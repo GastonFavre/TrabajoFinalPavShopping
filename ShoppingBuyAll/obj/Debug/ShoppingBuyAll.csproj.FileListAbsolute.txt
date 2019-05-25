@@ -1,0 +1,266 @@
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Compras.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Compras.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio Trabajo Practico Integrador\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Compras.resources
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\diego\OneDrive\Escritorio\ShoppingPAV1-6be086ded247ebeedc3210f42792519e85bfce18\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Estacionamiento.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Estacionamiento.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Estacionamiento.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+C:\Users\Gaston\Desktop\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Estacionamiento.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\Repositorio TPI ShoppingBuyAll\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Estacionamiento.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\ASUS\Documents\GitHub\TrabajoPractico\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\aranc\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+C:\Users\diego\OneDrive\Escritorio\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Facturas.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_clientes_filtrados.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Facturas.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\Gaston\Desktop\tp de verdad es este\tp de verdad es este\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
