@@ -22,35 +22,7 @@ namespace ShoppingBuyAll.Formularios
         Facturas factura = new Facturas();
         private void btn_CargarGrid_Click(object sender, EventArgs e)
         {
-            if (txt_Fecha.Visible)
-            {
-                if (txt_Fecha.Text != "")
-                {
-
-                    dataGridView1.DataSource = factura.buscar_Factura_Fecha(txt_Fecha.Text.Trim());
-                }
-            }
-            if (txt_NumFactura.Visible)
-            {
-                if (txt_NumFactura.Text != "")
-                {
-                    dataGridView1.DataSource = factura.buscar_Factura_Numero(txt_NumFactura.Text.Trim());
-                }
-            }
-            if (txt_Precio.Visible)
-            {
-                if (txt_Precio.Text != "")
-                {
-                    
-                }
-            }
-            if (txt_Cliente.Visible)
-            {
-                if (txt_Cliente.Text != "")
-                {
-                    dataGridView1.DataSource = factura.buscar_Factura_Cliente(txt_Cliente.Text.Trim());
-                }
-            }
+            
         }
 
         private void rb_numFactura_CheckedChanged(object sender, EventArgs e)
@@ -113,6 +85,37 @@ namespace ShoppingBuyAll.Formularios
             }
         }
 
+        private void boton_Buscar_Click(object sender, EventArgs e)
+        {
+            if (txt_Fecha.Visible)
+            {
+                if (txt_Fecha.Text != "")
+                {
 
+                    dataGridView1.DataSource = factura.buscar_Factura_Fecha(txt_Fecha.Text.Trim());
+                }
+            }
+            if (txt_NumFactura.Visible)
+            {
+                if (txt_NumFactura.Text != "")
+                {
+                    dataGridView1.DataSource = factura.buscar_Factura_Numero(txt_NumFactura.Text.Trim());
+                }
+            }
+            if (txt_Precio.Visible)
+            {
+                if (txt_Precio.Text != "")
+                {
+
+                }
+            }
+            if (txt_Cliente.Visible)
+            {
+                if (txt_Cliente.Text != "")
+                {
+                    dataGridView1.DataSource = factura.buscar_Factura_Cliente(txt_Cliente.Text.Trim());
+                }
+            }
+        }
     }
 }
