@@ -43,6 +43,7 @@
             this.btn_Modificar = new System.Windows.Forms.Button();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.btn_Nuevo = new System.Windows.Forms.Button();
+            this.btn_Auto_Cliente = new System.Windows.Forms.Button();
             this.cmb_Tipo_Doc = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.cmb_Modelo = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.cmb_TipoAuto = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
@@ -269,6 +270,25 @@
             this.btn_Nuevo.UseVisualStyleBackColor = false;
             this.btn_Nuevo.Click += new System.EventHandler(this.btn_Nuevo_Click);
             // 
+            // btn_Auto_Cliente
+            // 
+            this.btn_Auto_Cliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btn_Auto_Cliente.FlatAppearance.BorderSize = 0;
+            this.btn_Auto_Cliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_Auto_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Auto_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_Auto_Cliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Auto_Cliente.Image = ((System.Drawing.Image)(resources.GetObject("btn_Auto_Cliente.Image")));
+            this.btn_Auto_Cliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Auto_Cliente.Location = new System.Drawing.Point(558, 318);
+            this.btn_Auto_Cliente.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Auto_Cliente.Name = "btn_Auto_Cliente";
+            this.btn_Auto_Cliente.Size = new System.Drawing.Size(216, 81);
+            this.btn_Auto_Cliente.TabIndex = 77;
+            this.btn_Auto_Cliente.Text = "Buscar automoviles de cliente";
+            this.btn_Auto_Cliente.UseVisualStyleBackColor = false;
+            this.btn_Auto_Cliente.Click += new System.EventHandler(this.btn_Auto_Cliente_Click);
+            // 
             // cmb_Tipo_Doc
             // 
             this.cmb_Tipo_Doc._campo = "tipo_doc2";
@@ -374,6 +394,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btn_Auto_Cliente);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_agregarTarjeta);
             this.Controls.Add(this.cmb_Tipo_Doc);
@@ -426,5 +447,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_agregarTarjeta;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Auto_Cliente;
     }
 }

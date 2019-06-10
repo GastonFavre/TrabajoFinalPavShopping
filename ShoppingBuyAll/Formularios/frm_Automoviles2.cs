@@ -252,7 +252,14 @@ namespace ShoppingBuyAll.Formularios
             this.cmb_Marca.SelectedValue = -1;
         }
 
-       
+        private void btn_Auto_Cliente_Click(object sender, EventArgs e)
+        {
+            
+
+                frm_AutoDeCliente form_AutoC = new frm_AutoDeCliente();
+                form_AutoC.ShowDialog();
+            
+        }
     }
 
 }

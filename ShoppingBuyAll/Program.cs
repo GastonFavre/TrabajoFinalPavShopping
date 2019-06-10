@@ -17,7 +17,7 @@ namespace ShoppingBuyAll
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Facturas());
+            Application.Run(new frm_Menu());
         }
     }
 }

@@ -17,9 +17,7 @@ namespace ShoppingBuyAll.clases
 
 
         int _tipo_marca;
-
-
-
+      
 
         public int tipo_marca
         {
@@ -69,6 +67,18 @@ namespace ShoppingBuyAll.clases
         {
             Validar validacion = new Validar();
             return validacion.validar_Form(controles);
+        }
+
+        public DataTable auto_de_cliente(string doc, string tipo)
+        {
+            string sql = @"SELECT A.patente as Patente, MO.nombre as Modelo, T.descripcion as 'Tipo Doc', A.num_doc1 as 'Nro Doc', TA.nombre as 'Cod Tipo', M.descripcion as Marca 
+                          FROM automoviles A JOIN Marcas M ON M.id_marca = A.id_marca1 
+                          JOIN Tipo_Documento T ON A.tipo_doc2 = T.id_doc
+                          JOIN Tipo_Auto TA ON TA.cod_tipo = A.cod_tipo1
+                          JOIN Modelo MO ON A.modelo = MO.id_modelo
+                          WHERE tipo_doc2 = " + tipo + " AND num_doc1 = " + doc;
+            MessageBox.Show(sql);
+            return _BD.consulta(sql);
         }
 
 
