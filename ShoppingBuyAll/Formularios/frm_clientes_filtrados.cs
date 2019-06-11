@@ -62,6 +62,60 @@ namespace ShoppingBuyAll.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (validacion.validar_Form(this.Controls) == 0)
+            {
+                recuperarDatos();
+            }
+            else
+            {
+                if (this.cmb_tipoDoc.SelectedIndex != -1)
+                {
+                    recuperarDatos();
+                    return;
+                }
+                if(this.txt_Ape.Text != "")
+                {
+                    recuperarDatos();
+                    return;
+                }
+                if(this.txt_Nom.Text != "")
+                {
+                    recuperarDatos();
+                    return;
+                }
+                if(this.txt_NumDoc.Text != "")
+                {
+                    recuperarDatos();
+                    return;
+                }
+                if(this.txtCalle.Text != "")
+                {
+                    recuperarDatos();
+                    return;
+                }
+                if(this.cmbBarrio.SelectedIndex != -1)
+                {
+                    recuperarDatos();
+                    return;
+                }
+                if(this.cmbEstadoCivil.SelectedIndex != -1)
+                {
+                    recuperarDatos();
+                    return;
+                }
+                if(this.cmbSexo.SelectedIndex != -1)
+                {
+                    recuperarDatos();
+                    return;
+                }
+
+                MessageBox.Show("No se ha seleccionado ningun campo");
+            }
+        }
+
+
+        public void recuperarDatos()
+        {
             DataTable tabla_filtro = new DataTable();
             tabla_filtro = cliente.buscar_cliente_filtrado(this.Controls);
             datagrid_filtro.DataSource = tabla_filtro;
@@ -78,6 +132,7 @@ namespace ShoppingBuyAll.Formularios
             if (this.cmb_tipoDoc.Enabled == true)
             {
                 this.cmb_tipoDoc.Enabled = false;
+                this.cmb_tipoDoc.SelectedIndex = -1;
             }
             else
             {
@@ -90,6 +145,7 @@ namespace ShoppingBuyAll.Formularios
             if (this.txt_NumDoc.Enabled == true)
             {
                 this.txt_NumDoc.Enabled = false;
+                this.txt_NumDoc.Text = "";
             }
             else
             {
@@ -102,6 +158,7 @@ namespace ShoppingBuyAll.Formularios
             if (this.txt_Ape.Enabled == true)
             {
                 this.txt_Ape.Enabled = false;
+                this.txt_Ape.Text = "";
             }
             else
             {
@@ -114,6 +171,7 @@ namespace ShoppingBuyAll.Formularios
             if (this.txt_Nom.Enabled == true)
             {
                 this.txt_Nom.Enabled = false;
+                this.txt_Nom.Text = "";
             }
             else
             {
@@ -126,6 +184,7 @@ namespace ShoppingBuyAll.Formularios
             if (this.txtCalle.Enabled == true)
             {
                 this.txtCalle.Enabled = false;
+                this.txtCalle.Text = "";
             }
             else
             {
@@ -138,6 +197,7 @@ namespace ShoppingBuyAll.Formularios
             if (this.cmbBarrio.Enabled == true)
             {
                 this.cmbBarrio.Enabled = false;
+                this.cmbBarrio.SelectedIndex = -1;
             }
             else
             {
@@ -150,6 +210,7 @@ namespace ShoppingBuyAll.Formularios
             if (this.cmbEstadoCivil.Enabled == true)
             {
                 this.cmbEstadoCivil.Enabled = false;
+                this.cmbEstadoCivil.SelectedIndex = -1;
             }
             else
             {
@@ -162,6 +223,7 @@ namespace ShoppingBuyAll.Formularios
             if (this.cmbSexo.Enabled == true)
             {
                 this.cmbSexo.Enabled = false;
+                this.cmbSexo.SelectedIndex = -1;
             }
             else
             {
@@ -177,5 +239,7 @@ namespace ShoppingBuyAll.Formularios
             this.cmbEstadoCivil.cargar("Estado_Civil", "id_estado", "nombre");
             validacion.blanquear_objetos(this.Controls);
         }
+
+        
     }
 }
