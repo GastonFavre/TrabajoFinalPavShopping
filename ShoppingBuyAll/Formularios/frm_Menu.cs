@@ -146,6 +146,11 @@ namespace ShoppingBuyAll
         {
             AbrirFormaHija(new frm_Facturas());
         }
+
+        private void btn_buscarFiltrado_Click(object sender, EventArgs e)
+        {
+            AbrirFormaHija(new frm_EstacionamientoFiltrado());
+        }
         //AGREGO UN COMENTARIO DE MIERDA
     }
 }

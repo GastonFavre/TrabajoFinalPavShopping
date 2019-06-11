@@ -60,6 +60,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btn_buscarFiltrado = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.Barra_De_Titulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_min)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_rest)).BeginInit();
@@ -160,25 +162,27 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 30);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(251, 482);
+            this.panel3.Size = new System.Drawing.Size(251, 758);
             this.panel3.TabIndex = 2;
             // 
             // panelSubmenu
             // 
+            this.panelSubmenu.Controls.Add(this.panel9);
+            this.panelSubmenu.Controls.Add(this.btn_buscarFiltrado);
             this.panelSubmenu.Controls.Add(this.panel10);
             this.panelSubmenu.Controls.Add(this.panel11);
             this.panelSubmenu.Controls.Add(this.btnSalida);
             this.panelSubmenu.Controls.Add(this.btnIngreso);
-            this.panelSubmenu.Location = new System.Drawing.Point(15, 516);
+            this.panelSubmenu.Location = new System.Drawing.Point(15, 515);
             this.panelSubmenu.Name = "panelSubmenu";
-            this.panelSubmenu.Size = new System.Drawing.Size(236, 100);
+            this.panelSubmenu.Size = new System.Drawing.Size(236, 166);
             this.panelSubmenu.TabIndex = 5;
             this.panelSubmenu.Visible = false;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel10.Location = new System.Drawing.Point(36, 0);
+            this.panel10.Location = new System.Drawing.Point(33, 3);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(15, 48);
             this.panel10.TabIndex = 8;
@@ -186,7 +190,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Firebrick;
-            this.panel11.Location = new System.Drawing.Point(36, 53);
+            this.panel11.Location = new System.Drawing.Point(33, 54);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(15, 48);
             this.panel11.TabIndex = 9;
@@ -217,9 +221,9 @@
             this.btnIngreso.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngreso.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnIngreso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIngreso.Location = new System.Drawing.Point(36, -1);
+            this.btnIngreso.Location = new System.Drawing.Point(39, 3);
             this.btnIngreso.Name = "btnIngreso";
-            this.btnIngreso.Size = new System.Drawing.Size(200, 48);
+            this.btnIngreso.Size = new System.Drawing.Size(197, 48);
             this.btnIngreso.TabIndex = 6;
             this.btnIngreso.Text = "Ingreso";
             this.btnIngreso.UseVisualStyleBackColor = false;
@@ -425,7 +429,7 @@
             this.panel_contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_contenedor.Location = new System.Drawing.Point(251, 30);
             this.panel_contenedor.Name = "panel_contenedor";
-            this.panel_contenedor.Size = new System.Drawing.Size(673, 482);
+            this.panel_contenedor.Size = new System.Drawing.Size(673, 758);
             this.panel_contenedor.TabIndex = 3;
             // 
             // label2
@@ -450,12 +454,37 @@
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btn_buscarFiltrado
+            // 
+            this.btn_buscarFiltrado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
+            this.btn_buscarFiltrado.FlatAppearance.BorderSize = 0;
+            this.btn_buscarFiltrado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_buscarFiltrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscarFiltrado.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscarFiltrado.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_buscarFiltrado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_buscarFiltrado.Location = new System.Drawing.Point(39, 105);
+            this.btn_buscarFiltrado.Name = "btn_buscarFiltrado";
+            this.btn_buscarFiltrado.Size = new System.Drawing.Size(197, 48);
+            this.btn_buscarFiltrado.TabIndex = 10;
+            this.btn_buscarFiltrado.Text = "Buscar";
+            this.btn_buscarFiltrado.UseVisualStyleBackColor = false;
+            this.btn_buscarFiltrado.Click += new System.EventHandler(this.btn_buscarFiltrado_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.panel9.Location = new System.Drawing.Point(33, 105);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(15, 48);
+            this.panel9.TabIndex = 10;
+            // 
             // frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(924, 512);
+            this.ClientSize = new System.Drawing.Size(924, 788);
             this.Controls.Add(this.panel_contenedor);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.Barra_De_Titulo);
@@ -510,5 +539,7 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button btnSalida;
         private System.Windows.Forms.Button btnIngreso;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button btn_buscarFiltrado;
     }
 }

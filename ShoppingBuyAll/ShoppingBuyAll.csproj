@@ -121,6 +121,12 @@
     <Compile Include="Formularios\frm_clientes_filtrados.Designer.cs">
       <DependentUpon>frm_clientes_filtrados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frm_EstacionamientoFiltrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_EstacionamientoFiltrado.Designer.cs">
+      <DependentUpon>frm_EstacionamientoFiltrado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frm_Facturas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_clientes_filtrados.resx">
       <DependentUpon>frm_clientes_filtrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_EstacionamientoFiltrado.resx">
+      <DependentUpon>frm_EstacionamientoFiltrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Facturas.resx">
       <DependentUpon>frm_Facturas.cs</DependentUpon>

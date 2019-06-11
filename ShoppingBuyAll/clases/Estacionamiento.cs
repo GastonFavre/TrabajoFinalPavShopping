@@ -75,7 +75,10 @@ namespace ShoppingBuyAll.clases
             _BD.auto_insert(controles, "EstacXCliente");
         }
 
-
+        public DataTable buscar_estacionamiento_filtrado(Control.ControlCollection controles)
+        {
+            return _BD.buscar_filtrado(controles, "EstacXCliente");
+        }
 
 
     }
