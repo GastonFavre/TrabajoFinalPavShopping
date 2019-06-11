@@ -62,14 +62,10 @@ namespace ShoppingBuyAll.Formularios
                                     cuil= " + cuil;
             return this._BD.consulta(sql_Buscar);
         }
-        public DataTable local_por_rubro(string tipo_com)
+
+        public DataTable buscar_local_filtrado(Control.ControlCollection controles)
         {
-            string sql = @"SELECT L.cuil as 'CUIL', L.nombre as 'NOMBRE NEGOCIO'
-                          FROM Locales L
-                          WHERE tIPO_Comercio1 = " + tipo_com;
-            MessageBox.Show(sql);
-            return _BD.consulta(sql);
+                return _BD.buscar_filtrado(controles, "Locales");
         }
-    }
-   
+    }  
 }

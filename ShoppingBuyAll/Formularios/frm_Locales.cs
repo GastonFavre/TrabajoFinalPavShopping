@@ -137,7 +137,7 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_Local_Tipo_Click(object sender, EventArgs e)
         {
-            frm_LocalPorTipo LocxTipo = new frm_LocalPorTipo();
+            frm_LocalesFiltrados LocxTipo = new frm_LocalesFiltrados();
             LocxTipo.ShowDialog();
         }
 

@@ -145,11 +145,11 @@
     <Compile Include="Formularios\frm_Locales.Designer.cs">
       <DependentUpon>frm_Locales.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frm_LocalPorTipo.cs">
+    <Compile Include="Formularios\frm_LocalesFiltrados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frm_LocalPorTipo.Designer.cs">
-      <DependentUpon>frm_LocalPorTipo.cs</DependentUpon>
+    <Compile Include="Formularios\frm_LocalesFiltrados.Designer.cs">
+      <DependentUpon>frm_LocalesFiltrados.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frm_Login.cs">
       <SubType>Form</SubType>
@@ -241,8 +241,8 @@
     <EmbeddedResource Include="Formularios\frm_Locales.resx">
       <DependentUpon>frm_Locales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frm_LocalPorTipo.resx">
-      <DependentUpon>frm_LocalPorTipo.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frm_LocalesFiltrados.resx">
+      <DependentUpon>frm_LocalesFiltrados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>

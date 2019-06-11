@@ -268,12 +268,12 @@
             this.btn_Local_Tipo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_Local_Tipo.Image = ((System.Drawing.Image)(resources.GetObject("btn_Local_Tipo.Image")));
             this.btn_Local_Tipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Local_Tipo.Location = new System.Drawing.Point(833, 388);
+            this.btn_Local_Tipo.Location = new System.Drawing.Point(1106, 668);
             this.btn_Local_Tipo.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Local_Tipo.Name = "btn_Local_Tipo";
             this.btn_Local_Tipo.Size = new System.Drawing.Size(216, 81);
             this.btn_Local_Tipo.TabIndex = 78;
-            this.btn_Local_Tipo.Text = "Buscar Locales por tipo";
+            this.btn_Local_Tipo.Text = "  Locales Filtrados";
             this.btn_Local_Tipo.UseVisualStyleBackColor = false;
             this.btn_Local_Tipo.Click += new System.EventHandler(this.btn_Local_Tipo_Click);
             // 
