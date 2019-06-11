@@ -17,19 +17,19 @@ namespace ShoppingBuyAll.clases
             return validacion.validar_Form(controles);
         }
 
-        public void agregar_Rubro(string cuil, string id)
+        public void agregar_Rubro(Control.ControlCollection controles)
         {
-            string sql_agregar = @"INSERT INTO RubrosXLocal(cuil_Local, id_rubro) VALUES ('" + cuil + "', "
-                + id + " ')";
-          
+            MessageBox.Show(controles.ToString());
+            _BD.auto_insert(controles, "LocalesXRubro");
         }
 
-        public DataTable buscar_Rubro(string cuil_Local, string id_rubro)
+        public DataTable buscar_Rubro(string cuil)
         {
-            string sql_Buscar = @"SELECT cuil_Local as 'Cuil', id_rubro as 'Rubro' FROM RubrosXLocal WHERE
-                                    cuil_Local= " + cuil_Local + "AND id_rubro = " + id_rubro;
+            string sql_Buscar = @"SELECT cuil_local1 as 'CUIL', cod_rub1 as 'RUBRO' FROM LocalesXRubro WHERE
+                                    cuil_local1= " + cuil;
             return this._BD.consulta(sql_Buscar);
         }
+
     }
 }
 

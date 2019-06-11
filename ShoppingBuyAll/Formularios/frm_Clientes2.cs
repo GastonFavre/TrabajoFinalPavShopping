@@ -229,6 +229,11 @@ namespace ShoppingBuyAll.Formularios
             frm_clientes_filtrados form_filtrados = new frm_clientes_filtrados();
             form_filtrados.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }

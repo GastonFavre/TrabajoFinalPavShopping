@@ -19,47 +19,10 @@ namespace ShoppingBuyAll.Formularios
             return validacion.validar_Form(controles);
         }
 
-        public void agregar_local(Control.ControlCollection controles)
+        public bool agregar_local(Control.ControlCollection controles)
         {
-                MessageBox.Show(controles.ToString());
-                string sqlinsert;
-                string columna = "";
-                string valores = "";
-                foreach (Control item in controles)
-                {
-                    if (item.Name == "txt_Cuil")
-                    {
-                        if (columna == "")
-                        {
-                            columna = "cuil_local1";
-                            valores = valores + (item).Text.ToString().Trim();
-                        }
-                        else
-                        {
-                            columna = columna + "," + "cod_rub1";
-                            valores = valores + "," + (item).Text.ToString().Trim();
-                        }
-                    }
-
-                    if (item.Name == "cmb_Rubro")
-                    {
-                        if (columna == "")
-                        {
-                            columna = "cuil_local1";
-                            valores = valores + ((ComboBoxDeControl)item).SelectedValue.ToString();
-                        }
-                        else
-                        {
-                            columna = columna + "," + "cod_rub1";
-                            valores = valores + "," + ((ComboBoxDeControl)item).SelectedValue.ToString();
-                        }
-                    }
-                }
-                sqlinsert = @"INSERT INTO LocalesXRubro" + "(" + columna + ") VALUES (" + valores + ")";
-                MessageBox.Show(sqlinsert);
-                _BD.auto_insert(controles, "Locales");
-                _BD.grabar_modificar(sqlinsert);
-            }
+            return _BD.auto_insert(controles, "Locales");
+        }
 
             public void modificar_local(Control.ControlCollection controles, string cuil)
         {

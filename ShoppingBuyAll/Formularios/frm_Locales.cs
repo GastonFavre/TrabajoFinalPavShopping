@@ -26,7 +26,6 @@ namespace ShoppingBuyAll.Formularios
         private void frm_Locales_Load(object sender, EventArgs e)
         {
             this.cmb_Tipo_Loc.cargar("Tipo_Comercio", "id_tipoC", "descripcion");
-            this.cmb_Rubro.cargar("Rubros", "cod_rub", "nombre");
         }
 
         private void boton_Modi_Click(object sender, EventArgs e)
@@ -53,17 +52,20 @@ namespace ShoppingBuyAll.Formularios
         {
             _val.blanquear_objetos(this.Controls);
             txt_Cuil.Enabled = true;
-            this.cmb_Tipo_Loc.Focus();
+            this.txt_Cuil.Focus();
+            dataGridView1.DataSource = "";
         }
 
         private void boton_Agregar_Click(object sender, EventArgs e)
         {
             if (local.validar_local(this.Controls) == Validar.estado_validacion.correcta)
             {
-                local.agregar_local(this.Controls);
-                MessageBox.Show("Local agregado correctamente", "Mensaje", 
-                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                
+                if (local.agregar_local(this.Controls) == true)
+                {
+                    MessageBox.Show("Local agregado correctamente", "Mensaje"
+                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
             }
         }
 
@@ -89,6 +91,8 @@ namespace ShoppingBuyAll.Formularios
             txt_Nombre_Local.Enabled = false;
             cmb_Tipo_Loc.Enabled = false;
             btn_Buscar_CUIL.Visible = true;
+            btn_agregarRubro.Enabled = false;
+            btn_mostrarRubros.Enabled = false;
         }
 
         private void btn_Buscar_CUIL_Click(object sender, EventArgs e)
@@ -117,8 +121,9 @@ namespace ShoppingBuyAll.Formularios
             txt_Cuil.Enabled = false;
             txt_Nombre_Local.Enabled = true;
             cmb_Tipo_Loc.Enabled = true;
-            cmb_Rubro.Enabled = true;
             btn_Buscar_CUIL.Visible = false;
+            btn_agregarRubro.Enabled = true;
+            btn_mostrarRubros.Enabled = true;
         }
 
         private void txt_Cuil_KeyPress(object sender, KeyPressEventArgs e)
@@ -134,6 +139,37 @@ namespace ShoppingBuyAll.Formularios
         {
             frm_LocalPorTipo LocxTipo = new frm_LocalPorTipo();
             LocxTipo.ShowDialog();
+        }
+
+        private void btn_agregarRubro_Click(object sender, EventArgs e)
+        {
+            frm_RubroLocal locxrub = new frm_RubroLocal();
+            locxrub.txt_Cuil.Text = this.txt_Cuil.Text.Trim();
+            locxrub.ShowDialog();
+        }
+
+        private void btn_mostrarRubros_Click(object sender, EventArgs e)
+        {
+            
+            if (txt_Cuil.Text == "")
+            {
+                MessageBox.Show("No se Ingreso el CUIL");
+                return;
+            }
+            DataTable tabla = new DataTable();
+            tabla = rubrosxloc.buscar_Rubro(this.txt_Cuil.Text.Trim());
+            if (tabla.Rows.Count == 0)
+            {
+                MessageBox.Show("El CUIL no tiene Rubros asociadas");
+                return;
+            }
+            else
+            {
+                dataGridView1.Visible = true;
+                label1.Visible = true;
+                dataGridView1.DataSource = tabla;
+            }
+
         }
     }
 }

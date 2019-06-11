@@ -182,6 +182,12 @@
       <DependentUpon>frm_Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="clases\Locales.cs" />
+    <Compile Include="Formularios\frm_RubroLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_RubroLocal.Designer.cs">
+      <DependentUpon>frm_RubroLocal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Ingreso_Estacionamiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Productos.resx">
       <DependentUpon>frm_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_RubroLocal.resx">
+      <DependentUpon>frm_RubroLocal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Ingreso_Estacionamiento.resx">
       <DependentUpon>Ingreso_Estacionamiento.cs</DependentUpon>
