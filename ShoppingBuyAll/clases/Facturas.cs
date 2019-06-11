@@ -49,5 +49,18 @@ namespace ShoppingBuyAll.clases
                            WHERE C.fecha_compra = '" + fecha + "'";
             return _BD.consulta(sql);
         }
+
+        public DataTable buscar_Factura_precio(string precio)
+        {
+            string sql = @"SELECT C.nro_factura AS 'Nro Factura', CL.nombres AS 'Nombre Cliente', CL.apellido AS 'Apellido Cliente', COUNT(C.nro_factura) AS 'Cantidad De Artiuculos', SUM(P.precio*D.cantidad) AS 'Monto Total'
+                           FROM ComprasXCliente C JOIN  DetalleCompras D ON D.nro_factura1 = C.nro_factura 
+                                JOIN clientes CL ON C.tipo_doc1 = CL.tipo_doc1 AND  CL.num_doc = C.num_doc1
+					            JOIN Locales L ON L.cuil = D.cuil_local2
+					            JOIN Productos P ON P.cod_prod=D.cod_prod1
+                           GROUP BY C.nro_factura, CL.nombres, CL.apellido
+                           HAVING SUM(P.precio*D.cantidad) > " + precio;
+            return _BD.consulta(sql);
+        }
+
     }
 }

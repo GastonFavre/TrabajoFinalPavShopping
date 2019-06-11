@@ -370,3 +370,6 @@ C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\ob
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_AutoDeCliente.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_EstacionamientoFiltrado.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalPorTipo.resources
