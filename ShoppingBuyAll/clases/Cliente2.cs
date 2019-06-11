@@ -40,9 +40,23 @@ namespace ShoppingBuyAll.clases
             }
             else
             {
-                string sql_eliminar = "DELETE FROM clientes WHERE tipo_doc1 = " + tipoDoc + " AND num_doc = " + NumDoc;
-                _BD.grabar_modificar(sql_eliminar);
-                MessageBox.Show("El Cliente ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DataTable tabla_verificar_compras_cliente = new DataTable();
+                string sql_verificar_compras_cliente = "SELECT FROM ComprasXCliente WHERE tipo_doc1 = " + tipoDoc + "AND num_doc1 = " + NumDoc;
+                tabla_verificar_compras_cliente = _BD.consulta(sql_verificar_compras_cliente);
+                if (tabla_verificar_compras_cliente.Rows.Count == 0)
+                {
+                    string sql_eliminar_tarjetas = "DELETE FROM TarjetaXCliente WHERE tipo_doc3 = " + tipoDoc + "AND num_doc3 = " + NumDoc;
+                    _BD.grabar_modificar(sql_eliminar_tarjetas);
+                    MessageBox.Show("Las Tarjetas vinculadas al cliente fueron eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string sql_eliminar = "DELETE FROM clientes WHERE tipo_doc1 = " + tipoDoc + " AND num_doc = " + NumDoc;
+                    _BD.grabar_modificar(sql_eliminar);
+                    MessageBox.Show("El Cliente ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("El Cliente tiene asociadas compras por lo tanto no se puede eliminar", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                
             }
             
         }

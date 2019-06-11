@@ -1,4 +1,4 @@
-C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+﻿C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
@@ -399,3 +399,6 @@ C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoFinalPavShopping\S
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_RubroLocal.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_AutoDeCliente.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_EstacionamientoFiltrado.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalPorTipo.resources
