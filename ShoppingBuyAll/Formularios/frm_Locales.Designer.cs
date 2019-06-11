@@ -43,6 +43,7 @@
             this.boton_Buscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cmb_Rubro = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
+            this.btn_Local_Tipo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_cuil
@@ -265,12 +266,32 @@
             this.cmb_Rubro.Size = new System.Drawing.Size(386, 37);
             this.cmb_Rubro.TabIndex = 63;
             // 
+            // btn_Local_Tipo
+            // 
+            this.btn_Local_Tipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btn_Local_Tipo.FlatAppearance.BorderSize = 0;
+            this.btn_Local_Tipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_Local_Tipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Local_Tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_Local_Tipo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Local_Tipo.Image = ((System.Drawing.Image)(resources.GetObject("btn_Local_Tipo.Image")));
+            this.btn_Local_Tipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Local_Tipo.Location = new System.Drawing.Point(833, 388);
+            this.btn_Local_Tipo.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Local_Tipo.Name = "btn_Local_Tipo";
+            this.btn_Local_Tipo.Size = new System.Drawing.Size(216, 81);
+            this.btn_Local_Tipo.TabIndex = 78;
+            this.btn_Local_Tipo.Text = "Buscar Locales por tipo";
+            this.btn_Local_Tipo.UseVisualStyleBackColor = false;
+            this.btn_Local_Tipo.Click += new System.EventHandler(this.btn_Local_Tipo_Click);
+            // 
             // frm_Locales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1446, 865);
+            this.Controls.Add(this.btn_Local_Tipo);
             this.Controls.Add(this.cmb_Rubro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.boton_Buscar);
@@ -311,5 +332,6 @@
         private System.Windows.Forms.Button boton_Buscar;
         private System.Windows.Forms.Label label1;
         private Componentes.ComboBoxDeControl cmb_Rubro;
+        private System.Windows.Forms.Button btn_Local_Tipo;
     }
 }

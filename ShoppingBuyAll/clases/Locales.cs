@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using ShoppingBuyAll.clases;
 using System.Windows.Forms;
+using ShoppingBuyAll.Componentes;
 
 namespace ShoppingBuyAll.Formularios
 {
@@ -20,11 +21,47 @@ namespace ShoppingBuyAll.Formularios
 
         public void agregar_local(Control.ControlCollection controles)
         {
-            MessageBox.Show(controles.ToString());
-            _BD.auto_insert(controles, "Locales");
-        }
+                MessageBox.Show(controles.ToString());
+                string sqlinsert;
+                string columna = "";
+                string valores = "";
+                foreach (Control item in controles)
+                {
+                    if (item.Name == "txt_Cuil")
+                    {
+                        if (columna == "")
+                        {
+                            columna = "cuil_local1";
+                            valores = valores + (item).Text.ToString().Trim();
+                        }
+                        else
+                        {
+                            columna = columna + "," + "cod_rub1";
+                            valores = valores + "," + (item).Text.ToString().Trim();
+                        }
+                    }
 
-        public void modificar_local(Control.ControlCollection controles, string cuil)
+                    if (item.Name == "cmb_Rubro")
+                    {
+                        if (columna == "")
+                        {
+                            columna = "cuil_local1";
+                            valores = valores + ((ComboBoxDeControl)item).SelectedValue.ToString();
+                        }
+                        else
+                        {
+                            columna = columna + "," + "cod_rub1";
+                            valores = valores + "," + ((ComboBoxDeControl)item).SelectedValue.ToString();
+                        }
+                    }
+                }
+                sqlinsert = @"INSERT INTO LocalesXRubro" + "(" + columna + ") VALUES (" + valores + ")";
+                MessageBox.Show(sqlinsert);
+                _BD.auto_insert(controles, "Locales");
+                _BD.grabar_modificar(sqlinsert);
+            }
+
+            public void modificar_local(Control.ControlCollection controles, string cuil)
         {
             DataTable tabla = new DataTable();
             tabla = buscar_local(cuil);
@@ -62,5 +99,14 @@ namespace ShoppingBuyAll.Formularios
                                     cuil= " + cuil;
             return this._BD.consulta(sql_Buscar);
         }
+        public DataTable local_por_rubro(string tipo_com)
+        {
+            string sql = @"SELECT L.cuil as 'CUIL', L.nombre as 'NOMBRE NEGOCIO'
+                          FROM Locales L
+                          WHERE tIPO_Comercio1 = " + tipo_com;
+            MessageBox.Show(sql);
+            return _BD.consulta(sql);
+        }
     }
+   
 }
