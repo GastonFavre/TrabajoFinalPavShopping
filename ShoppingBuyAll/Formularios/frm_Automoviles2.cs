@@ -260,6 +260,17 @@ namespace ShoppingBuyAll.Formularios
                 form_AutoC.ShowDialog();
             
         }
+
+        private void btn_Buscar_Modelos_Click(object sender, EventArgs e)
+        {
+            if (this.cmb_Marca.SelectedIndex > 0 && this.cmb_Modelo.SelectedIndex >0)
+            {
+                frm_Automoviles_Marca form_AutoMarca = new frm_Automoviles_Marca();
+                form_AutoMarca.tipo_marca = int.Parse(this.cmb_Marca.SelectedValue.ToString());
+                form_AutoMarca.tipo_modelo = int.Parse(this.cmb_Modelo.SelectedValue.ToString());
+                form_AutoMarca.ShowDialog();
+            }
+        }
     }
 
 }

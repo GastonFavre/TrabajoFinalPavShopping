@@ -17,6 +17,7 @@ namespace ShoppingBuyAll.clases
 
 
         int _tipo_marca;
+        
       
 
         public int tipo_marca
@@ -71,7 +72,7 @@ namespace ShoppingBuyAll.clases
 
         public DataTable auto_de_cliente(string doc, string tipo)
         {
-            string sql = @"SELECT A.patente as Patente, MO.nombre as Modelo, T.descripcion as 'Tipo Doc', A.num_doc1 as 'Nro Doc', TA.nombre as 'Cod Tipo', M.descripcion as Marca 
+            string sql = @"SELECT A.patente as Patente, MO.nombre as Modelo, T.descripcion as 'Tipo Doc', A.num_doc1 as 'Nro Doc', TA.nombre as 'Tipo Auto', M.descripcion as Marca 
                           FROM automoviles A JOIN Marcas M ON M.id_marca = A.id_marca1 
                           JOIN Tipo_Documento T ON A.tipo_doc2 = T.id_doc
                           JOIN Tipo_Auto TA ON TA.cod_tipo = A.cod_tipo1
@@ -81,6 +82,16 @@ namespace ShoppingBuyAll.clases
             return _BD.consulta(sql);
         }
 
+        public DataTable Consultar_Auto_Marca(string marca, string modelo)
+        {
+            string sql = @"SELECT A.patente as Patente, MO.nombre as Modelo, T.descripcion as 'Tipo Doc', A.num_doc1 as 'Nro Doc', TA.nombre as 'Tipo Auto', M.descripcion as Marca 
+                          FROM automoviles A JOIN Marcas M ON M.id_marca = A.id_marca1 
+                          JOIN Tipo_Documento T ON A.tipo_doc2 = T.id_doc
+                          JOIN Tipo_Auto TA ON TA.cod_tipo = A.cod_tipo1
+                          JOIN Modelo MO ON A.modelo = MO.id_modelo
+                          WHERE A.modelo = " + modelo + " AND A.id_marca1 = " + marca;
+            return _BD.consulta(sql);
+        }
 
     }
 }

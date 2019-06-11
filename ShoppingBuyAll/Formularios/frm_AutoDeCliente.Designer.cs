@@ -153,6 +153,7 @@
             this.Controls.Add(this.dataGrid_Automoviles);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_AutoDeCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_AutoDeCliente";
             this.Load += new System.EventHandler(this.frm_AutoDeCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Automoviles)).EndInit();

@@ -103,6 +103,12 @@
     <Compile Include="Formularios\frm_Automoviles2.Designer.cs">
       <DependentUpon>frm_Automoviles2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frm_Automoviles_Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_Automoviles_Marca.Designer.cs">
+      <DependentUpon>frm_Automoviles_Marca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frm_Barrio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Automoviles2.resx">
       <DependentUpon>frm_Automoviles2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_Automoviles_Marca.resx">
+      <DependentUpon>frm_Automoviles_Marca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Barrio.resx">
       <DependentUpon>frm_Barrio.cs</DependentUpon>

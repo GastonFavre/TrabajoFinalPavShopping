@@ -402,3 +402,7 @@ D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavSho
 D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_EstacionamientoFiltrado.resources
 D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalPorTipo.resources
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalesFiltrados.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_EstacionamientoFiltrado.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalesFiltrados.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_RubroLocal.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles_Marca.resources

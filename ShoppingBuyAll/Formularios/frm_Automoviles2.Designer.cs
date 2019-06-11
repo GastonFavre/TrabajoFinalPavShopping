@@ -50,6 +50,7 @@
             this.txt_nroDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.cmb_Marca = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.txt_Patente = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.btn_Buscar_Modelos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -388,12 +389,32 @@
             this.txt_Patente.Size = new System.Drawing.Size(169, 26);
             this.txt_Patente.TabIndex = 0;
             // 
+            // btn_Buscar_Modelos
+            // 
+            this.btn_Buscar_Modelos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btn_Buscar_Modelos.FlatAppearance.BorderSize = 0;
+            this.btn_Buscar_Modelos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_Buscar_Modelos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Buscar_Modelos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_Buscar_Modelos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Buscar_Modelos.Image = ((System.Drawing.Image)(resources.GetObject("btn_Buscar_Modelos.Image")));
+            this.btn_Buscar_Modelos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Buscar_Modelos.Location = new System.Drawing.Point(623, 217);
+            this.btn_Buscar_Modelos.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Buscar_Modelos.Name = "btn_Buscar_Modelos";
+            this.btn_Buscar_Modelos.Size = new System.Drawing.Size(224, 83);
+            this.btn_Buscar_Modelos.TabIndex = 78;
+            this.btn_Buscar_Modelos.Text = "Buscar automoviles por modelo";
+            this.btn_Buscar_Modelos.UseVisualStyleBackColor = false;
+            this.btn_Buscar_Modelos.Click += new System.EventHandler(this.btn_Buscar_Modelos_Click);
+            // 
             // frm_Automoviles2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btn_Buscar_Modelos);
             this.Controls.Add(this.btn_Auto_Cliente);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_agregarTarjeta);
@@ -448,5 +469,6 @@
         private System.Windows.Forms.Button btn_agregarTarjeta;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_Auto_Cliente;
+        private System.Windows.Forms.Button btn_Buscar_Modelos;
     }
 }
