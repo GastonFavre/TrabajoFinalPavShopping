@@ -129,5 +129,11 @@ namespace ShoppingBuyAll.Formularios
                 e.Handled = true;
             }
         }
+
+        private void btn_Local_Tipo_Click(object sender, EventArgs e)
+        {
+            frm_LocalPorTipo LocxTipo = new frm_LocalPorTipo();
+            LocxTipo.ShowDialog();
+        }
     }
 }
