@@ -75,9 +75,51 @@ namespace ShoppingBuyAll.clases
             _BD.auto_insert(controles, "EstacXCliente");
         }
 
-        public DataTable buscar_estacionamiento_filtrado(Control.ControlCollection controles)
+        //public DataTable buscar_estacionamiento_filtrado(Control.ControlCollection controles)
+        //{
+        //    return _BD.buscar_filtrado(controles, "EstacXCliente");
+        //}
+
+        public DataTable buscar_porPatente(string patente)
         {
-            return _BD.buscar_filtrado(controles, "EstacXCliente");
+            string sql = @"SELECT E.patente_1 AS 'Patente',E.nro_doc2 AS 'Numero Documento',E.fecha AS 'Fecha de Ingreso',E.hora_desde as 'Hora Ingreso',E.hora_hasta AS 'Hora Egreso',
+                           P.nombre AS 'Playa',E.nro_estac AS 'Lugar numero'
+                           FROM EstacXCliente E JOIN Playa P ON P.id_playa = E.id_playa1
+                           WHERE E.patente_1 = '" +patente + "'";
+
+            return _BD.consulta(sql);
+        }
+
+        public DataTable buscar_porDNI(string numeroDoc)
+        {
+            string sql = @"SELECT E.patente_1 AS 'Patente',E.nro_doc2 AS 'Numero Documento',T.descripcion AS 'Tipo Documento',E.fecha AS 'Fecha de Ingreso',E.hora_desde as 'Hora Ingreso',E.hora_hasta AS 'Hora Egreso',
+                           P.nombre AS 'Playa',E.nro_estac AS 'Lugar numero'
+                           FROM EstacXCliente E JOIN Playa P ON P.id_playa = E.id_playa1  JOIN Tipo_Documento T ON E.tipo_doc2 = T.id_doc
+                           WHERE E.nro_doc2 =  '" + numeroDoc + "'";
+
+            return _BD.consulta(sql);
+        }
+
+        public DataTable buscar_porFecha(string fecha)
+        {
+            string sql = @"SELECT E.patente_1 AS 'Patente',E.nro_doc2 AS 'Numero Documento',E.fecha AS 'Fecha de Ingreso',E.hora_desde as 'Hora Ingreso',E.hora_hasta AS 'Hora Egreso',
+                           P.nombre AS 'Playa',E.nro_estac AS 'Lugar numero'
+                           FROM EstacXCliente E JOIN Playa P ON P.id_playa = E.id_playa1 
+                           WHERE E.fecha = '" + fecha + "'";
+
+            return _BD.consulta(sql);
+
+        }
+
+        public DataTable buscar_porPlaya(string Playa)
+        {
+            string sql = @"SELECT E.patente_1 AS 'Patente',E.nro_doc2 AS 'Numero Documento',E.fecha AS 'Fecha de Ingreso',E.hora_desde as 'Hora Ingreso',E.hora_hasta AS 'Hora Egreso',
+                           P.nombre AS 'Playa',E.nro_estac AS 'Lugar numero'
+                           FROM EstacXCliente E JOIN Playa P ON P.id_playa = E.id_playa1 
+                           WHERE E.id_playa1 =  '" + Playa + "'";
+
+            return _BD.consulta(sql);
+
         }
 
 

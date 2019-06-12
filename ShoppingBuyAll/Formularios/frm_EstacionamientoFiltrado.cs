@@ -41,16 +41,55 @@ namespace ShoppingBuyAll.Formularios
         {
             Estacionamiento AutoCliente = new Estacionamiento();
             DataTable tabla_filtrados = new DataTable();
-            tabla_filtrados = AutoCliente.buscar_estacionamiento_filtrado(this.Controls);
-            if (tabla_filtrados.Rows.Count == 0)
+            if (this.txt_patenteFiltrado.Visible)
             {
-                MessageBox.Show("No se encontraron resultados \n para los filtros aplicados");
+                if (this.txt_patenteFiltrado.Text == "")
+                {
+                    MessageBox.Show("Debe ingresar una patente");
+                }
+                else
+                {
+                    GrillaFiltrados.DataSource = AutoCliente.buscar_porPatente(txt_patenteFiltrado.Text);
+                }
             }
-            else
-            {
-                GrillaFiltrados.DataSource = tabla_filtrados;
-            } 
 
+            if (this.txt_NumDocFiltrado.Visible)
+            {
+                if (this.txt_NumDocFiltrado.Text == "" || cmb_tipoDocFiltrado.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe completar el tipo y numero de documento");
+                }
+                else
+                {
+                    GrillaFiltrados.DataSource = AutoCliente.buscar_porDNI(txt_NumDocFiltrado.Text);
+                }
+            }
+
+            if (this.cmbPlayaFiltrado.Visible)
+            {
+                if (this.cmbPlayaFiltrado.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Debe seleccionar la playa");
+                }
+                else
+                {
+                    GrillaFiltrados.DataSource = AutoCliente.buscar_porPlaya(cmbPlayaFiltrado.SelectedValue.ToString());
+                }
+            }
+
+            if (this.dt_fecha_entradaFiltrado.Visible)
+            {
+                if (this.dt_fecha_entradaFiltrado.Text == "")
+                {
+                    MessageBox.Show("Debe ingresar una fecha");
+                }
+                else
+                {
+                    GrillaFiltrados.DataSource = AutoCliente.buscar_porFecha(dt_fecha_entradaFiltrado.Text);
+                }
+            }
+
+            
         }
 
        
@@ -62,154 +101,162 @@ namespace ShoppingBuyAll.Formularios
                 if (this.txt_patenteFiltrado.Enabled == true)
                 {
                     this.txt_patenteFiltrado.Enabled = false;
-                }
+
+                    this.txt_NumDocFiltrado.Visible = true;
+                    this.cmb_tipoDocFiltrado.Visible = true;
+                    this.cmbPlayaFiltrado.Visible = true;
+                    this.dt_fecha_entradaFiltrado.Visible = true;
+
+                    this.checkNroDNI.Enabled = true;
+                  
+                    this.checkFechaIngreso.Enabled = true;
+                    this.checkPlaya.Enabled = true;
+            }
                 else
                 {
                     this.txt_patenteFiltrado.Enabled = true;
+
+                    this.txt_NumDocFiltrado.Visible = false;
+                    this.cmb_tipoDocFiltrado.Visible = false;
+                    this.cmbPlayaFiltrado.Visible = false;
+                    this.dt_fecha_entradaFiltrado.Visible = false;
+
+                    this.checkNroDNI.Enabled = false;
+                  
+                    this.checkFechaIngreso.Enabled = false;
+                    this.checkPlaya.Enabled = false;
+
                     this.txt_patenteFiltrado.Focus();
                 }
             
         }
 
-        private void checkTipoDNI_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.cmb_tipoDocFiltrado.Enabled == true)
-            {
-                this.cmb_tipoDocFiltrado.Enabled = false;
-            }
-            else
-            {
-                this.cmb_tipoDocFiltrado.Enabled = true;
-                this.cmb_tipoDocFiltrado.Focus();
-            }
-        }
+        
 
         private void checkNroDNI_CheckedChanged(object sender, EventArgs e)
         {
             if (this.txt_NumDocFiltrado.Enabled == true)
             {
                 this.txt_NumDocFiltrado.Enabled = false;
+                this.cmb_tipoDocFiltrado.Enabled = false;
+                this.txt_patenteFiltrado.Visible = true;
+                this.cmb_tipoDocFiltrado.Visible = true;
+                this.cmbPlayaFiltrado.Visible = true;
+                this.dt_fecha_entradaFiltrado.Visible = true;
+
+                this.checkPatente.Enabled = true;
+               
+                this.checkFechaIngreso.Enabled = true;
+                this.checkPlaya.Enabled = true;
             }
             else
             {
                 this.txt_NumDocFiltrado.Enabled = true;
+                this.cmb_tipoDocFiltrado.Enabled = true;
+
+                this.txt_patenteFiltrado.Visible = false;
+                
+                this.cmbPlayaFiltrado.Visible = false;
+                this.dt_fecha_entradaFiltrado.Visible = false;
+
+                this.checkPatente.Enabled = false;
+                
+                this.checkFechaIngreso.Enabled = false;
+                this.checkPlaya.Enabled = false;
+
                 this.txt_NumDocFiltrado.Focus();
             }
         }
 
-        private void checkNombre_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.txt_nombreFiltrado.Enabled == true)
-            {
-                this.txt_nombreFiltrado.Enabled = false;
-            }
-            else
-            {
-                this.txt_nombreFiltrado.Enabled = true;
-                this.txt_nombreFiltrado.Focus();
-            }
-        }
-
-        private void checkApellido_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.txt_apellidoFiltrado.Enabled == true)
-            {
-                this.txt_apellidoFiltrado.Enabled = false;
-            }
-            else
-            {
-                this.txt_apellidoFiltrado.Enabled = true;
-                this.txt_apellidoFiltrado.Focus();
-            }
-        }
+        
 
         private void checkPlaya_CheckedChanged(object sender, EventArgs e)
         {
             if (this.cmbPlayaFiltrado.Enabled == true)
             {
                 this.cmbPlayaFiltrado.Enabled = false;
+                this.txt_NumDocFiltrado.Visible = true;
+                this.cmb_tipoDocFiltrado.Visible = true;
+                this.txt_patenteFiltrado.Visible = true;
+                this.dt_fecha_entradaFiltrado.Visible = true;
+
+                this.checkNroDNI.Enabled = true;
+            
+                this.checkFechaIngreso.Enabled = true;
+                this.checkPatente.Enabled = true;
             }
             else
             {
                 this.cmbPlayaFiltrado.Enabled = true;
+
+                this.txt_NumDocFiltrado.Visible = false;
+                this.cmb_tipoDocFiltrado.Visible = false;
+                this.txt_patenteFiltrado.Visible = false;
+                this.dt_fecha_entradaFiltrado.Visible = false;
+
+                this.checkNroDNI.Enabled = false;
+               
+                this.checkFechaIngreso.Enabled = false;
+                this.checkPatente.Enabled = false;
+
                 this.cmbPlayaFiltrado.Focus();
+
             }
         }
 
-        private void checkNroEstac_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.txt_NroEstacionFiltrado.Enabled == true)
-            {
-                this.txt_NroEstacionFiltrado.Enabled = false;
-            }
-            else
-            {
-                this.txt_NroEstacionFiltrado.Enabled = true;
-                this.txt_NroEstacionFiltrado.Focus();
-            }
-        }
+        
 
         private void checkFechaIngreso_CheckedChanged(object sender, EventArgs e)
         {
             if (this.dt_fecha_entradaFiltrado.Enabled == true)
             {
                 this.dt_fecha_entradaFiltrado.Enabled = false;
+                this.txt_NumDocFiltrado.Visible = true;
+                this.cmb_tipoDocFiltrado.Visible = true;
+                this.cmbPlayaFiltrado.Visible = true;
+                this.txt_patenteFiltrado.Visible = true;
+
+                this.checkNroDNI.Enabled = true;
+              
+                this.checkPatente.Enabled = true;
+                this.checkPlaya.Enabled = true;
             }
             else
             {
                 this.dt_fecha_entradaFiltrado.Enabled = true;
+
+                this.txt_NumDocFiltrado.Visible = false;
+                this.cmb_tipoDocFiltrado.Visible = false;
+                this.cmbPlayaFiltrado.Visible = false;
+                this.txt_patenteFiltrado.Visible = false;
+
+                this.checkNroDNI.Enabled = false;
+              
+                this.checkPatente.Enabled = false;
+                this.checkPlaya.Enabled = false;
+
                 this.dt_fecha_entradaFiltrado.Focus();
             }
         }
 
-        private void checkHoraIng_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.txt_horaDesdeFiltrado.Enabled == true)
-            {
-                this.txt_horaDesdeFiltrado.Enabled = false;
-            }
-            else
-            {
-                this.txt_horaDesdeFiltrado.Enabled = true;
-                this.txt_horaDesdeFiltrado.Focus();
-            }
-        }
-
-        private void checkHoraSalida_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.txt_horaSalidaFiltrado.Enabled == true)
-            {
-                this.txt_horaSalidaFiltrado.Enabled = false;
-            }
-            else
-            {
-                this.txt_horaSalidaFiltrado.Enabled = true;
-                this.txt_horaSalidaFiltrado.Focus();
-            }
-        }
+        
 
         private void btn_nuevoFiltrado_Click(object sender, EventArgs e)
         {
             txt_patenteFiltrado.Text = "";
             txt_NumDocFiltrado.Text = "";
-            txt_NroEstacionFiltrado.Text = "";
-            txt_nombreFiltrado.Text = "";
-            txt_apellidoFiltrado.Text = "";
-            txt_horaDesdeFiltrado.Text = "";
-            txt_horaSalidaFiltrado.Text = "";
+           
             dt_fecha_entradaFiltrado.Text = "";
             cmbPlayaFiltrado.SelectedIndex = -1;
             cmb_tipoDocFiltrado.SelectedIndex = -1;
             checkPatente.Checked = false;
-            checkApellido.Checked = false;
-            checkNombre.Checked = false;
+            
             checkNroDNI.Checked = false;
-            checkTipoDNI.Checked = false;
+          
             checkPlaya.Checked = false;
-            checkNroEstac.Checked = false;
-            checkHoraIng.Checked = false;
+            
             checkFechaIngreso.Checked = false;
-            checkHoraSalida.Checked = false;
+           
             GrillaFiltrados.DataSource = "";
         }
     }
