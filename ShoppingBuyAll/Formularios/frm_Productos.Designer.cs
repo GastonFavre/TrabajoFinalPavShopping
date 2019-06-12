@@ -42,6 +42,13 @@
             this.txt_PrecioProducto = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_NombreProducto = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_CodigoProducto = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.dataGridBusqueda = new System.Windows.Forms.DataGridView();
+            this.radioButtonCodigo = new System.Windows.Forms.RadioButton();
+            this.radioButtonPrecio = new System.Windows.Forms.RadioButton();
+            this.groupBoxFiltros = new System.Windows.Forms.GroupBox();
+            this.btnBuscarPrecio = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBusqueda)).BeginInit();
+            this.groupBoxFiltros.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_Precio
@@ -238,12 +245,76 @@
             this.txt_CodigoProducto.TabIndex = 62;
             this.txt_CodigoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
+            // dataGridBusqueda
+            // 
+            this.dataGridBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridBusqueda.Location = new System.Drawing.Point(455, 51);
+            this.dataGridBusqueda.Name = "dataGridBusqueda";
+            this.dataGridBusqueda.Size = new System.Drawing.Size(424, 249);
+            this.dataGridBusqueda.TabIndex = 71;
+            // 
+            // radioButtonCodigo
+            // 
+            this.radioButtonCodigo.AutoSize = true;
+            this.radioButtonCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonCodigo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButtonCodigo.Location = new System.Drawing.Point(18, 34);
+            this.radioButtonCodigo.Name = "radioButtonCodigo";
+            this.radioButtonCodigo.Size = new System.Drawing.Size(103, 17);
+            this.radioButtonCodigo.TabIndex = 72;
+            this.radioButtonCodigo.TabStop = true;
+            this.radioButtonCodigo.Text = "POR CODIGO";
+            this.radioButtonCodigo.UseVisualStyleBackColor = true;
+            this.radioButtonCodigo.CheckedChanged += new System.EventHandler(this.radioButtonCodigo_CheckedChanged);
+            // 
+            // radioButtonPrecio
+            // 
+            this.radioButtonPrecio.AutoSize = true;
+            this.radioButtonPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonPrecio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButtonPrecio.Location = new System.Drawing.Point(18, 57);
+            this.radioButtonPrecio.Name = "radioButtonPrecio";
+            this.radioButtonPrecio.Size = new System.Drawing.Size(101, 17);
+            this.radioButtonPrecio.TabIndex = 73;
+            this.radioButtonPrecio.TabStop = true;
+            this.radioButtonPrecio.Text = "POR PRECIO";
+            this.radioButtonPrecio.UseVisualStyleBackColor = true;
+            this.radioButtonPrecio.CheckedChanged += new System.EventHandler(this.radioButtonPrecio_CheckedChanged);
+            // 
+            // groupBoxFiltros
+            // 
+            this.groupBoxFiltros.Controls.Add(this.radioButtonCodigo);
+            this.groupBoxFiltros.Controls.Add(this.radioButtonPrecio);
+            this.groupBoxFiltros.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBoxFiltros.Location = new System.Drawing.Point(715, 354);
+            this.groupBoxFiltros.Name = "groupBoxFiltros";
+            this.groupBoxFiltros.Size = new System.Drawing.Size(161, 100);
+            this.groupBoxFiltros.TabIndex = 74;
+            this.groupBoxFiltros.TabStop = false;
+            this.groupBoxFiltros.Text = "FILTROS";
+            this.groupBoxFiltros.Visible = false;
+            // 
+            // btnBuscarPrecio
+            // 
+            this.btnBuscarPrecio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscarPrecio.BackgroundImage")));
+            this.btnBuscarPrecio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscarPrecio.Location = new System.Drawing.Point(314, 234);
+            this.btnBuscarPrecio.Name = "btnBuscarPrecio";
+            this.btnBuscarPrecio.Size = new System.Drawing.Size(26, 26);
+            this.btnBuscarPrecio.TabIndex = 75;
+            this.btnBuscarPrecio.UseVisualStyleBackColor = true;
+            this.btnBuscarPrecio.Visible = false;
+            this.btnBuscarPrecio.Click += new System.EventHandler(this.btnBuscarPrecio_Click);
+            // 
             // frm_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(932, 484);
+            this.Controls.Add(this.btnBuscarPrecio);
+            this.Controls.Add(this.groupBoxFiltros);
+            this.Controls.Add(this.dataGridBusqueda);
             this.Controls.Add(this.btn_BuscarCod);
             this.Controls.Add(this.boton_Buscar);
             this.Controls.Add(this.boton_Eliminar);
@@ -262,6 +333,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frm_Productos";
             this.Load += new System.EventHandler(this.frm_Productos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridBusqueda)).EndInit();
+            this.groupBoxFiltros.ResumeLayout(false);
+            this.groupBoxFiltros.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,5 +355,10 @@
         private System.Windows.Forms.Label lbl_Productos;
         private System.Windows.Forms.Label lbl_NombreProducto;
         private System.Windows.Forms.Label lbl_CodProducto;
+        private System.Windows.Forms.DataGridView dataGridBusqueda;
+        private System.Windows.Forms.RadioButton radioButtonCodigo;
+        private System.Windows.Forms.RadioButton radioButtonPrecio;
+        private System.Windows.Forms.GroupBox groupBoxFiltros;
+        private System.Windows.Forms.Button btnBuscarPrecio;
     }
 }

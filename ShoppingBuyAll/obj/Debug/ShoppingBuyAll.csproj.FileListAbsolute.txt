@@ -409,3 +409,34 @@ C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\ob
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalesFiltrados.resources
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_RubroLocal.resources
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.FormularioPrincipal.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.FormularioPrincipal.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_AutoDeCliente.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles2.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles_Marca.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Barrio.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Clientes2.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_clientes_filtrados.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_EstacionamientoFiltrado.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Facturas.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalesFiltrados.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Modelo.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Productos.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_RubroLocal.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.Ingreso_Estacionamiento.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.salida_estacionamiento.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_TarjetaCliente.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Compras.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Properties.Resources.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.GenerateResource.cache
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CoreCompileInputs.cache
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.exe
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.pdb
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb

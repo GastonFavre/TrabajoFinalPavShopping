@@ -103,11 +103,15 @@ namespace ShoppingBuyAll.Formularios
         private void boton_Buscar_Click(object sender, EventArgs e)
         {
             this.blanquear_objetos();
-            txt_CodigoProducto.Enabled = true;
+            groupBoxFiltros.Visible = true;
+            dataGridBusqueda.DataSource = "";
+            
+            txt_CodigoProducto.Enabled = false;
             txt_PrecioProducto.Enabled = false;
             txt_NombreProducto.Enabled = false;
-            txt_CodigoProducto.Focus();
-            btn_BuscarCod.Visible = true;
+         
+          
+            
 
            
         }
@@ -115,7 +119,7 @@ namespace ShoppingBuyAll.Formularios
         
         private void btn_BuscarCod_Click(object sender, EventArgs e)
         {
-        
+           
 
             if (txt_CodigoProducto.Text == "")
             {
@@ -129,11 +133,11 @@ namespace ShoppingBuyAll.Formularios
             {
                 //Esta linea de codigo de abajo es para cuando modificamos el producto
 
-
-                txt_CodigoProducto.Text = tabla.Rows[0]["cod_prod"].ToString();
-                txt_NombreProducto.Text = tabla.Rows[0]["nombre"].ToString();
-                txt_PrecioProducto.Text = tabla.Rows[0]["precio"].ToString();
-                txt_CodigoProducto.Enabled = false;
+                dataGridBusqueda.DataSource = tabla;
+                //txt_CodigoProducto.Text = tabla.Rows[0]["cod_prod"].ToString();
+                //txt_NombreProducto.Text = tabla.Rows[0]["nombre"].ToString();
+                //txt_PrecioProducto.Text = tabla.Rows[0]["precio"].ToString();
+                //txt_CodigoProducto.Enabled = false;
             }
             else
             {
@@ -142,6 +146,7 @@ namespace ShoppingBuyAll.Formularios
             txt_NombreProducto.Enabled = true;
             txt_PrecioProducto.Enabled = true;
             btn_BuscarCod.Visible = false;
+            radioButtonCodigo.Checked = false;
         }
 
         private void txtNum_KeyPress(object sender, KeyPressEventArgs e)
@@ -164,14 +169,67 @@ namespace ShoppingBuyAll.Formularios
 
         private void frm_Productos_Load(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void cmb_Rubro_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
-       
+        private void radioButtonCodigo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonCodigo.Checked == true)
+            {
+                btn_BuscarCod.Visible = true;
+                txt_CodigoProducto.Enabled = true;
+                btnBuscarPrecio.Visible = false;
+                txt_PrecioProducto.Enabled = false;
+                txt_NombreProducto.Enabled = false;
+                dataGridBusqueda.DataSource = "";
+                txt_PrecioProducto.Text = "";
+            }
+        }
+
+        private void radioButtonPrecio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonPrecio.Checked == true)
+            {
+                btnBuscarPrecio.Visible = true;
+                txt_PrecioProducto.Enabled = true;
+                btn_BuscarCod.Visible = false;
+                txt_NombreProducto.Enabled = false;
+                txt_CodigoProducto.Enabled = false;
+                dataGridBusqueda.DataSource = "";
+                txt_CodigoProducto.Text = "";
+
+            }
+        }
+
+        private void btnBuscarPrecio_Click(object sender, EventArgs e)
+        {
+            if (txt_PrecioProducto.Text == "")
+            {
+                MessageBox.Show("Precio de producto no ingresado");
+                return;
+            }
+
+            DataTable tabla = new DataTable();
+            tabla = this.producto.buscar_producto_precio(this.txt_PrecioProducto.Text.Trim());
+            if (tabla.Rows.Count == 1)
+            {
+                //Esta linea de codigo de abajo es para cuando modificamos el producto
+                dataGridBusqueda.DataSource = tabla;
+            }
+            else
+            {
+                MessageBox.Show("No existen productos con el precio ingresado");
+            }
+            txt_NombreProducto.Enabled = true;
+            txt_PrecioProducto.Enabled = true;
+            btn_BuscarCod.Visible = false;
+            radioButtonPrecio.Checked = false;
+
+        }
     }
     }

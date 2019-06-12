@@ -67,5 +67,10 @@ namespace ShoppingBuyAll.clases
             string sql_Buscar = @"SELECT * FROM Productos WHERE cod_prod = " + codProducto;
             return this._BD.consulta(sql_Buscar);
         }
+        public DataTable buscar_producto_precio(string precio)
+        {
+            string sql_Buscar = "SELECT * FROM Productos WHERE precio = " + precio;
+            return this._BD.consulta(sql_Buscar);
+        }
     }
 }
