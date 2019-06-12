@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ShoppingBuyAll.clases;
 using System.Runtime.InteropServices;
 using ShoppingBuyAll.Formularios;
+using ShoppingBuyAll.Componentes;
 
 namespace ShoppingBuyAll.Formularios
 {
@@ -114,15 +115,41 @@ namespace ShoppingBuyAll.Formularios
             tabla_filtro = obj_local.buscar_local_filtrado(this.Controls);
             datagrid_filtro.DataSource = tabla_filtro;
         }
+        private bool validar_campos(Control.ControlCollection controles)
+        {
+            int cont = 0;
+            foreach (Control item in controles)
+            {
+                if (item.GetType().Name == "TextBoxDeControl")
+                {
+                    if (item.Text == "")
+                    {
+                        cont += 1;
+                    }
+                }
+                if (item.GetType().Name == "ComboBoxDeControl")
+                {
+                    if (((ComboBoxDeControl)item).SelectedIndex == -1)
+                    {
+                        cont += 1;
+                    }
+                }
+            }
+            if (cont == 8)
+            {
+                return false;
+            }
 
+            return true;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (validacion.validar_Form(this.Controls) == 0)
+            if (validar_campos(this.Controls) == false)
             {
-                recuperarDatos();
+                MessageBox.Show("No se ha seleccionado ningun campo");
             }
             else
-            {
+            {              
                 if (this.txt_cuil.Text != "")
                 {
                     recuperarDatos();
@@ -132,14 +159,12 @@ namespace ShoppingBuyAll.Formularios
                 {
                     recuperarDatos();
                     return;
-                }                
+                }
                 if (this.cmb_tipoCom.SelectedIndex != -1)
                 {
                     recuperarDatos();
                     return;
                 }
-
-                MessageBox.Show("No se ha seleccionado ningun campo");
             }
         }
     }

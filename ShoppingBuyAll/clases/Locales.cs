@@ -24,19 +24,10 @@ namespace ShoppingBuyAll.Formularios
             return _BD.auto_insert(controles, "Locales");
         }
 
-            public void modificar_local(Control.ControlCollection controles, string cuil)
+        public void modificar_local(Control.ControlCollection controles)
         {
-            DataTable tabla = new DataTable();
-            tabla = buscar_local(cuil);
-            if (tabla.Rows.Count == 0)
-            {
-                MessageBox.Show("El Local ingresado para Modificar no existe!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                _BD.auto_modificar(controles, "Locales");
-                MessageBox.Show("El Local ingresado fue modificado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            
+           _BD.auto_modificar(controles, "Locales");
             
         }
 

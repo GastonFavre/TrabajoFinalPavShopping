@@ -40,7 +40,7 @@ namespace ShoppingBuyAll.Formularios
                 }
                 else
                 {
-                    local.modificar_local(this.Controls, txt_Cuil.Text.ToString().Trim());
+                    local.modificar_local(this.Controls);
                     MessageBox.Show("Local Modificado Correctamente", "Mensaje"
                                     , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
