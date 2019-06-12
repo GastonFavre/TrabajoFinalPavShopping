@@ -355,7 +355,6 @@ C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\ob
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Facturas.resources
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FormularioPadre.resources
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Locales.resources
-C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalPorTipo.resources
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Login.resources
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Marca.resources
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Menu.resources
@@ -406,3 +405,7 @@ C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalesFiltrados.resources
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_RubroLocal.resources
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles_Marca.resources
+C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Automoviles_Marca.resources
+C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_LocalesFiltrados.resources
+C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_RubroLocal.resources
+C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.FormularioPrincipal.resources

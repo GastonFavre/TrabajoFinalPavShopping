@@ -28,7 +28,7 @@ namespace ShoppingBuyAll.clases
         //cadena conexion Juancito Cuello Provider=SQLNCLI11;Data Source=DESKTOP-Q1570T7;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All
         //cadena de conexion leo messi d10s Provider=SQLNCLI11;Data Source=DESKTOP-7P9GVA2\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All
 
-        string cadena_conexion = "Provider=SQLNCLI11;Data Source=DESKTOP-81G4FGU\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All";
+        string cadena_conexion = "Provider=SQLNCLI11;Data Source=DESKTOP-IE9SHP6\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All";
 
 
         public void iniciar_transaccion()

@@ -22,6 +22,8 @@ namespace ShoppingBuyAll
             InitializeComponent();
         }
 
+        int LX, LY;
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -31,19 +33,28 @@ namespace ShoppingBuyAll
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("¿Seguro desea salir?","Alerta",MessageBoxButtons.YesNo) ==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void btn_max_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
+            LX = this.Location.X;
+            LY = this.Location.Y;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
             btn_max.Visible = false;
             btn_rest.Visible = true;
         }
 
         private void btn_rest_Click_1(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            //this.WindowState = FormWindowState.Normal;
+            this.Size = new Size(924, 788);
+            this.Location = new Point(LX, LY);
             btn_rest.Visible = false;
             btn_max.Visible = true;
         }
@@ -151,6 +162,42 @@ namespace ShoppingBuyAll
         {
             AbrirFormaHija(new frm_EstacionamientoFiltrado());
         }
-        //AGREGO UN COMENTARIO DE MIERDA
+
+        private void btn_abm_clientes_Click(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+            label2.Visible = false;
+            AbrirFormaHija(new frm_Clientes2());
+        }
+
+        private void btn_filtro_cliente_Click(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+            label2.Visible = false;
+            AbrirFormaHija(new frm_clientes_filtrados());
+        }
+
+        protected override void WndProc(ref Message msj)
+        {
+            const int CoordenadaWFP = 0x84; //ibicacion de la parte derecha inferior del form
+            const int DesIzquierda = 16;
+            const int DesDerecha = 17;
+            if (msj.Msg == CoordenadaWFP)
+            {
+                int x = (int)(msj.LParam.ToInt64() & 0xFFFF);
+                int y = (int)((msj.LParam.ToInt64() & 0xFFFF0000) >> 16);
+                Point CoordenadaArea = PointToClient(new Point(x, y));
+                Size TamañoAreaForm = ClientSize;
+                if (CoordenadaArea.X >= TamañoAreaForm.Width - 16 && CoordenadaArea.Y >= TamañoAreaForm.Height - 16 && TamañoAreaForm.Height >= 16)
+                {
+                    msj.Result = (IntPtr)(IsMirrored ? DesIzquierda : DesDerecha);
+                    return;
+                }
+            }
+            base.WndProc(ref msj);
+        }
+
     }
+        //AGREGO UN COMENTARIO DE MIERDA
+    
 }

@@ -227,7 +227,14 @@ namespace ShoppingBuyAll.Formularios
         private void button2_Click(object sender, EventArgs e)
         {
             frm_clientes_filtrados form_filtrados = new frm_clientes_filtrados();
-            form_filtrados.ShowDialog();
+            AddOwnedForm(form_filtrados);
+            form_filtrados.FormBorderStyle = FormBorderStyle.None;
+            form_filtrados.TopLevel = false;
+            form_filtrados.Dock = DockStyle.Fill;
+            this.Controls.Add(form_filtrados);
+            this.Tag = form_filtrados;
+            form_filtrados.BringToFront();
+            form_filtrados.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

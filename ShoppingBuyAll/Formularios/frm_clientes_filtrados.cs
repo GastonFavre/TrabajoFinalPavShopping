@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using ShoppingBuyAll.Formularios;
 using ShoppingBuyAll.clases;
+using ShoppingBuyAll.Componentes;
 
 namespace ShoppingBuyAll.Formularios
 {
@@ -36,24 +37,14 @@ namespace ShoppingBuyAll.Formularios
             Dispose();
         }
 
-        private void btn_rest_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btn_rest.Visible = false;
-            btn_max.Visible = true;
-        }
+       
 
         private void btn_min_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btn_max_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btn_max.Visible = false;
-            btn_rest.Visible = true;
-        }
+        
 
         private void Barra_De_Titulo_Paint(object sender, PaintEventArgs e)
         {
@@ -62,9 +53,9 @@ namespace ShoppingBuyAll.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (validacion.validar_Form(this.Controls) == 0)
+            if (validar_campos(this.Controls) == false)
             {
-                recuperarDatos();
+                MessageBox.Show("No se ha seleccionado ningun campo");
             }
             else
             {
@@ -108,18 +99,45 @@ namespace ShoppingBuyAll.Formularios
                     recuperarDatos();
                     return;
                 }
-
-                MessageBox.Show("No se ha seleccionado ningun campo");
             }
         }
 
 
-        public void recuperarDatos()
+        private void recuperarDatos()
         {
             DataTable tabla_filtro = new DataTable();
             tabla_filtro = cliente.buscar_cliente_filtrado(this.Controls);
             datagrid_filtro.DataSource = tabla_filtro;
         }
+
+        private bool validar_campos(Control.ControlCollection controles)
+        {
+            int cont=0;
+            foreach(Control item in controles)
+            {
+                if (item.GetType().Name == "TextBoxDeControl")
+                {
+                    if (item.Text == "")
+                    {
+                        cont += 1;
+                    }
+                }
+               if (item.GetType().Name == "ComboBoxDeControl")
+                {
+                    if (((ComboBoxDeControl)item).SelectedIndex == -1)
+                    {
+                        cont += 1;
+                    }
+                }
+            }
+            if (cont == 8)
+            {
+                return false;
+            }
+
+            return true;
+        }
+        
 
         private void Barra_De_Titulo_MouseDown(object sender, MouseEventArgs e)
         {
