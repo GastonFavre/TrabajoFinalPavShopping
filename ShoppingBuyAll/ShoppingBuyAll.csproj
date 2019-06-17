@@ -33,6 +33,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -91,6 +112,16 @@
     <Compile Include="clases\sexo.cs" />
     <Compile Include="clases\tipos_documento.cs" />
     <Compile Include="clases\usuarios.cs" />
+    <Compile Include="DS_InfromeClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_TopProductos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_TopProductos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormularioPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +225,18 @@
       <DependentUpon>frm_Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="clases\Locales.cs" />
+    <Compile Include="Formularios\frm_Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_Reporte.Designer.cs">
+      <DependentUpon>frm_Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_ReporteClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_ReporteClientes.Designer.cs">
+      <DependentUpon>frm_ReporteClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frm_RubroLocal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,8 +267,15 @@
     <Compile Include="Formularios\frm_Compras.Designer.cs">
       <DependentUpon>frm_Compras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frm_Reporte_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_Reporte_Productos.Designer.cs">
+      <DependentUpon>frm_Reporte_Productos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Formularios\FormularioPrincipal.resx">
       <DependentUpon>FormularioPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +327,15 @@
     <EmbeddedResource Include="Formularios\frm_Productos.resx">
       <DependentUpon>frm_Productos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_Reporte.resx">
+      <DependentUpon>frm_Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_ReporteClientes.resx">
+      <DependentUpon>frm_ReporteClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_Reporte_Productos.resx">
+      <DependentUpon>frm_Reporte_Productos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_RubroLocal.resx">
       <DependentUpon>frm_RubroLocal.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +351,8 @@
     <EmbeddedResource Include="Formularios\frm_Compras.resx">
       <DependentUpon>frm_Compras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Informes\InformeClientes.rdlc" />
+    <EmbeddedResource Include="Informes\InfromeProductosMasVendidos.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -302,6 +363,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DS_InfromeClientes.xsc">
+      <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DS_InfromeClientes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_InfromeClientes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_InfromeClientes.xss">
+      <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DS_TopProductos.xsc">
+      <DependentUpon>DS_TopProductos.xsd</DependentUpon>
+    </None>
+    <None Include="DS_TopProductos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_TopProductos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_TopProductos.xss">
+      <DependentUpon>DS_TopProductos.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -334,9 +418,33 @@
     <None Include="Resources\iconos\lupa.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\person_1058425-1.png" />
+    <None Include="Resources\car-icon.png" />
+    <None Include="Resources\clientes.jpg" />
+    <None Include="Resources\estacionamiento-icono-png.png" />
+    <None Include="Resources\estacionamiento-icono-png1.png" />
+    <None Include="Resources\icono-productos-png-4.png" />
+    <None Include="Resources\icono-proveedor-png-4.png" />
+    <None Include="Resources\home-address-icon-1.jpg" />
+    <None Include="Resources\8aff3574eabda894d8f7484bf8e81a6e-icono-de-la-casa-azul-casa-by-vexels.png" />
+    <None Include="Resources\icono-exponegocios-02.png" />
     <Content Include="Resources\iconos\iconos juan-02.png" />
     <Content Include="Resources\iconos\iconos juan_Mesa de trabajo 1.png" />
     <Content Include="Resources\iconos\Mesa de trabajo 1.png" />
+    <None Include="Resources\ventas-icono-png-5.png" />
     <None Include="Resources\iconos\tarjeta3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

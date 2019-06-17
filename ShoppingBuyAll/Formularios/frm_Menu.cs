@@ -177,6 +177,13 @@ namespace ShoppingBuyAll
             AbrirFormaHija(new frm_clientes_filtrados());
         }
 
+        private void btn_Reporte_Click(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+            label2.Visible = false;
+            AbrirFormaHija(new frm_Reporte());
+        }
+
         protected override void WndProc(ref Message msj)
         {
             const int CoordenadaWFP = 0x84; //ibicacion de la parte derecha inferior del form
