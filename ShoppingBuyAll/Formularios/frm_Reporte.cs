@@ -109,5 +109,18 @@ namespace ShoppingBuyAll.Formularios
             form_Locales.BringToFront();
             form_Locales.Show();
         }
+
+        private void btn_Estacionamiento_Click(object sender, EventArgs e)
+        {
+            frm_EstacXCliente form_Est = new frm_EstacXCliente();
+            AddOwnedForm(form_Est);
+            form_Est.FormBorderStyle = FormBorderStyle.None;
+            form_Est.TopLevel = false;
+            form_Est.Dock = DockStyle.Fill;
+            this.Controls.Add(form_Est);
+            this.Tag = form_Est;
+            form_Est.BringToFront();
+            form_Est.Show();
+        }
     }
 }

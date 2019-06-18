@@ -94,6 +94,7 @@
             this.btn_Estacionamiento.Size = new System.Drawing.Size(200, 200);
             this.btn_Estacionamiento.TabIndex = 2;
             this.btn_Estacionamiento.TabStop = false;
+            this.btn_Estacionamiento.Click += new System.EventHandler(this.btn_Estacionamiento_Click);
             this.btn_Estacionamiento.MouseLeave += new System.EventHandler(this.btn_Estacionamiento_MouseLeave);
             this.btn_Estacionamiento.MouseHover += new System.EventHandler(this.btn_Estacionamiento_MouseHover);
             // 

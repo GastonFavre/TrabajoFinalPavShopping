@@ -122,6 +122,15 @@ namespace ShoppingBuyAll.clases
 
         }
 
+        public DataTable buscar_EstacionamientoClientes()
+        {
+            string sql = @"SELECT CONCAT(C.apellido, ' ', C.nombres) as descriptor, count(*) as dato
+                           FROM clientes C JOIN automoviles A ON A.tipo_doc2 = C.tipo_doc1 AND A.num_doc1 = C.num_doc
+                           JOIN EstacXCliente E ON A.patente = E.patente_1
+                           GROUP BY C.apellido, C.nombres, C.num_doc";
+            return _BD.consulta(sql);
+        }
+
 
     }
 }

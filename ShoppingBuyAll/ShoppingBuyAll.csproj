@@ -120,6 +120,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetProductos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datos\DSEstacCliente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEstacCliente.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_InfromeClientes.cs">
       <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
     </Compile>
@@ -180,6 +185,12 @@
     </Compile>
     <Compile Include="Formularios\frm_EstacionamientoFiltrado.Designer.cs">
       <DependentUpon>frm_EstacionamientoFiltrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_EstacXCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_EstacXCliente.Designer.cs">
+      <DependentUpon>frm_EstacXCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frm_Facturas.cs">
       <SubType>Form</SubType>
@@ -323,6 +334,9 @@
     <EmbeddedResource Include="Formularios\frm_EstacionamientoFiltrado.resx">
       <DependentUpon>frm_EstacionamientoFiltrado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_EstacXCliente.resx">
+      <DependentUpon>frm_EstacXCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Facturas.resx">
       <DependentUpon>frm_Facturas.cs</DependentUpon>
     </EmbeddedResource>
@@ -382,6 +396,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Informes\ClientesXSexo.rdlc" />
     <EmbeddedResource Include="Informes\InformeClientes.rdlc" />
+    <EmbeddedResource Include="Informes\InformeEstacCliente.rdlc" />
     <EmbeddedResource Include="Informes\InfromeProductosMasVendidos.rdlc" />
     <EmbeddedResource Include="Informes\LocalesXtipo.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -404,6 +419,17 @@
     </None>
     <None Include="Datos\DataSetProductos.xss">
       <DependentUpon>DataSetProductos.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\DSEstacCliente.xsc">
+      <DependentUpon>DSEstacCliente.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\DSEstacCliente.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEstacCliente.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\DSEstacCliente.xss">
+      <DependentUpon>DSEstacCliente.xsd</DependentUpon>
     </None>
     <None Include="DS_InfromeClientes.xsc">
       <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
