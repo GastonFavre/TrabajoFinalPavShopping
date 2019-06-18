@@ -122,5 +122,24 @@ namespace ShoppingBuyAll.Formularios
             form_Est.BringToFront();
             form_Est.Show();
         }
+
+        private void btn_Automoviles_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Ventas_Click(object sender, EventArgs e)
+        {
+        
+            ReporteCompras form_repo_comp = new ReporteCompras();
+            AddOwnedForm(form_repo_comp);
+            form_repo_comp.FormBorderStyle = FormBorderStyle.None;
+            form_repo_comp.TopLevel = false;
+            form_repo_comp.Dock = DockStyle.Fill;
+            this.Controls.Add(form_repo_comp);
+            this.Tag = form_repo_comp;
+            form_repo_comp.BringToFront();
+            form_repo_comp.Show();
+        }
     }
 }

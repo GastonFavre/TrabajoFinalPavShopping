@@ -108,6 +108,7 @@
             this.btn_Automoviles.Size = new System.Drawing.Size(200, 200);
             this.btn_Automoviles.TabIndex = 1;
             this.btn_Automoviles.TabStop = false;
+            this.btn_Automoviles.Click += new System.EventHandler(this.btn_Automoviles_Click);
             this.btn_Automoviles.MouseLeave += new System.EventHandler(this.btn_Automoviles_MouseLeave);
             this.btn_Automoviles.MouseHover += new System.EventHandler(this.btn_Automoviles_MouseHover);
             // 
@@ -121,6 +122,7 @@
             this.btn_Ventas.Size = new System.Drawing.Size(200, 200);
             this.btn_Ventas.TabIndex = 0;
             this.btn_Ventas.TabStop = false;
+            this.btn_Ventas.Click += new System.EventHandler(this.btn_Ventas_Click);
             this.btn_Ventas.MouseLeave += new System.EventHandler(this.btn_Ventas_MouseLeave);
             this.btn_Ventas.MouseHover += new System.EventHandler(this.btn_Ventas_MouseHover_1);
             // 

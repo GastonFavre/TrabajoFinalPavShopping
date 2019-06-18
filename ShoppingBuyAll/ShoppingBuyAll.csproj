@@ -112,6 +112,11 @@
     <Compile Include="clases\sexo.cs" />
     <Compile Include="clases\tipos_documento.cs" />
     <Compile Include="clases\usuarios.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datos\DataSetProductos.cs">
       <DependentUpon>DataSetProductos.xsd</DependentUpon>
     </Compile>
@@ -283,6 +288,12 @@
     <Compile Include="Formularios\Ingreso_Estacionamiento.designer.cs">
       <DependentUpon>Ingreso_Estacionamiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ReporteCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ReporteCompras.Designer.cs">
+      <DependentUpon>ReporteCompras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\salida_estacionamiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -385,6 +396,9 @@
     <EmbeddedResource Include="Formularios\Ingreso_Estacionamiento.resx">
       <DependentUpon>Ingreso_Estacionamiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ReporteCompras.resx">
+      <DependentUpon>ReporteCompras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\salida_estacionamiento.resx">
       <DependentUpon>salida_estacionamiento.cs</DependentUpon>
     </EmbeddedResource>
@@ -399,6 +413,7 @@
     <EmbeddedResource Include="Informes\InformeEstacCliente.rdlc" />
     <EmbeddedResource Include="Informes\InfromeProductosMasVendidos.rdlc" />
     <EmbeddedResource Include="Informes\LocalesXtipo.rdlc" />
+    <EmbeddedResource Include="Informes\Report1.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -409,6 +424,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Datos\DataSetProductos.xsc">
       <DependentUpon>DataSetProductos.xsd</DependentUpon>
     </None>
