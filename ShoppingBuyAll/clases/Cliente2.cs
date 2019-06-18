@@ -73,6 +73,15 @@ namespace ShoppingBuyAll.clases
             return _BD.buscar_filtrado(controles, "clientes");
         }
 
+        public DataTable clientesXSexo()
+        {
+            string sql = @"SELECT Sexo.nombre as descriptor
+                 , count(*) as dato
+                 FROM clientes join Sexo ON 
+                        clientes.sexo1 = Sexo.id_sex
+                 GROUP BY Sexo.nombre";
+            return _BD.consulta(sql);
+        }
 
     }
 }

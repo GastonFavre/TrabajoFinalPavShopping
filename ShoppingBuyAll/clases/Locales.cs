@@ -58,5 +58,13 @@ namespace ShoppingBuyAll.Formularios
         {
                 return _BD.buscar_filtrado(controles, "Locales");
         }
+
+        public DataTable localXTipo()
+        {
+            string sql = @"SELECT T.descripcion, L.cuil, L.nombre FROM Locales L JOIN Tipo_Comercio T ON T.id_tipoC = tipo_Comercio1
+                          GROUP BY T.descripcion, L.cuil, L.nombre
+                          ORDER BY T.descripcion";
+            return _BD.consulta(sql);
+        }
     }  
 }

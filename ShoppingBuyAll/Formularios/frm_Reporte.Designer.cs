@@ -52,6 +52,7 @@
             this.btn_Locales.Size = new System.Drawing.Size(200, 200);
             this.btn_Locales.TabIndex = 5;
             this.btn_Locales.TabStop = false;
+            this.btn_Locales.Click += new System.EventHandler(this.btn_Locales_Click);
             this.btn_Locales.MouseLeave += new System.EventHandler(this.btn_Locales_MouseLeave);
             this.btn_Locales.MouseHover += new System.EventHandler(this.btn_Locales_MouseHover);
             // 

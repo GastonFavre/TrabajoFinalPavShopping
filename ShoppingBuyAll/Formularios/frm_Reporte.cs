@@ -71,6 +71,7 @@ namespace ShoppingBuyAll.Formularios
         private void btn_Productos_Click(object sender, EventArgs e)
         {
             frm_Reporte_Productos frm_ReporteProductos = new frm_Reporte_Productos();
+           
             AddOwnedForm(frm_ReporteProductos);
             frm_ReporteProductos.FormBorderStyle = FormBorderStyle.None;
             frm_ReporteProductos.TopLevel = false;
@@ -84,7 +85,8 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_Clientes_Click(object sender, EventArgs e)
         {
-            frm_ReporteClientes frm_ReporteClientes = new frm_ReporteClientes();
+            //frm_ReporteClientes frm_ReporteClientes = new frm_ReporteClientes();
+            frm_InformeClientesXSexo frm_ReporteClientes = new frm_InformeClientesXSexo();
             AddOwnedForm(frm_ReporteClientes);
             frm_ReporteClientes.FormBorderStyle = FormBorderStyle.None;
             frm_ReporteClientes.TopLevel = false;
@@ -93,6 +95,19 @@ namespace ShoppingBuyAll.Formularios
             this.Tag = frm_ReporteClientes;
             frm_ReporteClientes.BringToFront();
             frm_ReporteClientes.Show();
+        }
+
+        private void btn_Locales_Click(object sender, EventArgs e)
+        {
+            frm_ListadoProductos form_Locales = new frm_ListadoProductos();
+            AddOwnedForm(form_Locales);
+            form_Locales.FormBorderStyle = FormBorderStyle.None;
+            form_Locales.TopLevel = false;
+            form_Locales.Dock = DockStyle.Fill;
+            this.Controls.Add(form_Locales);
+            this.Tag = form_Locales;
+            form_Locales.BringToFront();
+            form_Locales.Show();
         }
     }
 }

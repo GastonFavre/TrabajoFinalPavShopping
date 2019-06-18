@@ -112,6 +112,17 @@
     <Compile Include="clases\sexo.cs" />
     <Compile Include="clases\tipos_documento.cs" />
     <Compile Include="clases\usuarios.cs" />
+    <Compile Include="Datos\DataSetProductos.cs">
+      <DependentUpon>DataSetProductos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\DataSetProductos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProductos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_InfromeClientes.cs">
+      <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_InfromeClientes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -181,6 +192,18 @@
     </Compile>
     <Compile Include="Formularios\frm_FormularioPadre.Designer.cs">
       <DependentUpon>frm_FormularioPadre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_InformeClientesXSexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_InformeClientesXSexo.Designer.cs">
+      <DependentUpon>frm_InformeClientesXSexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_ListadoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_ListadoProductos.Designer.cs">
+      <DependentUpon>frm_ListadoProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frm_Locales.cs">
       <SubType>Form</SubType>
@@ -306,6 +329,12 @@
     <EmbeddedResource Include="Formularios\frm_FormularioPadre.resx">
       <DependentUpon>frm_FormularioPadre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_InformeClientesXSexo.resx">
+      <DependentUpon>frm_InformeClientesXSexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_ListadoProductos.resx">
+      <DependentUpon>frm_ListadoProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Locales.resx">
       <DependentUpon>frm_Locales.cs</DependentUpon>
     </EmbeddedResource>
@@ -351,8 +380,10 @@
     <EmbeddedResource Include="Formularios\frm_Compras.resx">
       <DependentUpon>frm_Compras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Informes\ClientesXSexo.rdlc" />
     <EmbeddedResource Include="Informes\InformeClientes.rdlc" />
     <EmbeddedResource Include="Informes\InfromeProductosMasVendidos.rdlc" />
+    <EmbeddedResource Include="Informes\LocalesXtipo.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -363,6 +394,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Datos\DataSetProductos.xsc">
+      <DependentUpon>DataSetProductos.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\DataSetProductos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProductos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\DataSetProductos.xss">
+      <DependentUpon>DataSetProductos.xsd</DependentUpon>
+    </None>
     <None Include="DS_InfromeClientes.xsc">
       <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
     </None>
