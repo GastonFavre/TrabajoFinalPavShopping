@@ -705,3 +705,7 @@ C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\ob
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\RdlCompile.compiled
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CopyComplete
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.ReporteCompras.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_EstacXCliente.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_InformeClientesXSexo.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ListadoProductos.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.ReporteCompras.resources

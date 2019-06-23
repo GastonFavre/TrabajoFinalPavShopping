@@ -29,41 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_bucarCliente = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmb_TipoDoc = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
-            this.txt_Apellido = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_Nombre = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_NumeroDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txt_tipo_loc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.label12 = new System.Windows.Forms.Label();
-            this.txt_nom_loc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.btn_busc_loc = new System.Windows.Forms.Button();
-            this.txt_cuil = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.grid_compra = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txt_cod_seg = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.cmb_tarjeta = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.rbt_eft = new System.Windows.Forms.RadioButton();
             this.rbt_tar = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
@@ -72,29 +58,45 @@
             this.btn_quitar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_finalizar = new System.Windows.Forms.Button();
-            this.grid_product = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_Buscar_Prod = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txt_Precio_Prod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_Nom_Prod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_Cod_Pod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.button9 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_cantidad = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
+            this.grid_product = new System.Windows.Forms.DataGridView();
+            this.grid_compra = new System.Windows.Forms.DataGridView();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.num_factur = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.dtp_compra = new ShoppingBuyAll.Componentes.DateTimePickerDeControl(this.components);
+            this.txt_cod_seg = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.cmb_tarjeta = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
+            this.txt_tipo_loc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_nom_loc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_cuil = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_Precio_Prod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_Nom_Prod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_Cod_Pod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.cmb_TipoDoc = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
+            this.txt_Apellido = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_Nombre = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_NumeroDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_compra)).BeginInit();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_product)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cantidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_product)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_compra)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_bucarCliente
@@ -127,60 +129,6 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
-            // 
-            // cmb_TipoDoc
-            // 
-            this.cmb_TipoDoc._campo = "tipo_doc1";
-            this.cmb_TipoDoc._mensaje_error = "No selecciono tipo documento";
-            this.cmb_TipoDoc._nombre_tabla = "ComprasXCliente";
-            this.cmb_TipoDoc._pk = true;
-            this.cmb_TipoDoc._validable = true;
-            this.cmb_TipoDoc.FormattingEnabled = true;
-            this.cmb_TipoDoc.Location = new System.Drawing.Point(408, 44);
-            this.cmb_TipoDoc.Name = "cmb_TipoDoc";
-            this.cmb_TipoDoc.Size = new System.Drawing.Size(185, 28);
-            this.cmb_TipoDoc.TabIndex = 58;
-            // 
-            // txt_Apellido
-            // 
-            this.txt_Apellido._campo = null;
-            this.txt_Apellido._mensaje_error = null;
-            this.txt_Apellido._nombre_tabla = null;
-            this.txt_Apellido._pk = false;
-            this.txt_Apellido._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Apellido._validable = false;
-            this.txt_Apellido.Enabled = false;
-            this.txt_Apellido.Location = new System.Drawing.Point(408, 78);
-            this.txt_Apellido.Name = "txt_Apellido";
-            this.txt_Apellido.Size = new System.Drawing.Size(101, 26);
-            this.txt_Apellido.TabIndex = 57;
-            // 
-            // txt_Nombre
-            // 
-            this.txt_Nombre._campo = null;
-            this.txt_Nombre._mensaje_error = null;
-            this.txt_Nombre._nombre_tabla = null;
-            this.txt_Nombre._pk = false;
-            this.txt_Nombre._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Nombre._validable = false;
-            this.txt_Nombre.Enabled = false;
-            this.txt_Nombre.Location = new System.Drawing.Point(83, 82);
-            this.txt_Nombre.Name = "txt_Nombre";
-            this.txt_Nombre.Size = new System.Drawing.Size(143, 26);
-            this.txt_Nombre.TabIndex = 55;
-            // 
-            // txt_NumeroDoc
-            // 
-            this.txt_NumeroDoc._campo = "num_doc1";
-            this.txt_NumeroDoc._mensaje_error = "Numero no ingresado";
-            this.txt_NumeroDoc._nombre_tabla = "ComprasXCliente";
-            this.txt_NumeroDoc._pk = true;
-            this.txt_NumeroDoc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_NumeroDoc._validable = true;
-            this.txt_NumeroDoc.Location = new System.Drawing.Point(83, 48);
-            this.txt_NumeroDoc.Name = "txt_NumeroDoc";
-            this.txt_NumeroDoc.Size = new System.Drawing.Size(143, 26);
-            this.txt_NumeroDoc.TabIndex = 56;
             // 
             // label2
             // 
@@ -241,24 +189,10 @@
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox3.Location = new System.Drawing.Point(671, 207);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(250, 181);
+            this.groupBox3.Size = new System.Drawing.Size(297, 181);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Local";
-            // 
-            // txt_tipo_loc
-            // 
-            this.txt_tipo_loc._campo = null;
-            this.txt_tipo_loc._mensaje_error = null;
-            this.txt_tipo_loc._nombre_tabla = null;
-            this.txt_tipo_loc._pk = false;
-            this.txt_tipo_loc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_tipo_loc._validable = false;
-            this.txt_tipo_loc.Enabled = false;
-            this.txt_tipo_loc.Location = new System.Drawing.Point(93, 102);
-            this.txt_tipo_loc.Name = "txt_tipo_loc";
-            this.txt_tipo_loc.Size = new System.Drawing.Size(138, 26);
-            this.txt_tipo_loc.TabIndex = 61;
             // 
             // label12
             // 
@@ -271,45 +205,17 @@
             this.label12.TabIndex = 50;
             this.label12.Text = "Tipo";
             // 
-            // txt_nom_loc
-            // 
-            this.txt_nom_loc._campo = null;
-            this.txt_nom_loc._mensaje_error = null;
-            this.txt_nom_loc._nombre_tabla = null;
-            this.txt_nom_loc._pk = false;
-            this.txt_nom_loc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_nom_loc._validable = false;
-            this.txt_nom_loc.Enabled = false;
-            this.txt_nom_loc.Location = new System.Drawing.Point(93, 70);
-            this.txt_nom_loc.Name = "txt_nom_loc";
-            this.txt_nom_loc.Size = new System.Drawing.Size(138, 26);
-            this.txt_nom_loc.TabIndex = 62;
-            // 
             // btn_busc_loc
             // 
             this.btn_busc_loc.Enabled = false;
             this.btn_busc_loc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_busc_loc.Location = new System.Drawing.Point(202, 37);
             this.btn_busc_loc.Name = "btn_busc_loc";
-            this.btn_busc_loc.Size = new System.Drawing.Size(27, 26);
+            this.btn_busc_loc.Size = new System.Drawing.Size(86, 26);
             this.btn_busc_loc.TabIndex = 49;
             this.btn_busc_loc.Text = "Buscar";
             this.btn_busc_loc.UseVisualStyleBackColor = true;
             this.btn_busc_loc.Click += new System.EventHandler(this.btn_busc_loc_Click);
-            // 
-            // txt_cuil
-            // 
-            this.txt_cuil._campo = "cuil_local1";
-            this.txt_cuil._mensaje_error = null;
-            this.txt_cuil._nombre_tabla = "ComprasXCliente";
-            this.txt_cuil._pk = false;
-            this.txt_cuil._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_cuil._validable = false;
-            this.txt_cuil.Enabled = false;
-            this.txt_cuil.Location = new System.Drawing.Point(93, 37);
-            this.txt_cuil.Name = "txt_cuil";
-            this.txt_cuil.Size = new System.Drawing.Size(105, 26);
-            this.txt_cuil.TabIndex = 63;
             // 
             // label10
             // 
@@ -338,75 +244,12 @@
             this.groupBox4.Controls.Add(this.grid_compra);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox4.Location = new System.Drawing.Point(12, 464);
+            this.groupBox4.Location = new System.Drawing.Point(12, 429);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(666, 179);
+            this.groupBox4.Size = new System.Drawing.Size(653, 214);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Compra";
-            // 
-            // grid_compra
-            // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid_compra.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.grid_compra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_compra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.MediumTurquoise;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid_compra.DefaultCellStyle = dataGridViewCellStyle14;
-            this.grid_compra.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.grid_compra.Location = new System.Drawing.Point(12, 22);
-            this.grid_compra.Name = "grid_compra";
-            this.grid_compra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid_compra.Size = new System.Drawing.Size(644, 150);
-            this.grid_compra.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id Producto";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Precio";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Local";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Cantidad";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Precio Total";
-            this.Column6.Name = "Column6";
             // 
             // label3
             // 
@@ -428,9 +271,9 @@
             this.groupBox5.Controls.Add(this.rbt_tar);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox5.Location = new System.Drawing.Point(700, 464);
+            this.groupBox5.Location = new System.Drawing.Point(671, 429);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(297, 179);
+            this.groupBox5.Size = new System.Drawing.Size(297, 214);
             this.groupBox5.TabIndex = 9;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Pago";
@@ -441,42 +284,11 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(133, 139);
+            this.label14.Location = new System.Drawing.Point(20, 163);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(88, 20);
             this.label14.TabIndex = 61;
             this.label14.Text = "Cod. Seg.";
-            // 
-            // txt_cod_seg
-            // 
-            this.txt_cod_seg._campo = "cod_tarjeta1";
-            this.txt_cod_seg._mensaje_error = null;
-            this.txt_cod_seg._nombre_tabla = "ComprasXCliente";
-            this.txt_cod_seg._pk = false;
-            this.txt_cod_seg._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_cod_seg._validable = false;
-            this.txt_cod_seg.Enabled = false;
-            this.txt_cod_seg.Location = new System.Drawing.Point(227, 136);
-            this.txt_cod_seg.MaxLength = 3;
-            this.txt_cod_seg.Multiline = true;
-            this.txt_cod_seg.Name = "txt_cod_seg";
-            this.txt_cod_seg.Size = new System.Drawing.Size(48, 28);
-            this.txt_cod_seg.TabIndex = 3;
-            // 
-            // cmb_tarjeta
-            // 
-            this.cmb_tarjeta._campo = "num_tarjeta1";
-            this.cmb_tarjeta._mensaje_error = null;
-            this.cmb_tarjeta._nombre_tabla = "ComprasXCliente";
-            this.cmb_tarjeta._pk = false;
-            this.cmb_tarjeta._validable = false;
-            this.cmb_tarjeta.Enabled = false;
-            this.cmb_tarjeta.FormattingEnabled = true;
-            this.cmb_tarjeta.Location = new System.Drawing.Point(6, 136);
-            this.cmb_tarjeta.Name = "cmb_tarjeta";
-            this.cmb_tarjeta.Size = new System.Drawing.Size(121, 28);
-            this.cmb_tarjeta.TabIndex = 2;
-            this.cmb_tarjeta.SelectedIndexChanged += new System.EventHandler(this.cmb_tarjeta_SelectedIndexChanged);
             // 
             // rbt_eft
             // 
@@ -507,7 +319,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(484, 662);
+            this.label11.Location = new System.Drawing.Point(436, 659);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(85, 24);
             this.label11.TabIndex = 11;
@@ -517,7 +329,7 @@
             // 
             this.txt_Total.Enabled = false;
             this.txt_Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Total.Location = new System.Drawing.Point(575, 659);
+            this.txt_Total.Location = new System.Drawing.Point(551, 656);
             this.txt_Total.Multiline = true;
             this.txt_Total.Name = "txt_Total";
             this.txt_Total.Size = new System.Drawing.Size(93, 26);
@@ -527,7 +339,7 @@
             // 
             this.btn_agregar.Enabled = false;
             this.btn_agregar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_agregar.Location = new System.Drawing.Point(577, 394);
+            this.btn_agregar.Location = new System.Drawing.Point(590, 394);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(75, 28);
             this.btn_agregar.TabIndex = 48;
@@ -551,7 +363,7 @@
             // 
             this.btn_cancelar.Enabled = false;
             this.btn_cancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_cancelar.Location = new System.Drawing.Point(700, 662);
+            this.btn_cancelar.Location = new System.Drawing.Point(671, 652);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 28);
             this.btn_cancelar.TabIndex = 52;
@@ -563,38 +375,13 @@
             // 
             this.btn_finalizar.Enabled = false;
             this.btn_finalizar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_finalizar.Location = new System.Drawing.Point(922, 662);
+            this.btn_finalizar.Location = new System.Drawing.Point(893, 654);
             this.btn_finalizar.Name = "btn_finalizar";
             this.btn_finalizar.Size = new System.Drawing.Size(75, 28);
             this.btn_finalizar.TabIndex = 53;
             this.btn_finalizar.Text = "Finalizar";
             this.btn_finalizar.UseVisualStyleBackColor = true;
             this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
-            // 
-            // grid_product
-            // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid_product.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            this.grid_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.MediumTurquoise;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid_product.DefaultCellStyle = dataGridViewCellStyle16;
-            this.grid_product.Location = new System.Drawing.Point(264, 216);
-            this.grid_product.Name = "grid_product";
-            this.grid_product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grid_product.Size = new System.Drawing.Size(401, 172);
-            this.grid_product.TabIndex = 54;
             // 
             // label4
             // 
@@ -659,48 +446,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Producto";
             // 
-            // txt_Precio_Prod
-            // 
-            this.txt_Precio_Prod._campo = null;
-            this.txt_Precio_Prod._mensaje_error = null;
-            this.txt_Precio_Prod._nombre_tabla = null;
-            this.txt_Precio_Prod._pk = false;
-            this.txt_Precio_Prod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Precio_Prod._validable = false;
-            this.txt_Precio_Prod.Enabled = false;
-            this.txt_Precio_Prod.Location = new System.Drawing.Point(96, 102);
-            this.txt_Precio_Prod.Name = "txt_Precio_Prod";
-            this.txt_Precio_Prod.Size = new System.Drawing.Size(69, 26);
-            this.txt_Precio_Prod.TabIndex = 58;
-            // 
-            // txt_Nom_Prod
-            // 
-            this.txt_Nom_Prod._campo = null;
-            this.txt_Nom_Prod._mensaje_error = null;
-            this.txt_Nom_Prod._nombre_tabla = null;
-            this.txt_Nom_Prod._pk = false;
-            this.txt_Nom_Prod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Nom_Prod._validable = false;
-            this.txt_Nom_Prod.Enabled = false;
-            this.txt_Nom_Prod.Location = new System.Drawing.Point(96, 70);
-            this.txt_Nom_Prod.Name = "txt_Nom_Prod";
-            this.txt_Nom_Prod.Size = new System.Drawing.Size(127, 26);
-            this.txt_Nom_Prod.TabIndex = 59;
-            // 
-            // txt_Cod_Pod
-            // 
-            this.txt_Cod_Pod._campo = null;
-            this.txt_Cod_Pod._mensaje_error = null;
-            this.txt_Cod_Pod._nombre_tabla = null;
-            this.txt_Cod_Pod._pk = false;
-            this.txt_Cod_Pod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Cod_Pod._validable = false;
-            this.txt_Cod_Pod.Enabled = false;
-            this.txt_Cod_Pod.Location = new System.Drawing.Point(96, 37);
-            this.txt_Cod_Pod.Name = "txt_Cod_Pod";
-            this.txt_Cod_Pod.Size = new System.Drawing.Size(127, 26);
-            this.txt_Cod_Pod.TabIndex = 60;
-            // 
             // button9
             // 
             this.button9.Enabled = false;
@@ -753,6 +498,134 @@
             this.label16.Text = "Cantidad:";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
+            // grid_product
+            // 
+            this.grid_product.AllowUserToAddRows = false;
+            this.grid_product.AllowUserToDeleteRows = false;
+            this.grid_product.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grid_product.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
+            this.grid_product.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.grid_product.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid_product.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.grid_product.ColumnHeadersHeight = 30;
+            this.grid_product.EnableHeadersVisualStyles = false;
+            this.grid_product.GridColor = System.Drawing.Color.SteelBlue;
+            this.grid_product.Location = new System.Drawing.Point(264, 216);
+            this.grid_product.Name = "grid_product";
+            this.grid_product.ReadOnly = true;
+            this.grid_product.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SlateBlue;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid_product.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.grid_product.RowHeadersVisible = false;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.grid_product.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.grid_product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grid_product.Size = new System.Drawing.Size(401, 172);
+            this.grid_product.TabIndex = 75;
+            // 
+            // grid_compra
+            // 
+            this.grid_compra.AllowUserToAddRows = false;
+            this.grid_compra.AllowUserToDeleteRows = false;
+            this.grid_compra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grid_compra.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
+            this.grid_compra.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.grid_compra.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid_compra.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.grid_compra.ColumnHeadersHeight = 40;
+            this.grid_compra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.grid_compra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12});
+            this.grid_compra.EnableHeadersVisualStyles = false;
+            this.grid_compra.GridColor = System.Drawing.Color.SteelBlue;
+            this.grid_compra.Location = new System.Drawing.Point(14, 28);
+            this.grid_compra.Name = "grid_compra";
+            this.grid_compra.ReadOnly = true;
+            this.grid_compra.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SlateBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid_compra.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.grid_compra.RowHeadersVisible = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.grid_compra.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.grid_compra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grid_compra.Size = new System.Drawing.Size(618, 177);
+            this.grid_compra.TabIndex = 76;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "ID Producto";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Nombre";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Precio";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Local";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Cantidad";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "Precio Total";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
             // num_factur
             // 
             this.num_factur._campo = "nro_factura";
@@ -782,19 +655,188 @@
             this.dtp_compra.Size = new System.Drawing.Size(116, 26);
             this.dtp_compra.TabIndex = 56;
             // 
+            // txt_cod_seg
+            // 
+            this.txt_cod_seg._campo = "cod_tarjeta1";
+            this.txt_cod_seg._mensaje_error = null;
+            this.txt_cod_seg._nombre_tabla = "ComprasXCliente";
+            this.txt_cod_seg._pk = false;
+            this.txt_cod_seg._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_cod_seg._validable = false;
+            this.txt_cod_seg.Enabled = false;
+            this.txt_cod_seg.Location = new System.Drawing.Point(114, 160);
+            this.txt_cod_seg.MaxLength = 3;
+            this.txt_cod_seg.Multiline = true;
+            this.txt_cod_seg.Name = "txt_cod_seg";
+            this.txt_cod_seg.Size = new System.Drawing.Size(48, 28);
+            this.txt_cod_seg.TabIndex = 3;
+            // 
+            // cmb_tarjeta
+            // 
+            this.cmb_tarjeta._campo = "num_tarjeta1";
+            this.cmb_tarjeta._mensaje_error = null;
+            this.cmb_tarjeta._nombre_tabla = "ComprasXCliente";
+            this.cmb_tarjeta._pk = false;
+            this.cmb_tarjeta._validable = false;
+            this.cmb_tarjeta.Enabled = false;
+            this.cmb_tarjeta.FormattingEnabled = true;
+            this.cmb_tarjeta.Location = new System.Drawing.Point(16, 126);
+            this.cmb_tarjeta.Name = "cmb_tarjeta";
+            this.cmb_tarjeta.Size = new System.Drawing.Size(146, 28);
+            this.cmb_tarjeta.TabIndex = 2;
+            this.cmb_tarjeta.SelectedIndexChanged += new System.EventHandler(this.cmb_tarjeta_SelectedIndexChanged);
+            // 
+            // txt_tipo_loc
+            // 
+            this.txt_tipo_loc._campo = null;
+            this.txt_tipo_loc._mensaje_error = null;
+            this.txt_tipo_loc._nombre_tabla = null;
+            this.txt_tipo_loc._pk = false;
+            this.txt_tipo_loc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_tipo_loc._validable = false;
+            this.txt_tipo_loc.Enabled = false;
+            this.txt_tipo_loc.Location = new System.Drawing.Point(93, 102);
+            this.txt_tipo_loc.Name = "txt_tipo_loc";
+            this.txt_tipo_loc.Size = new System.Drawing.Size(195, 26);
+            this.txt_tipo_loc.TabIndex = 61;
+            // 
+            // txt_nom_loc
+            // 
+            this.txt_nom_loc._campo = null;
+            this.txt_nom_loc._mensaje_error = null;
+            this.txt_nom_loc._nombre_tabla = null;
+            this.txt_nom_loc._pk = false;
+            this.txt_nom_loc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_nom_loc._validable = false;
+            this.txt_nom_loc.Enabled = false;
+            this.txt_nom_loc.Location = new System.Drawing.Point(93, 70);
+            this.txt_nom_loc.Name = "txt_nom_loc";
+            this.txt_nom_loc.Size = new System.Drawing.Size(195, 26);
+            this.txt_nom_loc.TabIndex = 62;
+            // 
+            // txt_cuil
+            // 
+            this.txt_cuil._campo = "cuil_local1";
+            this.txt_cuil._mensaje_error = null;
+            this.txt_cuil._nombre_tabla = "ComprasXCliente";
+            this.txt_cuil._pk = false;
+            this.txt_cuil._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_cuil._validable = false;
+            this.txt_cuil.Enabled = false;
+            this.txt_cuil.Location = new System.Drawing.Point(93, 37);
+            this.txt_cuil.Name = "txt_cuil";
+            this.txt_cuil.Size = new System.Drawing.Size(105, 26);
+            this.txt_cuil.TabIndex = 63;
+            // 
+            // txt_Precio_Prod
+            // 
+            this.txt_Precio_Prod._campo = null;
+            this.txt_Precio_Prod._mensaje_error = null;
+            this.txt_Precio_Prod._nombre_tabla = null;
+            this.txt_Precio_Prod._pk = false;
+            this.txt_Precio_Prod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Precio_Prod._validable = false;
+            this.txt_Precio_Prod.Enabled = false;
+            this.txt_Precio_Prod.Location = new System.Drawing.Point(96, 102);
+            this.txt_Precio_Prod.Name = "txt_Precio_Prod";
+            this.txt_Precio_Prod.Size = new System.Drawing.Size(69, 26);
+            this.txt_Precio_Prod.TabIndex = 58;
+            // 
+            // txt_Nom_Prod
+            // 
+            this.txt_Nom_Prod._campo = null;
+            this.txt_Nom_Prod._mensaje_error = null;
+            this.txt_Nom_Prod._nombre_tabla = null;
+            this.txt_Nom_Prod._pk = false;
+            this.txt_Nom_Prod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Nom_Prod._validable = false;
+            this.txt_Nom_Prod.Enabled = false;
+            this.txt_Nom_Prod.Location = new System.Drawing.Point(96, 70);
+            this.txt_Nom_Prod.Name = "txt_Nom_Prod";
+            this.txt_Nom_Prod.Size = new System.Drawing.Size(127, 26);
+            this.txt_Nom_Prod.TabIndex = 59;
+            // 
+            // txt_Cod_Pod
+            // 
+            this.txt_Cod_Pod._campo = null;
+            this.txt_Cod_Pod._mensaje_error = null;
+            this.txt_Cod_Pod._nombre_tabla = null;
+            this.txt_Cod_Pod._pk = false;
+            this.txt_Cod_Pod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Cod_Pod._validable = false;
+            this.txt_Cod_Pod.Enabled = false;
+            this.txt_Cod_Pod.Location = new System.Drawing.Point(96, 37);
+            this.txt_Cod_Pod.Name = "txt_Cod_Pod";
+            this.txt_Cod_Pod.Size = new System.Drawing.Size(127, 26);
+            this.txt_Cod_Pod.TabIndex = 60;
+            // 
+            // cmb_TipoDoc
+            // 
+            this.cmb_TipoDoc._campo = "tipo_doc1";
+            this.cmb_TipoDoc._mensaje_error = "No selecciono tipo documento";
+            this.cmb_TipoDoc._nombre_tabla = "ComprasXCliente";
+            this.cmb_TipoDoc._pk = true;
+            this.cmb_TipoDoc._validable = true;
+            this.cmb_TipoDoc.FormattingEnabled = true;
+            this.cmb_TipoDoc.Location = new System.Drawing.Point(408, 44);
+            this.cmb_TipoDoc.Name = "cmb_TipoDoc";
+            this.cmb_TipoDoc.Size = new System.Drawing.Size(185, 28);
+            this.cmb_TipoDoc.TabIndex = 58;
+            // 
+            // txt_Apellido
+            // 
+            this.txt_Apellido._campo = null;
+            this.txt_Apellido._mensaje_error = null;
+            this.txt_Apellido._nombre_tabla = null;
+            this.txt_Apellido._pk = false;
+            this.txt_Apellido._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Apellido._validable = false;
+            this.txt_Apellido.Enabled = false;
+            this.txt_Apellido.Location = new System.Drawing.Point(408, 78);
+            this.txt_Apellido.Name = "txt_Apellido";
+            this.txt_Apellido.Size = new System.Drawing.Size(101, 26);
+            this.txt_Apellido.TabIndex = 57;
+            // 
+            // txt_Nombre
+            // 
+            this.txt_Nombre._campo = null;
+            this.txt_Nombre._mensaje_error = null;
+            this.txt_Nombre._nombre_tabla = null;
+            this.txt_Nombre._pk = false;
+            this.txt_Nombre._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Nombre._validable = false;
+            this.txt_Nombre.Enabled = false;
+            this.txt_Nombre.Location = new System.Drawing.Point(83, 82);
+            this.txt_Nombre.Name = "txt_Nombre";
+            this.txt_Nombre.Size = new System.Drawing.Size(143, 26);
+            this.txt_Nombre.TabIndex = 55;
+            // 
+            // txt_NumeroDoc
+            // 
+            this.txt_NumeroDoc._campo = "num_doc1";
+            this.txt_NumeroDoc._mensaje_error = "Numero no ingresado";
+            this.txt_NumeroDoc._nombre_tabla = "ComprasXCliente";
+            this.txt_NumeroDoc._pk = true;
+            this.txt_NumeroDoc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_NumeroDoc._validable = true;
+            this.txt_NumeroDoc.Location = new System.Drawing.Point(83, 48);
+            this.txt_NumeroDoc.Name = "txt_NumeroDoc";
+            this.txt_NumeroDoc.Size = new System.Drawing.Size(143, 26);
+            this.txt_NumeroDoc.TabIndex = 56;
+            // 
             // frm_Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1035, 776);
+            this.Controls.Add(this.grid_product);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txt_cantidad);
             this.Controls.Add(this.num_factur);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.dtp_compra);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.grid_product);
             this.Controls.Add(this.btn_finalizar);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_quitar);
@@ -816,13 +858,13 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grid_compra)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_product)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cantidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_product)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_compra)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -839,7 +881,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataGridView grid_compra;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.RadioButton rbt_eft;
@@ -850,7 +891,6 @@
         private System.Windows.Forms.Button btn_quitar;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_finalizar;
-        private System.Windows.Forms.DataGridView grid_product;
         private Componentes.ComboBoxDeControl cmb_TipoDoc;
         private Componentes.TextBoxDeControl txt_Apellido;
         private Componentes.TextBoxDeControl txt_Nombre;
@@ -869,10 +909,6 @@
         private System.Windows.Forms.Button btn_busc_loc;
         private Componentes.TextBoxDeControl txt_cuil;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private Componentes.ComboBoxDeControl cmb_tarjeta;
         private Componentes.TextBoxDeControl txt_cod_seg;
         private Componentes.DateTimePickerDeControl dtp_compra;
@@ -881,7 +917,13 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown txt_cantidad;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridView grid_product;
+        private System.Windows.Forms.DataGridView grid_compra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
     }
 }

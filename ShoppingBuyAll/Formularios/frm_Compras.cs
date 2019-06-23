@@ -140,9 +140,8 @@ namespace ShoppingBuyAll
                 {
                     grid_compra.AutoGenerateColumns = false;
                     grid_compra.Rows.Add(cod, nom, precioUnidad, loc, cantidad, precioTotal);
-                    txt_Total.Text = calcularTotal();
                     this.compras.agregar_detalle(this.num_factur.Text, cod, precioUnidad, this.txt_cuil.Text, cantidad);
-                    MessageBox.Show("Se agrego un nuevo item con exito!");
+                    txt_Total.Text = calcularTotal();
                 }
                 else
                 {
@@ -242,9 +241,9 @@ namespace ShoppingBuyAll
             string cod = grid_compra.CurrentRow.Cells[0].Value.ToString();
             MessageBox.Show(cod);
             this.compras.eliminar_detalle(this.num_factur.Text, cod , this.txt_cuil.Text);
-            txt_Total.Text = calcularTotal();
             MessageBox.Show("Se elimino correctamente el item!");
             grid_compra.Rows.RemoveAt(fila);
+            txt_Total.Text = calcularTotal();
         }
 
 
