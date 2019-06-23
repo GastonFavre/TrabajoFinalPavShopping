@@ -74,7 +74,7 @@ namespace ShoppingBuyAll
             }
             else
             {
-                MessageBox.Show("Faltan datos");
+                MessageBox.Show("Faltan datos. Para buscar al cliente primero debe ingresar el Numero y Tipo de Documento.");
                 this.txt_NumeroDoc.Text = "";
                 this.cmb_TipoDoc.SelectedIndex = -1;
                 this.txt_NumeroDoc.Focus();
@@ -101,7 +101,7 @@ namespace ShoppingBuyAll
             }
             else
             {
-                MessageBox.Show("Faltan datos");
+                MessageBox.Show("Faltan datos. Para buscar el producto primero debe ingresar el Codigo del mimso.");
                 this.txt_Cod_Pod.Text = "";
                 this.txt_Cod_Pod.Focus();
             }
@@ -192,7 +192,7 @@ namespace ShoppingBuyAll
             }
             else
             {
-                MessageBox.Show("Faltan datos");
+                MessageBox.Show("Faltan datos. Para Buscar el local primero debe ingresar el numero CUIT del mismo");
             }
         }
 
@@ -239,10 +239,10 @@ namespace ShoppingBuyAll
         {
             int fila = grid_compra.CurrentRow.Index;
             
-            txt_Total.Text = calcularTotal();
             string cod = grid_compra.CurrentRow.Cells[0].Value.ToString();
             MessageBox.Show(cod);
             this.compras.eliminar_detalle(this.num_factur.Text, cod , this.txt_cuil.Text);
+            txt_Total.Text = calcularTotal();
             MessageBox.Show("Se elimino correctamente el item!");
             grid_compra.Rows.RemoveAt(fila);
         }
@@ -268,9 +268,13 @@ namespace ShoppingBuyAll
 
         private void btn_finalizar_Click(object sender, EventArgs e)
         {
-            if (rbt_tar.Checked)
+            if (rbt_tar.Checked == false)
             {
-                
+                if (rbt_tar.Checked == false)
+                {
+                    MessageBox.Show("No se Selecciono el metodo de pago. Para finalizar la compra debe seleccionar uno.");
+                    return;
+                }
             }
             this._BD.cerrar_transaccion();
         }
