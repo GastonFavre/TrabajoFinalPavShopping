@@ -709,3 +709,5 @@ D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavSho
 D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_InformeClientesXSexo.resources
 D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ListadoProductos.resources
 D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.ReporteCompras.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\Newtonsoft.Json.dll
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.ReporteCompras.resources

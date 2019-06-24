@@ -31,7 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Menu));
             this.Barra_De_Titulo = new System.Windows.Forms.Panel();
+            this.btn_min = new System.Windows.Forms.PictureBox();
+            this.btn_max = new System.Windows.Forms.PictureBox();
+            this.btn_close = new System.Windows.Forms.PictureBox();
+            this.btn_rest = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_Reporte = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panelSubmenu = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.btn_buscarFiltrado = new System.Windows.Forms.Button();
@@ -40,37 +46,31 @@
             this.btnSalida = new System.Windows.Forms.Button();
             this.btnIngreso = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Productos = new System.Windows.Forms.Button();
+            this.btnEstacionamiento = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btn_Automoviles = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_Locales = new System.Windows.Forms.Button();
+            this.btn_clientes = new System.Windows.Forms.Button();
             this.panel_contenedor = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.btn_Reporte = new System.Windows.Forms.Button();
-            this.btn_Productos = new System.Windows.Forms.Button();
-            this.btnEstacionamiento = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btn_Automoviles = new System.Windows.Forms.Button();
-            this.btn_Locales = new System.Windows.Forms.Button();
-            this.btn_clientes = new System.Windows.Forms.Button();
-            this.btn_min = new System.Windows.Forms.PictureBox();
-            this.btn_max = new System.Windows.Forms.PictureBox();
-            this.btn_close = new System.Windows.Forms.PictureBox();
-            this.btn_rest = new System.Windows.Forms.PictureBox();
             this.Barra_De_Titulo.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panelSubmenu.SuspendLayout();
-            this.panel_contenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_min)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_max)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_rest)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panelSubmenu.SuspendLayout();
+            this.panel_contenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // Barra_De_Titulo
@@ -86,6 +86,59 @@
             this.Barra_De_Titulo.Size = new System.Drawing.Size(924, 30);
             this.Barra_De_Titulo.TabIndex = 1;
             this.Barra_De_Titulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Barra_De_Titulo_MouseDown);
+            // 
+            // btn_min
+            // 
+            this.btn_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_min.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_min.Image = ((System.Drawing.Image)(resources.GetObject("btn_min.Image")));
+            this.btn_min.Location = new System.Drawing.Point(861, 3);
+            this.btn_min.Name = "btn_min";
+            this.btn_min.Size = new System.Drawing.Size(16, 16);
+            this.btn_min.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_min.TabIndex = 5;
+            this.btn_min.TabStop = false;
+            this.btn_min.Click += new System.EventHandler(this.btn_min_Click_1);
+            // 
+            // btn_max
+            // 
+            this.btn_max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_max.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_max.Image = ((System.Drawing.Image)(resources.GetObject("btn_max.Image")));
+            this.btn_max.Location = new System.Drawing.Point(883, 3);
+            this.btn_max.Name = "btn_max";
+            this.btn_max.Size = new System.Drawing.Size(16, 16);
+            this.btn_max.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_max.TabIndex = 8;
+            this.btn_max.TabStop = false;
+            this.btn_max.Click += new System.EventHandler(this.btn_max_Click);
+            // 
+            // btn_close
+            // 
+            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.Image")));
+            this.btn_close.Location = new System.Drawing.Point(905, 3);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(16, 16);
+            this.btn_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_close.TabIndex = 7;
+            this.btn_close.TabStop = false;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // btn_rest
+            // 
+            this.btn_rest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_rest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_rest.Image = ((System.Drawing.Image)(resources.GetObject("btn_rest.Image")));
+            this.btn_rest.Location = new System.Drawing.Point(883, 3);
+            this.btn_rest.Name = "btn_rest";
+            this.btn_rest.Size = new System.Drawing.Size(16, 16);
+            this.btn_rest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_rest.TabIndex = 6;
+            this.btn_rest.TabStop = false;
+            this.btn_rest.Visible = false;
+            this.btn_rest.Click += new System.EventHandler(this.btn_rest_Click_1);
             // 
             // panel3
             // 
@@ -113,6 +166,32 @@
             this.panel3.Size = new System.Drawing.Size(251, 758);
             this.panel3.TabIndex = 2;
             // 
+            // btn_Reporte
+            // 
+            this.btn_Reporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
+            this.btn_Reporte.FlatAppearance.BorderSize = 0;
+            this.btn_Reporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_Reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Reporte.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reporte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Reporte.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reporte.Image")));
+            this.btn_Reporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Reporte.Location = new System.Drawing.Point(18, 356);
+            this.btn_Reporte.Name = "btn_Reporte";
+            this.btn_Reporte.Size = new System.Drawing.Size(236, 48);
+            this.btn_Reporte.TabIndex = 12;
+            this.btn_Reporte.Text = "Reporte";
+            this.btn_Reporte.UseVisualStyleBackColor = false;
+            this.btn_Reporte.Click += new System.EventHandler(this.btn_Reporte_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.panel12.Location = new System.Drawing.Point(3, 356);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(15, 48);
+            this.panel12.TabIndex = 11;
+            // 
             // panelSubmenu
             // 
             this.panelSubmenu.Controls.Add(this.panel9);
@@ -121,7 +200,7 @@
             this.panelSubmenu.Controls.Add(this.panel11);
             this.panelSubmenu.Controls.Add(this.btnSalida);
             this.panelSubmenu.Controls.Add(this.btnIngreso);
-            this.panelSubmenu.Location = new System.Drawing.Point(15, 562);
+            this.panelSubmenu.Location = new System.Drawing.Point(15, 459);
             this.panelSubmenu.Name = "panelSubmenu";
             this.panelSubmenu.Size = new System.Drawing.Size(236, 166);
             this.panelSubmenu.TabIndex = 5;
@@ -205,15 +284,51 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.panel1.Location = new System.Drawing.Point(3, 510);
+            this.panel1.Location = new System.Drawing.Point(3, 407);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(15, 48);
             this.panel1.TabIndex = 10;
             // 
+            // btn_Productos
+            // 
+            this.btn_Productos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
+            this.btn_Productos.FlatAppearance.BorderSize = 0;
+            this.btn_Productos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_Productos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Productos.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Productos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Productos.Image = ((System.Drawing.Image)(resources.GetObject("btn_Productos.Image")));
+            this.btn_Productos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Productos.Location = new System.Drawing.Point(18, 305);
+            this.btn_Productos.Name = "btn_Productos";
+            this.btn_Productos.Size = new System.Drawing.Size(236, 48);
+            this.btn_Productos.TabIndex = 9;
+            this.btn_Productos.Text = "Productos";
+            this.btn_Productos.UseVisualStyleBackColor = false;
+            this.btn_Productos.Click += new System.EventHandler(this.btn_Productos_Click);
+            // 
+            // btnEstacionamiento
+            // 
+            this.btnEstacionamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
+            this.btnEstacionamiento.FlatAppearance.BorderSize = 0;
+            this.btnEstacionamiento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btnEstacionamiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstacionamiento.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEstacionamiento.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEstacionamiento.Image = ((System.Drawing.Image)(resources.GetObject("btnEstacionamiento.Image")));
+            this.btnEstacionamiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstacionamiento.Location = new System.Drawing.Point(15, 407);
+            this.btnEstacionamiento.Name = "btnEstacionamiento";
+            this.btnEstacionamiento.Size = new System.Drawing.Size(236, 48);
+            this.btnEstacionamiento.TabIndex = 4;
+            this.btnEstacionamiento.Text = "Estacionamiento";
+            this.btnEstacionamiento.UseVisualStyleBackColor = false;
+            this.btnEstacionamiento.Click += new System.EventHandler(this.btnEstacionamiento_Click);
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.panel8.Location = new System.Drawing.Point(3, 408);
+            this.panel8.Location = new System.Drawing.Point(3, 305);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(15, 48);
             this.panel8.TabIndex = 7;
@@ -221,7 +336,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.panel7.Location = new System.Drawing.Point(3, 354);
+            this.panel7.Location = new System.Drawing.Point(3, 251);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(15, 48);
             this.panel7.TabIndex = 7;
@@ -229,7 +344,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.panel5.Location = new System.Drawing.Point(3, 300);
+            this.panel5.Location = new System.Drawing.Point(3, 197);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(15, 48);
             this.panel5.TabIndex = 8;
@@ -237,7 +352,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.panel6.Location = new System.Drawing.Point(3, 192);
+            this.panel6.Location = new System.Drawing.Point(3, 89);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(15, 48);
             this.panel6.TabIndex = 7;
@@ -245,18 +360,107 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.panel4.Location = new System.Drawing.Point(3, 246);
+            this.panel4.Location = new System.Drawing.Point(3, 143);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(15, 48);
             this.panel4.TabIndex = 7;
             // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(15, 251);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(236, 48);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Facturacion";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(15, 197);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(236, 48);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Compras";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btn_Automoviles
+            // 
+            this.btn_Automoviles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
+            this.btn_Automoviles.FlatAppearance.BorderSize = 0;
+            this.btn_Automoviles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_Automoviles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Automoviles.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Automoviles.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Automoviles.Image = ((System.Drawing.Image)(resources.GetObject("btn_Automoviles.Image")));
+            this.btn_Automoviles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Automoviles.Location = new System.Drawing.Point(15, 89);
+            this.btn_Automoviles.Name = "btn_Automoviles";
+            this.btn_Automoviles.Size = new System.Drawing.Size(236, 48);
+            this.btn_Automoviles.TabIndex = 1;
+            this.btn_Automoviles.Text = "Automoviles";
+            this.btn_Automoviles.UseVisualStyleBackColor = false;
+            this.btn_Automoviles.Click += new System.EventHandler(this.btn_Automoviles_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.panel2.Location = new System.Drawing.Point(3, 138);
+            this.panel2.Location = new System.Drawing.Point(3, 35);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(15, 48);
             this.panel2.TabIndex = 6;
+            // 
+            // btn_Locales
+            // 
+            this.btn_Locales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
+            this.btn_Locales.FlatAppearance.BorderSize = 0;
+            this.btn_Locales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_Locales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Locales.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Locales.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Locales.Image = ((System.Drawing.Image)(resources.GetObject("btn_Locales.Image")));
+            this.btn_Locales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Locales.Location = new System.Drawing.Point(15, 143);
+            this.btn_Locales.Name = "btn_Locales";
+            this.btn_Locales.Size = new System.Drawing.Size(236, 48);
+            this.btn_Locales.TabIndex = 2;
+            this.btn_Locales.Text = "Locales";
+            this.btn_Locales.UseVisualStyleBackColor = false;
+            this.btn_Locales.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btn_clientes
+            // 
+            this.btn_clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
+            this.btn_clientes.FlatAppearance.BorderSize = 0;
+            this.btn_clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_clientes.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_clientes.Image")));
+            this.btn_clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_clientes.Location = new System.Drawing.Point(15, 35);
+            this.btn_clientes.Name = "btn_clientes";
+            this.btn_clientes.Size = new System.Drawing.Size(236, 48);
+            this.btn_clientes.TabIndex = 0;
+            this.btn_clientes.Text = "Clientes";
+            this.btn_clientes.UseVisualStyleBackColor = false;
+            this.btn_clientes.Click += new System.EventHandler(this.btn_clientes_Click);
             // 
             // panel_contenedor
             // 
@@ -291,210 +495,6 @@
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.panel12.Location = new System.Drawing.Point(3, 459);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(15, 48);
-            this.panel12.TabIndex = 11;
-            // 
-            // btn_Reporte
-            // 
-            this.btn_Reporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
-            this.btn_Reporte.FlatAppearance.BorderSize = 0;
-            this.btn_Reporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.btn_Reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Reporte.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Reporte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Reporte.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reporte.Image")));
-            this.btn_Reporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Reporte.Location = new System.Drawing.Point(18, 459);
-            this.btn_Reporte.Name = "btn_Reporte";
-            this.btn_Reporte.Size = new System.Drawing.Size(236, 48);
-            this.btn_Reporte.TabIndex = 12;
-            this.btn_Reporte.Text = "Reporte";
-            this.btn_Reporte.UseVisualStyleBackColor = false;
-            this.btn_Reporte.Click += new System.EventHandler(this.btn_Reporte_Click);
-            // 
-            // btn_Productos
-            // 
-            this.btn_Productos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
-            this.btn_Productos.FlatAppearance.BorderSize = 0;
-            this.btn_Productos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.btn_Productos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Productos.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Productos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Productos.Image = ((System.Drawing.Image)(resources.GetObject("btn_Productos.Image")));
-            this.btn_Productos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Productos.Location = new System.Drawing.Point(18, 408);
-            this.btn_Productos.Name = "btn_Productos";
-            this.btn_Productos.Size = new System.Drawing.Size(236, 48);
-            this.btn_Productos.TabIndex = 9;
-            this.btn_Productos.Text = "Productos";
-            this.btn_Productos.UseVisualStyleBackColor = false;
-            this.btn_Productos.Click += new System.EventHandler(this.btn_Productos_Click);
-            // 
-            // btnEstacionamiento
-            // 
-            this.btnEstacionamiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
-            this.btnEstacionamiento.FlatAppearance.BorderSize = 0;
-            this.btnEstacionamiento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.btnEstacionamiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstacionamiento.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstacionamiento.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEstacionamiento.Image = ((System.Drawing.Image)(resources.GetObject("btnEstacionamiento.Image")));
-            this.btnEstacionamiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstacionamiento.Location = new System.Drawing.Point(15, 510);
-            this.btnEstacionamiento.Name = "btnEstacionamiento";
-            this.btnEstacionamiento.Size = new System.Drawing.Size(236, 48);
-            this.btnEstacionamiento.TabIndex = 4;
-            this.btnEstacionamiento.Text = "Estacionamiento";
-            this.btnEstacionamiento.UseVisualStyleBackColor = false;
-            this.btnEstacionamiento.Click += new System.EventHandler(this.btnEstacionamiento_Click);
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(15, 354);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(236, 48);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Facturacion";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(15, 300);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(236, 48);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Compras";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // btn_Automoviles
-            // 
-            this.btn_Automoviles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
-            this.btn_Automoviles.FlatAppearance.BorderSize = 0;
-            this.btn_Automoviles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.btn_Automoviles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Automoviles.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Automoviles.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Automoviles.Image = ((System.Drawing.Image)(resources.GetObject("btn_Automoviles.Image")));
-            this.btn_Automoviles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Automoviles.Location = new System.Drawing.Point(15, 192);
-            this.btn_Automoviles.Name = "btn_Automoviles";
-            this.btn_Automoviles.Size = new System.Drawing.Size(236, 48);
-            this.btn_Automoviles.TabIndex = 1;
-            this.btn_Automoviles.Text = "Automoviles";
-            this.btn_Automoviles.UseVisualStyleBackColor = false;
-            this.btn_Automoviles.Click += new System.EventHandler(this.btn_Automoviles_Click);
-            // 
-            // btn_Locales
-            // 
-            this.btn_Locales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
-            this.btn_Locales.FlatAppearance.BorderSize = 0;
-            this.btn_Locales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.btn_Locales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Locales.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Locales.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Locales.Image = ((System.Drawing.Image)(resources.GetObject("btn_Locales.Image")));
-            this.btn_Locales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Locales.Location = new System.Drawing.Point(15, 246);
-            this.btn_Locales.Name = "btn_Locales";
-            this.btn_Locales.Size = new System.Drawing.Size(236, 48);
-            this.btn_Locales.TabIndex = 2;
-            this.btn_Locales.Text = "Locales";
-            this.btn_Locales.UseVisualStyleBackColor = false;
-            this.btn_Locales.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btn_clientes
-            // 
-            this.btn_clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(20)))), ((int)(((byte)(36)))));
-            this.btn_clientes.FlatAppearance.BorderSize = 0;
-            this.btn_clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.btn_clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_clientes.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_clientes.Image")));
-            this.btn_clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_clientes.Location = new System.Drawing.Point(15, 138);
-            this.btn_clientes.Name = "btn_clientes";
-            this.btn_clientes.Size = new System.Drawing.Size(236, 48);
-            this.btn_clientes.TabIndex = 0;
-            this.btn_clientes.Text = "Clientes";
-            this.btn_clientes.UseVisualStyleBackColor = false;
-            this.btn_clientes.Click += new System.EventHandler(this.btn_clientes_Click);
-            // 
-            // btn_min
-            // 
-            this.btn_min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_min.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_min.Image = ((System.Drawing.Image)(resources.GetObject("btn_min.Image")));
-            this.btn_min.Location = new System.Drawing.Point(861, 3);
-            this.btn_min.Name = "btn_min";
-            this.btn_min.Size = new System.Drawing.Size(16, 16);
-            this.btn_min.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_min.TabIndex = 5;
-            this.btn_min.TabStop = false;
-            this.btn_min.Click += new System.EventHandler(this.btn_min_Click_1);
-            // 
-            // btn_max
-            // 
-            this.btn_max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_max.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_max.Image = ((System.Drawing.Image)(resources.GetObject("btn_max.Image")));
-            this.btn_max.Location = new System.Drawing.Point(883, 3);
-            this.btn_max.Name = "btn_max";
-            this.btn_max.Size = new System.Drawing.Size(16, 16);
-            this.btn_max.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_max.TabIndex = 8;
-            this.btn_max.TabStop = false;
-            this.btn_max.Click += new System.EventHandler(this.btn_max_Click);
-            // 
-            // btn_close
-            // 
-            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.Image")));
-            this.btn_close.Location = new System.Drawing.Point(905, 3);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(16, 16);
-            this.btn_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_close.TabIndex = 7;
-            this.btn_close.TabStop = false;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
-            // btn_rest
-            // 
-            this.btn_rest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_rest.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_rest.Image = ((System.Drawing.Image)(resources.GetObject("btn_rest.Image")));
-            this.btn_rest.Location = new System.Drawing.Point(883, 3);
-            this.btn_rest.Name = "btn_rest";
-            this.btn_rest.Size = new System.Drawing.Size(16, 16);
-            this.btn_rest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_rest.TabIndex = 6;
-            this.btn_rest.TabStop = false;
-            this.btn_rest.Visible = false;
-            this.btn_rest.Click += new System.EventHandler(this.btn_rest_Click_1);
-            // 
             // frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -510,14 +510,14 @@
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.frm_Menu_Load);
             this.Barra_De_Titulo.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panelSubmenu.ResumeLayout(false);
-            this.panel_contenedor.ResumeLayout(false);
-            this.panel_contenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_min)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_max)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_rest)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panelSubmenu.ResumeLayout(false);
+            this.panel_contenedor.ResumeLayout(false);
+            this.panel_contenedor.PerformLayout();
             this.ResumeLayout(false);
 
         }

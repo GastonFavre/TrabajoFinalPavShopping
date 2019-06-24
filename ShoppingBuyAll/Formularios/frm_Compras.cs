@@ -153,7 +153,7 @@ namespace ShoppingBuyAll
         public string calcularTotal()
         {
             int suma = 0;
-            for (int i = 0; i < grid_compra.RowCount - 1; i++)
+            for (int i = 0; i < grid_compra.RowCount ; i++)
             {
                 suma += int.Parse(grid_compra.Rows[i].Cells[5].Value.ToString());
             }
@@ -267,15 +267,18 @@ namespace ShoppingBuyAll
 
         private void btn_finalizar_Click(object sender, EventArgs e)
         {
-            if (rbt_tar.Checked == false)
+            if (rbt_tar.Checked == true || rbt_eft.Checked == true)
             {
-                if (rbt_tar.Checked == false)
-                {
-                    MessageBox.Show("No se Selecciono el metodo de pago. Para finalizar la compra debe seleccionar uno.");
-                    return;
-                }
+                this._BD.cerrar_transaccion();
+                MessageBox.Show("Se finalizo la compra con exito");
+                this.Dispose();                
             }
-            this._BD.cerrar_transaccion();
+            else
+            {
+                MessageBox.Show("No se Selecciono el metodo de pago. Para finalizar la compra debe seleccionar uno.");
+                return;
+
+            }
         }
 
         private void label16_Click(object sender, EventArgs e)
