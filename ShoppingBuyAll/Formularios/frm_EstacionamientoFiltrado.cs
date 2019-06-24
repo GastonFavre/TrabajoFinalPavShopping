@@ -259,5 +259,10 @@ namespace ShoppingBuyAll.Formularios
            
             GrillaFiltrados.DataSource = "";
         }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

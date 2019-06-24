@@ -606,7 +606,6 @@ C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\RdlCompile.cache
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\RdlCompile.compiled
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CopyComplete
-C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ListadoProductos.resources
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_InformeClientesXSexo.resources
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_EstacXCliente.resources
 C:\Users\Gaston\Desktop\ShoppingBuyAll\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\SqlServerTypes\x64\msvcr120.dll
@@ -711,3 +710,4 @@ D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavSho
 D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.ReporteCompras.resources
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\Newtonsoft.Json.dll
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.ReporteCompras.resources
+C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ReporteLocalesxTipo.resources

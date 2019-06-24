@@ -215,11 +215,11 @@
     <Compile Include="Formularios\frm_InformeClientesXSexo.Designer.cs">
       <DependentUpon>frm_InformeClientesXSexo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frm_ListadoProductos.cs">
+    <Compile Include="Formularios\frm_ReporteLocalesxTipo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frm_ListadoProductos.Designer.cs">
-      <DependentUpon>frm_ListadoProductos.cs</DependentUpon>
+    <Compile Include="Formularios\frm_ReporteLocalesxTipo.Designer.cs">
+      <DependentUpon>frm_ReporteLocalesxTipo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frm_Locales.cs">
       <SubType>Form</SubType>
@@ -357,8 +357,8 @@
     <EmbeddedResource Include="Formularios\frm_InformeClientesXSexo.resx">
       <DependentUpon>frm_InformeClientesXSexo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frm_ListadoProductos.resx">
-      <DependentUpon>frm_ListadoProductos.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frm_ReporteLocalesxTipo.resx">
+      <DependentUpon>frm_ReporteLocalesxTipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Locales.resx">
       <DependentUpon>frm_Locales.cs</DependentUpon>

@@ -111,7 +111,7 @@ namespace ShoppingBuyAll.Formularios
         //se cierra el formulario de ingreso de vehiculos
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
-            Close();
+            
             Dispose();
         }
 

@@ -99,7 +99,7 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_Locales_Click(object sender, EventArgs e)
         {
-            frm_ListadoProductos form_Locales = new frm_ListadoProductos();
+            frm_ReporteLocalesxTipo form_Locales = new frm_ReporteLocalesxTipo();
             AddOwnedForm(form_Locales);
             form_Locales.FormBorderStyle = FormBorderStyle.None;
             form_Locales.TopLevel = false;

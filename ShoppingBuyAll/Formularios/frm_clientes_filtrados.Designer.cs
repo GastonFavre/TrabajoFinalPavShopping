@@ -58,6 +58,7 @@
             this.cmbEstadoCivil = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.cmbBarrio = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.cmb_tipoDoc = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
+            this.btn_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_filtro)).BeginInit();
             this.SuspendLayout();
             // 
@@ -420,12 +421,25 @@
             this.cmb_tipoDoc.Size = new System.Drawing.Size(123, 28);
             this.cmb_tipoDoc.TabIndex = 121;
             // 
+            // btn_Salir
+            // 
+            this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Salir.Location = new System.Drawing.Point(1166, 422);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(90, 29);
+            this.btn_Salir.TabIndex = 146;
+            this.btn_Salir.Text = "Salir";
+            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
             // frm_clientes_filtrados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1268, 759);
+            this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox8);
             this.Controls.Add(this.checkBox7);
@@ -489,5 +503,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView datagrid_filtro;
+        private System.Windows.Forms.Button btn_Salir;
     }
 }

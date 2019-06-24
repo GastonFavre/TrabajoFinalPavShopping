@@ -68,5 +68,10 @@ namespace ShoppingBuyAll.Formularios
             detalleComprasBindingSource.DataSource = tabla;
             reportViewer1.RefreshReport();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

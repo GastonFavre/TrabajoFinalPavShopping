@@ -35,7 +35,7 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_Salir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
 
         private void btn_Buscar_Click(object sender, EventArgs e)

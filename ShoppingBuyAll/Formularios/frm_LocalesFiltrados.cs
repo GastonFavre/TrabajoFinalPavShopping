@@ -43,7 +43,7 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
 
         private void btn_min_Click(object sender, EventArgs e)

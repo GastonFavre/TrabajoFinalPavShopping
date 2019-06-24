@@ -638,7 +638,7 @@
                               <TextRun>
                                 <Value>=Fields!num_doc.Value</Value>
                                 <Style>
-                                  <FontWeight>Normal</FontWeight>
+                                  <FontWeight>ExtraBold</FontWeight>
                                   <Color>#333333</Color>
                                 </Style>
                               </TextRun>
@@ -663,6 +663,7 @@
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
+                      <rd:Selected>true</rd:Selected>
                     </CellContents>
                   </TablixHeader>
                   <TablixMembers>

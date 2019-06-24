@@ -258,6 +258,9 @@ namespace ShoppingBuyAll.Formularios
             validacion.blanquear_objetos(this.Controls);
         }
 
-        
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

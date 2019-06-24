@@ -50,6 +50,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmbPlayaFiltrado = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.checkPlaya = new System.Windows.Forms.CheckBox();
+            this.btn_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaFiltrados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -310,6 +311,18 @@
             this.checkPlaya.UseVisualStyleBackColor = true;
             this.checkPlaya.CheckedChanged += new System.EventHandler(this.checkPlaya_CheckedChanged);
             // 
+            // btn_Salir
+            // 
+            this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Salir.Location = new System.Drawing.Point(903, 456);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(90, 29);
+            this.btn_Salir.TabIndex = 262;
+            this.btn_Salir.Text = "Salir";
+            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
             // frm_EstacionamientoFiltrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,6 +330,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1005, 536);
+            this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.GrillaFiltrados);
             this.Controls.Add(this.checkFechaIngreso);
             this.Controls.Add(this.dt_fecha_entradaFiltrado);
@@ -362,5 +376,6 @@
         private System.Windows.Forms.Label label4;
         private Componentes.ComboBoxDeControl cmbPlayaFiltrado;
         private System.Windows.Forms.CheckBox checkPlaya;
+        private System.Windows.Forms.Button btn_Salir;
     }
 }

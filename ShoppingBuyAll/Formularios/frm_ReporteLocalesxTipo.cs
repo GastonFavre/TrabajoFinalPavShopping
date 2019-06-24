@@ -11,32 +11,28 @@ using ShoppingBuyAll.clases;
 
 namespace ShoppingBuyAll.Formularios
 {
-    public partial class frm_ListadoProductos : Form
+    public partial class frm_ReporteLocalesxTipo : Form
     {
-        public frm_ListadoProductos()
+        public frm_ReporteLocalesxTipo()
         {
             InitializeComponent();
         }
 
         private void frm_ListadoProductos_Load(object sender, EventArgs e)
         {
-           
+            DataTable tabla = obj_local.localXTipo();
+            localXtipoBindingSource.DataSource = tabla;
+            reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
 
         Locales obj_local = new Locales();
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DataTable tabla = obj_local.localXTipo();
-            localXtipoBindingSource.DataSource = tabla;
-            reportViewer1.RefreshReport();
-
-        }
+       
     }
 }

@@ -39,7 +39,7 @@ namespace ShoppingBuyAll.Formularios
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             actualizar = true;
-            this.Close();
+            this.Dispose();
         }
     }
     
