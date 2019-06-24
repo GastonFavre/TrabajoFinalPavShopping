@@ -29,10 +29,21 @@ namespace ShoppingBuyAll.Formularios
             RubrosXLocal locxrub = new RubrosXLocal();
             if (locxrub.validar_Rubro(this.Controls) == Validar.estado_validacion.correcta)
             {
-                locxrub.agregar_Rubro(this.Controls);
-                MessageBox.Show("Rubro Agregado Correctamente", "Mensaje"
-                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                DataTable tabla = new DataTable();
+                tabla = locxrub.buscar_rubro_local(txt_Cuil.Text.Trim(), cmb_Rubro.SelectedValue.ToString());
+                if (tabla.Rows.Count == 0)
+                {
+                    locxrub.agregar_Rubro(this.Controls);
+                    MessageBox.Show("Rubro Agregado Correctamente", "Mensaje"
+                                        , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    MessageBox.Show("El local ya tiene ese rubro asignado", "Mensaje"
+                                        , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
+                
         }
 
         private void boton_Modi_Click(object sender, EventArgs e)

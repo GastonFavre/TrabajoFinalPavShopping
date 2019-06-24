@@ -26,8 +26,10 @@ namespace ShoppingBuyAll.clases
 
         public DataTable buscar_Tarjeta(string tipoDoc, string numero)
         {
-            string sql_Buscar = @"SELECT cod_tarje3 as 'Codigo', nro_tarje3 as 'Numero', fecha_venc as 'Vencimiento' FROM TarjetaXCliente WHERE
-                                    tipo_doc3= " + tipoDoc + "AND num_doc3 = " + numero;
+            string sql_Buscar = @"SELECT M.nombre as 'Codigo', T.nro_tarje3 as 'Numero', T.fecha_venc as 'Vencimiento' 
+                                    FROM TarjetaXCliente T JOIN MarcaTarjetas M ON T.cod_tarje3 = M.cod_tarje
+                                    WHERE tipo_doc3= " + tipoDoc + "AND num_doc3 = " + numero;
+
             return this._BD.consulta(sql_Buscar);
         }
 

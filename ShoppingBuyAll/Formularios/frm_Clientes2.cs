@@ -57,8 +57,22 @@ namespace ShoppingBuyAll.Formularios
         private void boton_Nuevo_Click(object sender, EventArgs e)
         {
             _val.blanquear_objetos(this.Controls);
+            dataGridView1.DataSource = "";
             cmb_tipoDoc.Enabled = true;
             txt_NumDoc.Enabled = true;
+            txt_Ape.Enabled = true;
+            txt_Nom.Enabled = true;
+            txtCalle.Enabled = true;
+            txtNumCalle.Enabled = true;
+            cmbSexo.Enabled = true;
+            cmbEstadoCivil.Enabled = true;
+            cmbBarrio.Enabled = true;
+            dateTimePicker2.Enabled = true;
+            btn_Buscar_Doc.Visible = false;
+            cmb_tipoDoc.Enabled = true;
+            txt_NumDoc.Enabled = true;
+            btn_agregarTarjeta.Enabled = true;
+            btn_mostrarTarjetas.Enabled = true;
             this.cmb_Tipo_Doc.Focus();
         }
 
@@ -67,11 +81,22 @@ namespace ShoppingBuyAll.Formularios
 
             if (cliente.validar_Cliente(this.Controls) == Validar.estado_validacion.correcta)
             {
-                if (cliente.agregar_cliente(this.Controls) == true)
+                DataTable tabla = new DataTable();
+                tabla = this.cliente.buscar_cliente(this.cmb_tipoDoc.SelectedValue.ToString(), txt_NumDoc.Text.Trim());
+                if (tabla.Rows.Count == 0)
                 {
-                    MessageBox.Show("Cliente agregado correctamente", "Mensaje"
-                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    if (cliente.agregar_cliente(this.Controls) == true)
+                    {
+                        MessageBox.Show("Cliente agregado correctamente", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("El Cliente ya se encuentra en el sistema", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                
                 
             }
         }
@@ -80,8 +105,48 @@ namespace ShoppingBuyAll.Formularios
         {
             if ((this.cmb_tipoDoc.SelectedIndex != -1) && (this.txt_NumDoc.Text != ""))
             {
-                cliente.eliminar(cmb_tipoDoc.SelectedValue.ToString(), txt_NumDoc.Text.Trim());
-                _val.blanquear_objetos(this.Controls);
+                DataTable tabla_ClienteExistente = new DataTable();
+                tabla_ClienteExistente = this.cliente.buscar_cliente(this.cmb_tipoDoc.SelectedValue.ToString(), txt_NumDoc.Text.Trim());
+                if (tabla_ClienteExistente.Rows.Count == 0)
+                {
+                    MessageBox.Show("El Cliente que desea eliminar no existe.", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    DataTable tabla_ClienteConCompras = new DataTable();
+                    tabla_ClienteConCompras = this._BD.consulta("SELECT C.* FROM ComprasXCliente C WHERE tipo_doc1=" + cmb_tipoDoc.SelectedValue.ToString() + " AND num_doc1=" + txt_NumDoc.Text.ToString());
+                    if (tabla_ClienteConCompras.Rows.Count == 0)
+                    {
+                        DataTable tabla_ClienteConEstacionamiento = new DataTable();
+                        string sql = @"SELECT * FROM EstacXCliente WHERE tipo_doc2=" + cmb_tipoDoc.SelectedValue.ToString() + " AND nro_doc2=" + txt_NumDoc.Text.ToString();
+                        tabla_ClienteConEstacionamiento = this._BD.consulta(sql);
+                        if (tabla_ClienteConEstacionamiento.Rows.Count == 0)
+                        {
+                            this._BD.grabar_modificar("DELETE FROM TarjetaXCliente WHERE tipo_doc3=" + cmb_tipoDoc.SelectedValue.ToString() + " AND num_doc3=" + txt_NumDoc.Text.ToString());
+                            this._BD.grabar_modificar("DELETE FROM automoviles WHERE tipo_doc2=" + cmb_tipoDoc.SelectedValue.ToString() + " AND num_doc1=" + txt_NumDoc.Text.ToString());
+                            cliente.eliminar(cmb_tipoDoc.SelectedValue.ToString(), txt_NumDoc.Text.Trim());
+                            MessageBox.Show("El Cliente se ha eliminado correctamente junto a sus tarjetas asociadas y sus vehiculos.", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            _val.blanquear_objetos(this.Controls);
+                            dataGridView1.DataSource = "";
+                        }
+                        else
+                        {
+                            MessageBox.Show("El Cliente a utilizado el estacionamiento, por ese motivo no se puede eliminar.", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("El Cliente posee compras asociadas, por ese motivo no se puede eliminar.", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    
+                    
+                }
+                
             }
             else
             {
@@ -93,6 +158,7 @@ namespace ShoppingBuyAll.Formularios
         private void boton_Buscar_Click(object sender, EventArgs e)
         {
             _val.blanquear_objetos(this.Controls);
+            dataGridView1.DataSource = "";
             txt_Ape.Enabled = false;
             txt_Nom.Enabled = false;
             txtCalle.Enabled = false;
@@ -175,8 +241,10 @@ namespace ShoppingBuyAll.Formularios
         private void btn_agregarTarjeta_Click(object sender, EventArgs e)
         {
             frm_TarjetaCliente tarjeta = new frm_TarjetaCliente();
-            tarjeta.txt_TipoDoc.Text = this.cmb_tipoDoc.SelectedValue.ToString();
+
             tarjeta.txt_NumDocu.Text = this.txt_NumDoc.Text.Trim();
+            tarjeta.cmb_TipoDoc.cargar("Tipo_Documento", "id_doc", "descripcion");
+            tarjeta.cmb_TipoDoc.SelectedValue = this.cmb_tipoDoc.SelectedValue;
             tarjeta.ShowDialog();
 
         }

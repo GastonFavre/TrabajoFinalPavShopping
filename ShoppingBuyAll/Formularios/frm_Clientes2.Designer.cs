@@ -100,6 +100,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new ShoppingBuyAll.Componentes.DateTimePickerDeControl(this.components);
             this.txtNumCalle = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txtCalle = new ShoppingBuyAll.Componentes.TextBoxDeControl();
@@ -119,7 +120,6 @@
             this.comboBoxDeControl6 = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.comboBoxDeControl7 = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.comboBoxDeControl8 = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -395,7 +395,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(635, 203);
+            this.label5.Location = new System.Drawing.Point(635, 199);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 20);
             this.label5.TabIndex = 45;
@@ -599,7 +599,7 @@
             this.btn_agregarTarjeta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_agregarTarjeta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_agregarTarjeta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_agregarTarjeta.Location = new System.Drawing.Point(527, 445);
+            this.btn_agregarTarjeta.Location = new System.Drawing.Point(527, 455);
             this.btn_agregarTarjeta.Name = "btn_agregarTarjeta";
             this.btn_agregarTarjeta.Size = new System.Drawing.Size(136, 30);
             this.btn_agregarTarjeta.TabIndex = 69;
@@ -628,7 +628,7 @@
             this.btn_mostrarTarjetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_mostrarTarjetas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_mostrarTarjetas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_mostrarTarjetas.Location = new System.Drawing.Point(363, 445);
+            this.btn_mostrarTarjetas.Location = new System.Drawing.Point(363, 455);
             this.btn_mostrarTarjetas.Name = "btn_mostrarTarjetas";
             this.btn_mostrarTarjetas.Size = new System.Drawing.Size(136, 30);
             this.btn_mostrarTarjetas.TabIndex = 72;
@@ -638,10 +638,8 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -674,7 +672,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(300, 69);
+            this.dataGridView1.Size = new System.Drawing.Size(300, 79);
             this.dataGridView1.TabIndex = 73;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -984,6 +982,24 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(711, 100);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(136, 30);
+            this.button2.TabIndex = 76;
+            this.button2.Text = "Filtros";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2._campo = "fecha_nacim";
@@ -1006,7 +1022,7 @@
             this.txtNumCalle._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.numero;
             this.txtNumCalle._validable = true;
             this.txtNumCalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumCalle.Location = new System.Drawing.Point(669, 200);
+            this.txtNumCalle.Location = new System.Drawing.Point(669, 199);
             this.txtNumCalle.MaxLength = 5;
             this.txtNumCalle.Name = "txtNumCalle";
             this.txtNumCalle.Size = new System.Drawing.Size(93, 26);
@@ -1267,24 +1283,6 @@
             this.comboBoxDeControl8.Size = new System.Drawing.Size(214, 28);
             this.comboBoxDeControl8.TabIndex = 58;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(711, 100);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 30);
-            this.button2.TabIndex = 76;
-            this.button2.Text = "Filtros";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // frm_Clientes2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1417,12 +1415,12 @@
         private Componentes.DateTimePickerDeControl dateTimePicker2;
         private System.Windows.Forms.Button btn_agregarTarjeta;
         private Componentes.TextBoxDeControl txt_NumDoc;
-        private Componentes.ComboBoxDeControl cmb_tipoDoc;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button btn_mostrarTarjetas;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_agregar_barrio;
         private System.Windows.Forms.Button button2;
+        public Componentes.ComboBoxDeControl cmb_tipoDoc;
     }
 }

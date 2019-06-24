@@ -25,11 +25,16 @@ namespace ShoppingBuyAll.clases
 
         public DataTable buscar_Rubro(string cuil)
         {
-            string sql_Buscar = @"SELECT cuil_local1 as 'CUIL', cod_rub1 as 'RUBRO' FROM LocalesXRubro WHERE
+            string sql_Buscar = @"SELECT L.cuil_local1 as 'CUIL', R.nombre as 'RUBRO' FROM LocalesXRubro L JOIN Rubros R ON L.cod_rub1 = R.cod_rub WHERE
                                     cuil_local1= " + cuil;
             return this._BD.consulta(sql_Buscar);
         }
 
+        public DataTable buscar_rubro_local(string cuil, string rubro)
+        {
+            string sql_Buscar = @"SELECT * FROM LocalesXRubro WHERE cuil_local1= " + cuil + " AND cod_rub1= " + rubro;
+            return this._BD.consulta(sql_Buscar);
+        }
     }
 }
 

@@ -19,6 +19,7 @@ namespace ShoppingBuyAll.Formularios
             InitializeComponent();
         }
 
+
         private void boton_Modi_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -36,6 +37,7 @@ namespace ShoppingBuyAll.Formularios
 
         private void frm_TarjetaCliente_Load(object sender, EventArgs e)
         {
+            frm_Clientes2 cliente = new frm_Clientes2();
             this.cmb_CodTarjeta.cargar("MarcaTarjetas", "cod_Tarje", "nombre");
         }
     }

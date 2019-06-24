@@ -143,9 +143,19 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_agregarRubro_Click(object sender, EventArgs e)
         {
-            frm_RubroLocal locxrub = new frm_RubroLocal();
-            locxrub.txt_Cuil.Text = this.txt_Cuil.Text.Trim();
-            locxrub.ShowDialog();
+            DataTable tabla = new DataTable();
+            tabla = this.local.buscar_local(this.txt_Cuil.Text.Trim());
+            if (tabla.Rows.Count == 0)
+            {
+                MessageBox.Show("Primero debe agregar el local para luego agregar sus Rubros.");
+            }
+            else
+            {
+                frm_RubroLocal locxrub = new frm_RubroLocal();
+                locxrub.txt_Cuil.Text = this.txt_Cuil.Text.Trim();
+                locxrub.ShowDialog();
+            }
+            
         }
 
         private void btn_mostrarRubros_Click(object sender, EventArgs e)

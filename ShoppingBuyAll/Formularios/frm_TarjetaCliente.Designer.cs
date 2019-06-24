@@ -37,11 +37,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.boton_Modi = new System.Windows.Forms.Button();
             this.boton_Agregar = new System.Windows.Forms.Button();
-            this.txt_TipoDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_NumDocu = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.cmb_CodTarjeta = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
+            this.cmb_TipoDoc = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.cmb_FechaVencimiento = new ShoppingBuyAll.Componentes.MaskedTextBokDeControl(this.components);
             this.txt_NumTarjeta = new ShoppingBuyAll.Componentes.MaskedTextBokDeControl(this.components);
-            this.cmb_CodTarjeta = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,20 +154,6 @@
             this.boton_Agregar.UseVisualStyleBackColor = false;
             this.boton_Agregar.Click += new System.EventHandler(this.boton_Agregar_Click);
             // 
-            // txt_TipoDoc
-            // 
-            this.txt_TipoDoc._campo = "tipo_doc3";
-            this.txt_TipoDoc._mensaje_error = null;
-            this.txt_TipoDoc._nombre_tabla = "TarjetaXCliente";
-            this.txt_TipoDoc._pk = true;
-            this.txt_TipoDoc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.numero;
-            this.txt_TipoDoc._validable = false;
-            this.txt_TipoDoc.Enabled = false;
-            this.txt_TipoDoc.Location = new System.Drawing.Point(326, 29);
-            this.txt_TipoDoc.Name = "txt_TipoDoc";
-            this.txt_TipoDoc.Size = new System.Drawing.Size(88, 20);
-            this.txt_TipoDoc.TabIndex = 101;
-            // 
             // txt_NumDocu
             // 
             this.txt_NumDocu._campo = "num_doc3";
@@ -181,6 +167,33 @@
             this.txt_NumDocu.Name = "txt_NumDocu";
             this.txt_NumDocu.Size = new System.Drawing.Size(88, 20);
             this.txt_NumDocu.TabIndex = 95;
+            // 
+            // cmb_CodTarjeta
+            // 
+            this.cmb_CodTarjeta._campo = "cod_tarje3";
+            this.cmb_CodTarjeta._mensaje_error = "No se ingreso el codigo de la tarjeta";
+            this.cmb_CodTarjeta._nombre_tabla = "TarjetaXCliente";
+            this.cmb_CodTarjeta._pk = false;
+            this.cmb_CodTarjeta._validable = false;
+            this.cmb_CodTarjeta.FormattingEnabled = true;
+            this.cmb_CodTarjeta.Location = new System.Drawing.Point(326, 94);
+            this.cmb_CodTarjeta.Name = "cmb_CodTarjeta";
+            this.cmb_CodTarjeta.Size = new System.Drawing.Size(119, 21);
+            this.cmb_CodTarjeta.TabIndex = 102;
+            // 
+            // cmb_TipoDoc
+            // 
+            this.cmb_TipoDoc._campo = "tipo_doc3";
+            this.cmb_TipoDoc._mensaje_error = null;
+            this.cmb_TipoDoc._nombre_tabla = "TarjetaXCliente";
+            this.cmb_TipoDoc._pk = true;
+            this.cmb_TipoDoc._validable = false;
+            this.cmb_TipoDoc.Enabled = false;
+            this.cmb_TipoDoc.FormattingEnabled = true;
+            this.cmb_TipoDoc.Location = new System.Drawing.Point(326, 29);
+            this.cmb_TipoDoc.Name = "cmb_TipoDoc";
+            this.cmb_TipoDoc.Size = new System.Drawing.Size(121, 21);
+            this.cmb_TipoDoc.TabIndex = 104;
             // 
             // cmb_FechaVencimiento
             // 
@@ -211,27 +224,14 @@
             this.txt_NumTarjeta.Size = new System.Drawing.Size(37, 20);
             this.txt_NumTarjeta.TabIndex = 91;
             // 
-            // cmb_CodTarjeta
-            // 
-            this.cmb_CodTarjeta._campo = "cod_tarje3";
-            this.cmb_CodTarjeta._mensaje_error = "No se ingreso el codigo de la tarjeta";
-            this.cmb_CodTarjeta._nombre_tabla = "TarjetaXCliente";
-            this.cmb_CodTarjeta._pk = false;
-            this.cmb_CodTarjeta._validable = false;
-            this.cmb_CodTarjeta.FormattingEnabled = true;
-            this.cmb_CodTarjeta.Location = new System.Drawing.Point(326, 94);
-            this.cmb_CodTarjeta.Name = "cmb_CodTarjeta";
-            this.cmb_CodTarjeta.Size = new System.Drawing.Size(119, 21);
-            this.cmb_CodTarjeta.TabIndex = 102;
-            // 
             // frm_TarjetaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(464, 242);
+            this.Controls.Add(this.cmb_TipoDoc);
             this.Controls.Add(this.cmb_CodTarjeta);
-            this.Controls.Add(this.txt_TipoDoc);
             this.Controls.Add(this.boton_Modi);
             this.Controls.Add(this.boton_Agregar);
             this.Controls.Add(this.txt_NumDocu);
@@ -268,7 +268,7 @@
         private System.Windows.Forms.Button boton_Modi;
         private System.Windows.Forms.Button boton_Agregar;
         public Componentes.TextBoxDeControl txt_NumDocu;
-        public Componentes.TextBoxDeControl txt_TipoDoc;
         private Componentes.ComboBoxDeControl cmb_CodTarjeta;
+        public Componentes.ComboBoxDeControl cmb_TipoDoc;
     }
 }
