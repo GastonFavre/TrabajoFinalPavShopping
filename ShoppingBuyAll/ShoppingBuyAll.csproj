@@ -208,6 +208,12 @@
     <Compile Include="Formularios\frm_Facturas.Designer.cs">
       <DependentUpon>frm_Facturas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frm_FiltrosProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_FiltrosProductos.Designer.cs">
+      <DependentUpon>frm_FiltrosProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frm_FormularioPadre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -355,6 +361,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_Facturas.resx">
       <DependentUpon>frm_Facturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_FiltrosProductos.resx">
+      <DependentUpon>frm_FiltrosProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_FormularioPadre.resx">
       <DependentUpon>frm_FormularioPadre.cs</DependentUpon>

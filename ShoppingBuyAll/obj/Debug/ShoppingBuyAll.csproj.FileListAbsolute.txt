@@ -513,7 +513,6 @@ D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavSho
 D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Reporte_Productos.resources
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -914,3 +913,5 @@ C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavSh
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Reporte_Productos.resources
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.ReporteCompras.resources
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CopyComplete
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FiltrosProductos.resources
+D:\Facultad\Tercer Año\Programacion De Aplicaciones Visuales\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ReporteProductos.resources
