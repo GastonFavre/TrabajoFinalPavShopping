@@ -138,6 +138,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_productos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_productos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_TopProductos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -276,6 +281,12 @@
     <Compile Include="Formularios\frm_ReporteClientes.Designer.cs">
       <DependentUpon>frm_ReporteClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frm_ReporteProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_ReporteProductos.Designer.cs">
+      <DependentUpon>frm_ReporteProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frm_RubroLocal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,12 +322,6 @@
     </Compile>
     <Compile Include="Formularios\frm_Compras.Designer.cs">
       <DependentUpon>frm_Compras.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\frm_Reporte_Productos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frm_Reporte_Productos.Designer.cs">
-      <DependentUpon>frm_Reporte_Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -387,8 +392,8 @@
     <EmbeddedResource Include="Formularios\frm_ReporteClientes.resx">
       <DependentUpon>frm_ReporteClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frm_Reporte_Productos.resx">
-      <DependentUpon>frm_Reporte_Productos.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frm_ReporteProductos.resx">
+      <DependentUpon>frm_ReporteProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_RubroLocal.resx">
       <DependentUpon>frm_RubroLocal.cs</DependentUpon>
@@ -467,6 +472,17 @@
     </None>
     <None Include="DS_InfromeClientes.xss">
       <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DS_productos.xsc">
+      <DependentUpon>DS_productos.xsd</DependentUpon>
+    </None>
+    <None Include="DS_productos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_productos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_productos.xss">
+      <DependentUpon>DS_productos.xsd</DependentUpon>
     </None>
     <None Include="DS_TopProductos.xsc">
       <DependentUpon>DS_TopProductos.xsd</DependentUpon>
