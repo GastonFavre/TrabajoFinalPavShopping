@@ -18,55 +18,6 @@ namespace ShoppingBuyAll.Formularios
             InitializeComponent();
         }
 
-        //INTERFAZ NO HAY FUNCIONAMIENTO EN ESTA PARTE
-        private void btn_Automoviles_MouseHover(object sender, EventArgs e)
-        {
-            btn_Automoviles.BackColor = Color.FromArgb(0, 30, 82);
-        }
-        private void btn_Automoviles_MouseLeave(object sender, EventArgs e)
-        {
-            btn_Automoviles.BackColor = Color.FromArgb(49, 66, 82);
-        }
-        private void btn_Estacionamiento_MouseHover(object sender, EventArgs e)
-        {
-            btn_Estacionamiento.BackColor = Color.FromArgb(0, 30, 82);
-        }
-        private void btn_Estacionamiento_MouseLeave(object sender, EventArgs e)
-        {
-            btn_Estacionamiento.BackColor = Color.FromArgb(49, 66, 82);
-        }
-        private void btn_Productos_MouseHover(object sender, EventArgs e)
-        {
-            btn_Productos.BackColor = Color.FromArgb(0, 30, 82);
-        }
-        private void btn_Productos_MouseLeave(object sender, EventArgs e)
-        {
-            btn_Productos.BackColor = Color.FromArgb(49, 66, 82);
-        }
-        private void btn_Clientes_MouseHover(object sender, EventArgs e)
-        {
-            btn_Clientes.BackColor = Color.FromArgb(0, 30, 82);
-        }
-        private void btn_Clientes_MouseLeave(object sender, EventArgs e)
-        {
-            btn_Clientes.BackColor = Color.FromArgb(49, 66, 82);
-        }
-        private void btn_Locales_MouseHover(object sender, EventArgs e)
-        {
-            btn_Locales.BackColor = Color.FromArgb(0, 30, 82);
-        }
-        private void btn_Locales_MouseLeave(object sender, EventArgs e)
-        {
-            btn_Locales.BackColor = Color.FromArgb(49, 66, 82);
-        }
-        private void btn_Ventas_MouseHover_1(object sender, EventArgs e)
-        {
-            btn_Ventas.BackColor = Color.FromArgb(0, 30, 82);
-        }
-        private void btn_Ventas_MouseLeave(object sender, EventArgs e)
-        {
-            btn_Ventas.BackColor = Color.FromArgb(49, 66, 82);
-        }
         //------------------------------------------------------------------------
 
         private void btn_Productos_Click(object sender, EventArgs e)
@@ -86,7 +37,6 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_Clientes_Click(object sender, EventArgs e)
         {
-            //frm_ReporteClientes frm_ReporteClientes = new frm_ReporteClientes();
             frm_InformeClientesXSexo frm_ReporteClientes = new frm_InformeClientesXSexo();
             AddOwnedForm(frm_ReporteClientes);
             frm_ReporteClientes.FormBorderStyle = FormBorderStyle.None;

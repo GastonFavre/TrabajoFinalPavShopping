@@ -131,6 +131,15 @@ namespace ShoppingBuyAll.clases
             return _BD.consulta(sql);
         }
 
+        public DataTable buscar_EstacionamientoFiltadoAuto(string comando)
+        {
+            string sql = @"SELECT E.patente_1 AS 'Patente',E.nro_doc2 AS 'Numero Documento',E.fecha AS 'Fecha de Ingreso',E.hora_desde as 'Hora Ingreso',E.hora_hasta AS 'Hora Egreso',
+                           P.nombre AS 'Playa',E.nro_estac AS 'Lugar numero'
+                           FROM EstacXCliente E JOIN Playa P ON P.id_playa = E.id_playa1" + comando;
+            MessageBox.Show(sql);
+            return _BD.consulta(sql);
+        }
+
 
     }
 }
