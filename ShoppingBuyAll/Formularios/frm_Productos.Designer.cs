@@ -47,6 +47,8 @@
             this.radioButtonPrecio = new System.Windows.Forms.RadioButton();
             this.groupBoxFiltros = new System.Windows.Forms.GroupBox();
             this.btnBuscarPrecio = new System.Windows.Forms.Button();
+            this.radioButtonNombre = new System.Windows.Forms.RadioButton();
+            this.btnBuscarNombre = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBusqueda)).BeginInit();
             this.groupBoxFiltros.SuspendLayout();
             this.SuspendLayout();
@@ -56,9 +58,10 @@
             this.lbl_Precio.AutoSize = true;
             this.lbl_Precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Precio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Precio.Location = new System.Drawing.Point(129, 233);
+            this.lbl_Precio.Location = new System.Drawing.Point(194, 358);
+            this.lbl_Precio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Precio.Name = "lbl_Precio";
-            this.lbl_Precio.Size = new System.Drawing.Size(59, 20);
+            this.lbl_Precio.Size = new System.Drawing.Size(89, 29);
             this.lbl_Precio.TabIndex = 61;
             this.lbl_Precio.Text = "Precio";
             // 
@@ -67,9 +70,10 @@
             this.lbl_Productos.AutoSize = true;
             this.lbl_Productos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Productos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_Productos.Location = new System.Drawing.Point(129, 103);
+            this.lbl_Productos.Location = new System.Drawing.Point(194, 158);
+            this.lbl_Productos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Productos.Name = "lbl_Productos";
-            this.lbl_Productos.Size = new System.Drawing.Size(124, 24);
+            this.lbl_Productos.Size = new System.Drawing.Size(190, 33);
             this.lbl_Productos.TabIndex = 60;
             this.lbl_Productos.Text = "PRODUCTO";
             // 
@@ -78,9 +82,10 @@
             this.lbl_NombreProducto.AutoSize = true;
             this.lbl_NombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_NombreProducto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_NombreProducto.Location = new System.Drawing.Point(129, 198);
+            this.lbl_NombreProducto.Location = new System.Drawing.Point(194, 305);
+            this.lbl_NombreProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_NombreProducto.Name = "lbl_NombreProducto";
-            this.lbl_NombreProducto.Size = new System.Drawing.Size(71, 20);
+            this.lbl_NombreProducto.Size = new System.Drawing.Size(107, 29);
             this.lbl_NombreProducto.TabIndex = 59;
             this.lbl_NombreProducto.Text = "Nombre";
             // 
@@ -89,9 +94,10 @@
             this.lbl_CodProducto.AutoSize = true;
             this.lbl_CodProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_CodProducto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_CodProducto.Location = new System.Drawing.Point(129, 163);
+            this.lbl_CodProducto.Location = new System.Drawing.Point(194, 251);
+            this.lbl_CodProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_CodProducto.Name = "lbl_CodProducto";
-            this.lbl_CodProducto.Size = new System.Drawing.Size(65, 20);
+            this.lbl_CodProducto.Size = new System.Drawing.Size(98, 29);
             this.lbl_CodProducto.TabIndex = 58;
             this.lbl_CodProducto.Text = "Codigo";
             // 
@@ -99,9 +105,10 @@
             // 
             this.btn_BuscarCod.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_BuscarCod.BackgroundImage")));
             this.btn_BuscarCod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_BuscarCod.Location = new System.Drawing.Point(400, 164);
+            this.btn_BuscarCod.Location = new System.Drawing.Point(600, 252);
+            this.btn_BuscarCod.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_BuscarCod.Name = "btn_BuscarCod";
-            this.btn_BuscarCod.Size = new System.Drawing.Size(26, 26);
+            this.btn_BuscarCod.Size = new System.Drawing.Size(39, 40);
             this.btn_BuscarCod.TabIndex = 70;
             this.btn_BuscarCod.UseVisualStyleBackColor = true;
             this.btn_BuscarCod.Visible = false;
@@ -117,9 +124,10 @@
             this.boton_Buscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.boton_Buscar.Image = ((System.Drawing.Image)(resources.GetObject("boton_Buscar.Image")));
             this.boton_Buscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.boton_Buscar.Location = new System.Drawing.Point(715, 318);
+            this.boton_Buscar.Location = new System.Drawing.Point(1072, 489);
+            this.boton_Buscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Buscar.Name = "boton_Buscar";
-            this.boton_Buscar.Size = new System.Drawing.Size(136, 30);
+            this.boton_Buscar.Size = new System.Drawing.Size(204, 46);
             this.boton_Buscar.TabIndex = 69;
             this.boton_Buscar.Text = "Buscar";
             this.boton_Buscar.UseVisualStyleBackColor = false;
@@ -135,9 +143,10 @@
             this.boton_Eliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.boton_Eliminar.Image = ((System.Drawing.Image)(resources.GetObject("boton_Eliminar.Image")));
             this.boton_Eliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.boton_Eliminar.Location = new System.Drawing.Point(531, 318);
+            this.boton_Eliminar.Location = new System.Drawing.Point(796, 489);
+            this.boton_Eliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Eliminar.Name = "boton_Eliminar";
-            this.boton_Eliminar.Size = new System.Drawing.Size(136, 30);
+            this.boton_Eliminar.Size = new System.Drawing.Size(204, 46);
             this.boton_Eliminar.TabIndex = 68;
             this.boton_Eliminar.Text = "Eliminar";
             this.boton_Eliminar.UseVisualStyleBackColor = false;
@@ -153,9 +162,10 @@
             this.boton_Modi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.boton_Modi.Image = ((System.Drawing.Image)(resources.GetObject("boton_Modi.Image")));
             this.boton_Modi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.boton_Modi.Location = new System.Drawing.Point(379, 318);
+            this.boton_Modi.Location = new System.Drawing.Point(568, 489);
+            this.boton_Modi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Modi.Name = "boton_Modi";
-            this.boton_Modi.Size = new System.Drawing.Size(146, 30);
+            this.boton_Modi.Size = new System.Drawing.Size(219, 46);
             this.boton_Modi.TabIndex = 67;
             this.boton_Modi.Text = "Modificar";
             this.boton_Modi.UseVisualStyleBackColor = false;
@@ -171,9 +181,10 @@
             this.boton_Agregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.boton_Agregar.Image = ((System.Drawing.Image)(resources.GetObject("boton_Agregar.Image")));
             this.boton_Agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.boton_Agregar.Location = new System.Drawing.Point(212, 318);
+            this.boton_Agregar.Location = new System.Drawing.Point(318, 489);
+            this.boton_Agregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Agregar.Name = "boton_Agregar";
-            this.boton_Agregar.Size = new System.Drawing.Size(146, 30);
+            this.boton_Agregar.Size = new System.Drawing.Size(219, 46);
             this.boton_Agregar.TabIndex = 66;
             this.boton_Agregar.Text = "Agregar";
             this.boton_Agregar.UseVisualStyleBackColor = false;
@@ -189,9 +200,10 @@
             this.boton_Nuevo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.boton_Nuevo.Image = ((System.Drawing.Image)(resources.GetObject("boton_Nuevo.Image")));
             this.boton_Nuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.boton_Nuevo.Location = new System.Drawing.Point(62, 318);
+            this.boton_Nuevo.Location = new System.Drawing.Point(93, 489);
+            this.boton_Nuevo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Nuevo.Name = "boton_Nuevo";
-            this.boton_Nuevo.Size = new System.Drawing.Size(136, 30);
+            this.boton_Nuevo.Size = new System.Drawing.Size(204, 46);
             this.boton_Nuevo.TabIndex = 65;
             this.boton_Nuevo.Text = "Nuevo";
             this.boton_Nuevo.UseVisualStyleBackColor = false;
@@ -206,10 +218,11 @@
             this.txt_PrecioProducto._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.numero;
             this.txt_PrecioProducto._validable = true;
             this.txt_PrecioProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PrecioProducto.Location = new System.Drawing.Point(210, 233);
+            this.txt_PrecioProducto.Location = new System.Drawing.Point(315, 358);
+            this.txt_PrecioProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_PrecioProducto.MaxLength = 5;
             this.txt_PrecioProducto.Name = "txt_PrecioProducto";
-            this.txt_PrecioProducto.Size = new System.Drawing.Size(98, 26);
+            this.txt_PrecioProducto.Size = new System.Drawing.Size(145, 35);
             this.txt_PrecioProducto.TabIndex = 64;
             this.txt_PrecioProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
@@ -222,10 +235,11 @@
             this.txt_NombreProducto._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
             this.txt_NombreProducto._validable = true;
             this.txt_NombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NombreProducto.Location = new System.Drawing.Point(210, 198);
+            this.txt_NombreProducto.Location = new System.Drawing.Point(315, 305);
+            this.txt_NombreProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_NombreProducto.MaxLength = 20;
             this.txt_NombreProducto.Name = "txt_NombreProducto";
-            this.txt_NombreProducto.Size = new System.Drawing.Size(184, 26);
+            this.txt_NombreProducto.Size = new System.Drawing.Size(274, 35);
             this.txt_NombreProducto.TabIndex = 63;
             this.txt_NombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Letra_KeyPress);
             // 
@@ -238,19 +252,21 @@
             this.txt_CodigoProducto._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.numero;
             this.txt_CodigoProducto._validable = true;
             this.txt_CodigoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CodigoProducto.Location = new System.Drawing.Point(210, 163);
+            this.txt_CodigoProducto.Location = new System.Drawing.Point(315, 251);
+            this.txt_CodigoProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_CodigoProducto.MaxLength = 10;
             this.txt_CodigoProducto.Name = "txt_CodigoProducto";
-            this.txt_CodigoProducto.Size = new System.Drawing.Size(184, 26);
+            this.txt_CodigoProducto.Size = new System.Drawing.Size(274, 35);
             this.txt_CodigoProducto.TabIndex = 62;
             this.txt_CodigoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // dataGridBusqueda
             // 
             this.dataGridBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridBusqueda.Location = new System.Drawing.Point(455, 51);
+            this.dataGridBusqueda.Location = new System.Drawing.Point(682, 78);
+            this.dataGridBusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridBusqueda.Name = "dataGridBusqueda";
-            this.dataGridBusqueda.Size = new System.Drawing.Size(424, 249);
+            this.dataGridBusqueda.Size = new System.Drawing.Size(636, 383);
             this.dataGridBusqueda.TabIndex = 71;
             // 
             // radioButtonCodigo
@@ -258,9 +274,10 @@
             this.radioButtonCodigo.AutoSize = true;
             this.radioButtonCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonCodigo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonCodigo.Location = new System.Drawing.Point(18, 34);
+            this.radioButtonCodigo.Location = new System.Drawing.Point(27, 52);
+            this.radioButtonCodigo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButtonCodigo.Name = "radioButtonCodigo";
-            this.radioButtonCodigo.Size = new System.Drawing.Size(103, 17);
+            this.radioButtonCodigo.Size = new System.Drawing.Size(153, 24);
             this.radioButtonCodigo.TabIndex = 72;
             this.radioButtonCodigo.TabStop = true;
             this.radioButtonCodigo.Text = "POR CODIGO";
@@ -272,9 +289,10 @@
             this.radioButtonPrecio.AutoSize = true;
             this.radioButtonPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonPrecio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonPrecio.Location = new System.Drawing.Point(18, 57);
+            this.radioButtonPrecio.Location = new System.Drawing.Point(27, 88);
+            this.radioButtonPrecio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButtonPrecio.Name = "radioButtonPrecio";
-            this.radioButtonPrecio.Size = new System.Drawing.Size(101, 17);
+            this.radioButtonPrecio.Size = new System.Drawing.Size(148, 24);
             this.radioButtonPrecio.TabIndex = 73;
             this.radioButtonPrecio.TabStop = true;
             this.radioButtonPrecio.Text = "POR PRECIO";
@@ -283,12 +301,15 @@
             // 
             // groupBoxFiltros
             // 
+            this.groupBoxFiltros.Controls.Add(this.radioButtonNombre);
             this.groupBoxFiltros.Controls.Add(this.radioButtonCodigo);
             this.groupBoxFiltros.Controls.Add(this.radioButtonPrecio);
             this.groupBoxFiltros.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBoxFiltros.Location = new System.Drawing.Point(715, 354);
+            this.groupBoxFiltros.Location = new System.Drawing.Point(1072, 545);
+            this.groupBoxFiltros.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBoxFiltros.Name = "groupBoxFiltros";
-            this.groupBoxFiltros.Size = new System.Drawing.Size(161, 100);
+            this.groupBoxFiltros.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxFiltros.Size = new System.Drawing.Size(242, 186);
             this.groupBoxFiltros.TabIndex = 74;
             this.groupBoxFiltros.TabStop = false;
             this.groupBoxFiltros.Text = "FILTROS";
@@ -298,20 +319,50 @@
             // 
             this.btnBuscarPrecio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscarPrecio.BackgroundImage")));
             this.btnBuscarPrecio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscarPrecio.Location = new System.Drawing.Point(314, 234);
+            this.btnBuscarPrecio.Location = new System.Drawing.Point(471, 360);
+            this.btnBuscarPrecio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBuscarPrecio.Name = "btnBuscarPrecio";
-            this.btnBuscarPrecio.Size = new System.Drawing.Size(26, 26);
+            this.btnBuscarPrecio.Size = new System.Drawing.Size(39, 40);
             this.btnBuscarPrecio.TabIndex = 75;
             this.btnBuscarPrecio.UseVisualStyleBackColor = true;
             this.btnBuscarPrecio.Visible = false;
             this.btnBuscarPrecio.Click += new System.EventHandler(this.btnBuscarPrecio_Click);
             // 
+            // radioButtonNombre
+            // 
+            this.radioButtonNombre.AutoSize = true;
+            this.radioButtonNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonNombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButtonNombre.Location = new System.Drawing.Point(27, 122);
+            this.radioButtonNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonNombre.Name = "radioButtonNombre";
+            this.radioButtonNombre.Size = new System.Drawing.Size(159, 24);
+            this.radioButtonNombre.TabIndex = 74;
+            this.radioButtonNombre.TabStop = true;
+            this.radioButtonNombre.Text = "POR NOMBRE";
+            this.radioButtonNombre.UseVisualStyleBackColor = true;
+            this.radioButtonNombre.CheckedChanged += new System.EventHandler(this.radioButtonNombre_CheckedChanged);
+            // 
+            // btnBuscarNombre
+            // 
+            this.btnBuscarNombre.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscarNombre.BackgroundImage")));
+            this.btnBuscarNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscarNombre.Location = new System.Drawing.Point(600, 302);
+            this.btnBuscarNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBuscarNombre.Name = "btnBuscarNombre";
+            this.btnBuscarNombre.Size = new System.Drawing.Size(39, 40);
+            this.btnBuscarNombre.TabIndex = 76;
+            this.btnBuscarNombre.UseVisualStyleBackColor = true;
+            this.btnBuscarNombre.Visible = false;
+            this.btnBuscarNombre.Click += new System.EventHandler(this.btnBuscarNombre_Click);
+            // 
             // frm_Productos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(932, 484);
+            this.ClientSize = new System.Drawing.Size(1398, 745);
+            this.Controls.Add(this.btnBuscarNombre);
             this.Controls.Add(this.btnBuscarPrecio);
             this.Controls.Add(this.groupBoxFiltros);
             this.Controls.Add(this.dataGridBusqueda);
@@ -329,6 +380,7 @@
             this.Controls.Add(this.lbl_NombreProducto);
             this.Controls.Add(this.lbl_CodProducto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frm_Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frm_Productos";
@@ -360,5 +412,7 @@
         private System.Windows.Forms.RadioButton radioButtonPrecio;
         private System.Windows.Forms.GroupBox groupBoxFiltros;
         private System.Windows.Forms.Button btnBuscarPrecio;
+        private System.Windows.Forms.RadioButton radioButtonNombre;
+        private System.Windows.Forms.Button btnBuscarNombre;
     }
 }

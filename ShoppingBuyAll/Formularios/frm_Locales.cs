@@ -112,13 +112,14 @@ namespace ShoppingBuyAll.Formularios
                 txt_Nombre_Local.Text = tabla.Rows[0]["nombre"].ToString();
                 cmb_Tipo_Loc.SelectedValue = tabla.Rows[0]["tipo_Comercio1"];
                 btn_Buscar_CUIL.Visible = false;
+
             }
             else
             {
                 MessageBox.Show("El local solicitado no se encuetra en el sistema");
             }
 
-            txt_Cuil.Enabled = false;
+            txt_Cuil.Enabled = true;
             txt_Nombre_Local.Enabled = true;
             cmb_Tipo_Loc.Enabled = true;
             btn_Buscar_CUIL.Visible = false;

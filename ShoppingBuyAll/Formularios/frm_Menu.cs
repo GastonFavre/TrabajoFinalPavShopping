@@ -184,6 +184,11 @@ namespace ShoppingBuyAll
             AbrirFormaHija(new frm_Reporte());
         }
 
+        private void panel_contenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         protected override void WndProc(ref Message msj)
         {
             const int CoordenadaWFP = 0x84; //ibicacion de la parte derecha inferior del form

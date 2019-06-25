@@ -36,6 +36,7 @@ namespace ShoppingBuyAll.Formularios
         }
         private void boton_Nuevo_Click(object sender, EventArgs e)
         {
+            groupBoxFiltros.Visible = false;
             btn_BuscarCod.Visible = false;
             this.blanquear_objetos();
             txt_CodigoProducto.Enabled = true;
@@ -230,6 +231,47 @@ namespace ShoppingBuyAll.Formularios
             btn_BuscarCod.Visible = false;
             radioButtonPrecio.Checked = false;
 
+        }
+
+        private void radioButtonNombre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonNombre.Checked == true)
+            {
+                btnBuscarPrecio.Visible = false;
+                txt_PrecioProducto.Enabled = false;
+                btn_BuscarCod.Visible = false;
+                txt_NombreProducto.Enabled = true;
+                txt_CodigoProducto.Enabled = false;
+                btnBuscarNombre.Visible = true;
+                dataGridBusqueda.DataSource = "";
+                txt_NombreProducto.Text = "";
+
+            }
+        }
+
+        private void btnBuscarNombre_Click(object sender, EventArgs e)
+        {
+            if (txt_NombreProducto.Text == "")
+            {
+                MessageBox.Show("Nombre de producto no ingresado");
+                return;
+            }
+
+            DataTable tabla = new DataTable();
+            tabla = this.producto.buscar_producto_nombre(this.txt_NombreProducto.Text.Trim());
+            if (tabla.Rows.Count == 1)
+            {
+                //Esta linea de codigo de abajo es para cuando modificamos el producto
+                dataGridBusqueda.DataSource = tabla;
+            }
+            else
+            {
+                MessageBox.Show("No existen productos con el nombre ingresado");
+            }
+            txt_NombreProducto.Enabled = true;
+            txt_PrecioProducto.Enabled = true;
+            btnBuscarNombre.Visible = false;
+            radioButtonNombre.Checked = false;
         }
     }
     }

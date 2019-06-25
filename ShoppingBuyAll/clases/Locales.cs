@@ -41,7 +41,7 @@ namespace ShoppingBuyAll.Formularios
             }
             else
             {
-                string sql_eliminar = "DELETE FROM clientes WHERE cuil = " + cuil;
+                string sql_eliminar = "DELETE FROM Locales WHERE cuil = " + cuil;
                 _BD.grabar_modificar(sql_eliminar);
                 MessageBox.Show("El Local ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
