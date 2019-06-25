@@ -125,6 +125,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetProductos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datos\DSAutomoviles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAutomoviles.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datos\DSEstacCliente.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -230,6 +235,12 @@
     </Compile>
     <Compile Include="Formularios\frm_InformeClientesXSexo.Designer.cs">
       <DependentUpon>frm_InformeClientesXSexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_ReporteAutomoviles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_ReporteAutomoviles.Designer.cs">
+      <DependentUpon>frm_ReporteAutomoviles.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frm_ReporteLocalesxTipo.cs">
       <SubType>Form</SubType>
@@ -376,6 +387,9 @@
     <EmbeddedResource Include="Formularios\frm_InformeClientesXSexo.resx">
       <DependentUpon>frm_InformeClientesXSexo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_ReporteAutomoviles.resx">
+      <DependentUpon>frm_ReporteAutomoviles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_ReporteLocalesxTipo.resx">
       <DependentUpon>frm_ReporteLocalesxTipo.cs</DependentUpon>
     </EmbeddedResource>
@@ -428,10 +442,11 @@
       <DependentUpon>frm_Compras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informes\ClientesXSexo.rdlc" />
+    <EmbeddedResource Include="Informes\InformeAutomoviles.rdlc" />
     <EmbeddedResource Include="Informes\InformeClientes.rdlc" />
     <EmbeddedResource Include="Informes\InformeEstacCliente.rdlc" />
     <EmbeddedResource Include="Informes\InformeVentasXLocal.rdlc" />
-    <EmbeddedResource Include="Informes\InformeVentasXLocla.rdlc" />
+    <EmbeddedResource Include="Informes\Infr.rdlc" />
     <EmbeddedResource Include="Informes\InfromeProductosMasVendidos.rdlc" />
     <EmbeddedResource Include="Informes\Report1.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -465,6 +480,17 @@
     </None>
     <None Include="Datos\DataSetProductos.xss">
       <DependentUpon>DataSetProductos.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\DSAutomoviles.xsc">
+      <DependentUpon>DSAutomoviles.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\DSAutomoviles.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAutomoviles.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\DSAutomoviles.xss">
+      <DependentUpon>DSAutomoviles.xsd</DependentUpon>
     </None>
     <None Include="Datos\DSEstacCliente.xsc">
       <DependentUpon>DSEstacCliente.xsd</DependentUpon>

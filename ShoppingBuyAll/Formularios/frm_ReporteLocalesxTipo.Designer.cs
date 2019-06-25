@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.dSLocalesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSLocales = new ShoppingBuyAll.Datos.DSLocales();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -53,9 +53,9 @@
             // 
             this.reportViewer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.reportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.dSLocalesBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.dSLocalesBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ShoppingBuyAll.Informes.InformeVentasXLocal.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 69);
             this.reportViewer1.Name = "reportViewer1";
@@ -67,7 +67,7 @@
             // 
             this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Salir.Location = new System.Drawing.Point(1273, 561);
+            this.btn_Salir.Location = new System.Drawing.Point(878, 34);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(90, 29);
             this.btn_Salir.TabIndex = 2;

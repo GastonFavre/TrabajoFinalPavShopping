@@ -84,5 +84,13 @@ namespace ShoppingBuyAll.clases
             MessageBox.Show(sql);
             return _BD.consulta(sql);
         }
+
+        public DataTable topProductos()
+        {
+            string sql = @"SELECT TOP(5) p.nombre as descriptor, SUM (D.cantidad) as dato FROM
+                         Productos p JOIN DetalleCompras D ON D.cod_prod1 = p.cod_prod
+                         GROUP BY p.nombre, p.cod_prod";
+            return _BD.consulta(sql);
+        }
     }
 }

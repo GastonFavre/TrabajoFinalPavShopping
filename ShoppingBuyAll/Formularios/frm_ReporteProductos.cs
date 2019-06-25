@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ShoppingBuyAll.clases;
 
 namespace ShoppingBuyAll.Formularios
 {
@@ -16,11 +17,19 @@ namespace ShoppingBuyAll.Formularios
         {
             InitializeComponent();
         }
+        Producto obj_producto = new Producto();
+
 
         private void frm_ReporteProductos_Load(object sender, EventArgs e)
         {
-
+            DataTable tabla = obj_producto.topProductos();
+            this.topProductosBindingSource.DataSource = tabla;
             this.reportViewer1.RefreshReport();
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }
