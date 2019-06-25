@@ -59,6 +59,9 @@ namespace ShoppingBuyAll.clases
 
         }
 
+        
+
+
         //validar el objeto autoCliente
         public Validar.estado_validacion validar_autoCliente(Control.ControlCollection controles)
         {
@@ -140,6 +143,11 @@ namespace ShoppingBuyAll.clases
             return _BD.consulta(sql);
         }
 
+        public DataTable descripcion_TIPODOC(string tipoDoc)
+        {
+            string sql = @"SELECT T.descripcion AS 'descripcion' FROM Tipo_Documento T WHERE T.id_doc = '" + tipoDoc + "';"; 
 
+            return _BD.consulta(sql);
+        }
     }
 }

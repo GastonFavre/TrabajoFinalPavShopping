@@ -45,6 +45,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.tipoDocumento = new System.Windows.Forms.TextBox();
+            this.txt_horaDesde = new ShoppingBuyAll.Componentes.MaskedTextBokDeControl(this.components);
             this.txt_Estacionamiento = new ShoppingBuyAll.Componentes.MaskedTextBokDeControl(this.components);
             this.cmb_IdPlaya = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.dt_fecha_entrada = new ShoppingBuyAll.Componentes.MaskedTextBokDeControl(this.components);
@@ -53,7 +55,6 @@
             this.txt_nomCliente = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_nroDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_patente = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_horaDesde = new ShoppingBuyAll.Componentes.MaskedTextBokDeControl(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -243,6 +244,32 @@
             this.label11.TabIndex = 98;
             this.label11.Text = "N° Estacionamiento";
             // 
+            // tipoDocumento
+            // 
+            this.tipoDocumento.Enabled = false;
+            this.tipoDocumento.Location = new System.Drawing.Point(365, 259);
+            this.tipoDocumento.Multiline = true;
+            this.tipoDocumento.Name = "tipoDocumento";
+            this.tipoDocumento.Size = new System.Drawing.Size(122, 26);
+            this.tipoDocumento.TabIndex = 105;
+            // 
+            // txt_horaDesde
+            // 
+            this.txt_horaDesde._campo = "hora_desde";
+            this.txt_horaDesde._mensaje_error = "No se Ingreso una hora de entrada";
+            this.txt_horaDesde._nombre_tabla = "EstacXCliente";
+            this.txt_horaDesde._pk = true;
+            this.txt_horaDesde._tipo = ShoppingBuyAll.Componentes.MaskedTextBokDeControl.Tipo_dato.hora;
+            this.txt_horaDesde._validable = true;
+            this.txt_horaDesde.Enabled = false;
+            this.txt_horaDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_horaDesde.Location = new System.Drawing.Point(365, 472);
+            this.txt_horaDesde.Mask = "00:00";
+            this.txt_horaDesde.Name = "txt_horaDesde";
+            this.txt_horaDesde.Size = new System.Drawing.Size(50, 26);
+            this.txt_horaDesde.TabIndex = 2;
+            this.txt_horaDesde.ValidatingType = typeof(System.DateTime);
+            // 
             // txt_Estacionamiento
             // 
             this.txt_Estacionamiento._campo = "nro_estac";
@@ -298,11 +325,12 @@
             this.cmb_tipoDoc._validable = true;
             this.cmb_tipoDoc.Enabled = false;
             this.cmb_tipoDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_tipoDoc.Location = new System.Drawing.Point(365, 265);
+            this.cmb_tipoDoc.Location = new System.Drawing.Point(46, 53);
             this.cmb_tipoDoc.MaxLength = 8;
             this.cmb_tipoDoc.Name = "cmb_tipoDoc";
             this.cmb_tipoDoc.Size = new System.Drawing.Size(122, 26);
             this.cmb_tipoDoc.TabIndex = 103;
+            this.cmb_tipoDoc.Visible = false;
             // 
             // txt_apellido
             // 
@@ -367,29 +395,13 @@
             this.txt_patente.Size = new System.Drawing.Size(122, 26);
             this.txt_patente.TabIndex = 0;
             // 
-            // txt_horaDesde
-            // 
-            this.txt_horaDesde._campo = "hora_desde";
-            this.txt_horaDesde._mensaje_error = "No se Ingreso una hora de entrada";
-            this.txt_horaDesde._nombre_tabla = "EstacXCliente";
-            this.txt_horaDesde._pk = true;
-            this.txt_horaDesde._tipo = ShoppingBuyAll.Componentes.MaskedTextBokDeControl.Tipo_dato.hora;
-            this.txt_horaDesde._validable = true;
-            this.txt_horaDesde.Enabled = false;
-            this.txt_horaDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txt_horaDesde.Location = new System.Drawing.Point(365, 472);
-            this.txt_horaDesde.Mask = "00:00";
-            this.txt_horaDesde.Name = "txt_horaDesde";
-            this.txt_horaDesde.Size = new System.Drawing.Size(50, 26);
-            this.txt_horaDesde.TabIndex = 2;
-            this.txt_horaDesde.ValidatingType = typeof(System.DateTime);
-            // 
             // Ingreso_Estacionamiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.tipoDocumento);
             this.Controls.Add(this.txt_horaDesde);
             this.Controls.Add(this.txt_Estacionamiento);
             this.Controls.Add(this.cmb_IdPlaya);
@@ -451,5 +463,6 @@
         private Componentes.ComboBoxDeControl cmb_IdPlaya;
         private Componentes.MaskedTextBokDeControl txt_Estacionamiento;
         private Componentes.MaskedTextBokDeControl txt_horaDesde;
+        private System.Windows.Forms.TextBox tipoDocumento;
     }
 }
