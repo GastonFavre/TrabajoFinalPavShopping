@@ -495,8 +495,12 @@ namespace ShoppingBuyAll.clases
                         break;
                 }
             }
-
-            string sql_buscar = @"SELECT * FROM " + nombre_tabla + " WHERE " + columnasComp;
+            string sql_buscar = @"SELECT T.descripcion AS 'Tipo Doc', C.num_doc AS 'Num Doc', C.apellido AS 'Apellido', C.nombres AS 'Nombre', B.nombre 'Barrio', E.nombre AS 'Estado Civil', S.nombre AS 'Sexo', c.fecha_nacim AS 'Nacimiento'
+                                    FROM clientes  C JOIN Sexo S ON sexo1 = id_sex
+                                                     JOIN Barrio B ON id_barrio1 = id_barrio
+                                                     JOIN Estado_Civil E ON estado_civil1 = id_estado
+                                                     JOIN Tipo_Documento T ON tipo_doc1 = id_doc
+                                    WHERE " + columnasComp;
             return this.consulta(sql_buscar);
 
         }
