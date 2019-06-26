@@ -183,7 +183,7 @@
             this.btn_confirmar.Location = new System.Drawing.Point(627, 589);
             this.btn_confirmar.Name = "btn_confirmar";
             this.btn_confirmar.Size = new System.Drawing.Size(120, 34);
-            this.btn_confirmar.TabIndex = 89;
+            this.btn_confirmar.TabIndex = 5;
             this.btn_confirmar.Text = "Confirmar";
             this.toolTip1.SetToolTip(this.btn_confirmar, "Confirmar ingreso");
             this.btn_confirmar.UseVisualStyleBackColor = false;
@@ -199,7 +199,7 @@
             this.btn_cancelar.Location = new System.Drawing.Point(765, 589);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(120, 34);
-            this.btn_cancelar.TabIndex = 92;
+            this.btn_cancelar.TabIndex = 6;
             this.btn_cancelar.Text = "Salir";
             this.toolTip1.SetToolTip(this.btn_cancelar, "Volver al menu");
             this.btn_cancelar.UseVisualStyleBackColor = false;
@@ -271,7 +271,7 @@
             this.txt_horaDesde.Location = new System.Drawing.Point(365, 472);
             this.txt_horaDesde.Mask = "00:00";
             this.txt_horaDesde.Name = "txt_horaDesde";
-            this.txt_horaDesde.Size = new System.Drawing.Size(50, 26);
+            this.txt_horaDesde.Size = new System.Drawing.Size(48, 26);
             this.txt_horaDesde.TabIndex = 2;
             this.txt_horaDesde.ValidatingType = typeof(System.DateTime);
             // 
@@ -288,7 +288,7 @@
             this.txt_Estacionamiento.Location = new System.Drawing.Point(756, 273);
             this.txt_Estacionamiento.Mask = "900";
             this.txt_Estacionamiento.Name = "txt_Estacionamiento";
-            this.txt_Estacionamiento.Size = new System.Drawing.Size(40, 26);
+            this.txt_Estacionamiento.Size = new System.Drawing.Size(34, 26);
             this.txt_Estacionamiento.TabIndex = 4;
             this.toolTip1.SetToolTip(this.txt_Estacionamiento, "Ingrese un numero con formato : 000");
             // 
@@ -304,7 +304,7 @@
             this.cmb_IdPlaya.FormattingEnabled = true;
             this.cmb_IdPlaya.Location = new System.Drawing.Point(756, 232);
             this.cmb_IdPlaya.Name = "cmb_IdPlaya";
-            this.cmb_IdPlaya.Size = new System.Drawing.Size(129, 28);
+            this.cmb_IdPlaya.Size = new System.Drawing.Size(122, 28);
             this.cmb_IdPlaya.TabIndex = 3;
             this.toolTip1.SetToolTip(this.cmb_IdPlaya, "Seleccionar playa");
             // 
@@ -321,7 +321,7 @@
             this.dt_fecha_entrada.Location = new System.Drawing.Point(364, 434);
             this.dt_fecha_entrada.Mask = "00/00/0000";
             this.dt_fecha_entrada.Name = "dt_fecha_entrada";
-            this.dt_fecha_entrada.Size = new System.Drawing.Size(89, 26);
+            this.dt_fecha_entrada.Size = new System.Drawing.Size(85, 26);
             this.dt_fecha_entrada.TabIndex = 2;
             this.dt_fecha_entrada.ValidatingType = typeof(System.DateTime);
             // 
@@ -415,7 +415,7 @@
             this.boton_cancelar.Location = new System.Drawing.Point(526, 226);
             this.boton_cancelar.Name = "boton_cancelar";
             this.boton_cancelar.Size = new System.Drawing.Size(27, 26);
-            this.boton_cancelar.TabIndex = 106;
+            this.boton_cancelar.TabIndex = 2;
             this.toolTip1.SetToolTip(this.boton_cancelar, "Cancelar");
             this.boton_cancelar.UseVisualStyleBackColor = true;
             this.boton_cancelar.Click += new System.EventHandler(this.boton_cancelar_Click);

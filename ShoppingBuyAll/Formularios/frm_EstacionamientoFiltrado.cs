@@ -127,10 +127,11 @@ namespace ShoppingBuyAll.Formularios
                 }
                 if (checkFechaIngreso.Checked)
                 {
-                    
-                    if (estacionamiento.validar_Automovil(this.Controls) == Validar.estado_validacion.erronea)
+                    DateTime fecha;
+
+                    if (!DateTime.TryParse(dt_fecha_entradaFiltrado.Text, out fecha) )                       
                     {
-                        MessageBox.Show("Se ecuentra seleccionada la opcion de filtrado fecha, por ende debe escribir una fecha.");
+                        MessageBox.Show("No se ingreso una fecha o la fecha ingresada esta incompleta\nporfavor ingrese nuevamente una fecha.");
                         dt_fecha_entradaFiltrado.Focus();
                         return;
                     }
