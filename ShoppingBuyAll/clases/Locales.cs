@@ -41,12 +41,25 @@ namespace ShoppingBuyAll.Formularios
             }
             else
             {
-                string sql_eliminar_rubrosLocal = "DELETE FROM LocalesXRubro WHERE cuil_local1 = " + cuil;
-                _BD.grabar_modificar(sql_eliminar_rubrosLocal);
-                MessageBox.Show("Los Rubros vinculados al local fueron eliminados correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                string sql_eliminar = "DELETE FROM Locales WHERE cuil = " + cuil;
-                _BD.grabar_modificar(sql_eliminar);
-                MessageBox.Show("El Local ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DataTable tabla_rubros = new DataTable();
+                tabla_rubros = buscar_rubros(cuil);
+                if (tabla_rubros.Rows.Count == 0)
+                {
+                    string sql_eliminar = "DELETE FROM Locales WHERE cuil = " + cuil;
+                    _BD.grabar_modificar(sql_eliminar);
+                    MessageBox.Show("El Local ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+
+                {
+                    string sql_eliminar_rubrosLocal = "DELETE FROM LocalesXRubro WHERE cuil_local1 = " + cuil;
+                    _BD.grabar_modificar(sql_eliminar_rubrosLocal);
+                    MessageBox.Show("Los Rubros vinculados al local fueron eliminados correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string sql_eliminar = "DELETE FROM Locales WHERE cuil = " + cuil;
+                    _BD.grabar_modificar(sql_eliminar);
+                    MessageBox.Show("El Local ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                
             }
         }
 
@@ -55,6 +68,12 @@ namespace ShoppingBuyAll.Formularios
             string sql_Buscar = @"SELECT * FROM Locales WHERE
                                     cuil= " + cuil;
             return this._BD.consulta(sql_Buscar);
+        }
+
+        public DataTable buscar_rubros(string cuil)
+        {
+            string sql_buscar = "SELECT * FROM LocalesXRubro WHERE cuil_local1 =" + cuil;
+            return this._BD.consulta(sql_buscar);
         }
 
         public DataTable buscar_local_filtrado(Control.ControlCollection controles)

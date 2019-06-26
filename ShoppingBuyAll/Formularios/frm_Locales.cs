@@ -42,7 +42,7 @@ namespace ShoppingBuyAll.Formularios
                 {
                     local.modificar_local(this.Controls);
                     MessageBox.Show("Local Modificado Correctamente", "Mensaje"
-                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);                  
                 }
 
             }
@@ -52,20 +52,34 @@ namespace ShoppingBuyAll.Formularios
         {
             _val.blanquear_objetos(this.Controls);
             txt_Cuil.Enabled = true;
+            cmb_Tipo_Loc.Enabled = true;
+            txt_Nombre_Local.Enabled = true;
+            btn_agregarRubro.Enabled = true;
+            btn_mostrarRubros.Enabled = true;
             this.txt_Cuil.Focus();
             dataGridView1.DataSource = "";
+            btn_Buscar_CUIL.Visible = false;
         }
 
         private void boton_Agregar_Click(object sender, EventArgs e)
         {
             if (local.validar_local(this.Controls) == Validar.estado_validacion.correcta)
             {
-                if (local.agregar_local(this.Controls) == true)
+                DataTable tabla = new DataTable();
+                tabla = this.local.buscar_local(txt_Cuil.Text.Trim());
+                if (tabla.Rows.Count == 0)
                 {
-                    MessageBox.Show("Local agregado correctamente", "Mensaje"
-                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    if (local.agregar_local(this.Controls) == true)
+                    {
+                        MessageBox.Show("Local agregado correctamente", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
-
+                else
+                {
+                    MessageBox.Show("El Local ya se encuentra en el sistema", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
         }
 
@@ -75,34 +89,24 @@ namespace ShoppingBuyAll.Formularios
         {
             if (this.txt_Cuil.Text != "")
             {
-                DataTable tabla_Localexistente = new DataTable();
-                tabla_Localexistente = this.local.buscar_local(txt_Cuil.Text.Trim());
-                if (tabla_Localexistente.Rows.Count == 0)
-                {
-                    MessageBox.Show("El Local que desea eliminar no existe.", "Mensaje"
-                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-                else
-                {
-                    DataTable tabla_LocalConRubros = new DataTable();
-                    tabla_Localexistente = this._BD.consulta("SELECT R.* FROM LocalesXRubro C WHERE cuil_local1 =" + txt_Cuil.Text.ToString());
-                    if (tabla_Localexistente.Rows.Count == 0)
-                    {
-                        this._BD.grabar_modificar("DELETE FROM LocalesXRubro WHERE cuil_local1=" + txt_Cuil.Text.ToString());
-                        local.eliminar_local(txt_Cuil.Text.Trim());
-                        MessageBox.Show("El Local se ha eliminado correctamente junto a sus rubros asociados", "Mensaje"
+                local.eliminar_local(txt_Cuil.Text.Trim());
+                _val.blanquear_objetos(this.Controls);
+                dataGridView1.DataSource = "";
+            }
+            else
+            {
+                MessageBox.Show("Debe Ingresar el CUIL para eliminar un local", "Mensaje"
                                 , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        _val.blanquear_objetos(this.Controls);
-                        dataGridView1.DataSource = "";
-                    }
-                }
+                txt_Cuil.Focus();
             }
         }
         private void boton_Buscar_Click(object sender, EventArgs e)
         {
             _val.blanquear_objetos(this.Controls);
+            dataGridView1.DataSource = "";
             txt_Nombre_Local.Enabled = false;
             cmb_Tipo_Loc.Enabled = false;
+            txt_Cuil.Enabled = true;
             btn_Buscar_CUIL.Visible = true;
             btn_agregarRubro.Enabled = false;
             btn_mostrarRubros.Enabled = false;
@@ -125,14 +129,16 @@ namespace ShoppingBuyAll.Formularios
                 txt_Nombre_Local.Text = tabla.Rows[0]["nombre"].ToString();
                 cmb_Tipo_Loc.SelectedValue = tabla.Rows[0]["tipo_Comercio1"];
                 btn_Buscar_CUIL.Visible = false;
-
+                btn_agregarRubro.Enabled = true;
+                btn_mostrarRubros.Enabled = true;
+                txt_Cuil.Enabled = false;
             }
             else
             {
                 MessageBox.Show("El local solicitado no se encuetra en el sistema");
+                _val.blanquear_objetos(this.Controls);
             }
 
-            txt_Cuil.Enabled = true;
             txt_Nombre_Local.Enabled = true;
             cmb_Tipo_Loc.Enabled = true;
             btn_Buscar_CUIL.Visible = false;
