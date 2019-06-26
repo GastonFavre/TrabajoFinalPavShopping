@@ -74,7 +74,7 @@ namespace ShoppingBuyAll
         {
 
             if (this.panel_contenedor.Controls.Count > 0)
-                this.panel_contenedor.Controls.RemoveAt(1);
+                this.panel_contenedor.Controls.RemoveAt(0);
             Form fh = formhija as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;

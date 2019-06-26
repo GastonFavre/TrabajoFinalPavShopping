@@ -20,21 +20,56 @@ namespace ShoppingBuyAll.Formularios
         }
 
         Facturas factura = new Facturas();
-
-        private void rb_Fecha_CheckedChanged(object sender, EventArgs e)
+        private void btn_CargarGrid_Click(object sender, EventArgs e)
         {
-            if (rb_Fecha.Checked)
+            
+        }
+
+        private void rb_numFactura_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rb_numFactura.Checked)
             {
-                txt_FechaDesde.Enabled = true;
-                txt_FechaHasta.Enabled = true;
-                txt_FechaDesde.Focus();
+                this.txt_NumFactura.Text = "";
+                this.txt_NumFactura.Visible = true;
+                dataGridView1.DataSource = "";
+                txt_NumFactura.Focus();
             }
             else
             {
-                txt_FechaDesde.Enabled = false;
-                txt_FechaHasta.Enabled = false;
-                txt_FechaDesde.Text = "";
-                txt_FechaHasta.Text = "";
+                this.txt_NumFactura.Visible = false;
+                dataGridView1.DataSource = "";
+            }
+        }
+
+        private void rb_Cliente_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rb_Cliente.Checked)
+            {
+                this.txt_Cliente.Text = "";
+                this.txt_Cliente.Visible = true;
+                dataGridView1.DataSource = "";
+                txt_Cliente.Focus();
+            }
+            else
+            {
+                this.txt_Cliente.Visible = false;
+                dataGridView1.DataSource = "";
+            }
+        }
+
+        private void rb_Fecha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rb_Fecha.Checked)
+            {
+                this.txt_Fecha.Text = "";
+                this.txt_Fecha.Visible = true;
+                dataGridView1.DataSource = "";
+                txt_Fecha.Focus();
+            }
+            else
+            {
+                this.txt_Fecha.Visible = false;
+                dataGridView1.DataSource = "";
             }
         }
 
@@ -42,182 +77,95 @@ namespace ShoppingBuyAll.Formularios
         {
             if (this.rb_MontoFactura.Checked)
             {
-                txt_PrecioDesde.Enabled = true;
-                txt_PrecioDesde.Focus();
+                this.txt_Precio.Text = "";
+                this.txt_Precio.Visible = true;
+                dataGridView1.DataSource = "";
+                txt_Precio.Focus();
             }
             else
             {
-                txt_PrecioDesde.Enabled = false;
-                txt_PrecioHasta.Enabled = false;
-                txt_PrecioDesde.Text = "";
-                txt_PrecioHasta.Text = "";
+                this.txt_Precio.Visible = false;
+                dataGridView1.DataSource = "";
             }
-        }
-
-        private void rb_Cliente_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rb_Cliente.Checked)
-            {
-                txt_Cliente.Enabled = true;
-                txt_Cliente.Focus();
-            }
-            else
-            {
-                txt_Cliente.Enabled = false;
-                txt_Cliente.Text = "";
-            }
-        }
-
-        private void rb_numFactura_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rb_numFactura.Checked)
-            {
-                txt_NumFactura.Enabled = true;
-                txt_NumFactura.Focus();
-            }
-            else
-            {
-                txt_NumFactura.Enabled = false;
-                txt_NumFactura.Text = "";
-            }
-        }
-
-        private void txt_PrecioDesde_TextChanged(object sender, EventArgs e)
-        {
-            txt_PrecioHasta.Enabled = true;
         }
 
         private void boton_Buscar_Click(object sender, EventArgs e)
         {
-            string comando_sql = "";
-            string comando_sql_having = "";
-
-            //CADENA DE NUMERO FACTURA
-            if (rb_numFactura.Checked)
+            if (txt_Fecha.Visible)
             {
-                if (txt_NumFactura.Text == "")
+                if (txt_Fecha.Text != "")
                 {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por codigo, por ende debe escribir un codigo.");
-                    txt_NumFactura.Focus();
-                    return;
+
+                    dataGridView1.DataSource = factura.buscar_Factura_Fecha(txt_Fecha.Text.Trim());
                 }
                 else
                 {
-                    comando_sql = comando_sql + " WHERE " + txt_NumFactura._campo + " = " + txt_NumFactura.Text.Trim();
+                    MessageBox.Show("Debe escribir algo para realizar la busqueda por filtro");
+                    return;
                 }
             }
-
-            //CADENA DE PRECIO
-            if (rb_MontoFactura.Checked)
+            if (txt_NumFactura.Visible)
             {
-
-                if (txt_PrecioDesde.Text == "")
+                if (txt_NumFactura.Text != "")
                 {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por precio, por ende debe escribir un precio desde y un precio hasta.");
-                    txt_PrecioDesde.Focus();
-                    return;
-                }
-                if (txt_PrecioHasta.Text == "")
-                {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por precio, por ende debe escribir un precio desde y un precio hasta.");
-                    txt_PrecioHasta.Focus();
-                    return;
-                }
-                if (int.Parse(txt_PrecioDesde.Text) > int.Parse(txt_PrecioHasta.Text))
-                {
-                    MessageBox.Show("El precio desde debe ser menor al precio hasta.");
-                    txt_PrecioDesde.Text = "";
-                    txt_PrecioHasta.Text = "";
-                    txt_PrecioDesde.Focus();
-                    return;
-                }
-                if (comando_sql_having == "")
-                {
-                    comando_sql_having = comando_sql_having + @"GROUP BY C.nro_factura, CL.nombres, CL.apellido
-                                                                HAVING SUM(P.precio * D.cantidad) BETWEEN " + txt_PrecioDesde.Text.Trim() + " AND " + txt_PrecioHasta.Text.Trim();
-                }
-
-            }
-
-            //CADENA DE CLIENTE
-            if (rb_Cliente.Checked)
-            {
-                if (txt_Cliente.Text == "")
-                {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por nombre, por ende debe escribir uno.");
-                    txt_Cliente.Focus();
-                    return;
-                }
-                if (comando_sql == "")
-                {
-                    comando_sql = comando_sql + " WHERE " + txt_Cliente._campo + " LIKE '%" + txt_Cliente.Text.Trim() + "%'";
+                    dataGridView1.DataSource = factura.buscar_Factura_Numero(txt_NumFactura.Text.Trim());
                 }
                 else
                 {
-                    comando_sql = comando_sql + " AND  " + txt_Cliente._campo + " LIKE '%" + txt_Cliente.Text.ToString() + "%'";
+                    MessageBox.Show("Debe escribir algo para realizar la busqueda por filtro");
+                    return;
                 }
             }
-
-            //CADENA DE FECHA
-            if (rb_Fecha.Checked)
+            if (txt_Precio.Visible)
             {
-
-                if (txt_FechaDesde.Text == "")
+                if (txt_Precio.Text != "")
                 {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por precio, por ende debe escribir un precio desde y un precio hasta.");
-                    txt_FechaDesde.Focus();
-                    return;
-                }
-                if (txt_FechaHasta.Text == "")
-                {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por precio, por ende debe escribir un precio desde y un precio hasta.");
-                    txt_FechaHasta.Focus();
-                    return;
-                }
-                if (comando_sql == "")
-                {
-                    comando_sql = comando_sql + " WHERE " + txt_FechaDesde._campo + " BETWEEN '" + txt_FechaDesde.Text.Trim() + "' AND '" + txt_FechaHasta.Text.Trim() + "'";
+                    dataGridView1.DataSource = factura.buscar_Factura_precio(txt_Precio.Text.Trim());
                 }
                 else
                 {
-                    comando_sql = comando_sql + " AND " + txt_FechaDesde._campo + " BETWEEN '" + txt_FechaDesde.Text.Trim() + "' AND '" + txt_FechaHasta.Text.Trim() + "'";
+                    MessageBox.Show("Debe escribir algo para realizar la busqueda por filtro");
+                    return;
                 }
-
             }
-
-            DataTable tabla = new DataTable();
-            tabla = factura.buscar_facturaFiltrado(comando_sql, comando_sql_having);
-            if (tabla.Rows.Count == 0)
+            if (txt_Cliente.Visible)
             {
-                MessageBox.Show("No se encuentra ningun producto segun la busqueda realizada.");
-            }
-            else
-            {
-                dataGridView1.DataSource = tabla;
+                if (txt_Cliente.Text != "")
+                {
+                    dataGridView1.DataSource = factura.buscar_Factura_Cliente(txt_Cliente.Text.Trim());
+                }
+                else
+                {
+                    MessageBox.Show("Debe escribir algo para realizar la busqueda por filtro");
+                    return;
+                }
             }
 
-
+            //int c = dataGridView1.Rows.Count;
+            //for (int i = 0; i < c-1; i++)
+            //{
+            //    if (i == 0)
+            //    {
+            //        dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+            //    }
+            //    else
+            //    {
+            //        if (dataGridView1.Rows[i].Cells[0].Value != dataGridView1.Rows[i - 1].Cells[0].Value)
+            //        {
+            //            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+            //        }
+            //        else
+            //        {
+            //            dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+            //        }
+            //    }
+                
+            //}
         }
 
-        private void btn_Limpiar_Click(object sender, EventArgs e)
+        private void frm_Facturas_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = "";
-            txt_Cliente.Enabled = false;
-            txt_Cliente.Text = "";
-            txt_FechaDesde.Enabled = false;
-            txt_FechaDesde.Text = "";
-            txt_FechaHasta.Enabled = false;
-            txt_FechaHasta.Text = "";
-            txt_NumFactura.Enabled = false;
-            txt_NumFactura.Text = "";
-            txt_PrecioDesde.Enabled = false;
-            txt_PrecioDesde.Text = "";
-            txt_PrecioHasta.Enabled = false;
-            txt_PrecioHasta.Text = "";
-            rb_Cliente.Checked = false;
-            rb_Fecha.Checked = false;
-            rb_MontoFactura.Checked = false;
-            rb_numFactura.Checked = false;
+
         }
     }
 }

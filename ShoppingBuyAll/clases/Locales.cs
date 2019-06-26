@@ -66,14 +66,5 @@ namespace ShoppingBuyAll.Formularios
                           ORDER BY T.descripcion";
             return _BD.consulta(sql);
         }
-
-
-        public DataTable ventasXLocal()
-        {
-            string sql = @"SELECT L.nombre as descriptor,  COUNT(*) as dato FROM Locales L JOIN ComprasXCliente C ON C.cuil_local1 = L.cuil
-                          GROUP BY L.nombre, L.cuil";
-
-            return _BD.consulta(sql);
-        }
     }  
 }

@@ -93,12 +93,5 @@ namespace ShoppingBuyAll.clases
             return _BD.consulta(sql);
         }
 
-        public DataTable autoXcliente()
-        {
-            string sql = @" SELECT TOP(5) C.nombres as descriptor, count(*) as dato FROM clientes C JOIN
-                         automoviles A ON A.num_doc1 = C.num_doc AND A.tipo_doc2 = C.tipo_doc1
-                         GROUP BY C.nombres, C.num_doc, C.tipo_doc1";
-            return _BD.consulta(sql);
-        }
     }
 }

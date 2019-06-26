@@ -20,8 +20,8 @@ namespace ShoppingBuyAll.Formularios
 
         private void frm_ListadoProductos_Load(object sender, EventArgs e)
         {
-            DataTable tabla = obj_local.ventasXLocal();
-            dSLocalesBindingSource.DataSource = tabla;
+            DataTable tabla = obj_local.localXTipo();
+            localXtipoBindingSource.DataSource = tabla;
             reportViewer1.RefreshReport();
             this.reportViewer1.RefreshReport();
         }

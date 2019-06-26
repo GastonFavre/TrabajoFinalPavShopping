@@ -262,35 +262,5 @@ namespace ShoppingBuyAll.Formularios
         {
             this.Dispose();
         }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_NumDoc_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_Ape_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_Nom_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

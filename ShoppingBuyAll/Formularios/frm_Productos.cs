@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ShoppingBuyAll.clases;
 using ShoppingBuyAll.Componentes;
-using ShoppingBuyAll.Formularios;
 
 namespace ShoppingBuyAll.Formularios
 {
@@ -273,19 +272,6 @@ namespace ShoppingBuyAll.Formularios
             txt_PrecioProducto.Enabled = true;
             btnBuscarNombre.Visible = false;
             radioButtonNombre.Checked = false;
-        }
-
-        private void btn_filtros_Click(object sender, EventArgs e)
-        {
-            frm_FiltrosProductos filtroProducto= new frm_FiltrosProductos();
-            AddOwnedForm(filtroProducto);
-            filtroProducto.FormBorderStyle = FormBorderStyle.None;
-            filtroProducto.TopLevel = false;
-            filtroProducto.Dock = DockStyle.Fill;
-            this.Controls.Add(filtroProducto);
-            this.Tag = filtroProducto;
-            filtroProducto.BringToFront();
-            filtroProducto.Show();
         }
     }
     }

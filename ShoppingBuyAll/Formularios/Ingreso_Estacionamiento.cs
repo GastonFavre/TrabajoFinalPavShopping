@@ -19,7 +19,6 @@ namespace ShoppingBuyAll.Formularios
         tipos_documento obj_tipo_doc = new tipos_documento();
         Validar _val = new Validar();
         Estacionamiento autoCliente = new Estacionamiento();
-        
 
         
 
@@ -36,9 +35,7 @@ namespace ShoppingBuyAll.Formularios
             DataTable tabla = new DataTable();
             DataTable tabla1 = new DataTable();
             DataTable tabla2 = new DataTable();
-            DataTable tablaTipoDoc = new DataTable();
             tabla = autoCliente.Consultar_Automovil_Cliente(txt_patente.Text.Trim());
-            
 
             if (this.txt_patente.Text == "" )
             {
@@ -56,25 +53,21 @@ namespace ShoppingBuyAll.Formularios
                         MessageBox.Show("El vehiculo ya se encuentra en el estacionamiento!");
                         return;
                     }
+     
+                    this.txt_patente.Text = tabla.Rows[0]["patente"].ToString();
 
-                    
-                    this.txt_nroDoc.Text = tabla.Rows[0]["num_doc1"].ToString();
                     this.cmb_tipoDoc.Text = tabla.Rows[0]["tipo_doc2"].ToString();
-
-                    tablaTipoDoc = autoCliente.descripcion_TIPODOC(cmb_tipoDoc.Text);
-                    tipoDocumento.Text = tablaTipoDoc.Rows[0]["descripcion"].ToString();
+                    this.txt_nroDoc.Text = tabla.Rows[0]["num_doc1"].ToString();
 
 
                     tabla1 = autoCliente.Consultar_Cliente(txt_nroDoc.Text);
                     this.txt_nomCliente.Text = tabla1.Rows[0]["nombres"].ToString();
                     this.txt_apellido.Text = tabla1.Rows[0]["apellido"].ToString();
 
-                    
+                    cmb_tipoDoc.Enabled = true;
                     cmb_IdPlaya.Enabled = true;
                     txt_Estacionamiento.Enabled = true;
                     txt_horaDesde.Text = DateTime.Now.ToShortTimeString();
-                    dt_fecha_entrada.Text = DateTime.Now.ToString("dd/MM/yyyy");
-                    
                     this.dt_fecha_entrada.Focus();
                 }
                 else
@@ -97,28 +90,21 @@ namespace ShoppingBuyAll.Formularios
         private void btn_confirmar_Click(object sender, EventArgs e)
         {
             
+            
 
-
-
-            if (autoCliente.validar_autoCliente(this.Controls) == Validar.estado_validacion.correcta && txt_patente.Text != "")
+            if (autoCliente.validar_autoCliente(this.Controls) == Validar.estado_validacion.correcta)
             {
                 autoCliente.agregar_enEstacionamiento(this.Controls);
-
+               
                 MessageBox.Show("Auto agregado correctamente en el \n estacionamiento", "Mensaje"
                                 , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this._val.blanquear_objetos(this.Controls);
-                tipoDocumento.Text = "";
+                dt_fecha_entrada.Text = DateTime.Now.ToShortDateString();
 
-
-            }
-            else
-            {
-                MessageBox.Show("No hay un numero de patente ingresado");
             }
 
             
             _val.blanquear_objetos(this.Controls);
-            tipoDocumento.Text = "";
 
         }
 
@@ -135,10 +121,6 @@ namespace ShoppingBuyAll.Formularios
         private void Ingreso_Estacionamiento_Load(object sender, EventArgs e)
         {
             this.cmb_IdPlaya.cargar("Playa", "id_playa", "nombre");
-            ;
-
         }
-
-        
     }
 }
