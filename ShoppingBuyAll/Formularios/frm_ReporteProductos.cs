@@ -16,11 +16,5 @@ namespace ShoppingBuyAll.Formularios
         {
             InitializeComponent();
         }
-
-        private void frm_ReporteProductos_Load(object sender, EventArgs e)
-        {
-
-            this.reportViewer1.RefreshReport();
-        }
     }
 }

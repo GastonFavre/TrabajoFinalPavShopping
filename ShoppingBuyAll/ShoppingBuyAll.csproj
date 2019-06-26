@@ -281,12 +281,6 @@
     <Compile Include="Formularios\frm_ReporteClientes.Designer.cs">
       <DependentUpon>frm_ReporteClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frm_ReporteProductos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frm_ReporteProductos.Designer.cs">
-      <DependentUpon>frm_ReporteProductos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\frm_RubroLocal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -391,9 +385,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_ReporteClientes.resx">
       <DependentUpon>frm_ReporteClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frm_ReporteProductos.resx">
-      <DependentUpon>frm_ReporteProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_RubroLocal.resx">
       <DependentUpon>frm_RubroLocal.cs</DependentUpon>
