@@ -149,7 +149,6 @@ namespace ShoppingBuyAll.Formularios
             txt_PrecioProducto.Enabled = true;
             btn_BuscarCod.Visible = false;
             radioButtonCodigo.Checked = false;
-            txt_CodigoProducto.Text = "";
         }
 
         private void txtNum_KeyPress(object sender, KeyPressEventArgs e)
@@ -191,7 +190,6 @@ namespace ShoppingBuyAll.Formularios
                 txt_NombreProducto.Enabled = false;
                 dataGridBusqueda.DataSource = "";
                 txt_PrecioProducto.Text = "";
-                btnBuscarNombre.Visible = false;
             }
         }
 
@@ -206,7 +204,6 @@ namespace ShoppingBuyAll.Formularios
                 txt_CodigoProducto.Enabled = false;
                 dataGridBusqueda.DataSource = "";
                 txt_CodigoProducto.Text = "";
-                btnBuscarNombre.Visible = false;
 
             }
         }
@@ -276,7 +273,6 @@ namespace ShoppingBuyAll.Formularios
             txt_PrecioProducto.Enabled = true;
             btnBuscarNombre.Visible = false;
             radioButtonNombre.Checked = false;
-            
         }
 
         private void btn_filtros_Click(object sender, EventArgs e)

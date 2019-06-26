@@ -76,6 +76,7 @@ namespace ShoppingBuyAll.Formularios
                     dt_fecha_entrada.Text = DateTime.Now.ToString("dd/MM/yyyy");
                     
                     this.dt_fecha_entrada.Focus();
+                    this.txt_patente.Enabled = false;
                 }
                 else
                 {
@@ -96,37 +97,47 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_confirmar_Click(object sender, EventArgs e)
         {
-            
 
-
-
-            if (autoCliente.validar_autoCliente(this.Controls) == Validar.estado_validacion.correcta && txt_patente.Text != "")
+            DataTable verificarLugar = new DataTable();
+            verificarLugar = autoCliente.verificarLugar(cmb_IdPlaya.SelectedIndex + 1, txt_Estacionamiento.Text);
+            if (verificarLugar.Rows.Count > 0)
             {
-                autoCliente.agregar_enEstacionamiento(this.Controls);
-
-                MessageBox.Show("Auto agregado correctamente en el \n estacionamiento", "Mensaje"
-                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                this._val.blanquear_objetos(this.Controls);
-                tipoDocumento.Text = "";
-
-
+                MessageBox.Show("[LUGAR OCUPADO] Porfavor ingrese otro\n numero de estacionamiento u otra Playa.");
+                txt_Estacionamiento.Focus();
             }
             else
             {
-                MessageBox.Show("No hay un numero de patente ingresado");
+
+                if (autoCliente.validar_autoCliente(this.Controls) == Validar.estado_validacion.correcta)
+                {
+                    autoCliente.agregar_enEstacionamiento(this.Controls);
+
+                    MessageBox.Show("Auto agregado correctamente en el \n estacionamiento", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    this._val.blanquear_objetos(this.Controls);
+                    tipoDocumento.Text = "";
+                    cmb_IdPlaya.Enabled = false;
+                    txt_Estacionamiento.Enabled = false;
+                    txt_patente.Enabled = true;
+                    txt_patente.Focus();
+
+
+                }
             }
 
+
             
-            _val.blanquear_objetos(this.Controls);
-            tipoDocumento.Text = "";
+
+            
+            
 
         }
 
         //se cierra el formulario de ingreso de vehiculos
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
-            
-            Dispose();
+            this.Close();
+            this.Dispose();
         }
 
         //al abrirse el formulario de salida se guarda la fecha actual en la que se esta
@@ -135,10 +146,18 @@ namespace ShoppingBuyAll.Formularios
         private void Ingreso_Estacionamiento_Load(object sender, EventArgs e)
         {
             this.cmb_IdPlaya.cargar("Playa", "id_playa", "nombre");
-            ;
+            cmb_IdPlaya.SelectedIndex = -1;
 
         }
 
-        
+        private void boton_cancelar_Click(object sender, EventArgs e)
+        {
+            this._val.blanquear_objetos(this.Controls);
+            tipoDocumento.Text = "";
+            txt_patente.Focus();
+            txt_patente.Enabled = true;
+            cmb_IdPlaya.Enabled = false;
+            txt_Estacionamiento.Enabled = false;
+        }
     }
 }

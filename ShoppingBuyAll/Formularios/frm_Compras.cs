@@ -285,15 +285,6 @@ namespace ShoppingBuyAll
         {
 
         }
-
-        private void txtNum_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((char.IsDigit(e.KeyChar) != true) && (char.IsControl(e.KeyChar) != true))
-            {
-                MessageBox.Show("No es un valor permitido");
-                e.Handled = true;
-            }
-        }
     }
 }
 

@@ -1,4 +1,4 @@
-C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+﻿C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
@@ -908,6 +908,7 @@ C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavSh
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ReporteLocalesxTipo.resources
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_Reporte.resources
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ReporteClientes.resources
+C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.frm_Reporte_Productos.resources
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.ReporteCompras.resources
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csproj.CopyComplete
 C:\Users\aranc\OneDrive\Documentos\GitHub\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ReporteProductos.resources
@@ -1017,3 +1018,4 @@ C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavSh
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ReporteProductos.resources
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FiltrosProductos.resources
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ReporteAutomoviles.resources
+

@@ -22,16 +22,16 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_Productos_Click(object sender, EventArgs e)
         {
-            //frm_Reporte_Productos frm_ReporteProductos = new frm_Reporte_Productos();
+            frm_ReporteProductos frm_ReporteProductos = new frm_ReporteProductos();
            
-            //AddOwnedForm(frm_ReporteProductos);
-            //frm_ReporteProductos.FormBorderStyle = FormBorderStyle.None;
-            //frm_ReporteProductos.TopLevel = false;
-            //frm_ReporteProductos.Dock = DockStyle.Fill;
-            //this.Controls.Add(frm_ReporteProductos);
-            //this.Tag = frm_ReporteProductos;
-            //frm_ReporteProductos.BringToFront();
-            //frm_ReporteProductos.Show();
+            AddOwnedForm(frm_ReporteProductos);
+            frm_ReporteProductos.FormBorderStyle = FormBorderStyle.None;
+            frm_ReporteProductos.TopLevel = false;
+            frm_ReporteProductos.Dock = DockStyle.Fill;
+            this.Controls.Add(frm_ReporteProductos);
+            this.Tag = frm_ReporteProductos;
+            frm_ReporteProductos.BringToFront();
+            frm_ReporteProductos.Show();
 
         }
 

@@ -30,6 +30,8 @@ namespace ShoppingBuyAll.clases
             return validacion.validar_Form(controles);
         }
 
+       
+
         //consulta que la patente este la tabla automoviles es decir que ya este asignada
         //a un cliente registrado
 
@@ -143,9 +145,32 @@ namespace ShoppingBuyAll.clases
             return _BD.consulta(sql);
         }
 
+        public DataTable estacionados_actuales()
+        {
+            string sql = @"SELECT E.patente_1 AS 'Patente',E.nro_doc2 AS 'Numero Documento',T.descripcion AS 'Tipo de Documento',E.fecha AS 'Fecha de Ingreso',E.hora_desde as 'Hora Ingreso',E.hora_hasta AS 'Hora Egreso',
+                           P.nombre AS 'Playa',E.nro_estac AS 'Lugar numero'
+                           FROM EstacXCliente E JOIN Playa P ON P.id_playa = E.id_playa1 JOIN Tipo_Documento T ON T.id_doc = E.tipo_doc2 WHERE E.hora_hasta IS NULL" ;
+
+            return _BD.consulta(sql);
+        }
+
         public DataTable descripcion_TIPODOC(string tipoDoc)
         {
             string sql = @"SELECT T.descripcion AS 'descripcion' FROM Tipo_Documento T WHERE T.id_doc = '" + tipoDoc + "';"; 
+
+            return _BD.consulta(sql);
+        }
+
+        public DataTable _nombre_playa(string id_playa)
+        {
+            string sql = @"SELECT P.nombre AS 'nombre' FROM Playa P WHERE P.id_playa = '" + id_playa + "';";
+
+            return _BD.consulta(sql);
+        }
+
+        public DataTable verificarLugar(int id_playa, string nroEstac)
+        {
+            string sql = @"SELECT * FROM EstacXCliente E WHERE E.id_playa1 = " + id_playa + " AND E.nro_estac = '"+nroEstac+"' AND hora_hasta IS NULL";
 
             return _BD.consulta(sql);
         }

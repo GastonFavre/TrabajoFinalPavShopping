@@ -34,13 +34,5 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Provider=SQLNCLI11;Data Source=DESKTOP-IE9SHP6\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All</Value>
     </Setting>
-    <Setting Name="ConnectionString3" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Provider=SQLNCLI11;Data Source=DESKTOP-NBF2L95\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Provider=SQLNCLI11;Data Source=DESKTOP-NBF2L95\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All</Value>
-    </Setting>
   </Settings>
 </SettingsFile>

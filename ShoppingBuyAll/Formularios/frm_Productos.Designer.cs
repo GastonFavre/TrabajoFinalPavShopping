@@ -33,6 +33,9 @@
             this.lbl_Productos = new System.Windows.Forms.Label();
             this.lbl_NombreProducto = new System.Windows.Forms.Label();
             this.lbl_CodProducto = new System.Windows.Forms.Label();
+            this.txt_PrecioProducto = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_NombreProducto = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_CodigoProducto = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.dataGridBusqueda = new System.Windows.Forms.DataGridView();
             this.radioButtonCodigo = new System.Windows.Forms.RadioButton();
             this.radioButtonPrecio = new System.Windows.Forms.RadioButton();
@@ -47,9 +50,6 @@
             this.boton_Modi = new System.Windows.Forms.Button();
             this.boton_Agregar = new System.Windows.Forms.Button();
             this.boton_Nuevo = new System.Windows.Forms.Button();
-            this.txt_PrecioProducto = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_NombreProducto = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_CodigoProducto = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBusqueda)).BeginInit();
             this.groupBoxFiltros.SuspendLayout();
             this.SuspendLayout();
@@ -98,11 +98,57 @@
             this.lbl_CodProducto.TabIndex = 58;
             this.lbl_CodProducto.Text = "Codigo";
             // 
+            // txt_PrecioProducto
+            // 
+            this.txt_PrecioProducto._campo = "precio";
+            this.txt_PrecioProducto._mensaje_error = "No se ingreso precio";
+            this.txt_PrecioProducto._nombre_tabla = "Productos";
+            this.txt_PrecioProducto._pk = false;
+            this.txt_PrecioProducto._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.numero;
+            this.txt_PrecioProducto._validable = true;
+            this.txt_PrecioProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_PrecioProducto.Location = new System.Drawing.Point(210, 233);
+            this.txt_PrecioProducto.MaxLength = 5;
+            this.txt_PrecioProducto.Name = "txt_PrecioProducto";
+            this.txt_PrecioProducto.Size = new System.Drawing.Size(98, 26);
+            this.txt_PrecioProducto.TabIndex = 64;
+            this.txt_PrecioProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
+            // 
+            // txt_NombreProducto
+            // 
+            this.txt_NombreProducto._campo = "nombre";
+            this.txt_NombreProducto._mensaje_error = "No se ingreso nombre";
+            this.txt_NombreProducto._nombre_tabla = "Productos";
+            this.txt_NombreProducto._pk = false;
+            this.txt_NombreProducto._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_NombreProducto._validable = true;
+            this.txt_NombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NombreProducto.Location = new System.Drawing.Point(210, 198);
+            this.txt_NombreProducto.MaxLength = 20;
+            this.txt_NombreProducto.Name = "txt_NombreProducto";
+            this.txt_NombreProducto.Size = new System.Drawing.Size(184, 26);
+            this.txt_NombreProducto.TabIndex = 63;
+            this.txt_NombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Letra_KeyPress);
+            // 
+            // txt_CodigoProducto
+            // 
+            this.txt_CodigoProducto._campo = "cod_prod";
+            this.txt_CodigoProducto._mensaje_error = "No se ingreso codigo";
+            this.txt_CodigoProducto._nombre_tabla = "Productos";
+            this.txt_CodigoProducto._pk = true;
+            this.txt_CodigoProducto._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.numero;
+            this.txt_CodigoProducto._validable = true;
+            this.txt_CodigoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_CodigoProducto.Location = new System.Drawing.Point(210, 163);
+            this.txt_CodigoProducto.MaxLength = 10;
+            this.txt_CodigoProducto.Name = "txt_CodigoProducto";
+            this.txt_CodigoProducto.Size = new System.Drawing.Size(184, 26);
+            this.txt_CodigoProducto.TabIndex = 62;
+            this.txt_CodigoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
+            // 
             // dataGridBusqueda
             // 
-            this.dataGridBusqueda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
             this.dataGridBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridBusqueda.GridColor = System.Drawing.Color.SteelBlue;
             this.dataGridBusqueda.Location = new System.Drawing.Point(455, 51);
             this.dataGridBusqueda.Name = "dataGridBusqueda";
             this.dataGridBusqueda.Size = new System.Drawing.Size(424, 249);
@@ -307,54 +353,6 @@
             this.boton_Nuevo.Text = "Nuevo";
             this.boton_Nuevo.UseVisualStyleBackColor = false;
             this.boton_Nuevo.Click += new System.EventHandler(this.boton_Nuevo_Click);
-            // 
-            // txt_PrecioProducto
-            // 
-            this.txt_PrecioProducto._campo = "precio";
-            this.txt_PrecioProducto._mensaje_error = "No se ingreso precio";
-            this.txt_PrecioProducto._nombre_tabla = "Productos";
-            this.txt_PrecioProducto._pk = false;
-            this.txt_PrecioProducto._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.numero;
-            this.txt_PrecioProducto._validable = true;
-            this.txt_PrecioProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_PrecioProducto.Location = new System.Drawing.Point(210, 233);
-            this.txt_PrecioProducto.MaxLength = 5;
-            this.txt_PrecioProducto.Name = "txt_PrecioProducto";
-            this.txt_PrecioProducto.Size = new System.Drawing.Size(98, 26);
-            this.txt_PrecioProducto.TabIndex = 64;
-            this.txt_PrecioProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
-            // 
-            // txt_NombreProducto
-            // 
-            this.txt_NombreProducto._campo = "nombre";
-            this.txt_NombreProducto._mensaje_error = "No se ingreso nombre";
-            this.txt_NombreProducto._nombre_tabla = "Productos";
-            this.txt_NombreProducto._pk = false;
-            this.txt_NombreProducto._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_NombreProducto._validable = true;
-            this.txt_NombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NombreProducto.Location = new System.Drawing.Point(210, 198);
-            this.txt_NombreProducto.MaxLength = 20;
-            this.txt_NombreProducto.Name = "txt_NombreProducto";
-            this.txt_NombreProducto.Size = new System.Drawing.Size(184, 26);
-            this.txt_NombreProducto.TabIndex = 63;
-            this.txt_NombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Letra_KeyPress);
-            // 
-            // txt_CodigoProducto
-            // 
-            this.txt_CodigoProducto._campo = "cod_prod";
-            this.txt_CodigoProducto._mensaje_error = "No se ingreso codigo";
-            this.txt_CodigoProducto._nombre_tabla = "Productos";
-            this.txt_CodigoProducto._pk = true;
-            this.txt_CodigoProducto._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.numero;
-            this.txt_CodigoProducto._validable = true;
-            this.txt_CodigoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CodigoProducto.Location = new System.Drawing.Point(210, 163);
-            this.txt_CodigoProducto.MaxLength = 10;
-            this.txt_CodigoProducto.Name = "txt_CodigoProducto";
-            this.txt_CodigoProducto.Size = new System.Drawing.Size(184, 26);
-            this.txt_CodigoProducto.TabIndex = 62;
-            this.txt_CodigoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // frm_Productos
             // 
