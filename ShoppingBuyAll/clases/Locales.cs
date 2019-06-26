@@ -41,25 +41,34 @@ namespace ShoppingBuyAll.Formularios
             }
             else
             {
-                DataTable tabla_rubros = new DataTable();
-                tabla_rubros = buscar_rubros(cuil);
-                if (tabla_rubros.Rows.Count == 0)
+                DataTable local_con_compras = new DataTable();
+                local_con_compras = this._BD.consulta("SELECT C.* FROM ComprasXCliente C WHERE cuil_local1 = " + cuil);
+                if (local_con_compras.Rows.Count == 0)
                 {
-                    string sql_eliminar = "DELETE FROM Locales WHERE cuil = " + cuil;
-                    _BD.grabar_modificar(sql_eliminar);
-                    MessageBox.Show("El Local ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DataTable tabla_rubros = new DataTable();
+                    tabla_rubros = buscar_rubros(cuil);
+                    if (tabla_rubros.Rows.Count == 0)
+                    {
+                        string sql_eliminar = "DELETE FROM Locales WHERE cuil = " + cuil;
+                        _BD.grabar_modificar(sql_eliminar);
+                        MessageBox.Show("El Local ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+
+                    {
+                        string sql_eliminar_rubrosLocal = "DELETE FROM LocalesXRubro WHERE cuil_local1 = " + cuil;
+                        _BD.grabar_modificar(sql_eliminar_rubrosLocal);
+                        MessageBox.Show("Los Rubros vinculados al local fueron eliminados correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        string sql_eliminar = "DELETE FROM Locales WHERE cuil = " + cuil;
+                        _BD.grabar_modificar(sql_eliminar);
+                        MessageBox.Show("El Local ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 else
-
                 {
-                    string sql_eliminar_rubrosLocal = "DELETE FROM LocalesXRubro WHERE cuil_local1 = " + cuil;
-                    _BD.grabar_modificar(sql_eliminar_rubrosLocal);
-                    MessageBox.Show("Los Rubros vinculados al local fueron eliminados correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    string sql_eliminar = "DELETE FROM Locales WHERE cuil = " + cuil;
-                    _BD.grabar_modificar(sql_eliminar);
-                    MessageBox.Show("El Local ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El Local posee compras asociadas, por ese motivo no se puede eliminar.", "Mensaje"
+                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-                
             }
         }
 

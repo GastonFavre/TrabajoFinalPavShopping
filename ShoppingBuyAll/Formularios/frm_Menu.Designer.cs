@@ -186,7 +186,7 @@
             this.btn_Reporte.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Reporte.Name = "btn_Reporte";
             this.btn_Reporte.Size = new System.Drawing.Size(354, 74);
-            this.btn_Reporte.TabIndex = 12;
+            this.btn_Reporte.TabIndex = 6;
             this.btn_Reporte.Text = "Reporte";
             this.btn_Reporte.UseVisualStyleBackColor = false;
             this.btn_Reporte.Click += new System.EventHandler(this.btn_Reporte_Click);
@@ -198,7 +198,7 @@
             this.panel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(22, 74);
-            this.panel12.TabIndex = 11;
+            this.panel12.TabIndex = 14;
             // 
             // panelSubmenu
             // 
@@ -237,7 +237,7 @@
             this.btn_buscarFiltrado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_buscarFiltrado.Name = "btn_buscarFiltrado";
             this.btn_buscarFiltrado.Size = new System.Drawing.Size(296, 74);
-            this.btn_buscarFiltrado.TabIndex = 10;
+            this.btn_buscarFiltrado.TabIndex = 2;
             this.btn_buscarFiltrado.Text = "Buscar";
             this.btn_buscarFiltrado.UseVisualStyleBackColor = false;
             this.btn_buscarFiltrado.Click += new System.EventHandler(this.btn_buscarFiltrado_Click);
@@ -273,7 +273,7 @@
             this.btnSalida.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalida.Name = "btnSalida";
             this.btnSalida.Size = new System.Drawing.Size(300, 74);
-            this.btnSalida.TabIndex = 7;
+            this.btnSalida.TabIndex = 1;
             this.btnSalida.Text = "Salida";
             this.btnSalida.UseVisualStyleBackColor = false;
             this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
@@ -291,7 +291,7 @@
             this.btnIngreso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnIngreso.Name = "btnIngreso";
             this.btnIngreso.Size = new System.Drawing.Size(296, 74);
-            this.btnIngreso.TabIndex = 6;
+            this.btnIngreso.TabIndex = 0;
             this.btnIngreso.Text = "Ingreso";
             this.btnIngreso.UseVisualStyleBackColor = false;
             this.btnIngreso.Click += new System.EventHandler(this.btnIngreso_Click);
@@ -319,7 +319,7 @@
             this.btn_Productos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Productos.Name = "btn_Productos";
             this.btn_Productos.Size = new System.Drawing.Size(354, 74);
-            this.btn_Productos.TabIndex = 9;
+            this.btn_Productos.TabIndex = 5;
             this.btn_Productos.Text = "Productos";
             this.btn_Productos.UseVisualStyleBackColor = false;
             this.btn_Productos.Click += new System.EventHandler(this.btn_Productos_Click);
@@ -338,7 +338,7 @@
             this.btnEstacionamiento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEstacionamiento.Name = "btnEstacionamiento";
             this.btnEstacionamiento.Size = new System.Drawing.Size(354, 74);
-            this.btnEstacionamiento.TabIndex = 4;
+            this.btnEstacionamiento.TabIndex = 7;
             this.btnEstacionamiento.Text = "Estacionamiento";
             this.btnEstacionamiento.UseVisualStyleBackColor = false;
             this.btnEstacionamiento.Click += new System.EventHandler(this.btnEstacionamiento_Click);
@@ -401,7 +401,7 @@
             this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(354, 74);
-            this.button6.TabIndex = 5;
+            this.button6.TabIndex = 4;
             this.button6.Text = "Facturacion";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);

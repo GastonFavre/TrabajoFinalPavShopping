@@ -52,7 +52,7 @@
             this.txt_Cuil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Cuil.Name = "txt_Cuil";
             this.txt_Cuil.Size = new System.Drawing.Size(180, 26);
-            this.txt_Cuil.TabIndex = 102;
+            this.txt_Cuil.TabIndex = 2;
             // 
             // label3
             // 
@@ -80,7 +80,7 @@
             this.cmb_Rubro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmb_Rubro.Name = "cmb_Rubro";
             this.cmb_Rubro.Size = new System.Drawing.Size(178, 28);
-            this.cmb_Rubro.TabIndex = 105;
+            this.cmb_Rubro.TabIndex = 0;
             // 
             // label1
             // 
@@ -119,7 +119,7 @@
             this.boton_Agregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Agregar.Name = "boton_Agregar";
             this.boton_Agregar.Size = new System.Drawing.Size(148, 46);
-            this.boton_Agregar.TabIndex = 108;
+            this.boton_Agregar.TabIndex = 1;
             this.boton_Agregar.Text = "Agregar";
             this.boton_Agregar.UseVisualStyleBackColor = false;
             this.boton_Agregar.Click += new System.EventHandler(this.boton_Agregar_Click);
@@ -137,7 +137,7 @@
             this.boton_Modi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Modi.Name = "boton_Modi";
             this.boton_Modi.Size = new System.Drawing.Size(148, 46);
-            this.boton_Modi.TabIndex = 109;
+            this.boton_Modi.TabIndex = 2;
             this.boton_Modi.Text = "Cancelar";
             this.boton_Modi.UseVisualStyleBackColor = false;
             this.boton_Modi.Click += new System.EventHandler(this.boton_Modi_Click);

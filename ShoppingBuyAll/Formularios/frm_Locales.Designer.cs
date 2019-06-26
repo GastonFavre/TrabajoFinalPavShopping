@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Locales));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lb_cuil = new System.Windows.Forms.Label();
             this.lb_nombre_loc = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -105,7 +105,10 @@
             this.txt_Cuil.MaxLength = 19;
             this.txt_Cuil.Name = "txt_Cuil";
             this.txt_Cuil.Size = new System.Drawing.Size(288, 35);
-            this.txt_Cuil.TabIndex = 44;           
+            this.txt_Cuil.TabIndex = 0;
+            // 
+            // txt_Nombre_Local
+            // 
             this.txt_Nombre_Local._campo = "nombre";
             this.txt_Nombre_Local._mensaje_error = "No se ingresó el nombre del local";
             this.txt_Nombre_Local._nombre_tabla = "Locales";
@@ -117,7 +120,7 @@
             this.txt_Nombre_Local.MaxLength = 30;
             this.txt_Nombre_Local.Name = "txt_Nombre_Local";
             this.txt_Nombre_Local.Size = new System.Drawing.Size(463, 35);
-            this.txt_Nombre_Local.TabIndex = 45;
+            this.txt_Nombre_Local.TabIndex = 1;
             // 
             // cmb_Tipo_Loc
             // 
@@ -131,7 +134,7 @@
             this.cmb_Tipo_Loc.Location = new System.Drawing.Point(414, 405);
             this.cmb_Tipo_Loc.Name = "cmb_Tipo_Loc";
             this.cmb_Tipo_Loc.Size = new System.Drawing.Size(386, 37);
-            this.cmb_Tipo_Loc.TabIndex = 46;
+            this.cmb_Tipo_Loc.TabIndex = 2;
             // 
             // btn_Buscar_CUIL
             // 
@@ -141,7 +144,7 @@
             this.btn_Buscar_CUIL.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Buscar_CUIL.Name = "btn_Buscar_CUIL";
             this.btn_Buscar_CUIL.Size = new System.Drawing.Size(40, 35);
-            this.btn_Buscar_CUIL.TabIndex = 56;
+            this.btn_Buscar_CUIL.TabIndex = 12;
             this.btn_Buscar_CUIL.UseVisualStyleBackColor = true;
             this.btn_Buscar_CUIL.Visible = false;
             this.btn_Buscar_CUIL.Click += new System.EventHandler(this.btn_Buscar_CUIL_Click);
@@ -160,7 +163,7 @@
             this.boton_Nuevo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Nuevo.Name = "boton_Nuevo";
             this.boton_Nuevo.Size = new System.Drawing.Size(204, 46);
-            this.boton_Nuevo.TabIndex = 57;
+            this.boton_Nuevo.TabIndex = 6;
             this.boton_Nuevo.Text = "Nuevo";
             this.boton_Nuevo.UseVisualStyleBackColor = false;
             this.boton_Nuevo.Click += new System.EventHandler(this.boton_Nuevo_Click);
@@ -179,7 +182,7 @@
             this.boton_Agregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Agregar.Name = "boton_Agregar";
             this.boton_Agregar.Size = new System.Drawing.Size(219, 46);
-            this.boton_Agregar.TabIndex = 58;
+            this.boton_Agregar.TabIndex = 7;
             this.boton_Agregar.Text = "Agregar";
             this.boton_Agregar.UseVisualStyleBackColor = false;
             this.boton_Agregar.Click += new System.EventHandler(this.boton_Agregar_Click);
@@ -198,7 +201,7 @@
             this.boton_Modi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Modi.Name = "boton_Modi";
             this.boton_Modi.Size = new System.Drawing.Size(219, 46);
-            this.boton_Modi.TabIndex = 59;
+            this.boton_Modi.TabIndex = 8;
             this.boton_Modi.Text = "Modificar";
             this.boton_Modi.UseVisualStyleBackColor = false;
             this.boton_Modi.Click += new System.EventHandler(this.boton_Modi_Click);
@@ -217,7 +220,7 @@
             this.boton_Eliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Eliminar.Name = "boton_Eliminar";
             this.boton_Eliminar.Size = new System.Drawing.Size(204, 46);
-            this.boton_Eliminar.TabIndex = 60;
+            this.boton_Eliminar.TabIndex = 9;
             this.boton_Eliminar.Text = "Eliminar";
             this.boton_Eliminar.UseVisualStyleBackColor = false;
             this.boton_Eliminar.Click += new System.EventHandler(this.boton_Eliminar_Click);
@@ -236,7 +239,7 @@
             this.boton_Buscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.boton_Buscar.Name = "boton_Buscar";
             this.boton_Buscar.Size = new System.Drawing.Size(204, 46);
-            this.boton_Buscar.TabIndex = 61;
+            this.boton_Buscar.TabIndex = 10;
             this.boton_Buscar.Text = "Buscar";
             this.boton_Buscar.UseVisualStyleBackColor = false;
             this.boton_Buscar.Click += new System.EventHandler(this.boton_Buscar_Click);
@@ -262,14 +265,14 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
@@ -277,21 +280,21 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SlateBlue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SlateBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(450, 106);
             this.dataGridView1.TabIndex = 79;
@@ -309,7 +312,7 @@
             this.btn_mostrarRubros.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_mostrarRubros.Name = "btn_mostrarRubros";
             this.btn_mostrarRubros.Size = new System.Drawing.Size(204, 46);
-            this.btn_mostrarRubros.TabIndex = 80;
+            this.btn_mostrarRubros.TabIndex = 3;
             this.btn_mostrarRubros.Text = "Mostrar Rubros";
             this.btn_mostrarRubros.UseVisualStyleBackColor = false;
             this.btn_mostrarRubros.Click += new System.EventHandler(this.btn_mostrarRubros_Click);
@@ -327,7 +330,7 @@
             this.btn_agregarRubro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_agregarRubro.Name = "btn_agregarRubro";
             this.btn_agregarRubro.Size = new System.Drawing.Size(204, 46);
-            this.btn_agregarRubro.TabIndex = 81;
+            this.btn_agregarRubro.TabIndex = 4;
             this.btn_agregarRubro.Text = "Agregar Rubro";
             this.btn_agregarRubro.UseVisualStyleBackColor = false;
             this.btn_agregarRubro.Click += new System.EventHandler(this.btn_agregarRubro_Click);
@@ -346,7 +349,7 @@
             this.btn_filtros.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_filtros.Name = "btn_filtros";
             this.btn_filtros.Size = new System.Drawing.Size(204, 46);
-            this.btn_filtros.TabIndex = 82;
+            this.btn_filtros.TabIndex = 11;
             this.btn_filtros.Text = "Filtros";
             this.btn_filtros.UseVisualStyleBackColor = false;
             this.btn_filtros.Click += new System.EventHandler(this.btn_filtros_Click);

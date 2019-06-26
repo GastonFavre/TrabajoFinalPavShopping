@@ -92,6 +92,7 @@ namespace ShoppingBuyAll.Formularios
                 local.eliminar_local(txt_Cuil.Text.Trim());
                 _val.blanquear_objetos(this.Controls);
                 dataGridView1.DataSource = "";
+                txt_Cuil.Enabled = true;
             }
             else
             {

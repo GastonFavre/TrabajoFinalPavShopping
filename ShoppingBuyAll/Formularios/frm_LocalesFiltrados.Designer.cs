@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_LocalesFiltrados));
             this.datagrid_filtro = new System.Windows.Forms.DataGridView();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.groupBoxFiltros = new System.Windows.Forms.GroupBox();
             this.btn_buscar = new System.Windows.Forms.Button();
+            this.txt_Nombre = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_CuilLocal = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.cb_Nombre = new System.Windows.Forms.CheckBox();
             this.cb_TipoComercio = new System.Windows.Forms.CheckBox();
             this.cb_Cuil = new System.Windows.Forms.CheckBox();
-            this.txt_Nombre = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_CuilLocal = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.cmb_tipoCom = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.btn_Limpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_filtro)).BeginInit();
@@ -54,14 +54,14 @@
             this.datagrid_filtro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
             this.datagrid_filtro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagrid_filtro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_filtro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_filtro.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.datagrid_filtro.ColumnHeadersHeight = 30;
             this.datagrid_filtro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.datagrid_filtro.EnableHeadersVisualStyles = false;
@@ -70,21 +70,21 @@
             this.datagrid_filtro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.datagrid_filtro.Name = "datagrid_filtro";
             this.datagrid_filtro.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_filtro.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            this.datagrid_filtro.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_filtro.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.datagrid_filtro.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.datagrid_filtro.Size = new System.Drawing.Size(734, 421);
-            this.datagrid_filtro.TabIndex = 158;
+            this.datagrid_filtro.TabIndex = 2;
             // 
             // btn_Salir
             // 
@@ -94,7 +94,7 @@
             this.btn_Salir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(135, 45);
-            this.btn_Salir.TabIndex = 159;
+            this.btn_Salir.TabIndex = 2;
             this.btn_Salir.Text = "Salir";
             this.btn_Salir.UseVisualStyleBackColor = true;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
@@ -114,7 +114,7 @@
             this.groupBoxFiltros.Name = "groupBoxFiltros";
             this.groupBoxFiltros.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBoxFiltros.Size = new System.Drawing.Size(578, 408);
-            this.groupBoxFiltros.TabIndex = 160;
+            this.groupBoxFiltros.TabIndex = 0;
             this.groupBoxFiltros.TabStop = false;
             this.groupBoxFiltros.Text = "FILTROS";
             this.groupBoxFiltros.Enter += new System.EventHandler(this.groupBoxFiltros_Enter);
@@ -132,49 +132,10 @@
             this.btn_buscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(184, 52);
-            this.btn_buscar.TabIndex = 146;
+            this.btn_buscar.TabIndex = 0;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
-            // 
-            // cb_Nombre
-            // 
-            this.cb_Nombre.AutoSize = true;
-            this.cb_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Nombre.Location = new System.Drawing.Point(20, 240);
-            this.cb_Nombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cb_Nombre.Name = "cb_Nombre";
-            this.cb_Nombre.Size = new System.Drawing.Size(133, 33);
-            this.cb_Nombre.TabIndex = 77;
-            this.cb_Nombre.Text = "Nombre";
-            this.cb_Nombre.UseVisualStyleBackColor = true;
-            this.cb_Nombre.CheckedChanged += new System.EventHandler(this.cb_Nombre_CheckedChanged);
-            // 
-            // cb_TipoComercio
-            // 
-            this.cb_TipoComercio.AutoSize = true;
-            this.cb_TipoComercio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_TipoComercio.Location = new System.Drawing.Point(20, 153);
-            this.cb_TipoComercio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cb_TipoComercio.Name = "cb_TipoComercio";
-            this.cb_TipoComercio.Size = new System.Drawing.Size(206, 33);
-            this.cb_TipoComercio.TabIndex = 76;
-            this.cb_TipoComercio.Text = "TipoComercio";
-            this.cb_TipoComercio.UseVisualStyleBackColor = true;
-            this.cb_TipoComercio.CheckedChanged += new System.EventHandler(this.cb_TipoComercio_CheckedChanged);
-            // 
-            // cb_Cuil
-            // 
-            this.cb_Cuil.AutoSize = true;
-            this.cb_Cuil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Cuil.Location = new System.Drawing.Point(20, 66);
-            this.cb_Cuil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cb_Cuil.Name = "cb_Cuil";
-            this.cb_Cuil.Size = new System.Drawing.Size(96, 33);
-            this.cb_Cuil.TabIndex = 75;
-            this.cb_Cuil.Text = "CUIL";
-            this.cb_Cuil.UseVisualStyleBackColor = true;
-            this.cb_Cuil.CheckedChanged += new System.EventHandler(this.cb_Cuil_CheckedChanged);
             // 
             // txt_Nombre
             // 
@@ -190,7 +151,7 @@
             this.txt_Nombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(229, 35);
-            this.txt_Nombre.TabIndex = 81;
+            this.txt_Nombre.TabIndex = 6;
             // 
             // txt_CuilLocal
             // 
@@ -206,8 +167,47 @@
             this.txt_CuilLocal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_CuilLocal.Name = "txt_CuilLocal";
             this.txt_CuilLocal.Size = new System.Drawing.Size(229, 35);
-            this.txt_CuilLocal.TabIndex = 78;
+            this.txt_CuilLocal.TabIndex = 4;
             this.txt_CuilLocal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CuilLocal_KeyPress);
+            // 
+            // cb_Nombre
+            // 
+            this.cb_Nombre.AutoSize = true;
+            this.cb_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Nombre.Location = new System.Drawing.Point(20, 240);
+            this.cb_Nombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cb_Nombre.Name = "cb_Nombre";
+            this.cb_Nombre.Size = new System.Drawing.Size(133, 33);
+            this.cb_Nombre.TabIndex = 3;
+            this.cb_Nombre.Text = "Nombre";
+            this.cb_Nombre.UseVisualStyleBackColor = true;
+            this.cb_Nombre.CheckedChanged += new System.EventHandler(this.cb_Nombre_CheckedChanged);
+            // 
+            // cb_TipoComercio
+            // 
+            this.cb_TipoComercio.AutoSize = true;
+            this.cb_TipoComercio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_TipoComercio.Location = new System.Drawing.Point(20, 153);
+            this.cb_TipoComercio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cb_TipoComercio.Name = "cb_TipoComercio";
+            this.cb_TipoComercio.Size = new System.Drawing.Size(206, 33);
+            this.cb_TipoComercio.TabIndex = 2;
+            this.cb_TipoComercio.Text = "TipoComercio";
+            this.cb_TipoComercio.UseVisualStyleBackColor = true;
+            this.cb_TipoComercio.CheckedChanged += new System.EventHandler(this.cb_TipoComercio_CheckedChanged);
+            // 
+            // cb_Cuil
+            // 
+            this.cb_Cuil.AutoSize = true;
+            this.cb_Cuil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Cuil.Location = new System.Drawing.Point(20, 66);
+            this.cb_Cuil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cb_Cuil.Name = "cb_Cuil";
+            this.cb_Cuil.Size = new System.Drawing.Size(96, 33);
+            this.cb_Cuil.TabIndex = 1;
+            this.cb_Cuil.Text = "CUIL";
+            this.cb_Cuil.UseVisualStyleBackColor = true;
+            this.cb_Cuil.CheckedChanged += new System.EventHandler(this.cb_Cuil_CheckedChanged);
             // 
             // cmb_tipoCom
             // 
@@ -224,7 +224,7 @@
             this.cmb_tipoCom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmb_tipoCom.Name = "cmb_tipoCom";
             this.cmb_tipoCom.Size = new System.Drawing.Size(290, 37);
-            this.cmb_tipoCom.TabIndex = 152;
+            this.cmb_tipoCom.TabIndex = 5;
             // 
             // btn_Limpiar
             // 
@@ -234,7 +234,7 @@
             this.btn_Limpiar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Limpiar.Name = "btn_Limpiar";
             this.btn_Limpiar.Size = new System.Drawing.Size(194, 45);
-            this.btn_Limpiar.TabIndex = 161;
+            this.btn_Limpiar.TabIndex = 1;
             this.btn_Limpiar.Text = "Limpiar";
             this.btn_Limpiar.UseVisualStyleBackColor = true;
             this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
