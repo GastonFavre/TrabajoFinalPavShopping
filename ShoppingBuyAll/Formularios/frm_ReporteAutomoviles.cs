@@ -11,18 +11,18 @@ using ShoppingBuyAll.clases;
 
 namespace ShoppingBuyAll.Formularios
 {
-    public partial class frm_ReporteLocalesxTipo : Form
+    public partial class frm_ReporteAutomoviles : Form
     {
-        public frm_ReporteLocalesxTipo()
+        public frm_ReporteAutomoviles()
         {
             InitializeComponent();
         }
+        Automovil obj_auto = new Automovil();
 
-        private void frm_ListadoProductos_Load(object sender, EventArgs e)
+        private void frm_ReporteAutomoviles_Load(object sender, EventArgs e)
         {
-            DataTable tabla = obj_local.ventasXLocal();
-            dSLocalesBindingSource.DataSource = tabla;
-            reportViewer1.RefreshReport();
+            DataTable tabla = this.obj_auto.autoXcliente();
+            this.autoXClienteBindingSource.DataSource = tabla;
             this.reportViewer1.RefreshReport();
         }
 
@@ -30,9 +30,5 @@ namespace ShoppingBuyAll.Formularios
         {
             this.Dispose();
         }
-
-        Locales obj_local = new Locales();
-
-       
     }
 }

@@ -125,10 +125,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetProductos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Datos\DSAutomoviles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAutomoviles.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datos\DSEstacCliente.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSEstacCliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\DSLocales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLocales.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_InfromeClientes.cs">
       <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>
@@ -208,6 +218,12 @@
     <Compile Include="Formularios\frm_Facturas.Designer.cs">
       <DependentUpon>frm_Facturas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frm_FiltrosProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_FiltrosProductos.Designer.cs">
+      <DependentUpon>frm_FiltrosProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frm_FormularioPadre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +235,12 @@
     </Compile>
     <Compile Include="Formularios\frm_InformeClientesXSexo.Designer.cs">
       <DependentUpon>frm_InformeClientesXSexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frm_ReporteAutomoviles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frm_ReporteAutomoviles.Designer.cs">
+      <DependentUpon>frm_ReporteAutomoviles.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frm_ReporteLocalesxTipo.cs">
       <SubType>Form</SubType>
@@ -350,11 +372,17 @@
     <EmbeddedResource Include="Formularios\frm_Facturas.resx">
       <DependentUpon>frm_Facturas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_FiltrosProductos.resx">
+      <DependentUpon>frm_FiltrosProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_FormularioPadre.resx">
       <DependentUpon>frm_FormularioPadre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_InformeClientesXSexo.resx">
       <DependentUpon>frm_InformeClientesXSexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frm_ReporteAutomoviles.resx">
+      <DependentUpon>frm_ReporteAutomoviles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frm_ReporteLocalesxTipo.resx">
       <DependentUpon>frm_ReporteLocalesxTipo.cs</DependentUpon>
@@ -405,10 +433,12 @@
       <DependentUpon>frm_Compras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Informes\ClientesXSexo.rdlc" />
+    <EmbeddedResource Include="Informes\InformeAutomoviles.rdlc" />
     <EmbeddedResource Include="Informes\InformeClientes.rdlc" />
     <EmbeddedResource Include="Informes\InformeEstacCliente.rdlc" />
+    <EmbeddedResource Include="Informes\InformeVentasXLocal.rdlc" />
+    <EmbeddedResource Include="Informes\Infr.rdlc" />
     <EmbeddedResource Include="Informes\InfromeProductosMasVendidos.rdlc" />
-    <EmbeddedResource Include="Informes\LocalesXtipo.rdlc" />
     <EmbeddedResource Include="Informes\Report1.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -442,6 +472,17 @@
     <None Include="Datos\DataSetProductos.xss">
       <DependentUpon>DataSetProductos.xsd</DependentUpon>
     </None>
+    <None Include="Datos\DSAutomoviles.xsc">
+      <DependentUpon>DSAutomoviles.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\DSAutomoviles.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAutomoviles.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\DSAutomoviles.xss">
+      <DependentUpon>DSAutomoviles.xsd</DependentUpon>
+    </None>
     <None Include="Datos\DSEstacCliente.xsc">
       <DependentUpon>DSEstacCliente.xsd</DependentUpon>
     </None>
@@ -452,6 +493,17 @@
     </None>
     <None Include="Datos\DSEstacCliente.xss">
       <DependentUpon>DSEstacCliente.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\DSLocales.xsc">
+      <DependentUpon>DSLocales.xsd</DependentUpon>
+    </None>
+    <None Include="Datos\DSLocales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLocales.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datos\DSLocales.xss">
+      <DependentUpon>DSLocales.xsd</DependentUpon>
     </None>
     <None Include="DS_InfromeClientes.xsc">
       <DependentUpon>DS_InfromeClientes.xsd</DependentUpon>

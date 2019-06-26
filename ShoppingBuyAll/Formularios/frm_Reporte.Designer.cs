@@ -53,8 +53,6 @@
             this.btn_Locales.TabIndex = 5;
             this.btn_Locales.TabStop = false;
             this.btn_Locales.Click += new System.EventHandler(this.btn_Locales_Click);
-            this.btn_Locales.MouseLeave += new System.EventHandler(this.btn_Locales_MouseLeave);
-            this.btn_Locales.MouseHover += new System.EventHandler(this.btn_Locales_MouseHover);
             // 
             // btn_Clientes
             // 
@@ -67,8 +65,6 @@
             this.btn_Clientes.TabIndex = 4;
             this.btn_Clientes.TabStop = false;
             this.btn_Clientes.Click += new System.EventHandler(this.btn_Clientes_Click);
-            this.btn_Clientes.MouseLeave += new System.EventHandler(this.btn_Clientes_MouseLeave);
-            this.btn_Clientes.MouseHover += new System.EventHandler(this.btn_Clientes_MouseHover);
             // 
             // btn_Productos
             // 
@@ -81,8 +77,7 @@
             this.btn_Productos.TabIndex = 3;
             this.btn_Productos.TabStop = false;
             this.btn_Productos.Click += new System.EventHandler(this.btn_Productos_Click);
-            this.btn_Productos.MouseLeave += new System.EventHandler(this.btn_Productos_MouseLeave);
-            this.btn_Productos.MouseHover += new System.EventHandler(this.btn_Productos_MouseHover);
+
             // 
             // btn_Estacionamiento
             // 
@@ -95,8 +90,7 @@
             this.btn_Estacionamiento.TabIndex = 2;
             this.btn_Estacionamiento.TabStop = false;
             this.btn_Estacionamiento.Click += new System.EventHandler(this.btn_Estacionamiento_Click);
-            this.btn_Estacionamiento.MouseLeave += new System.EventHandler(this.btn_Estacionamiento_MouseLeave);
-            this.btn_Estacionamiento.MouseHover += new System.EventHandler(this.btn_Estacionamiento_MouseHover);
+
             // 
             // btn_Automoviles
             // 
@@ -109,8 +103,7 @@
             this.btn_Automoviles.TabIndex = 1;
             this.btn_Automoviles.TabStop = false;
             this.btn_Automoviles.Click += new System.EventHandler(this.btn_Automoviles_Click);
-            this.btn_Automoviles.MouseLeave += new System.EventHandler(this.btn_Automoviles_MouseLeave);
-            this.btn_Automoviles.MouseHover += new System.EventHandler(this.btn_Automoviles_MouseHover);
+
             // 
             // btn_Ventas
             // 
@@ -123,8 +116,7 @@
             this.btn_Ventas.TabIndex = 0;
             this.btn_Ventas.TabStop = false;
             this.btn_Ventas.Click += new System.EventHandler(this.btn_Ventas_Click);
-            this.btn_Ventas.MouseLeave += new System.EventHandler(this.btn_Ventas_MouseLeave);
-            this.btn_Ventas.MouseHover += new System.EventHandler(this.btn_Ventas_MouseHover_1);
+
             // 
             // frm_Reporte
             // 
