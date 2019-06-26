@@ -1,6 +1,6 @@
 ﻿namespace ShoppingBuyAll.Formularios
 {
-    partial class frm_ReporteLocalesxTipo
+    partial class frm_ReporteAutomoviles
     {
         /// <summary>
         /// Required designer variable.
@@ -30,50 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.dSLocalesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dSLocales = new ShoppingBuyAll.Datos.DSLocales();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.btn_Salir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dSLocalesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSLocales)).BeginInit();
+            this.btn_Salir = new System.Windows.Forms.Button();
+            this.dSAutomoviles = new ShoppingBuyAll.Datos.DSAutomoviles();
+            this.autoXClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dSAutomoviles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoXClienteBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dSLocalesBindingSource
-            // 
-            this.dSLocalesBindingSource.DataSource = this.dSLocales;
-            this.dSLocalesBindingSource.Position = 0;
-            // 
-            // dSLocales
-            // 
-            this.dSLocales.DataSetName = "DSLocales";
-            this.dSLocales.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
             this.reportViewer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.reportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.dSLocalesBindingSource;
+            reportDataSource2.Value = this.autoXClienteBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ShoppingBuyAll.Informes.InformeVentasXLocal.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ShoppingBuyAll.Informes.InformeAutomoviles.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 69);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(1351, 486);
-            this.reportViewer1.TabIndex = 0;
-            // 
-            // btn_Salir
-            // 
-            this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Salir.Location = new System.Drawing.Point(878, 34);
-            this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(90, 29);
-            this.btn_Salir.TabIndex = 2;
-            this.btn_Salir.Text = "Salir";
-            this.btn_Salir.UseVisualStyleBackColor = true;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            this.reportViewer1.TabIndex = 1;
             // 
             // label1
             // 
@@ -82,26 +59,47 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Informe de ventas por local";
+            this.label1.Size = new System.Drawing.Size(409, 23);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Informe de clientes con mas automoviles";
             // 
-            // frm_ReporteLocalesxTipo
+            // btn_Salir
+            // 
+            this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Salir.Location = new System.Drawing.Point(878, 34);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(90, 29);
+            this.btn_Salir.TabIndex = 6;
+            this.btn_Salir.Text = "Salir";
+            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
+            // dSAutomoviles
+            // 
+            this.dSAutomoviles.DataSetName = "DSAutomoviles";
+            this.dSAutomoviles.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // autoXClienteBindingSource
+            // 
+            this.autoXClienteBindingSource.DataMember = "AutoXCliente";
+            this.autoXClienteBindingSource.DataSource = this.dSAutomoviles;
+            // 
+            // frm_ReporteAutomoviles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1375, 602);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Salir);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.reportViewer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_ReporteLocalesxTipo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_ListadoProductos";
-            this.Load += new System.EventHandler(this.frm_ListadoProductos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dSLocalesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSLocales)).EndInit();
+            this.Name = "frm_ReporteAutomoviles";
+            this.Text = "frm_ReporteAutomoviles";
+            this.Load += new System.EventHandler(this.frm_ReporteAutomoviles_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dSAutomoviles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoXClienteBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,9 +108,9 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.BindingSource dSLocalesBindingSource;
-        private Datos.DSLocales dSLocales;
+        private System.Windows.Forms.Button btn_Salir;
+        private System.Windows.Forms.BindingSource autoXClienteBindingSource;
+        private Datos.DSAutomoviles dSAutomoviles;
     }
 }
