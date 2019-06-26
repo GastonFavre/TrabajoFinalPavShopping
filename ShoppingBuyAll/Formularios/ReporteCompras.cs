@@ -63,7 +63,7 @@ namespace ShoppingBuyAll.Formularios
                         clientes C ON
                                      V.tipo_doc1 = C.tipo_doc1 AND
                                      V.num_doc1 = C.num_doc
-                   WHERE V.fecha_compra BETWEEN " + txt_FechaDesde.Text.Trim() + " AND " + txt_FechaHasta.Text.Trim()+
+                   WHERE V.fecha_compra BETWEEN CONVERT(char(10),'" + txt_FechaDesde.Text.Trim() + "',103) AND CONVERT(char(10),'" + txt_FechaHasta.Text.Trim()+ "',103)" +
                    @" GROUP BY V.nro_factura, V.cuil_local1, V.num_tarjeta1, 
                             V.fecha_compra, C.num_doc, C.nombres, C.apellido";
             tabla = _BD.consulta(sql);
