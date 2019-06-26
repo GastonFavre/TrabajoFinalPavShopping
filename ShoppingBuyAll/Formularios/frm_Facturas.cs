@@ -97,7 +97,7 @@ namespace ShoppingBuyAll.Formularios
             {
                 if (txt_NumFactura.Text == "")
                 {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por codigo, por ende debe escribir un codigo.");
+                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por numero de factura, por ende debe escribir un numero.");
                     txt_NumFactura.Focus();
                     return;
                 }
@@ -144,7 +144,7 @@ namespace ShoppingBuyAll.Formularios
             {
                 if (txt_Cliente.Text == "")
                 {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por nombre, por ende debe escribir uno.");
+                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por nombre de cliente, por ende debe escribir uno.");
                     txt_Cliente.Focus();
                     return;
                 }
@@ -164,13 +164,13 @@ namespace ShoppingBuyAll.Formularios
 
                 if (txt_FechaDesde.Text == "")
                 {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por precio, por ende debe escribir un precio desde y un precio hasta.");
+                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por fecha, por ende debe escribir una fecha desde y una fecha hasta.");
                     txt_FechaDesde.Focus();
                     return;
                 }
                 if (txt_FechaHasta.Text == "")
                 {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por precio, por ende debe escribir un precio desde y un precio hasta.");
+                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por fecha, por ende debe escribir una fecha desde y una fecha hasta.");
                     txt_FechaHasta.Focus();
                     return;
                 }
