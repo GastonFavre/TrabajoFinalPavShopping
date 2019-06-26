@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Locales));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lb_cuil = new System.Windows.Forms.Label();
             this.lb_nombre_loc = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -45,10 +45,10 @@
             this.boton_Eliminar = new System.Windows.Forms.Button();
             this.boton_Buscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Local_Tipo = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_mostrarRubros = new System.Windows.Forms.Button();
             this.btn_agregarRubro = new System.Windows.Forms.Button();
+            this.btn_filtros = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,11 +105,7 @@
             this.txt_Cuil.MaxLength = 19;
             this.txt_Cuil.Name = "txt_Cuil";
             this.txt_Cuil.Size = new System.Drawing.Size(288, 35);
-            this.txt_Cuil.TabIndex = 44;
-            this.txt_Cuil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Cuil_KeyPress);
-            // 
-            // txt_Nombre_Local
-            // 
+            this.txt_Cuil.TabIndex = 44;           
             this.txt_Nombre_Local._campo = "nombre";
             this.txt_Nombre_Local._mensaje_error = "No se ingresó el nombre del local";
             this.txt_Nombre_Local._nombre_tabla = "Locales";
@@ -258,25 +254,6 @@
             this.label1.TabIndex = 62;
             this.label1.Text = "Rubro";
             // 
-            // btn_Local_Tipo
-            // 
-            this.btn_Local_Tipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.btn_Local_Tipo.FlatAppearance.BorderSize = 0;
-            this.btn_Local_Tipo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.btn_Local_Tipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Local_Tipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btn_Local_Tipo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Local_Tipo.Image = ((System.Drawing.Image)(resources.GetObject("btn_Local_Tipo.Image")));
-            this.btn_Local_Tipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Local_Tipo.Location = new System.Drawing.Point(1106, 668);
-            this.btn_Local_Tipo.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Local_Tipo.Name = "btn_Local_Tipo";
-            this.btn_Local_Tipo.Size = new System.Drawing.Size(216, 81);
-            this.btn_Local_Tipo.TabIndex = 78;
-            this.btn_Local_Tipo.Text = "  Locales Filtrados";
-            this.btn_Local_Tipo.UseVisualStyleBackColor = false;
-            this.btn_Local_Tipo.Click += new System.EventHandler(this.btn_Local_Tipo_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
@@ -285,14 +262,14 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
@@ -300,21 +277,21 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SlateBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SlateBlue;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(61)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(450, 106);
             this.dataGridView1.TabIndex = 79;
@@ -355,16 +332,35 @@
             this.btn_agregarRubro.UseVisualStyleBackColor = false;
             this.btn_agregarRubro.Click += new System.EventHandler(this.btn_agregarRubro_Click);
             // 
+            // btn_filtros
+            // 
+            this.btn_filtros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btn_filtros.FlatAppearance.BorderSize = 0;
+            this.btn_filtros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
+            this.btn_filtros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_filtros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_filtros.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_filtros.Image = ((System.Drawing.Image)(resources.GetObject("btn_filtros.Image")));
+            this.btn_filtros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_filtros.Location = new System.Drawing.Point(1098, 685);
+            this.btn_filtros.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_filtros.Name = "btn_filtros";
+            this.btn_filtros.Size = new System.Drawing.Size(204, 46);
+            this.btn_filtros.TabIndex = 82;
+            this.btn_filtros.Text = "Filtros";
+            this.btn_filtros.UseVisualStyleBackColor = false;
+            this.btn_filtros.Click += new System.EventHandler(this.btn_filtros_Click);
+            // 
             // frm_Locales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1446, 865);
+            this.Controls.Add(this.btn_filtros);
             this.Controls.Add(this.btn_agregarRubro);
             this.Controls.Add(this.btn_mostrarRubros);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btn_Local_Tipo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.boton_Buscar);
             this.Controls.Add(this.boton_Eliminar);
@@ -404,9 +400,9 @@
         private System.Windows.Forms.Button boton_Eliminar;
         private System.Windows.Forms.Button boton_Buscar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Local_Tipo;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_mostrarRubros;
         private System.Windows.Forms.Button btn_agregarRubro;
+        private System.Windows.Forms.Button btn_filtros;
     }
 }

@@ -199,5 +199,10 @@ namespace ShoppingBuyAll.Formularios
         {
             verificar_solo_numeros(sender, e);
         }
+
+        private void frm_FiltrosProductos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

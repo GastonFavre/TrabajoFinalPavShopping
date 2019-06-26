@@ -75,16 +75,29 @@ namespace ShoppingBuyAll.Formularios
         {
             if (this.txt_Cuil.Text != "")
             {
-                local.eliminar_local(txt_Cuil.Text.Trim());
-                _val.blanquear_objetos(this.Controls);
-            }
-            else
-            {
-                MessageBox.Show("Debe Ingresar el CUIL para eliminar un Local", "Mensaje"
+                DataTable tabla_Localexistente = new DataTable();
+                tabla_Localexistente = this.local.buscar_local(txt_Cuil.Text.Trim());
+                if (tabla_Localexistente.Rows.Count == 0)
+                {
+                    MessageBox.Show("El Local que desea eliminar no existe.", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    DataTable tabla_LocalConRubros = new DataTable();
+                    tabla_Localexistente = this._BD.consulta("SELECT R.* FROM LocalesXRubro C WHERE cuil_local1 =" + txt_Cuil.Text.ToString());
+                    if (tabla_Localexistente.Rows.Count == 0)
+                    {
+                        this._BD.grabar_modificar("DELETE FROM LocalesXRubro WHERE cuil_local1=" + txt_Cuil.Text.ToString());
+                        local.eliminar_local(txt_Cuil.Text.Trim());
+                        MessageBox.Show("El Local se ha eliminado correctamente junto a sus rubros asociados", "Mensaje"
                                 , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        _val.blanquear_objetos(this.Controls);
+                        dataGridView1.DataSource = "";
+                    }
+                }
             }
         }
-
         private void boton_Buscar_Click(object sender, EventArgs e)
         {
             _val.blanquear_objetos(this.Controls);
@@ -181,6 +194,19 @@ namespace ShoppingBuyAll.Formularios
                 dataGridView1.DataSource = tabla;
             }
 
+        }
+
+        private void btn_filtros_Click(object sender, EventArgs e)
+        {
+            frm_LocalesFiltrados form_filtrados = new frm_LocalesFiltrados();
+            AddOwnedForm(form_filtrados);
+            form_filtrados.FormBorderStyle = FormBorderStyle.None;
+            form_filtrados.TopLevel = false;
+            form_filtrados.Dock = DockStyle.Fill;
+            this.Controls.Add(form_filtrados);
+            this.Tag = form_filtrados;
+            form_filtrados.BringToFront();
+            form_filtrados.Show();
         }
     }
 }

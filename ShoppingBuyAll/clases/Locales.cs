@@ -41,6 +41,9 @@ namespace ShoppingBuyAll.Formularios
             }
             else
             {
+                string sql_eliminar_rubrosLocal = "DELETE FROM LocalesXRubro WHERE cuil_local1 = " + cuil;
+                _BD.grabar_modificar(sql_eliminar_rubrosLocal);
+                MessageBox.Show("Los Rubros vinculados al local fueron eliminados correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 string sql_eliminar = "DELETE FROM Locales WHERE cuil = " + cuil;
                 _BD.grabar_modificar(sql_eliminar);
                 MessageBox.Show("El Local ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -73,6 +76,13 @@ namespace ShoppingBuyAll.Formularios
             string sql = @"SELECT L.nombre as descriptor,  COUNT(*) as dato FROM Locales L JOIN ComprasXCliente C ON C.cuil_local1 = L.cuil
                           GROUP BY L.nombre, L.cuil";
 
+            return _BD.consulta(sql);
+        }
+
+        public DataTable buscar_Locales_Filtrado(string comando)
+        {
+            string sql = "SELECT cuil AS 'CUIL', nombre AS 'Nombre Local', tipo_Comercio1 AS 'Tipo Comercio' FROM Locales" + comando;
+            MessageBox.Show(sql);
             return _BD.consulta(sql);
         }
     }  

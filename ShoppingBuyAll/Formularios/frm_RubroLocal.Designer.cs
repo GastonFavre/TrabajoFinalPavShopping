@@ -157,6 +157,7 @@
             this.Controls.Add(this.txt_Cuil);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_RubroLocal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frm_RubroLocal";
             this.Load += new System.EventHandler(this.frm_RubroLocal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

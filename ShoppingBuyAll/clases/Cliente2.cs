@@ -47,7 +47,7 @@ namespace ShoppingBuyAll.clases
                 {
                     string sql_eliminar_tarjetas = "DELETE FROM TarjetaXCliente WHERE tipo_doc3 = " + tipoDoc + " AND num_doc3 = " + NumDoc;
                     _BD.grabar_modificar(sql_eliminar_tarjetas);
-                    MessageBox.Show("Las Tarjetas vinculadas al cliente fueron eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Las Tarjetas vinculadas al cliente fueron eliminadas correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     string sql_eliminar = "DELETE FROM clientes WHERE tipo_doc1 = " + tipoDoc + " AND num_doc = " + NumDoc;
                     _BD.grabar_modificar(sql_eliminar);
                     MessageBox.Show("El Cliente ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
