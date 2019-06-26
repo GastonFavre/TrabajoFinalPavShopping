@@ -146,7 +146,7 @@ namespace ShoppingBuyAll.clases
 
         public DataTable estacionados_actuales()
         {
-            string sql = @"SELECT E.patente_1 AS 'Patente',E.nro_doc2 AS 'Numero Documento',T.descripcion AS 'Tipo de Documento',E.fecha AS 'Fecha de Ingreso',E.hora_desde as 'Hora Ingreso',E.hora_hasta AS 'Hora Egreso',
+            string sql = @"SELECT E.patente_1 AS 'Patente',E.nro_doc2 AS 'Numero Documento',T.descripcion AS 'Tipo de Documento',E.fecha AS 'Fecha de Ingreso',E.hora_desde as 'Hora Ingreso',
                            P.nombre AS 'Playa',E.nro_estac AS 'Lugar numero'
                            FROM EstacXCliente E JOIN Playa P ON P.id_playa = E.id_playa1 JOIN Tipo_Documento T ON T.id_doc = E.tipo_doc2 WHERE E.hora_hasta IS NULL" ;
 

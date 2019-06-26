@@ -72,6 +72,7 @@ namespace ShoppingBuyAll.Formularios
                     
                     cmb_IdPlaya.Enabled = true;
                     txt_Estacionamiento.Enabled = true;
+
                     txt_horaDesde.Text = DateTime.Now.ToShortTimeString();
                     dt_fecha_entrada.Text = DateTime.Now.ToString("dd/MM/yyyy");
                     

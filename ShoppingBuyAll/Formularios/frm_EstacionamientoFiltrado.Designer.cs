@@ -47,14 +47,14 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkEstacActual = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_nuevoFiltrado = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.cmb_tipoDocFiltrado = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.txt_NumDocFiltrado = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.dt_fecha_entradaFiltrado = new ShoppingBuyAll.Componentes.MaskedTextBokDeControl(this.components);
             this.txt_patenteFiltrado = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.cmbPlayaFiltrado = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
-            this.btn_nuevoFiltrado = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.GrillaFiltrados)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             this.btn_buscarFiltrado.Location = new System.Drawing.Point(108, 283);
             this.btn_buscarFiltrado.Name = "btn_buscarFiltrado";
             this.btn_buscarFiltrado.Size = new System.Drawing.Size(136, 30);
-            this.btn_buscarFiltrado.TabIndex = 171;
+            this.btn_buscarFiltrado.TabIndex = 11;
             this.btn_buscarFiltrado.Text = "Buscar";
             this.btn_buscarFiltrado.UseVisualStyleBackColor = false;
             this.btn_buscarFiltrado.Click += new System.EventHandler(this.btn_buscarFiltrado_Click);
@@ -135,7 +135,7 @@
             this.checkPatente.Location = new System.Drawing.Point(33, 30);
             this.checkPatente.Name = "checkPatente";
             this.checkPatente.Size = new System.Drawing.Size(15, 14);
-            this.checkPatente.TabIndex = 245;
+            this.checkPatente.TabIndex = 0;
             this.toolTip1.SetToolTip(this.checkPatente, "Realiza una busqueda por patente");
             this.checkPatente.UseVisualStyleBackColor = true;
             this.checkPatente.CheckedChanged += new System.EventHandler(this.checkPatente_CheckedChanged);
@@ -146,7 +146,7 @@
             this.checkNroDNI.Location = new System.Drawing.Point(33, 75);
             this.checkNroDNI.Name = "checkNroDNI";
             this.checkNroDNI.Size = new System.Drawing.Size(15, 14);
-            this.checkNroDNI.TabIndex = 242;
+            this.checkNroDNI.TabIndex = 2;
             this.toolTip1.SetToolTip(this.checkNroDNI, "Busqueda por tipo y numero de documento");
             this.checkNroDNI.UseVisualStyleBackColor = true;
             this.checkNroDNI.CheckedChanged += new System.EventHandler(this.checkNroDNI_CheckedChanged);
@@ -157,7 +157,7 @@
             this.checkPlaya.Location = new System.Drawing.Point(33, 204);
             this.checkPlaya.Name = "checkPlaya";
             this.checkPlaya.Size = new System.Drawing.Size(15, 14);
-            this.checkPlaya.TabIndex = 248;
+            this.checkPlaya.TabIndex = 7;
             this.checkPlaya.UseVisualStyleBackColor = true;
             this.checkPlaya.CheckedChanged += new System.EventHandler(this.checkPlaya_CheckedChanged);
             // 
@@ -192,7 +192,7 @@
             this.checkFechaIngreso.Location = new System.Drawing.Point(33, 155);
             this.checkFechaIngreso.Name = "checkFechaIngreso";
             this.checkFechaIngreso.Size = new System.Drawing.Size(15, 14);
-            this.checkFechaIngreso.TabIndex = 258;
+            this.checkFechaIngreso.TabIndex = 5;
             this.toolTip1.SetToolTip(this.checkFechaIngreso, "Busqueda por fecha de ingreso");
             this.checkFechaIngreso.UseVisualStyleBackColor = true;
             this.checkFechaIngreso.CheckedChanged += new System.EventHandler(this.checkFechaIngreso_CheckedChanged);
@@ -257,7 +257,7 @@
             this.checkEstacActual.Location = new System.Drawing.Point(33, 248);
             this.checkEstacActual.Name = "checkEstacActual";
             this.checkEstacActual.Size = new System.Drawing.Size(15, 14);
-            this.checkEstacActual.TabIndex = 260;
+            this.checkEstacActual.TabIndex = 9;
             this.toolTip1.SetToolTip(this.checkEstacActual, "Muestra todos los automoviles\r\nque estan en el estacionamiento\r\nen este momento");
             this.checkEstacActual.UseVisualStyleBackColor = true;
             this.checkEstacActual.CheckedChanged += new System.EventHandler(this.checkEstacActual_CheckedChanged);
@@ -275,6 +275,36 @@
             this.label1.Text = "Todos los estacionados actualmente";
             this.toolTip1.SetToolTip(this.label1, "Muestra todos los automoviles\r\nque estan en el estacionamiento\r\nen este momento");
             // 
+            // btn_nuevoFiltrado
+            // 
+            this.btn_nuevoFiltrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_nuevoFiltrado.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_nuevoFiltrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_nuevoFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btn_nuevoFiltrado.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_nuevoFiltrado.Location = new System.Drawing.Point(423, 422);
+            this.btn_nuevoFiltrado.Name = "btn_nuevoFiltrado";
+            this.btn_nuevoFiltrado.Size = new System.Drawing.Size(90, 29);
+            this.btn_nuevoFiltrado.TabIndex = 0;
+            this.btn_nuevoFiltrado.Text = "Limpiar";
+            this.btn_nuevoFiltrado.UseVisualStyleBackColor = true;
+            this.btn_nuevoFiltrado.Click += new System.EventHandler(this.btn_nuevoFiltrado_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Location = new System.Drawing.Point(875, 422);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 29);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // cmb_tipoDocFiltrado
             // 
             this.cmb_tipoDocFiltrado._campo = "tipo_doc2";
@@ -289,7 +319,7 @@
             this.cmb_tipoDocFiltrado.Location = new System.Drawing.Point(196, 67);
             this.cmb_tipoDocFiltrado.Name = "cmb_tipoDocFiltrado";
             this.cmb_tipoDocFiltrado.Size = new System.Drawing.Size(122, 28);
-            this.cmb_tipoDocFiltrado.TabIndex = 231;
+            this.cmb_tipoDocFiltrado.TabIndex = 3;
             // 
             // txt_NumDocFiltrado
             // 
@@ -304,8 +334,8 @@
             this.txt_NumDocFiltrado.Location = new System.Drawing.Point(196, 100);
             this.txt_NumDocFiltrado.MaxLength = 8;
             this.txt_NumDocFiltrado.Name = "txt_NumDocFiltrado";
-            this.txt_NumDocFiltrado.Size = new System.Drawing.Size(123, 26);
-            this.txt_NumDocFiltrado.TabIndex = 232;
+            this.txt_NumDocFiltrado.Size = new System.Drawing.Size(122, 26);
+            this.txt_NumDocFiltrado.TabIndex = 4;
             this.txt_NumDocFiltrado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NumDocFiltrado_KeyPress);
             // 
             // dt_fecha_entradaFiltrado
@@ -321,8 +351,8 @@
             this.dt_fecha_entradaFiltrado.Location = new System.Drawing.Point(196, 147);
             this.dt_fecha_entradaFiltrado.Mask = "00/00/0000";
             this.dt_fecha_entradaFiltrado.Name = "dt_fecha_entradaFiltrado";
-            this.dt_fecha_entradaFiltrado.Size = new System.Drawing.Size(88, 26);
-            this.dt_fecha_entradaFiltrado.TabIndex = 253;
+            this.dt_fecha_entradaFiltrado.Size = new System.Drawing.Size(122, 26);
+            this.dt_fecha_entradaFiltrado.TabIndex = 6;
             this.dt_fecha_entradaFiltrado.ValidatingType = typeof(System.DateTime);
             // 
             // txt_patenteFiltrado
@@ -339,7 +369,7 @@
             this.txt_patenteFiltrado.MaxLength = 20;
             this.txt_patenteFiltrado.Name = "txt_patenteFiltrado";
             this.txt_patenteFiltrado.Size = new System.Drawing.Size(122, 26);
-            this.txt_patenteFiltrado.TabIndex = 235;
+            this.txt_patenteFiltrado.TabIndex = 1;
             // 
             // cmbPlayaFiltrado
             // 
@@ -354,38 +384,8 @@
             this.cmbPlayaFiltrado.FormattingEnabled = true;
             this.cmbPlayaFiltrado.Location = new System.Drawing.Point(196, 196);
             this.cmbPlayaFiltrado.Name = "cmbPlayaFiltrado";
-            this.cmbPlayaFiltrado.Size = new System.Drawing.Size(123, 28);
-            this.cmbPlayaFiltrado.TabIndex = 246;
-            // 
-            // btn_nuevoFiltrado
-            // 
-            this.btn_nuevoFiltrado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_nuevoFiltrado.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_nuevoFiltrado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_nuevoFiltrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btn_nuevoFiltrado.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_nuevoFiltrado.Location = new System.Drawing.Point(423, 422);
-            this.btn_nuevoFiltrado.Name = "btn_nuevoFiltrado";
-            this.btn_nuevoFiltrado.Size = new System.Drawing.Size(90, 29);
-            this.btn_nuevoFiltrado.TabIndex = 264;
-            this.btn_nuevoFiltrado.Text = "Limpiar";
-            this.btn_nuevoFiltrado.UseVisualStyleBackColor = true;
-            this.btn_nuevoFiltrado.Click += new System.EventHandler(this.btn_nuevoFiltrado_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(875, 422);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 29);
-            this.button1.TabIndex = 265;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cmbPlayaFiltrado.Size = new System.Drawing.Size(122, 28);
+            this.cmbPlayaFiltrado.TabIndex = 8;
             // 
             // frm_EstacionamientoFiltrado
             // 
