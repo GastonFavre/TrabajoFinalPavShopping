@@ -176,11 +176,11 @@ namespace ShoppingBuyAll.Formularios
                 }
                 if (comando_sql == "")
                 {
-                    comando_sql = comando_sql + " WHERE " + txt_FechaDesde._campo + " BETWEEN '" + txt_FechaDesde.Text.Trim() + "' AND '" + txt_FechaHasta.Text.Trim() + "'";
+                    comando_sql = comando_sql + " WHERE " + txt_FechaDesde._campo + " BETWEEN CONVERT(char(10),'" + txt_FechaDesde.Text.Trim() + "',103) AND CONVERT(char(10),'" + txt_FechaHasta.Text.Trim() + "',103)";
                 }
                 else
                 {
-                    comando_sql = comando_sql + " AND " + txt_FechaDesde._campo + " BETWEEN '" + txt_FechaDesde.Text.Trim() + "' AND '" + txt_FechaHasta.Text.Trim() + "'";
+                    comando_sql = comando_sql + " AND " + txt_FechaDesde._campo + " BETWEEN CONVERT(char(10),'" + txt_FechaDesde.Text.Trim() + "', 103) AND CONVERT(char(10),'" + txt_FechaHasta.Text.Trim() + "', 103)";
                 }
 
             }
