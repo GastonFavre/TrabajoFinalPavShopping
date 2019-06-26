@@ -46,16 +46,23 @@ namespace ShoppingBuyAll.Formularios
 
         private void boton_Agregar_Click(object sender, EventArgs e)
         {
-            btn_BuscarCod.Visible = false;
-
             if (producto.validar_Producto(this.Controls) == Validar.estado_validacion.correcta)
             {
-                if (producto.agregar_producto(this.Controls))
+                DataTable tabla = new DataTable();
+                tabla = this.producto.buscar_producto(txt_CodigoProducto.Text.Trim());
+                if (tabla.Rows.Count == 0)
                 {
-                    MessageBox.Show("Producto agregado correctamente", "Mensaje"
-                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    if (producto.agregar_producto(this.Controls) == true)
+                    {
+                        MessageBox.Show("Producto agregado correctamente", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
-                
+                else
+                {
+                    MessageBox.Show("El Producto ya se encuentra en el sistema", "Mensaje"
+                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
         }
 

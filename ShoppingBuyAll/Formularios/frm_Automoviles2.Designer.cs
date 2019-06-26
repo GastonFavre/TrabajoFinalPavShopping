@@ -50,7 +50,6 @@
             this.txt_nroDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.cmb_Marca = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.txt_Patente = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.btn_Buscar_Modelos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -61,7 +60,7 @@
             this.label6.Location = new System.Drawing.Point(173, 217);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 20);
+            this.label6.Size = new System.Drawing.Size(84, 29);
             this.label6.TabIndex = 68;
             this.label6.Text = "Marca";
             // 
@@ -73,7 +72,7 @@
             this.label5.Location = new System.Drawing.Point(143, 412);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 20);
+            this.label5.Size = new System.Drawing.Size(126, 29);
             this.label5.TabIndex = 67;
             this.label5.Text = "Tipo Auto";
             // 
@@ -85,7 +84,7 @@
             this.label4.Location = new System.Drawing.Point(74, 365);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 20);
+            this.label4.Size = new System.Drawing.Size(195, 29);
             this.label4.TabIndex = 66;
             this.label4.Text = "Nro Documento";
             // 
@@ -97,7 +96,7 @@
             this.label3.Location = new System.Drawing.Point(63, 318);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 20);
+            this.label3.Size = new System.Drawing.Size(206, 29);
             this.label3.TabIndex = 65;
             this.label3.Text = "Tipo Documento";
             // 
@@ -109,7 +108,7 @@
             this.label2.Location = new System.Drawing.Point(156, 269);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 20);
+            this.label2.Size = new System.Drawing.Size(101, 29);
             this.label2.TabIndex = 64;
             this.label2.Text = "Modelo";
             // 
@@ -121,7 +120,7 @@
             this.label1.Location = new System.Drawing.Point(167, 166);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
+            this.label1.Size = new System.Drawing.Size(102, 29);
             this.label1.TabIndex = 63;
             this.label1.Text = "Patente";
             // 
@@ -281,7 +280,7 @@
             this.btn_Auto_Cliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_Auto_Cliente.Image = ((System.Drawing.Image)(resources.GetObject("btn_Auto_Cliente.Image")));
             this.btn_Auto_Cliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Auto_Cliente.Location = new System.Drawing.Point(558, 318);
+            this.btn_Auto_Cliente.Location = new System.Drawing.Point(923, 524);
             this.btn_Auto_Cliente.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Auto_Cliente.Name = "btn_Auto_Cliente";
             this.btn_Auto_Cliente.Size = new System.Drawing.Size(216, 81);
@@ -303,7 +302,7 @@
             this.cmb_Tipo_Doc.Location = new System.Drawing.Point(282, 318);
             this.cmb_Tipo_Doc.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_Tipo_Doc.Name = "cmb_Tipo_Doc";
-            this.cmb_Tipo_Doc.Size = new System.Drawing.Size(263, 28);
+            this.cmb_Tipo_Doc.Size = new System.Drawing.Size(263, 37);
             this.cmb_Tipo_Doc.TabIndex = 3;
             // 
             // cmb_Modelo
@@ -319,7 +318,7 @@
             this.cmb_Modelo.Location = new System.Drawing.Point(282, 267);
             this.cmb_Modelo.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_Modelo.Name = "cmb_Modelo";
-            this.cmb_Modelo.Size = new System.Drawing.Size(263, 28);
+            this.cmb_Modelo.Size = new System.Drawing.Size(263, 37);
             this.cmb_Modelo.TabIndex = 2;
             // 
             // cmb_TipoAuto
@@ -335,7 +334,7 @@
             this.cmb_TipoAuto.Location = new System.Drawing.Point(282, 412);
             this.cmb_TipoAuto.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_TipoAuto.Name = "cmb_TipoAuto";
-            this.cmb_TipoAuto.Size = new System.Drawing.Size(263, 28);
+            this.cmb_TipoAuto.Size = new System.Drawing.Size(263, 37);
             this.cmb_TipoAuto.TabIndex = 5;
             // 
             // txt_nroDoc
@@ -351,7 +350,7 @@
             this.txt_nroDoc.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nroDoc.MaxLength = 8;
             this.txt_nroDoc.Name = "txt_nroDoc";
-            this.txt_nroDoc.Size = new System.Drawing.Size(263, 26);
+            this.txt_nroDoc.Size = new System.Drawing.Size(263, 35);
             this.txt_nroDoc.TabIndex = 4;
             this.txt_nroDoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nroDoc_KeyPress);
             // 
@@ -368,7 +367,7 @@
             this.cmb_Marca.Location = new System.Drawing.Point(282, 214);
             this.cmb_Marca.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_Marca.Name = "cmb_Marca";
-            this.cmb_Marca.Size = new System.Drawing.Size(263, 28);
+            this.cmb_Marca.Size = new System.Drawing.Size(263, 37);
             this.cmb_Marca.TabIndex = 1;
             this.cmb_Marca.SelectedIndexChanged += new System.EventHandler(this.traer_Modelos);
             this.cmb_Marca.Click += new System.EventHandler(this.habilitar_Modelo);
@@ -386,35 +385,15 @@
             this.txt_Patente.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Patente.MaxLength = 7;
             this.txt_Patente.Name = "txt_Patente";
-            this.txt_Patente.Size = new System.Drawing.Size(169, 26);
+            this.txt_Patente.Size = new System.Drawing.Size(169, 35);
             this.txt_Patente.TabIndex = 0;
-            // 
-            // btn_Buscar_Modelos
-            // 
-            this.btn_Buscar_Modelos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.btn_Buscar_Modelos.FlatAppearance.BorderSize = 0;
-            this.btn_Buscar_Modelos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(58)))), ((int)(((byte)(155)))));
-            this.btn_Buscar_Modelos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Buscar_Modelos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btn_Buscar_Modelos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Buscar_Modelos.Image = ((System.Drawing.Image)(resources.GetObject("btn_Buscar_Modelos.Image")));
-            this.btn_Buscar_Modelos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Buscar_Modelos.Location = new System.Drawing.Point(623, 217);
-            this.btn_Buscar_Modelos.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Buscar_Modelos.Name = "btn_Buscar_Modelos";
-            this.btn_Buscar_Modelos.Size = new System.Drawing.Size(224, 83);
-            this.btn_Buscar_Modelos.TabIndex = 78;
-            this.btn_Buscar_Modelos.Text = "Buscar automoviles por modelo";
-            this.btn_Buscar_Modelos.UseVisualStyleBackColor = false;
-            this.btn_Buscar_Modelos.Click += new System.EventHandler(this.btn_Buscar_Modelos_Click);
             // 
             // frm_Automoviles2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.btn_Buscar_Modelos);
             this.Controls.Add(this.btn_Auto_Cliente);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_agregarTarjeta);
@@ -469,6 +448,5 @@
         private System.Windows.Forms.Button btn_agregarTarjeta;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_Auto_Cliente;
-        private System.Windows.Forms.Button btn_Buscar_Modelos;
     }
 }
