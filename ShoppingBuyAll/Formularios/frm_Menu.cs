@@ -72,9 +72,12 @@ namespace ShoppingBuyAll
 
         private void AbrirFormaHija(object formhija)
         {
+            
 
-            if (this.panel_contenedor.Controls.Count > 0)
+            if (this.panel_contenedor.Controls.Count > 1)
+            {
                 this.panel_contenedor.Controls.RemoveAt(1);
+            }
             Form fh = formhija as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
@@ -145,11 +148,15 @@ namespace ShoppingBuyAll
 
         private void btnIngreso_Click(object sender, EventArgs e)
         {
+            label1.Visible = false;
+            label2.Visible = false;
             AbrirFormaHija(new Ingreso_Estacionamiento());
         }
 
         private void btnSalida_Click(object sender, EventArgs e)
         {
+            label1.Visible = false;
+            label2.Visible = false;
             AbrirFormaHija(new salida_estacionamiento());
         }
 
@@ -160,6 +167,8 @@ namespace ShoppingBuyAll
 
         private void btn_buscarFiltrado_Click(object sender, EventArgs e)
         {
+            label1.Visible = false;
+            label2.Visible = false;
             AbrirFormaHija(new frm_EstacionamientoFiltrado());
         }
 

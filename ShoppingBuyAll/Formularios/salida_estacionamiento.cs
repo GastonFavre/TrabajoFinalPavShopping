@@ -43,6 +43,8 @@ namespace ShoppingBuyAll.Formularios
             {
                 DataTable tabla = new DataTable();
                 DataTable tabla1 = new DataTable();
+                DataTable tablaTipoDoc = new DataTable();
+                DataTable tablaPlaya = new DataTable();
 
                 tabla = autoCliente.consultar_lugar_playa(txt_patente.Text);
 
@@ -65,9 +67,14 @@ namespace ShoppingBuyAll.Formularios
                     txt_Estacionamiento.Text = tabla.Rows[0]["nro_estac"].ToString();
                     //en el id_playa devuelve null porque nunca se cargo en la tabla EstacXCliente
                     //ese error esta comentado en agregar_enEstacionamiento()
+                    tablaTipoDoc = autoCliente.descripcion_TIPODOC(cmb_tipoDoc.Text);
+                    tipoDocumento.Text = tablaTipoDoc.Rows[0]["descripcion"].ToString();
 
+                    tablaPlaya = autoCliente._nombre_playa(txt_idPlaya.Text);
+                    nombrePlaya.Text = tablaPlaya.Rows[0]["nombre"].ToString();
                     //calcular las horas totales 
-                    txt_horaSalida.Focus();
+                    txt_horaSalida.Text = DateTime.Now.ToShortTimeString();
+                    this.txt_patente.Enabled = false;
 
 
                 }
@@ -77,7 +84,8 @@ namespace ShoppingBuyAll.Formularios
         //sale y cierra el formulario
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
-            Dispose();
+            this.Close();
+            this.Dispose();
         }
 
         
@@ -95,6 +103,10 @@ namespace ShoppingBuyAll.Formularios
                 _BD.auto_modificar(this.Controls, "EstacXCliente");
                 MessageBox.Show("Se registro correctamente la salida del Vehiculo!");
                 _val.blanquear_objetos(this.Controls);
+                tipoDocumento.Text = "";
+                nombrePlaya.Text = "";
+                txt_patente.Enabled = true;
+                txt_patente.Focus();
             }
             
 
@@ -103,6 +115,15 @@ namespace ShoppingBuyAll.Formularios
         private void salida_estacionamiento_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void boton_cancelar_Click(object sender, EventArgs e)
+        {
+            this._val.blanquear_objetos(this.Controls);
+            tipoDocumento.Text = "";
+            nombrePlaya.Text = "";
+            txt_patente.Focus();
+            txt_patente.Enabled = true;
         }
     }
 }

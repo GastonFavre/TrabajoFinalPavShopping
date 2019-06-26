@@ -44,14 +44,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Buscar_patente = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.tipoDocumento = new System.Windows.Forms.TextBox();
+            this.nombrePlaya = new System.Windows.Forms.TextBox();
+            this.boton_cancelar = new System.Windows.Forms.Button();
+            this.txt_horaDesde = new ShoppingBuyAll.Componentes.MaskedTextBokDeControl(this.components);
             this.txt_horaSalida = new ShoppingBuyAll.Componentes.MaskedTextBokDeControl(this.components);
-            this.txt_horaDesde = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.dt_fecha_entrada = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.cmb_tipoDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_Estacionamiento = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_idPlaya = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_nroDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_patente = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // label11
@@ -70,11 +74,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(648, 263);
+            this.label10.Location = new System.Drawing.Point(666, 263);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 20);
+            this.label10.Size = new System.Drawing.Size(57, 20);
             this.label10.TabIndex = 125;
-            this.label10.Text = "N° Playa";
+            this.label10.Text = " Playa";
             // 
             // label4
             // 
@@ -111,6 +115,7 @@
             this.btn_cancelar.Size = new System.Drawing.Size(120, 34);
             this.btn_cancelar.TabIndex = 120;
             this.btn_cancelar.Text = "Salir";
+            this.toolTip1.SetToolTip(this.btn_cancelar, "Volver al menu");
             this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
@@ -127,6 +132,7 @@
             this.btn_confirmar.Size = new System.Drawing.Size(120, 34);
             this.btn_confirmar.TabIndex = 119;
             this.btn_confirmar.Text = "Confirmar";
+            this.toolTip1.SetToolTip(this.btn_confirmar, "Confirmar salida");
             this.btn_confirmar.UseVisualStyleBackColor = false;
             this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
             // 
@@ -213,6 +219,7 @@
             this.btn_Buscar_patente.Name = "btn_Buscar_patente";
             this.btn_Buscar_patente.Size = new System.Drawing.Size(27, 26);
             this.btn_Buscar_patente.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.btn_Buscar_patente, "Buscar");
             this.btn_Buscar_patente.UseVisualStyleBackColor = true;
             this.btn_Buscar_patente.Click += new System.EventHandler(this.btn_Buscar_patente_Click);
             // 
@@ -228,6 +235,57 @@
             this.label12.TabIndex = 131;
             this.label12.Text = "Hora de Salida";
             // 
+            // tipoDocumento
+            // 
+            this.tipoDocumento.Enabled = false;
+            this.tipoDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tipoDocumento.Location = new System.Drawing.Point(353, 300);
+            this.tipoDocumento.Multiline = true;
+            this.tipoDocumento.Name = "tipoDocumento";
+            this.tipoDocumento.Size = new System.Drawing.Size(122, 26);
+            this.tipoDocumento.TabIndex = 133;
+            // 
+            // nombrePlaya
+            // 
+            this.nombrePlaya.Enabled = false;
+            this.nombrePlaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nombrePlaya.Location = new System.Drawing.Point(744, 254);
+            this.nombrePlaya.Multiline = true;
+            this.nombrePlaya.Name = "nombrePlaya";
+            this.nombrePlaya.Size = new System.Drawing.Size(122, 26);
+            this.nombrePlaya.TabIndex = 134;
+            // 
+            // boton_cancelar
+            // 
+            this.boton_cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("boton_cancelar.BackgroundImage")));
+            this.boton_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.boton_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.boton_cancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.boton_cancelar.Location = new System.Drawing.Point(514, 258);
+            this.boton_cancelar.Name = "boton_cancelar";
+            this.boton_cancelar.Size = new System.Drawing.Size(27, 26);
+            this.boton_cancelar.TabIndex = 135;
+            this.toolTip1.SetToolTip(this.boton_cancelar, "Cancelar");
+            this.boton_cancelar.UseVisualStyleBackColor = true;
+            this.boton_cancelar.Click += new System.EventHandler(this.boton_cancelar_Click);
+            // 
+            // txt_horaDesde
+            // 
+            this.txt_horaDesde._campo = "hora_desde";
+            this.txt_horaDesde._mensaje_error = "No se Ingreso una hora de entrada";
+            this.txt_horaDesde._nombre_tabla = "EstacXCliente";
+            this.txt_horaDesde._pk = true;
+            this.txt_horaDesde._tipo = ShoppingBuyAll.Componentes.MaskedTextBokDeControl.Tipo_dato.hora;
+            this.txt_horaDesde._validable = true;
+            this.txt_horaDesde.Enabled = false;
+            this.txt_horaDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_horaDesde.Location = new System.Drawing.Point(351, 433);
+            this.txt_horaDesde.Mask = "00:00";
+            this.txt_horaDesde.Name = "txt_horaDesde";
+            this.txt_horaDesde.Size = new System.Drawing.Size(50, 26);
+            this.txt_horaDesde.TabIndex = 132;
+            this.txt_horaDesde.ValidatingType = typeof(System.DateTime);
+            // 
             // txt_horaSalida
             // 
             this.txt_horaSalida._campo = "hora_hasta";
@@ -236,6 +294,7 @@
             this.txt_horaSalida._pk = false;
             this.txt_horaSalida._tipo = ShoppingBuyAll.Componentes.MaskedTextBokDeControl.Tipo_dato.hora;
             this.txt_horaSalida._validable = true;
+            this.txt_horaSalida.Enabled = false;
             this.txt_horaSalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_horaSalida.Location = new System.Drawing.Point(744, 400);
             this.txt_horaSalida.Mask = "00:00";
@@ -243,22 +302,6 @@
             this.txt_horaSalida.Size = new System.Drawing.Size(50, 26);
             this.txt_horaSalida.TabIndex = 2;
             this.txt_horaSalida.ValidatingType = typeof(System.DateTime);
-            // 
-            // txt_horaDesde
-            // 
-            this.txt_horaDesde._campo = "hora_desde";
-            this.txt_horaDesde._mensaje_error = "No se Ingreso una hora";
-            this.txt_horaDesde._nombre_tabla = "EstacXCliente";
-            this.txt_horaDesde._pk = true;
-            this.txt_horaDesde._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_horaDesde._validable = true;
-            this.txt_horaDesde.Enabled = false;
-            this.txt_horaDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_horaDesde.Location = new System.Drawing.Point(351, 432);
-            this.txt_horaDesde.MaxLength = 8;
-            this.txt_horaDesde.Name = "txt_horaDesde";
-            this.txt_horaDesde.Size = new System.Drawing.Size(64, 26);
-            this.txt_horaDesde.TabIndex = 129;
             // 
             // dt_fecha_entrada
             // 
@@ -286,11 +329,12 @@
             this.cmb_tipoDoc._validable = true;
             this.cmb_tipoDoc.Enabled = false;
             this.cmb_tipoDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_tipoDoc.Location = new System.Drawing.Point(353, 302);
+            this.cmb_tipoDoc.Location = new System.Drawing.Point(353, 299);
             this.cmb_tipoDoc.MaxLength = 8;
             this.cmb_tipoDoc.Name = "cmb_tipoDoc";
             this.cmb_tipoDoc.Size = new System.Drawing.Size(122, 26);
             this.cmb_tipoDoc.TabIndex = 127;
+            this.cmb_tipoDoc.Visible = false;
             // 
             // txt_Estacionamiento
             // 
@@ -317,10 +361,11 @@
             this.txt_idPlaya._validable = true;
             this.txt_idPlaya.Enabled = false;
             this.txt_idPlaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.txt_idPlaya.Location = new System.Drawing.Point(744, 256);
+            this.txt_idPlaya.Location = new System.Drawing.Point(744, 289);
             this.txt_idPlaya.Name = "txt_idPlaya";
             this.txt_idPlaya.Size = new System.Drawing.Size(100, 26);
             this.txt_idPlaya.TabIndex = 123;
+            this.txt_idPlaya.Visible = false;
             // 
             // txt_nroDoc
             // 
@@ -352,6 +397,7 @@
             this.txt_patente.Name = "txt_patente";
             this.txt_patente.Size = new System.Drawing.Size(122, 26);
             this.txt_patente.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.txt_patente, "Ingrese una patente");
             // 
             // salida_estacionamiento
             // 
@@ -359,9 +405,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.boton_cancelar);
+            this.Controls.Add(this.nombrePlaya);
+            this.Controls.Add(this.tipoDocumento);
+            this.Controls.Add(this.txt_horaDesde);
             this.Controls.Add(this.txt_horaSalida);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.txt_horaDesde);
             this.Controls.Add(this.dt_fecha_entrada);
             this.Controls.Add(this.cmb_tipoDoc);
             this.Controls.Add(this.label11);
@@ -390,14 +439,11 @@
         }
 
         #endregion
-
-        private Componentes.TextBoxDeControl txt_horaDesde;
         private Componentes.TextBoxDeControl dt_fecha_entrada;
         private Componentes.TextBoxDeControl cmb_tipoDoc;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private Componentes.TextBoxDeControl txt_Estacionamiento;
-        private Componentes.TextBoxDeControl txt_idPlaya;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_cancelar;
@@ -413,5 +459,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
         private Componentes.MaskedTextBokDeControl txt_horaSalida;
+        private Componentes.MaskedTextBokDeControl txt_horaDesde;
+        private System.Windows.Forms.TextBox tipoDocumento;
+        private System.Windows.Forms.TextBox nombrePlaya;
+        private Componentes.TextBoxDeControl txt_idPlaya;
+        private System.Windows.Forms.Button boton_cancelar;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

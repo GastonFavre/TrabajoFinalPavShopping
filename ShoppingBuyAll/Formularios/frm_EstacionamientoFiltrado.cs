@@ -41,86 +41,120 @@ namespace ShoppingBuyAll.Formularios
         private void btn_buscarFiltrado_Click(object sender, EventArgs e)
         {
             string comando_sql = "";
-            if (checkPatente.Checked)
+
+            checkPatente.Enabled = true;
+
+            checkNroDNI.Enabled = true;
+
+            checkPlaya.Enabled = true;
+
+            checkFechaIngreso.Enabled = true;
+
+            
+
+            //agregado: muestra todos los autos que estan actualmente en el estacionamiento
+
+            if (checkEstacActual.Checked)
             {
-                if (txt_patenteFiltrado.Text == "")
+                DataTable tabla_Actuales = new DataTable();
+                tabla_Actuales = estacionamiento.estacionados_actuales();
+                if (tabla_Actuales.Rows.Count == 0)
                 {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por codigo, por ende debe escribir un codigo.");
-                    txt_patenteFiltrado.Focus();
-                    return;
+                    MessageBox.Show("No hay autos en el estacionamiento en este momento.");
+                    checkEstacActual.Checked = false;
                 }
                 else
                 {
-                    comando_sql = comando_sql + " WHERE " + txt_patenteFiltrado._campo + " = '" + txt_patenteFiltrado.Text.Trim() + "'";
+                    GrillaFiltrados.DataSource = tabla_Actuales;
+                    checkEstacActual.Checked = false;
                 }
             }
-            if (checkPlaya.Checked)
-            {
-                if (cmbPlayaFiltrado.SelectedIndex == -1)
-                {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado por precio, por ende debe escribir un precio desde y un precio hasta.");
-                    cmbPlayaFiltrado.Focus();
-                    return;
-                }
-                if (comando_sql == "")
-                {
-                    comando_sql = comando_sql + " WHERE " + cmbPlayaFiltrado._campo + " = " + this.cmbPlayaFiltrado.SelectedValue.ToString();
-                }
-                else
-                {
-                    comando_sql = comando_sql + " AND " + cmbPlayaFiltrado._campo + " = " + this.cmbPlayaFiltrado.SelectedValue.ToString();
-                }
-            }
-            if (checkNroDNI.Checked)
-            {
-                if (txt_NumDocFiltrado.Text == "")
-                {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado numero de documento, por ende debe escribir uno.");
-                    txt_NumDocFiltrado.Focus();
-                    return;
-                }
-                if (cmb_tipoDocFiltrado.SelectedIndex == -1)
-                {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado numero de documento, por ende debe seleccionar un tipo de documento.");
-                    cmb_tipoDocFiltrado.Focus();
-                    return;
-                }
-                if (comando_sql == "")
-                {
-                    comando_sql = comando_sql + " WHERE " + txt_NumDocFiltrado._campo + " = " + txt_NumDocFiltrado.Text.Trim() + "AND " + cmb_tipoDocFiltrado._campo + " = " + cmb_tipoDocFiltrado.SelectedValue.ToString();
-                }
-                else
-                {
-                    comando_sql = comando_sql + " AND  " + txt_NumDocFiltrado._campo + " = " + txt_NumDocFiltrado.Text.Trim() + "AND " + cmb_tipoDocFiltrado._campo + " = " + cmb_tipoDocFiltrado.SelectedValue.ToString();
-                }
-            }
-            if (checkFechaIngreso.Checked)
-            {
-                if (dt_fecha_entradaFiltrado.Text == "")
-                {
-                    MessageBox.Show("Se ecuentra seleccionada la opcion de filtado fecha, por ende debe escribir una fecha.");
-                    dt_fecha_entradaFiltrado.Focus();
-                    return;
-                }
-                if (comando_sql == "")
-                {
-                    comando_sql = comando_sql + " WHERE " + dt_fecha_entradaFiltrado._campo + " = '" + dt_fecha_entradaFiltrado.Text.Trim() + "'";
-                }
-                else
-                {
-                    comando_sql = comando_sql + " AND " + dt_fecha_entradaFiltrado._campo + " = '" + dt_fecha_entradaFiltrado.Text.Trim() + "'";
-                }
-            }
-            DataTable tabla = new DataTable();
-            tabla = estacionamiento.buscar_EstacionamientoFiltadoAuto(comando_sql);
-            if (tabla.Rows.Count == 0)
-            {
-                MessageBox.Show("No se encuentra ningun producto segun la busqueda realizada.");
-            }
+
             else
             {
-                GrillaFiltrados.DataSource = tabla;
+                if (checkPatente.Checked)
+                {
+                    if (txt_patenteFiltrado.Text == "")
+                    {
+                        MessageBox.Show("Se ecuentra seleccionada la opcion de filtrado por patente, por ende debe escribir una patente.");
+                        txt_patenteFiltrado.Focus();
+                        return;
+                    }
+                    else
+                    {
+                        comando_sql = comando_sql + " WHERE " + txt_patenteFiltrado._campo + " = '" + txt_patenteFiltrado.Text.Trim() + "'";
+                    }
+                }
+                if (checkPlaya.Checked)
+                {
+                    if (cmbPlayaFiltrado.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Se ecuentra seleccionada la opcion de filtrado por Playa, por ende debe seleccionar una playa.");
+                        cmbPlayaFiltrado.Focus();
+                        return;
+                    }
+                    if (comando_sql == "")
+                    {
+                        comando_sql = comando_sql + " WHERE " + cmbPlayaFiltrado._campo + " = " + this.cmbPlayaFiltrado.SelectedValue.ToString();
+                    }
+                    else
+                    {
+                        comando_sql = comando_sql + " AND " + cmbPlayaFiltrado._campo + " = " + this.cmbPlayaFiltrado.SelectedValue.ToString();
+                    }
+                }
+                if (checkNroDNI.Checked)
+                {
+                    if (txt_NumDocFiltrado.Text == "")
+                    {
+                        MessageBox.Show("Se ecuentra seleccionada la opcion de filtrado numero de documento, por ende debe escribir uno.");
+                        txt_NumDocFiltrado.Focus();
+                        return;
+                    }
+                    if (cmb_tipoDocFiltrado.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Se ecuentra seleccionada la opcion de filtrado numero de documento, por ende debe seleccionar un tipo de documento.");
+                        cmb_tipoDocFiltrado.Focus();
+                        return;
+                    }
+                    if (comando_sql == "")
+                    {
+                        comando_sql = comando_sql + " WHERE " + txt_NumDocFiltrado._campo + " = " + txt_NumDocFiltrado.Text.Trim() + "AND " + cmb_tipoDocFiltrado._campo + " = " + cmb_tipoDocFiltrado.SelectedValue.ToString();
+                    }
+                    else
+                    {
+                        comando_sql = comando_sql + " AND  " + txt_NumDocFiltrado._campo + " = " + txt_NumDocFiltrado.Text.Trim() + "AND " + cmb_tipoDocFiltrado._campo + " = " + cmb_tipoDocFiltrado.SelectedValue.ToString();
+                    }
+                }
+                if (checkFechaIngreso.Checked)
+                {
+                    
+                    if (estacionamiento.validar_Automovil(this.Controls) == Validar.estado_validacion.erronea)
+                    {
+                        MessageBox.Show("Se ecuentra seleccionada la opcion de filtrado fecha, por ende debe escribir una fecha.");
+                        dt_fecha_entradaFiltrado.Focus();
+                        return;
+                    }
+                    if (comando_sql == "")
+                    {
+                        comando_sql = comando_sql + " WHERE " + dt_fecha_entradaFiltrado._campo + " = '" + dt_fecha_entradaFiltrado.Text.Trim() + "'";
+                    }
+                    else
+                    {
+                        comando_sql = comando_sql + " AND " + dt_fecha_entradaFiltrado._campo + " = '" + dt_fecha_entradaFiltrado.Text.Trim() + "'";
+                    }
+                }
+                DataTable tabla = new DataTable();
+                tabla = estacionamiento.buscar_EstacionamientoFiltadoAuto(comando_sql);
+                if (tabla.Rows.Count == 0)
+                {
+                    MessageBox.Show("No se encuentra ningun resultado segun la busqueda realizada.");
+                }
+                else
+                {
+                    GrillaFiltrados.DataSource = tabla;
+                }
             }
+            
 
         }
 
@@ -155,6 +189,7 @@ namespace ShoppingBuyAll.Formularios
                 txt_NumDocFiltrado.Enabled = false;
                 cmb_tipoDocFiltrado.Enabled = false;
                 txt_NumDocFiltrado.Text = "";
+                cmb_tipoDocFiltrado.SelectedIndex = -1;
             }
         }
 
@@ -192,10 +227,7 @@ namespace ShoppingBuyAll.Formularios
 
       
 
-        private void btn_Salir_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
+       
 
         private void btn_nuevoFiltrado_Click_1(object sender, EventArgs e)
         {
@@ -213,6 +245,8 @@ namespace ShoppingBuyAll.Formularios
 
             checkFechaIngreso.Checked = false;
 
+          
+
             GrillaFiltrados.DataSource = "";
         }
 
@@ -223,6 +257,55 @@ namespace ShoppingBuyAll.Formularios
                 MessageBox.Show("No es un valor permitido");
                 e.Handled = true;
             }
+        }
+
+        private void checkEstacActual_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkEstacActual.Checked)
+            {
+                txt_patenteFiltrado.Text = "";
+                txt_NumDocFiltrado.Text = "";
+
+                dt_fecha_entradaFiltrado.Text = "";
+                cmbPlayaFiltrado.SelectedIndex = -1;
+                cmb_tipoDocFiltrado.SelectedIndex = -1;
+
+                checkPatente.Checked = false;
+
+                checkNroDNI.Checked = false;
+
+                checkPlaya.Checked = false;
+
+                checkFechaIngreso.Checked = false;
+
+
+                checkPatente.Enabled = false;
+
+                checkNroDNI.Enabled = false;
+
+                checkPlaya.Enabled = false;
+
+                checkFechaIngreso.Enabled = false;
+
+                GrillaFiltrados.DataSource = "";
+            }
+            else
+            {
+                checkPatente.Enabled = true;
+
+                checkNroDNI.Enabled = true;
+
+                checkPlaya.Enabled = true;
+
+                checkFechaIngreso.Enabled = true;
+            }
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            this.Dispose();
         }
     }
 }

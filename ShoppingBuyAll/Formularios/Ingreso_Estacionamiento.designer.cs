@@ -55,6 +55,8 @@
             this.txt_nomCliente = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_nroDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.txt_patente = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.boton_cancelar = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -103,6 +105,7 @@
             this.btn_Buscar_patente.Name = "btn_Buscar_patente";
             this.btn_Buscar_patente.Size = new System.Drawing.Size(27, 26);
             this.btn_Buscar_patente.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.btn_Buscar_patente, "Buscar");
             this.btn_Buscar_patente.UseVisualStyleBackColor = true;
             this.btn_Buscar_patente.Click += new System.EventHandler(this.btn_Buscar_patente_Click);
             // 
@@ -182,6 +185,7 @@
             this.btn_confirmar.Size = new System.Drawing.Size(120, 34);
             this.btn_confirmar.TabIndex = 89;
             this.btn_confirmar.Text = "Confirmar";
+            this.toolTip1.SetToolTip(this.btn_confirmar, "Confirmar ingreso");
             this.btn_confirmar.UseVisualStyleBackColor = false;
             this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
             // 
@@ -197,6 +201,7 @@
             this.btn_cancelar.Size = new System.Drawing.Size(120, 34);
             this.btn_cancelar.TabIndex = 92;
             this.btn_cancelar.Text = "Salir";
+            this.toolTip1.SetToolTip(this.btn_cancelar, "Volver al menu");
             this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
@@ -278,12 +283,14 @@
             this.txt_Estacionamiento._pk = false;
             this.txt_Estacionamiento._tipo = ShoppingBuyAll.Componentes.MaskedTextBokDeControl.Tipo_dato.numero;
             this.txt_Estacionamiento._validable = true;
+            this.txt_Estacionamiento.Enabled = false;
             this.txt_Estacionamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txt_Estacionamiento.Location = new System.Drawing.Point(756, 273);
             this.txt_Estacionamiento.Mask = "900";
             this.txt_Estacionamiento.Name = "txt_Estacionamiento";
             this.txt_Estacionamiento.Size = new System.Drawing.Size(40, 26);
             this.txt_Estacionamiento.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.txt_Estacionamiento, "Ingrese un numero con formato : 000");
             // 
             // cmb_IdPlaya
             // 
@@ -292,12 +299,14 @@
             this.cmb_IdPlaya._nombre_tabla = "EstacXCliente";
             this.cmb_IdPlaya._pk = false;
             this.cmb_IdPlaya._validable = true;
+            this.cmb_IdPlaya.Enabled = false;
             this.cmb_IdPlaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmb_IdPlaya.FormattingEnabled = true;
             this.cmb_IdPlaya.Location = new System.Drawing.Point(756, 232);
             this.cmb_IdPlaya.Name = "cmb_IdPlaya";
             this.cmb_IdPlaya.Size = new System.Drawing.Size(129, 28);
             this.cmb_IdPlaya.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.cmb_IdPlaya, "Seleccionar playa");
             // 
             // dt_fecha_entrada
             // 
@@ -307,6 +316,7 @@
             this.dt_fecha_entrada._pk = true;
             this.dt_fecha_entrada._tipo = ShoppingBuyAll.Componentes.MaskedTextBokDeControl.Tipo_dato.fecha;
             this.dt_fecha_entrada._validable = true;
+            this.dt_fecha_entrada.Enabled = false;
             this.dt_fecha_entrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_fecha_entrada.Location = new System.Drawing.Point(364, 434);
             this.dt_fecha_entrada.Mask = "00/00/0000";
@@ -325,7 +335,7 @@
             this.cmb_tipoDoc._validable = true;
             this.cmb_tipoDoc.Enabled = false;
             this.cmb_tipoDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_tipoDoc.Location = new System.Drawing.Point(46, 53);
+            this.cmb_tipoDoc.Location = new System.Drawing.Point(398, 259);
             this.cmb_tipoDoc.MaxLength = 8;
             this.cmb_tipoDoc.Name = "cmb_tipoDoc";
             this.cmb_tipoDoc.Size = new System.Drawing.Size(122, 26);
@@ -394,6 +404,21 @@
             this.txt_patente.Name = "txt_patente";
             this.txt_patente.Size = new System.Drawing.Size(122, 26);
             this.txt_patente.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.txt_patente, "Ingrese una patente");
+            // 
+            // boton_cancelar
+            // 
+            this.boton_cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("boton_cancelar.BackgroundImage")));
+            this.boton_cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.boton_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.boton_cancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.boton_cancelar.Location = new System.Drawing.Point(526, 226);
+            this.boton_cancelar.Name = "boton_cancelar";
+            this.boton_cancelar.Size = new System.Drawing.Size(27, 26);
+            this.boton_cancelar.TabIndex = 106;
+            this.toolTip1.SetToolTip(this.boton_cancelar, "Cancelar");
+            this.boton_cancelar.UseVisualStyleBackColor = true;
+            this.boton_cancelar.Click += new System.EventHandler(this.boton_cancelar_Click);
             // 
             // Ingreso_Estacionamiento
             // 
@@ -401,6 +426,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.boton_cancelar);
             this.Controls.Add(this.tipoDocumento);
             this.Controls.Add(this.txt_horaDesde);
             this.Controls.Add(this.txt_Estacionamiento);
@@ -464,5 +490,7 @@
         private Componentes.MaskedTextBokDeControl txt_Estacionamiento;
         private Componentes.MaskedTextBokDeControl txt_horaDesde;
         private System.Windows.Forms.TextBox tipoDocumento;
+        private System.Windows.Forms.Button boton_cancelar;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
