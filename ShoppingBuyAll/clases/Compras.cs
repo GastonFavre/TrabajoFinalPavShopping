@@ -22,8 +22,9 @@ namespace ShoppingBuyAll.clases
 
         public void agregar_compra_vacia(string pk, string local, string tipo_D, string nro_Doc, string fecha)
         {
+            MessageBox.Show(fecha);
             string sql = "INSERT INTO ComprasXCliente (nro_factura, cuil_local1, tipo_doc1, num_doc1, fecha_compra)" +
-                          " VALUES (" + pk + " , " + local + " , " + tipo_D + " , " + nro_Doc + " , " +  fecha + ")";
+                          " VALUES (" + pk + " , " + local + " , " + tipo_D + " , " + nro_Doc + " , '" +  fecha + "')";
             this._BD.insert_update_delete(sql);
         }
 
@@ -46,7 +47,7 @@ namespace ShoppingBuyAll.clases
             string pk;
             string pk_nueva;
             string sql = "";
-            sql = "SELECT MAX(C.nro_factura) FROM ComprasXCliente C WHERE C.cuil_local1 = " + cuil;
+            sql = "SELECT MAX(C.nro_factura) FROM ComprasXCliente C";
             DataTable tabla = _BD.consulta(sql);
             pk = tabla.Rows[0]["Column1"].ToString();
             if (pk == "")

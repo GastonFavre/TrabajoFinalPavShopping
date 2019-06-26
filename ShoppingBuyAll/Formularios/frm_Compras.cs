@@ -45,6 +45,7 @@ namespace ShoppingBuyAll
             this.cmb_TipoDoc.cargar("Tipo_Documento", "id_doc", "descripcion");
             this.cmb_TipoDoc.SelectedIndex = -1;
             this._BD.iniciar_transaccion();
+            dtp_compra.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void btn_bucarCliente_Click(object sender, EventArgs e)
@@ -232,8 +233,9 @@ namespace ShoppingBuyAll
                     this.btn_busc_loc.Enabled = false;
                     this.num_factur.Enabled = false;
                     this.txt_cuil.Enabled = false;
+                    MessageBox.Show(dtp_compra.Text.Trim());
                     this.compras.agregar_compra_vacia(pk_Factura, this.txt_cuil.Text.Trim(), this.cmb_TipoDoc.SelectedValue.ToString().Trim(),
-                                                        this.txt_NumeroDoc.Text.Trim(), dtp_compra.Text.ToString());
+                                                        this.txt_NumeroDoc.Text.Trim(), dtp_compra.Text.Trim());
                 }
             }
             else

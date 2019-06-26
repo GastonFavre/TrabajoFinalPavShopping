@@ -35,7 +35,7 @@ namespace ShoppingBuyAll.Formularios
         {
             if (txt_FechaDesde.Text != "" && txt_FechaHasta.Text != "")
             {
-                string sql = "WHERE C.fecha_compra BETWEEN " + txt_FechaDesde.Text.Trim() + " AND " + txt_FechaHasta.Text.Trim();
+                string sql = "WHERE C.fecha_compra BETWEEN CONVERT(char(10),'" + txt_FechaDesde.Text.Trim() + "',103) AND CONVERT(char(10),'" + txt_FechaHasta.Text.Trim() +"',103)";
                 DataTable tabla = obj_producto.topProductos(sql);
                 this.topProductosBindingSource.DataSource = tabla;
                 this.reportViewer1.RefreshReport();

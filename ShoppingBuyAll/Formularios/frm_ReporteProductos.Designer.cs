@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.topProductosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetProductos = new ShoppingBuyAll.Datos.DataSetProductos();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -57,9 +57,9 @@
             // reportViewer1
             // 
             this.reportViewer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.topProductosBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.topProductosBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ShoppingBuyAll.Informes.Infr.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 69);
             this.reportViewer1.Name = "reportViewer1";
@@ -70,11 +70,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(357, 23);
+            this.label1.Size = new System.Drawing.Size(344, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "Informe de productos mas vendidos";
             // 
@@ -95,7 +95,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(599, 37);
+            this.label3.Location = new System.Drawing.Point(590, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 20);
             this.label3.TabIndex = 84;
@@ -106,7 +106,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(459, 37);
+            this.label2.Location = new System.Drawing.Point(417, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 83;
@@ -121,11 +121,11 @@
             this.txt_FechaDesde._tipo = ShoppingBuyAll.Componentes.MaskedTextBokDeControl.Tipo_dato.texto;
             this.txt_FechaDesde._validable = false;
             this.txt_FechaDesde.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_FechaDesde.Location = new System.Drawing.Point(516, 34);
+            this.txt_FechaDesde.Location = new System.Drawing.Point(479, 34);
             this.txt_FechaDesde.Mask = "00/00/0000";
             this.txt_FechaDesde.Name = "txt_FechaDesde";
-            this.txt_FechaDesde.Size = new System.Drawing.Size(77, 26);
-            this.txt_FechaDesde.TabIndex = 82;
+            this.txt_FechaDesde.Size = new System.Drawing.Size(96, 26);
+            this.txt_FechaDesde.TabIndex = 0;
             this.txt_FechaDesde.ValidatingType = typeof(System.DateTime);
             // 
             // txt_FechaHasta
@@ -137,11 +137,11 @@
             this.txt_FechaHasta._tipo = ShoppingBuyAll.Componentes.MaskedTextBokDeControl.Tipo_dato.texto;
             this.txt_FechaHasta._validable = false;
             this.txt_FechaHasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_FechaHasta.Location = new System.Drawing.Point(657, 34);
+            this.txt_FechaHasta.Location = new System.Drawing.Point(648, 34);
             this.txt_FechaHasta.Mask = "00/00/0000";
             this.txt_FechaHasta.Name = "txt_FechaHasta";
-            this.txt_FechaHasta.Size = new System.Drawing.Size(77, 26);
-            this.txt_FechaHasta.TabIndex = 81;
+            this.txt_FechaHasta.Size = new System.Drawing.Size(103, 26);
+            this.txt_FechaHasta.TabIndex = 1;
             this.txt_FechaHasta.ValidatingType = typeof(System.DateTime);
             // 
             // button1
