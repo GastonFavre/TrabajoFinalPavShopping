@@ -280,7 +280,7 @@
             this.btn_Auto_Cliente.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_Auto_Cliente.Image = ((System.Drawing.Image)(resources.GetObject("btn_Auto_Cliente.Image")));
             this.btn_Auto_Cliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Auto_Cliente.Location = new System.Drawing.Point(923, 524);
+            this.btn_Auto_Cliente.Location = new System.Drawing.Point(574, 313);
             this.btn_Auto_Cliente.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Auto_Cliente.Name = "btn_Auto_Cliente";
             this.btn_Auto_Cliente.Size = new System.Drawing.Size(216, 81);
