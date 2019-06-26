@@ -44,6 +44,7 @@ namespace ShoppingBuyAll
         {
             this.cmb_TipoDoc.cargar("Tipo_Documento", "id_doc", "descripcion");
             this.cmb_TipoDoc.SelectedIndex = -1;
+            this._BD.iniciar_transaccion();
         }
 
         private void btn_bucarCliente_Click(object sender, EventArgs e)
@@ -56,6 +57,8 @@ namespace ShoppingBuyAll
                 {
                     MessageBox.Show("El Cliente ingresado no existe", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.txt_NumeroDoc.Text = "";
+                    this.txt_Nombre.Text = "";
+                    txt_Apellido.Text = "";
                     this.cmb_TipoDoc.SelectedIndex = -1;
                     this.txt_NumeroDoc.Focus();
                 }
@@ -223,7 +226,7 @@ namespace ShoppingBuyAll
                     this.txt_nom_loc.Text = tabla_loc.Rows[0]["nombre"].ToString();
                     this.txt_tipo_loc.Text = tabla_tipo.Rows[0]["descripcion"].ToString();
 
-                    this._BD.iniciar_transaccion();
+                    
                     string pk_Factura = this.compras.Numero_Factura(this.txt_cuil.Text.Trim());
                     this.num_factur.Text = pk_Factura;
                     this.btn_busc_loc.Enabled = false;
@@ -315,36 +318,31 @@ namespace ShoppingBuyAll
             {
                 if (rbt_tar.Checked)
                 {
-                    this.compras.agregar_Tarjeta_Factura(this.num_factur.Text.Trim(), idCodigoTarjera, cmb_NumTarjeta.Text.Trim(), cmb_TipoDoc.SelectedValue.ToString(), txt_NumeroDoc.Text.Trim());
-                    //if (cmb_NumTarjeta.SelectedIndex == -1)
-                    //{
-                    //    MessageBox.Show("Usted Eligio como metodo de pago tarjeta de credito. Por ese motivo, debe ingresar una.");
-                    //    cmb_NumTarjeta.Focus();
-                    //    return;
-                    //}
-                    //else
-                    //{
-                    //    this.compras.agregar_Tarjeta_Factura(this.num_factur.Text.Trim(), idCodigoTarjera, cmb_NumTarjeta.Text.Trim(), cmb_TipoDoc.SelectedValue.ToString(), txt_NumeroDoc.Text.Trim());
-                    //}
-                    
+                    if (cmb_NumTarjeta.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Usted Eligio como metodo de pago tarjeta de credito. Por ese motivo, debe ingresar una.");
+                        cmb_NumTarjeta.Focus();
+                        return;
+                    }
+                    else
+                    {
+                        this.compras.agregar_Tarjeta_Factura(this.num_factur.Text.Trim(), idCodigoTarjera, cmb_NumTarjeta.Text.Trim(), cmb_TipoDoc.SelectedValue.ToString(), txt_NumeroDoc.Text.Trim());
+                    }
+
                 }
 
-                this._BD.cerrar_transaccion();
-                MessageBox.Show("Se finalizo la compra con exito");
-                this.Dispose();
+                if (MessageBox.Show("Esta seguro que desea Confirmar la compra?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    this._BD.cerrar_transaccion();
+                    MessageBox.Show("Se finalizo la compra con exito");
+                    this.Dispose();
+                }
+                else
+                {
+                    return;
+                }
 
-                //if (MessageBox.Show("Esta seguro que desea Confirmar la compra?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                //{
-                //    this._BD.cerrar_transaccion();
-                //    MessageBox.Show("Se finalizo la compra con exito");
-                //    this.Dispose();
-                //}
-                //else
-                //{
-                //    return;
-                //}
 
-                
             }
             else
             {
@@ -411,7 +409,28 @@ namespace ShoppingBuyAll
             txt_Nom_Prod.Enabled = false;
             rb_Nombre.Checked = false;
 
+            txt_Precio_Prod.Text = "";
             grid_product.DataSource = "";
+        }
+
+        private void grid_compra_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
+        {
+            if (grid_compra.Rows.Count != 0)
+            {
+                rbt_eft.Enabled = true;
+                rbt_tar.Enabled = true;
+            }
+            else
+            {
+                rbt_eft.Checked = false;
+                rbt_tar.Checked = false;
+                rbt_eft.Enabled = false;
+                rbt_tar.Enabled = false;
+                cmb_NumTarjeta.Enabled = false;
+                cb_NombreTarjeta.Enabled = false;
+                cmb_NumTarjeta.SelectedIndex = -1;
+                cb_NombreTarjeta.SelectedIndex = -1;
+            }
         }
     }
 }
