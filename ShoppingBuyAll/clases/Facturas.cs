@@ -71,7 +71,6 @@ namespace ShoppingBuyAll.clases
                                                 JOIN clientes CL ON C.tipo_doc1 = CL.tipo_doc1 AND CL.num_doc = C.num_doc1
                                                 JOIN Locales L ON L.cuil = D.cuil_local2
                                                 JOIN Productos P ON P.cod_prod = D.cod_prod1 " + comandoWhere + " " + comandoHaving;
-                MessageBox.Show(sql);
                 return _BD.consulta(sql);
             }
             else
@@ -81,7 +80,6 @@ namespace ShoppingBuyAll.clases
                                                 JOIN clientes CL ON C.tipo_doc1 = CL.tipo_doc1 AND CL.num_doc = C.num_doc1
                                                 JOIN Locales L ON L.cuil = D.cuil_local2
                                                 JOIN Productos P ON P.cod_prod = D.cod_prod1 " + comandoWhere;
-                MessageBox.Show(sql);
                 return _BD.consulta(sql);
             }
             

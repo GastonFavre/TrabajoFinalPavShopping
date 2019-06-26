@@ -25,7 +25,6 @@ namespace ShoppingBuyAll.clases
             string sql = "INSERT INTO ComprasXCliente (nro_factura, cuil_local1, tipo_doc1, num_doc1)" +
                           " VALUES (" + pk + " , " + local + " , " + tipo_D + " , " + nro_Doc + ")";
             this._BD.insert_update_delete(sql);
-            MessageBox.Show(sql);
         }
 
         public void agregar_detalle(string factura, string cod, string precioUnidad, string loc, string cantidad)
@@ -33,14 +32,12 @@ namespace ShoppingBuyAll.clases
             string sql = "INSERT INTO DetalleCompras (nro_factura1, cuil_local2, cod_prod1, cantidad, precio) VALUES (" + factura +
                     " , " + loc + " , " + cod + " , " + cantidad + " , " + precioUnidad + ")";
             this._BD.insert_update_delete(sql);
-            MessageBox.Show(sql);
         }
 
         public void eliminar_detalle(string factura, string cod, string loc)
         {
             string sql = "DELETE FROM DetalleCompras WHERE nro_factura1 = " + factura + " AND cuil_local2= " + loc + " AND cod_prod1= " + cod;
             this._BD.insert_update_delete(sql);
-            MessageBox.Show(sql);
         }
 
 

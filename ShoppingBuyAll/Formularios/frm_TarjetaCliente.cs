@@ -28,9 +28,21 @@ namespace ShoppingBuyAll.Formularios
         private void boton_Agregar_Click(object sender, EventArgs e)
         {
             TarjetaXCliente tarjeta = new TarjetaXCliente();
+            
             if (tarjeta.validar_Tarjeta(this.Controls) == Validar.estado_validacion.correcta)
             {
-                tarjeta.agregar_Tarjeta(this.Controls);
+                DataTable tabla = new DataTable();
+                tabla = tarjeta.verificarTarjetaCliente(this.cmb_TipoDoc.SelectedValue.ToString(), this.txt_NumDocu.Text.Trim(), this.cmb_CodTarjeta.SelectedValue.ToString());
+                if (tabla.Rows.Count == 0)
+                {
+                    tarjeta.agregar_Tarjeta(this.Controls);
+                    MessageBox.Show("Tarjeta Agregada Correctamente.");
+                }
+                else
+                {
+                    MessageBox.Show("La tarjeta que se desea agregar ya se encuentra registrada.");
+                }
+                
             }
 
         }

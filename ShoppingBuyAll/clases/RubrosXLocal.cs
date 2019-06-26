@@ -19,7 +19,6 @@ namespace ShoppingBuyAll.clases
 
         public void agregar_Rubro(Control.ControlCollection controles)
         {
-            MessageBox.Show(controles.ToString());
             _BD.auto_insert(controles, "LocalesXRubro");
         }
 

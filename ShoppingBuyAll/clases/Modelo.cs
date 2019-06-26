@@ -38,7 +38,6 @@ namespace ShoppingBuyAll.clases
             string sql = "";
             sql = "INSERT INTO Modelo (id_modelo, nombre, id_marca1) VALUES (" + id_nuevo.ToString() + ", ' " + nombre + "', " + marca + ")";
             _BD.grabar_modificar(sql);
-            MessageBox.Show(sql);
 
         }
 

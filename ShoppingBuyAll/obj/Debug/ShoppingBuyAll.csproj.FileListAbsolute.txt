@@ -1,4 +1,4 @@
-﻿C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
+C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe.config
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.exe
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\bin\Debug\ShoppingBuyAll.pdb
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\ShoppingPAV1\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.csprojAssemblyReference.cache
@@ -1018,4 +1018,3 @@ C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavSh
 C:\Users\PC01\Desktop\FACULTAD\PAV I\TP PAV I\Trabajo Practico\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ReporteProductos.resources
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_FiltrosProductos.resources
 C:\Users\leoob\OneDrive\Documentos\GitHub\ShoppingPAV1\TrabajoFinalPavShopping\ShoppingBuyAll\obj\Debug\ShoppingBuyAll.Formularios.frm_ReporteAutomoviles.resources
-

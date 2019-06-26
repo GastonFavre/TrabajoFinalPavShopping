@@ -186,7 +186,6 @@ namespace ShoppingBuyAll
                     this._BD.iniciar_transaccion();
                     this.compras.agregar_compra_vacia(pk_Factura, this.txt_cuil.Text.Trim(), this.cmb_TipoDoc.SelectedValue.ToString().Trim(),
                                                         this.txt_NumeroDoc.Text.Trim());
-                    MessageBox.Show("Inicio la transaccion");
                 }
             }
             else

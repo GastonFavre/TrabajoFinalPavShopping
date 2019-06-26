@@ -28,7 +28,6 @@ namespace ShoppingBuyAll.clases
             int id_nuevo = int.Parse(id) + 1;
             string sql = "";
             sql = "INSERT INTO Marcas (id_marca, descripcion) VALUES (" + id_nuevo.ToString() + ", ' " + descripcion + "')";
-            MessageBox.Show(sql);
             _BD.grabar_modificar(sql);
         }
 

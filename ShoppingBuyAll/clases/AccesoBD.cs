@@ -29,7 +29,7 @@ namespace ShoppingBuyAll.clases
         //cadena de conexion leo messi d10s Provider=SQLNCLI11;Data Source=DESKTOP-7P9GVA2\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All
         //cadena de conexion de tu hermana la mariana Provider=SQLNCLI11;Data Source=DESKTOP-NBF2L95\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All
 
-        string cadena_conexion = "Provider=SQLNCLI11;Data Source=DESKTOP-7P9GVA2\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All";
+        string cadena_conexion = "Provider=SQLNCLI11;Data Source=.;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All";
 
         public void iniciar_transaccion()
         {
@@ -255,7 +255,7 @@ namespace ShoppingBuyAll.clases
 
             sqlinsert = @"INSERT INTO " + nombre_tabla
                         + "(" + columnas + ") VALUES (" + valores + ")";
-            MessageBox.Show(sqlinsert);
+
             if (this.insert_update_delete(sqlinsert) == resultado_acceso.error)
             {
                 return false;
@@ -419,7 +419,6 @@ namespace ShoppingBuyAll.clases
             }
 
             sqlComand = @"UPDATE " + nombre_tabla + " SET " + cuerpo + " WHERE " + condicion;
-            MessageBox.Show(sqlComand);
 
             this.insert_update_delete(sqlComand);
         }

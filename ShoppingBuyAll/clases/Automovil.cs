@@ -78,7 +78,6 @@ namespace ShoppingBuyAll.clases
                           JOIN Tipo_Auto TA ON TA.cod_tipo = A.cod_tipo1
                           JOIN Modelo MO ON A.modelo = MO.id_modelo
                           WHERE tipo_doc2 = " + tipo + " AND num_doc1 = " + doc;
-            MessageBox.Show(sql);
             return _BD.consulta(sql);
         }
 

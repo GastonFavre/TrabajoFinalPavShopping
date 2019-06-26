@@ -28,7 +28,6 @@ namespace ShoppingBuyAll.clases
             int id_nuevo = int.Parse(id) + 1;
             string sql = "";
             sql = "INSERT INTO Barrio (id_barrio, nombre) VALUES (" + id_nuevo.ToString() + ", ' " + descripcion + "')";
-            MessageBox.Show(sql);
             _BD.grabar_modificar(sql);
         }
     }

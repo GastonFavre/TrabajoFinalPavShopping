@@ -105,53 +105,15 @@ namespace ShoppingBuyAll.Formularios
         {
             if ((this.cmb_tipoDoc.SelectedIndex != -1) && (this.txt_NumDoc.Text != ""))
             {
-                DataTable tabla_ClienteExistente = new DataTable();
-                tabla_ClienteExistente = this.cliente.buscar_cliente(this.cmb_tipoDoc.SelectedValue.ToString(), txt_NumDoc.Text.Trim());
-                if (tabla_ClienteExistente.Rows.Count == 0)
-                {
-                    MessageBox.Show("El Cliente que desea eliminar no existe.", "Mensaje"
-                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-                else
-                {
-                    DataTable tabla_ClienteConCompras = new DataTable();
-                    tabla_ClienteConCompras = this._BD.consulta("SELECT C.* FROM ComprasXCliente C WHERE tipo_doc1=" + cmb_tipoDoc.SelectedValue.ToString() + " AND num_doc1=" + txt_NumDoc.Text.ToString());
-                    if (tabla_ClienteConCompras.Rows.Count == 0)
-                    {
-                        DataTable tabla_ClienteConEstacionamiento = new DataTable();
-                        string sql = @"SELECT * FROM EstacXCliente WHERE tipo_doc2=" + cmb_tipoDoc.SelectedValue.ToString() + " AND nro_doc2=" + txt_NumDoc.Text.ToString();
-                        tabla_ClienteConEstacionamiento = this._BD.consulta(sql);
-                        if (tabla_ClienteConEstacionamiento.Rows.Count == 0)
-                        {
-                            this._BD.grabar_modificar("DELETE FROM TarjetaXCliente WHERE tipo_doc3=" + cmb_tipoDoc.SelectedValue.ToString() + " AND num_doc3=" + txt_NumDoc.Text.ToString());
-                            this._BD.grabar_modificar("DELETE FROM automoviles WHERE tipo_doc2=" + cmb_tipoDoc.SelectedValue.ToString() + " AND num_doc1=" + txt_NumDoc.Text.ToString());
-                            cliente.eliminar(cmb_tipoDoc.SelectedValue.ToString(), txt_NumDoc.Text.Trim());
-                            MessageBox.Show("El Cliente se ha eliminado correctamente junto a sus tarjetas asociadas y sus vehiculos.", "Mensaje"
-                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            _val.blanquear_objetos(this.Controls);
-                            dataGridView1.DataSource = "";
-                        }
-                        else
-                        {
-                            MessageBox.Show("El Cliente a utilizado el estacionamiento, por ese motivo no se puede eliminar.", "Mensaje"
-                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        }
-                        
-                    }
-                    else
-                    {
-                        MessageBox.Show("El Cliente posee compras asociadas, por ese motivo no se puede eliminar.", "Mensaje"
-                                    , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
-                    
-                    
-                }
-                
+                cliente.eliminar(cmb_tipoDoc.SelectedValue.ToString(), txt_NumDoc.Text.Trim());
+                _val.blanquear_objetos(this.Controls);
+                dataGridView1.DataSource = "";
             }
             else
             {
                 MessageBox.Show("Debe Ingresar el tipo de Documento y el Numero para eliminar un cliente", "Mensaje"
                                 , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txt_NumDoc.Focus();
             }
         }
 

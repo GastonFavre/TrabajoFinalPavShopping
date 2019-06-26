@@ -32,33 +32,43 @@ namespace ShoppingBuyAll.clases
 
         public void eliminar(string tipoDoc, string NumDoc)
         {
-            DataTable tabla = new DataTable();
-            tabla = buscar_cliente(tipoDoc, NumDoc);
-            if (tabla.Rows.Count == 0)
+            DataTable tabla_ClienteExistente = new DataTable();
+            tabla_ClienteExistente = buscar_cliente(tipoDoc, NumDoc);
+            if (tabla_ClienteExistente.Rows.Count == 0)
             {
-                MessageBox.Show("El Cliente ingresado para Eliminar no existe!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("El Cliente que desea eliminar no existe.", "Mensaje"
+                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
-                DataTable tabla_verificar_compras_cliente = new DataTable();
-                string sql_verificar_compras_cliente = "SELECT * FROM ComprasXCliente WHERE tipo_doc1 = " + tipoDoc + " AND num_doc1 = " + NumDoc;
-                tabla_verificar_compras_cliente = _BD.consulta(sql_verificar_compras_cliente);
-                if (tabla_verificar_compras_cliente.Rows.Count == 0)
+                DataTable tabla_ClienteConCompras = new DataTable();
+                tabla_ClienteConCompras = this._BD.consulta("SELECT C.* FROM ComprasXCliente C WHERE tipo_doc1=" + tipoDoc + " AND num_doc1=" + NumDoc);
+                if (tabla_ClienteConCompras.Rows.Count == 0)
                 {
-                    string sql_eliminar_tarjetas = "DELETE FROM TarjetaXCliente WHERE tipo_doc3 = " + tipoDoc + " AND num_doc3 = " + NumDoc;
-                    _BD.grabar_modificar(sql_eliminar_tarjetas);
-                    MessageBox.Show("Las Tarjetas vinculadas al cliente fueron eliminadas correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    string sql_eliminar = "DELETE FROM clientes WHERE tipo_doc1 = " + tipoDoc + " AND num_doc = " + NumDoc;
-                    _BD.grabar_modificar(sql_eliminar);
-                    MessageBox.Show("El Cliente ingresado fue eliminado correctamente!", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DataTable tabla_ClienteConEstacionamiento = new DataTable();
+                    string sql = @"SELECT * FROM EstacXCliente WHERE tipo_doc2=" + tipoDoc + " AND nro_doc2=" + NumDoc;
+                    tabla_ClienteConEstacionamiento = this._BD.consulta(sql);
+                    if (tabla_ClienteConEstacionamiento.Rows.Count == 0)
+                    {
+                        this._BD.grabar_modificar("DELETE FROM TarjetaXCliente WHERE tipo_doc3=" + tipoDoc + " AND num_doc3=" + NumDoc);
+                        this._BD.grabar_modificar("DELETE FROM automoviles WHERE tipo_doc2=" + tipoDoc + " AND num_doc1=" + NumDoc);
+                        this._BD.grabar_modificar("DELETE FROM clientes WHERE tipo_doc1=" + tipoDoc + " AND num_doc=" + NumDoc);
+                        MessageBox.Show("El Cliente se ha eliminado correctamente junto a sus tarjetas asociadas y sus vehiculos.", "Mensaje"
+                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El Cliente a utilizado el estacionamiento, por ese motivo no se puede eliminar.", "Mensaje"
+                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("El Cliente tiene asociadas compras por lo tanto no se puede eliminar", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El Cliente posee compras asociadas, por ese motivo no se puede eliminar.", "Mensaje"
+                                , MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-                
             }
-            
         }
 
         public DataTable buscar_cliente(string tipoDoc, string numero)

@@ -82,7 +82,6 @@ namespace ShoppingBuyAll.Formularios
         public DataTable buscar_Locales_Filtrado(string comando)
         {
             string sql = "SELECT cuil AS 'CUIL', nombre AS 'Nombre Local', tipo_Comercio1 AS 'Tipo Comercio' FROM Locales" + comando;
-            MessageBox.Show(sql);
             return _BD.consulta(sql);
         }
     }  

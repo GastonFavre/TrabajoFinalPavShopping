@@ -81,7 +81,6 @@ namespace ShoppingBuyAll.clases
         public DataTable buscar_productos_filtrado(string comando)
         {
             string sql = "SELECT cod_prod AS 'Codigo Producto', nombre AS 'Nombre Producto', precio 'Precio en $' FROM Productos" + comando;
-            MessageBox.Show(sql);
             return _BD.consulta(sql);
         }
 

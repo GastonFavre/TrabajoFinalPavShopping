@@ -20,7 +20,6 @@ namespace ShoppingBuyAll.clases
 
         public void agregar_Tarjeta(Control.ControlCollection controles)
         {
-            MessageBox.Show(controles.ToString());
             _BD.auto_insert(controles, "TarjetaXCliente");
         }
 
@@ -33,6 +32,16 @@ namespace ShoppingBuyAll.clases
             return this._BD.consulta(sql_Buscar);
         }
 
-       
+        public DataTable verificarTarjetaCliente(string tipoDoc, string numero, string codTarje)
+        {
+            string sql_Buscar = @"SELECT * 
+                                    FROM TarjetaXCliente
+                                    WHERE tipo_doc3= " + tipoDoc + "AND num_doc3 = " + numero + " AND cod_tarje3 = " + codTarje;
+
+            return this._BD.consulta(sql_Buscar);
+        }
+
+
+
     }
 }
