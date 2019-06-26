@@ -66,5 +66,16 @@ namespace ShoppingBuyAll.Properties {
                 return ((string)(this["ConnectionString2"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLNCLI11;Data Source=DESKTOP-NBF2L95\\SQLEXPRESS;Integrated Security=SSP" +
+            "I;Initial Catalog=Shopping_Buy_All")]
+        public string ConnectionString3 {
+            get {
+                return ((string)(this["ConnectionString3"]));
+            }
+        }
     }
 }
