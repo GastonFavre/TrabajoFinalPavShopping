@@ -30,6 +30,7 @@ namespace ShoppingBuyAll.clases
         //cadena de conexion de tu hermana la mariana Provider=SQLNCLI11;Data Source=DESKTOP-NBF2L95\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Shopping_Buy_All
 
         string cadena_conexion = "Provider=SQLNCLI11;Data Source=.;Integrated Security=SSPI;Initial Catalog=ShoppingBuyAll";
+
         public void iniciar_transaccion()
         {
             _tipo_trans = tipo_conexion.transaccion;
