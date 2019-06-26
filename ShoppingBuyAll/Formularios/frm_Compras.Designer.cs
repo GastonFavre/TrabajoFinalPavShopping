@@ -37,13 +37,20 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_bucarCliente = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmb_TipoDoc = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
+            this.txt_Apellido = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_Nombre = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_NumeroDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_tipo_loc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.label12 = new System.Windows.Forms.Label();
+            this.txt_nom_loc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.btn_busc_loc = new System.Windows.Forms.Button();
+            this.txt_cuil = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -56,8 +63,10 @@
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cb_NombreTarjeta = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.cmb_NumTarjeta = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
             this.rbt_eft = new System.Windows.Forms.RadioButton();
             this.rbt_tar = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
@@ -71,28 +80,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btn_Buscar_Prod = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.rb_Nombre = new System.Windows.Forms.RadioButton();
+            this.rb_codigo = new System.Windows.Forms.RadioButton();
+            this.txt_Precio_Prod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_Nom_Prod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
+            this.txt_Cod_Pod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.button9 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_cantidad = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.grid_product = new System.Windows.Forms.DataGridView();
-            this.rb_codigo = new System.Windows.Forms.RadioButton();
-            this.rb_Nombre = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.num_factur = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.dtp_compra = new ShoppingBuyAll.Componentes.DateTimePickerDeControl(this.components);
-            this.cb_NombreTarjeta = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
-            this.cmb_NumTarjeta = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
-            this.txt_tipo_loc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_nom_loc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_cuil = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_Precio_Prod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_Nom_Prod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_Cod_Pod = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.cmb_TipoDoc = new ShoppingBuyAll.Componentes.ComboBoxDeControl();
-            this.txt_Apellido = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_Nombre = new ShoppingBuyAll.Componentes.TextBoxDeControl();
-            this.txt_NumeroDoc = new ShoppingBuyAll.Componentes.TextBoxDeControl();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -133,6 +133,60 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
+            // 
+            // cmb_TipoDoc
+            // 
+            this.cmb_TipoDoc._campo = "tipo_doc1";
+            this.cmb_TipoDoc._mensaje_error = "No selecciono tipo documento";
+            this.cmb_TipoDoc._nombre_tabla = "ComprasXCliente";
+            this.cmb_TipoDoc._pk = true;
+            this.cmb_TipoDoc._validable = true;
+            this.cmb_TipoDoc.FormattingEnabled = true;
+            this.cmb_TipoDoc.Location = new System.Drawing.Point(408, 44);
+            this.cmb_TipoDoc.Name = "cmb_TipoDoc";
+            this.cmb_TipoDoc.Size = new System.Drawing.Size(185, 28);
+            this.cmb_TipoDoc.TabIndex = 58;
+            // 
+            // txt_Apellido
+            // 
+            this.txt_Apellido._campo = null;
+            this.txt_Apellido._mensaje_error = null;
+            this.txt_Apellido._nombre_tabla = null;
+            this.txt_Apellido._pk = false;
+            this.txt_Apellido._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Apellido._validable = false;
+            this.txt_Apellido.Enabled = false;
+            this.txt_Apellido.Location = new System.Drawing.Point(408, 78);
+            this.txt_Apellido.Name = "txt_Apellido";
+            this.txt_Apellido.Size = new System.Drawing.Size(101, 26);
+            this.txt_Apellido.TabIndex = 57;
+            // 
+            // txt_Nombre
+            // 
+            this.txt_Nombre._campo = null;
+            this.txt_Nombre._mensaje_error = null;
+            this.txt_Nombre._nombre_tabla = null;
+            this.txt_Nombre._pk = false;
+            this.txt_Nombre._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Nombre._validable = false;
+            this.txt_Nombre.Enabled = false;
+            this.txt_Nombre.Location = new System.Drawing.Point(83, 82);
+            this.txt_Nombre.Name = "txt_Nombre";
+            this.txt_Nombre.Size = new System.Drawing.Size(143, 26);
+            this.txt_Nombre.TabIndex = 55;
+            // 
+            // txt_NumeroDoc
+            // 
+            this.txt_NumeroDoc._campo = "num_doc1";
+            this.txt_NumeroDoc._mensaje_error = "Numero no ingresado";
+            this.txt_NumeroDoc._nombre_tabla = "ComprasXCliente";
+            this.txt_NumeroDoc._pk = true;
+            this.txt_NumeroDoc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_NumeroDoc._validable = true;
+            this.txt_NumeroDoc.Location = new System.Drawing.Point(83, 48);
+            this.txt_NumeroDoc.Name = "txt_NumeroDoc";
+            this.txt_NumeroDoc.Size = new System.Drawing.Size(143, 26);
+            this.txt_NumeroDoc.TabIndex = 56;
             // 
             // label2
             // 
@@ -198,6 +252,20 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Local";
             // 
+            // txt_tipo_loc
+            // 
+            this.txt_tipo_loc._campo = null;
+            this.txt_tipo_loc._mensaje_error = null;
+            this.txt_tipo_loc._nombre_tabla = null;
+            this.txt_tipo_loc._pk = false;
+            this.txt_tipo_loc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_tipo_loc._validable = false;
+            this.txt_tipo_loc.Enabled = false;
+            this.txt_tipo_loc.Location = new System.Drawing.Point(93, 102);
+            this.txt_tipo_loc.Name = "txt_tipo_loc";
+            this.txt_tipo_loc.Size = new System.Drawing.Size(195, 26);
+            this.txt_tipo_loc.TabIndex = 61;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -208,6 +276,20 @@
             this.label12.Size = new System.Drawing.Size(43, 20);
             this.label12.TabIndex = 50;
             this.label12.Text = "Tipo";
+            // 
+            // txt_nom_loc
+            // 
+            this.txt_nom_loc._campo = null;
+            this.txt_nom_loc._mensaje_error = null;
+            this.txt_nom_loc._nombre_tabla = null;
+            this.txt_nom_loc._pk = false;
+            this.txt_nom_loc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_nom_loc._validable = false;
+            this.txt_nom_loc.Enabled = false;
+            this.txt_nom_loc.Location = new System.Drawing.Point(93, 70);
+            this.txt_nom_loc.Name = "txt_nom_loc";
+            this.txt_nom_loc.Size = new System.Drawing.Size(195, 26);
+            this.txt_nom_loc.TabIndex = 62;
             // 
             // btn_busc_loc
             // 
@@ -220,6 +302,20 @@
             this.btn_busc_loc.Text = "Buscar";
             this.btn_busc_loc.UseVisualStyleBackColor = true;
             this.btn_busc_loc.Click += new System.EventHandler(this.btn_busc_loc_Click);
+            // 
+            // txt_cuil
+            // 
+            this.txt_cuil._campo = "cuil_local1";
+            this.txt_cuil._mensaje_error = null;
+            this.txt_cuil._nombre_tabla = "ComprasXCliente";
+            this.txt_cuil._pk = false;
+            this.txt_cuil._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_cuil._validable = false;
+            this.txt_cuil.Enabled = false;
+            this.txt_cuil.Location = new System.Drawing.Point(93, 37);
+            this.txt_cuil.Name = "txt_cuil";
+            this.txt_cuil.Size = new System.Drawing.Size(105, 26);
+            this.txt_cuil.TabIndex = 63;
             // 
             // label10
             // 
@@ -370,6 +466,20 @@
             this.groupBox5.Text = "Pago";
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
+            // cb_NombreTarjeta
+            // 
+            this.cb_NombreTarjeta._campo = "cod_tarjeta1";
+            this.cb_NombreTarjeta._mensaje_error = null;
+            this.cb_NombreTarjeta._nombre_tabla = "ComprasXCliente";
+            this.cb_NombreTarjeta._pk = false;
+            this.cb_NombreTarjeta._validable = false;
+            this.cb_NombreTarjeta.Enabled = false;
+            this.cb_NombreTarjeta.FormattingEnabled = true;
+            this.cb_NombreTarjeta.Location = new System.Drawing.Point(144, 160);
+            this.cb_NombreTarjeta.Name = "cb_NombreTarjeta";
+            this.cb_NombreTarjeta.Size = new System.Drawing.Size(144, 28);
+            this.cb_NombreTarjeta.TabIndex = 63;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -391,6 +501,22 @@
             this.label14.Size = new System.Drawing.Size(132, 20);
             this.label14.TabIndex = 61;
             this.label14.Text = "Numero Tarjeta";
+            // 
+            // cmb_NumTarjeta
+            // 
+            this.cmb_NumTarjeta._campo = "num_tarjeta1";
+            this.cmb_NumTarjeta._mensaje_error = null;
+            this.cmb_NumTarjeta._nombre_tabla = "ComprasXCliente";
+            this.cmb_NumTarjeta._pk = false;
+            this.cmb_NumTarjeta._validable = false;
+            this.cmb_NumTarjeta.Enabled = false;
+            this.cmb_NumTarjeta.FormattingEnabled = true;
+            this.cmb_NumTarjeta.Location = new System.Drawing.Point(144, 126);
+            this.cmb_NumTarjeta.Name = "cmb_NumTarjeta";
+            this.cmb_NumTarjeta.Size = new System.Drawing.Size(144, 28);
+            this.cmb_NumTarjeta.TabIndex = 2;
+            this.cmb_NumTarjeta.SelectedIndexChanged += new System.EventHandler(this.cmb_tarjeta_SelectedIndexChanged);
+            this.cmb_NumTarjeta.SelectedValueChanged += new System.EventHandler(this.cmb_NumTarjeta_SelectedValueChanged);
             // 
             // rbt_eft
             // 
@@ -552,6 +678,82 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Producto";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(159, 147);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 28);
+            this.button1.TabIndex = 76;
+            this.button1.Text = "Limpiar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // rb_Nombre
+            // 
+            this.rb_Nombre.AutoSize = true;
+            this.rb_Nombre.Location = new System.Drawing.Point(223, 77);
+            this.rb_Nombre.Name = "rb_Nombre";
+            this.rb_Nombre.Size = new System.Drawing.Size(14, 13);
+            this.rb_Nombre.TabIndex = 62;
+            this.rb_Nombre.TabStop = true;
+            this.rb_Nombre.UseVisualStyleBackColor = true;
+            this.rb_Nombre.CheckedChanged += new System.EventHandler(this.rb_Nombre_CheckedChanged);
+            // 
+            // rb_codigo
+            // 
+            this.rb_codigo.AutoSize = true;
+            this.rb_codigo.Location = new System.Drawing.Point(223, 44);
+            this.rb_codigo.Name = "rb_codigo";
+            this.rb_codigo.Size = new System.Drawing.Size(14, 13);
+            this.rb_codigo.TabIndex = 61;
+            this.rb_codigo.TabStop = true;
+            this.rb_codigo.UseVisualStyleBackColor = true;
+            this.rb_codigo.CheckedChanged += new System.EventHandler(this.rb_codigo_CheckedChanged);
+            // 
+            // txt_Precio_Prod
+            // 
+            this.txt_Precio_Prod._campo = null;
+            this.txt_Precio_Prod._mensaje_error = null;
+            this.txt_Precio_Prod._nombre_tabla = null;
+            this.txt_Precio_Prod._pk = false;
+            this.txt_Precio_Prod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Precio_Prod._validable = false;
+            this.txt_Precio_Prod.Enabled = false;
+            this.txt_Precio_Prod.Location = new System.Drawing.Point(90, 102);
+            this.txt_Precio_Prod.Name = "txt_Precio_Prod";
+            this.txt_Precio_Prod.Size = new System.Drawing.Size(69, 26);
+            this.txt_Precio_Prod.TabIndex = 58;
+            // 
+            // txt_Nom_Prod
+            // 
+            this.txt_Nom_Prod._campo = null;
+            this.txt_Nom_Prod._mensaje_error = null;
+            this.txt_Nom_Prod._nombre_tabla = null;
+            this.txt_Nom_Prod._pk = false;
+            this.txt_Nom_Prod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Nom_Prod._validable = false;
+            this.txt_Nom_Prod.Enabled = false;
+            this.txt_Nom_Prod.Location = new System.Drawing.Point(90, 70);
+            this.txt_Nom_Prod.Name = "txt_Nom_Prod";
+            this.txt_Nom_Prod.Size = new System.Drawing.Size(127, 26);
+            this.txt_Nom_Prod.TabIndex = 59;
+            // 
+            // txt_Cod_Pod
+            // 
+            this.txt_Cod_Pod._campo = null;
+            this.txt_Cod_Pod._mensaje_error = null;
+            this.txt_Cod_Pod._nombre_tabla = null;
+            this.txt_Cod_Pod._pk = false;
+            this.txt_Cod_Pod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
+            this.txt_Cod_Pod._validable = false;
+            this.txt_Cod_Pod.Enabled = false;
+            this.txt_Cod_Pod.Location = new System.Drawing.Point(90, 37);
+            this.txt_Cod_Pod.Name = "txt_Cod_Pod";
+            this.txt_Cod_Pod.Size = new System.Drawing.Size(127, 26);
+            this.txt_Cod_Pod.TabIndex = 60;
+            // 
             // button9
             // 
             this.button9.Enabled = false;
@@ -646,41 +848,6 @@
             this.grid_product.Size = new System.Drawing.Size(401, 172);
             this.grid_product.TabIndex = 75;
             // 
-            // rb_codigo
-            // 
-            this.rb_codigo.AutoSize = true;
-            this.rb_codigo.Location = new System.Drawing.Point(223, 44);
-            this.rb_codigo.Name = "rb_codigo";
-            this.rb_codigo.Size = new System.Drawing.Size(14, 13);
-            this.rb_codigo.TabIndex = 61;
-            this.rb_codigo.TabStop = true;
-            this.rb_codigo.UseVisualStyleBackColor = true;
-            this.rb_codigo.CheckedChanged += new System.EventHandler(this.rb_codigo_CheckedChanged);
-            // 
-            // rb_Nombre
-            // 
-            this.rb_Nombre.AutoSize = true;
-            this.rb_Nombre.Location = new System.Drawing.Point(223, 77);
-            this.rb_Nombre.Name = "rb_Nombre";
-            this.rb_Nombre.Size = new System.Drawing.Size(14, 13);
-            this.rb_Nombre.TabIndex = 62;
-            this.rb_Nombre.TabStop = true;
-            this.rb_Nombre.UseVisualStyleBackColor = true;
-            this.rb_Nombre.CheckedChanged += new System.EventHandler(this.rb_Nombre_CheckedChanged);
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(159, 147);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 28);
-            this.button1.TabIndex = 76;
-            this.button1.Text = "Limpiar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // num_factur
             // 
             this.num_factur._campo = "nro_factura";
@@ -709,174 +876,6 @@
             this.dtp_compra.Name = "dtp_compra";
             this.dtp_compra.Size = new System.Drawing.Size(116, 26);
             this.dtp_compra.TabIndex = 56;
-            // 
-            // cb_NombreTarjeta
-            // 
-            this.cb_NombreTarjeta._campo = "cod_tarjeta1";
-            this.cb_NombreTarjeta._mensaje_error = null;
-            this.cb_NombreTarjeta._nombre_tabla = "ComprasXCliente";
-            this.cb_NombreTarjeta._pk = false;
-            this.cb_NombreTarjeta._validable = false;
-            this.cb_NombreTarjeta.Enabled = false;
-            this.cb_NombreTarjeta.FormattingEnabled = true;
-            this.cb_NombreTarjeta.Location = new System.Drawing.Point(144, 160);
-            this.cb_NombreTarjeta.Name = "cb_NombreTarjeta";
-            this.cb_NombreTarjeta.Size = new System.Drawing.Size(144, 28);
-            this.cb_NombreTarjeta.TabIndex = 63;
-            // 
-            // cmb_NumTarjeta
-            // 
-            this.cmb_NumTarjeta._campo = "num_tarjeta1";
-            this.cmb_NumTarjeta._mensaje_error = null;
-            this.cmb_NumTarjeta._nombre_tabla = "ComprasXCliente";
-            this.cmb_NumTarjeta._pk = false;
-            this.cmb_NumTarjeta._validable = false;
-            this.cmb_NumTarjeta.Enabled = false;
-            this.cmb_NumTarjeta.FormattingEnabled = true;
-            this.cmb_NumTarjeta.Location = new System.Drawing.Point(144, 126);
-            this.cmb_NumTarjeta.Name = "cmb_NumTarjeta";
-            this.cmb_NumTarjeta.Size = new System.Drawing.Size(144, 28);
-            this.cmb_NumTarjeta.TabIndex = 2;
-            this.cmb_NumTarjeta.SelectedIndexChanged += new System.EventHandler(this.cmb_tarjeta_SelectedIndexChanged);
-            this.cmb_NumTarjeta.SelectedValueChanged += new System.EventHandler(this.cmb_NumTarjeta_SelectedValueChanged);
-            // 
-            // txt_tipo_loc
-            // 
-            this.txt_tipo_loc._campo = null;
-            this.txt_tipo_loc._mensaje_error = null;
-            this.txt_tipo_loc._nombre_tabla = null;
-            this.txt_tipo_loc._pk = false;
-            this.txt_tipo_loc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_tipo_loc._validable = false;
-            this.txt_tipo_loc.Enabled = false;
-            this.txt_tipo_loc.Location = new System.Drawing.Point(93, 102);
-            this.txt_tipo_loc.Name = "txt_tipo_loc";
-            this.txt_tipo_loc.Size = new System.Drawing.Size(195, 26);
-            this.txt_tipo_loc.TabIndex = 61;
-            // 
-            // txt_nom_loc
-            // 
-            this.txt_nom_loc._campo = null;
-            this.txt_nom_loc._mensaje_error = null;
-            this.txt_nom_loc._nombre_tabla = null;
-            this.txt_nom_loc._pk = false;
-            this.txt_nom_loc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_nom_loc._validable = false;
-            this.txt_nom_loc.Enabled = false;
-            this.txt_nom_loc.Location = new System.Drawing.Point(93, 70);
-            this.txt_nom_loc.Name = "txt_nom_loc";
-            this.txt_nom_loc.Size = new System.Drawing.Size(195, 26);
-            this.txt_nom_loc.TabIndex = 62;
-            // 
-            // txt_cuil
-            // 
-            this.txt_cuil._campo = "cuil_local1";
-            this.txt_cuil._mensaje_error = null;
-            this.txt_cuil._nombre_tabla = "ComprasXCliente";
-            this.txt_cuil._pk = false;
-            this.txt_cuil._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_cuil._validable = false;
-            this.txt_cuil.Enabled = false;
-            this.txt_cuil.Location = new System.Drawing.Point(93, 37);
-            this.txt_cuil.Name = "txt_cuil";
-            this.txt_cuil.Size = new System.Drawing.Size(105, 26);
-            this.txt_cuil.TabIndex = 63;
-            // 
-            // txt_Precio_Prod
-            // 
-            this.txt_Precio_Prod._campo = null;
-            this.txt_Precio_Prod._mensaje_error = null;
-            this.txt_Precio_Prod._nombre_tabla = null;
-            this.txt_Precio_Prod._pk = false;
-            this.txt_Precio_Prod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Precio_Prod._validable = false;
-            this.txt_Precio_Prod.Enabled = false;
-            this.txt_Precio_Prod.Location = new System.Drawing.Point(90, 102);
-            this.txt_Precio_Prod.Name = "txt_Precio_Prod";
-            this.txt_Precio_Prod.Size = new System.Drawing.Size(69, 26);
-            this.txt_Precio_Prod.TabIndex = 58;
-            // 
-            // txt_Nom_Prod
-            // 
-            this.txt_Nom_Prod._campo = null;
-            this.txt_Nom_Prod._mensaje_error = null;
-            this.txt_Nom_Prod._nombre_tabla = null;
-            this.txt_Nom_Prod._pk = false;
-            this.txt_Nom_Prod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Nom_Prod._validable = false;
-            this.txt_Nom_Prod.Enabled = false;
-            this.txt_Nom_Prod.Location = new System.Drawing.Point(90, 70);
-            this.txt_Nom_Prod.Name = "txt_Nom_Prod";
-            this.txt_Nom_Prod.Size = new System.Drawing.Size(127, 26);
-            this.txt_Nom_Prod.TabIndex = 59;
-            // 
-            // txt_Cod_Pod
-            // 
-            this.txt_Cod_Pod._campo = null;
-            this.txt_Cod_Pod._mensaje_error = null;
-            this.txt_Cod_Pod._nombre_tabla = null;
-            this.txt_Cod_Pod._pk = false;
-            this.txt_Cod_Pod._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Cod_Pod._validable = false;
-            this.txt_Cod_Pod.Enabled = false;
-            this.txt_Cod_Pod.Location = new System.Drawing.Point(90, 37);
-            this.txt_Cod_Pod.Name = "txt_Cod_Pod";
-            this.txt_Cod_Pod.Size = new System.Drawing.Size(127, 26);
-            this.txt_Cod_Pod.TabIndex = 60;
-            // 
-            // cmb_TipoDoc
-            // 
-            this.cmb_TipoDoc._campo = "tipo_doc1";
-            this.cmb_TipoDoc._mensaje_error = "No selecciono tipo documento";
-            this.cmb_TipoDoc._nombre_tabla = "ComprasXCliente";
-            this.cmb_TipoDoc._pk = true;
-            this.cmb_TipoDoc._validable = true;
-            this.cmb_TipoDoc.FormattingEnabled = true;
-            this.cmb_TipoDoc.Location = new System.Drawing.Point(408, 44);
-            this.cmb_TipoDoc.Name = "cmb_TipoDoc";
-            this.cmb_TipoDoc.Size = new System.Drawing.Size(185, 28);
-            this.cmb_TipoDoc.TabIndex = 58;
-            // 
-            // txt_Apellido
-            // 
-            this.txt_Apellido._campo = null;
-            this.txt_Apellido._mensaje_error = null;
-            this.txt_Apellido._nombre_tabla = null;
-            this.txt_Apellido._pk = false;
-            this.txt_Apellido._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Apellido._validable = false;
-            this.txt_Apellido.Enabled = false;
-            this.txt_Apellido.Location = new System.Drawing.Point(408, 78);
-            this.txt_Apellido.Name = "txt_Apellido";
-            this.txt_Apellido.Size = new System.Drawing.Size(101, 26);
-            this.txt_Apellido.TabIndex = 57;
-            // 
-            // txt_Nombre
-            // 
-            this.txt_Nombre._campo = null;
-            this.txt_Nombre._mensaje_error = null;
-            this.txt_Nombre._nombre_tabla = null;
-            this.txt_Nombre._pk = false;
-            this.txt_Nombre._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_Nombre._validable = false;
-            this.txt_Nombre.Enabled = false;
-            this.txt_Nombre.Location = new System.Drawing.Point(83, 82);
-            this.txt_Nombre.Name = "txt_Nombre";
-            this.txt_Nombre.Size = new System.Drawing.Size(143, 26);
-            this.txt_Nombre.TabIndex = 55;
-            // 
-            // txt_NumeroDoc
-            // 
-            this.txt_NumeroDoc._campo = "num_doc1";
-            this.txt_NumeroDoc._mensaje_error = "Numero no ingresado";
-            this.txt_NumeroDoc._nombre_tabla = "ComprasXCliente";
-            this.txt_NumeroDoc._pk = true;
-            this.txt_NumeroDoc._tipo = ShoppingBuyAll.Componentes.TextBoxDeControl.Tipo_dato.texto;
-            this.txt_NumeroDoc._validable = true;
-            this.txt_NumeroDoc.Location = new System.Drawing.Point(83, 48);
-            this.txt_NumeroDoc.Name = "txt_NumeroDoc";
-            this.txt_NumeroDoc.Size = new System.Drawing.Size(143, 26);
-            this.txt_NumeroDoc.TabIndex = 56;
             // 
             // frm_Compras
             // 

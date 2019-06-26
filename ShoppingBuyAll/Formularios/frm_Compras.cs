@@ -316,10 +316,35 @@ namespace ShoppingBuyAll
                 if (rbt_tar.Checked)
                 {
                     this.compras.agregar_Tarjeta_Factura(this.num_factur.Text.Trim(), idCodigoTarjera, cmb_NumTarjeta.Text.Trim(), cmb_TipoDoc.SelectedValue.ToString(), txt_NumeroDoc.Text.Trim());
+                    //if (cmb_NumTarjeta.SelectedIndex == -1)
+                    //{
+                    //    MessageBox.Show("Usted Eligio como metodo de pago tarjeta de credito. Por ese motivo, debe ingresar una.");
+                    //    cmb_NumTarjeta.Focus();
+                    //    return;
+                    //}
+                    //else
+                    //{
+                    //    this.compras.agregar_Tarjeta_Factura(this.num_factur.Text.Trim(), idCodigoTarjera, cmb_NumTarjeta.Text.Trim(), cmb_TipoDoc.SelectedValue.ToString(), txt_NumeroDoc.Text.Trim());
+                    //}
+                    
                 }
+
                 this._BD.cerrar_transaccion();
                 MessageBox.Show("Se finalizo la compra con exito");
                 this.Dispose();
+
+                //if (MessageBox.Show("Esta seguro que desea Confirmar la compra?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                //{
+                //    this._BD.cerrar_transaccion();
+                //    MessageBox.Show("Se finalizo la compra con exito");
+                //    this.Dispose();
+                //}
+                //else
+                //{
+                //    return;
+                //}
+
+                
             }
             else
             {
