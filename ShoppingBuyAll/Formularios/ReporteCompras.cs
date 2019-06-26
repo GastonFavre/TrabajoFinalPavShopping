@@ -40,6 +40,16 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_repCompra_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             AccesoBD _BD = new AccesoBD();
             DataTable tabla = new DataTable();
             string sql = "";
@@ -53,11 +63,11 @@ namespace ShoppingBuyAll.Formularios
                         clientes C ON
                                      V.tipo_doc1 = C.tipo_doc1 AND
                                      V.num_doc1 = C.num_doc
-                   WHERE 1 = 1
-                   GROUP BY V.nro_factura, V.cuil_local1, V.num_tarjeta1, 
+                   WHERE V.fecha_compra BETWEEN " + txt_FechaDesde.Text.Trim() + " AND " + txt_FechaHasta.Text.Trim()+
+                   @" GROUP BY V.nro_factura, V.cuil_local1, V.num_tarjeta1, 
                             V.fecha_compra, C.num_doc, C.nombres, C.apellido";
             tabla = _BD.consulta(sql);
-            if(tabla.Rows.Count==0)
+            if (tabla.Rows.Count == 0)
             {
                 MessageBox.Show("No hay datos para mostrar");
                 return;
@@ -69,7 +79,7 @@ namespace ShoppingBuyAll.Formularios
             reportViewer1.RefreshReport();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Salir_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }

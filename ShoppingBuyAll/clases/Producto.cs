@@ -84,11 +84,11 @@ namespace ShoppingBuyAll.clases
             return _BD.consulta(sql);
         }
 
-        public DataTable topProductos()
+        public DataTable topProductos(string where)
         {
             string sql = @"SELECT TOP(5) p.nombre as descriptor, SUM (D.cantidad) as dato FROM
-                         Productos p JOIN DetalleCompras D ON D.cod_prod1 = p.cod_prod
-                         GROUP BY p.nombre, p.cod_prod";
+                         Productos p JOIN DetalleCompras D ON D.cod_prod1 = p.cod_prod JOIN ComprasXCliente C ON C.nro_factura = D.nro_factura1 " + where + 
+                         " GROUP BY p.nombre, p.cod_prod " ;
             return _BD.consulta(sql);
         }
     }

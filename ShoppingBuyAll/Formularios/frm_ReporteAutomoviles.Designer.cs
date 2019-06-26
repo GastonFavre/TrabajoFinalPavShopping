@@ -30,14 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.autoXClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSAutomoviles = new ShoppingBuyAll.Datos.DSAutomoviles();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Salir = new System.Windows.Forms.Button();
-            this.dSAutomoviles = new ShoppingBuyAll.Datos.DSAutomoviles();
-            this.autoXClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dSAutomoviles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.autoXClienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSAutomoviles)).BeginInit();
             this.SuspendLayout();
+            // 
+            // autoXClienteBindingSource
+            // 
+            this.autoXClienteBindingSource.DataMember = "AutoXCliente";
+            this.autoXClienteBindingSource.DataSource = this.dSAutomoviles;
+            // 
+            // dSAutomoviles
+            // 
+            this.dSAutomoviles.DataSetName = "DSAutomoviles";
+            this.dSAutomoviles.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -75,16 +85,6 @@
             this.btn_Salir.UseVisualStyleBackColor = true;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
-            // dSAutomoviles
-            // 
-            this.dSAutomoviles.DataSetName = "DSAutomoviles";
-            this.dSAutomoviles.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // autoXClienteBindingSource
-            // 
-            this.autoXClienteBindingSource.DataMember = "AutoXCliente";
-            this.autoXClienteBindingSource.DataSource = this.dSAutomoviles;
-            // 
             // frm_ReporteAutomoviles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -98,8 +98,8 @@
             this.Name = "frm_ReporteAutomoviles";
             this.Text = "frm_ReporteAutomoviles";
             this.Load += new System.EventHandler(this.frm_ReporteAutomoviles_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dSAutomoviles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.autoXClienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSAutomoviles)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

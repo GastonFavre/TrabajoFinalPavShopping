@@ -71,10 +71,10 @@ namespace ShoppingBuyAll.Formularios
         }
 
 
-        public DataTable ventasXLocal()
+        public DataTable ventasXLocal(string where)
         {
-            string sql = @"SELECT L.nombre as descriptor,  COUNT(*) as dato FROM Locales L JOIN ComprasXCliente C ON C.cuil_local1 = L.cuil
-                          GROUP BY L.nombre, L.cuil";
+            string sql = @"SELECT L.nombre as descriptor,  COUNT(*) as dato FROM Locales L JOIN ComprasXCliente C ON C.cuil_local1 = L.cuil " + where +
+                         " GROUP BY L.nombre, L.cuil";
 
             return _BD.consulta(sql);
         }

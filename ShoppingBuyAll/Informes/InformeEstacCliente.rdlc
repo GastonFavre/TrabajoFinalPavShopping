@@ -83,6 +83,7 @@
                       <DataElementOutput>Output</DataElementOutput>
                     </ChartDataPoint>
                   </ChartDataPoints>
+                  <Type>Shape</Type>
                   <Style />
                   <ChartEmptyPoints>
                     <Style />
@@ -93,12 +94,6 @@
                       <Style />
                     </ChartDataLabel>
                   </ChartEmptyPoints>
-                  <CustomProperties>
-                    <CustomProperty>
-                      <Name>DrawingStyle</Name>
-                      <Value>Cylinder</Value>
-                    </CustomProperty>
-                  </CustomProperties>
                   <ValueAxisName>Primary</ValueAxisName>
                   <CategoryAxisName>Primary</CategoryAxisName>
                   <ChartSmartLabel>
@@ -334,10 +329,6 @@
                     </ChartAxisScaleBreak>
                   </ChartAxis>
                 </ChartValueAxes>
-                <ChartThreeDProperties>
-                  <Enabled>true</Enabled>
-                  <Clustered>true</Clustered>
-                </ChartThreeDProperties>
                 <Style>
                   <BackgroundColor>#00ffffff</BackgroundColor>
                   <BackgroundGradientType>None</BackgroundGradientType>
@@ -351,7 +342,7 @@
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>8pt</FontSize>
                 </Style>
-                <Position>TopLeft</Position>
+                <DockToChartArea>Default</DockToChartArea>
                 <ChartLegendTitle>
                   <Caption />
                   <Style>
@@ -364,21 +355,7 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
-            <ChartTitles>
-              <ChartTitle Name="Default">
-                <Caption>Frecuencia de visita de clientes</Caption>
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextAlign>Left</TextAlign>
-                  <VerticalAlign>Top</VerticalAlign>
-                  <Color>#a6a6a6</Color>
-                </Style>
-                <Position>TopLeft</Position>
-              </ChartTitle>
-            </ChartTitles>
-            <Palette>PacificLight</Palette>
+            <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
                 <BackgroundColor>Gray</BackgroundColor>
@@ -396,22 +373,22 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DSEstacionamientoCliente</DataSetName>
-            <Height>11.77016cm</Height>
-            <Width>25.48849cm</Width>
+            <Height>12.11729cm</Height>
+            <Width>26.84104cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
                 <Style>None</Style>
               </Border>
-              <BackgroundColor>#314259</BackgroundColor>
+              <BackgroundColor>White</BackgroundColor>
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
         </ReportItems>
-        <Height>4.63392in</Height>
+        <Height>4.77059in</Height>
         <Style />
       </Body>
-      <Width>10.03484in</Width>
+      <Width>10.56734in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

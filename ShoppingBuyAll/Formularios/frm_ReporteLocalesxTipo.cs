@@ -20,10 +20,7 @@ namespace ShoppingBuyAll.Formularios
 
         private void frm_ListadoProductos_Load(object sender, EventArgs e)
         {
-            DataTable tabla = obj_local.ventasXLocal();
-            dSLocalesBindingSource.DataSource = tabla;
-            reportViewer1.RefreshReport();
-            this.reportViewer1.RefreshReport();
+           
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -33,6 +30,20 @@ namespace ShoppingBuyAll.Formularios
 
         Locales obj_local = new Locales();
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txt_FechaDesde.Text != "" && txt_FechaHasta.Text != "")
+            {
+                string sql = "WHERE C.fecha_compra BETWEEN " + txt_FechaDesde.Text.Trim() + " AND " + txt_FechaHasta.Text.Trim();
+                DataTable tabla = obj_local.ventasXLocal(sql);
+                dSLocalesBindingSource.DataSource = tabla;
+                reportViewer1.RefreshReport();
+                this.reportViewer1.RefreshReport(); ;
+            }
+            else
+            {
+                MessageBox.Show("Por favor complete los campos");
+            }
+        }
     }
 }
