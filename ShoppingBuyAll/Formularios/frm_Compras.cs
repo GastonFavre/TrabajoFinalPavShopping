@@ -32,6 +32,7 @@ namespace ShoppingBuyAll
         string cantidad = "";
         string precioTotal = "";
 
+        string idCodigoTarjera = "";
 
         public frm_Compras()
         {
@@ -62,7 +63,6 @@ namespace ShoppingBuyAll
                 {
                     this.txt_Apellido.Text = tabla.Rows[0]["apellido"].ToString();
                     this.txt_Nombre.Text = tabla.Rows[0]["nombres"].ToString();
-                    this.txt_Cod_Pod.Enabled = true;
                     this.txt_cuil.Enabled = true;
                     this.btn_agregar.Enabled = true;
                     this.btn_Buscar_Prod.Enabled = true;
@@ -83,35 +83,69 @@ namespace ShoppingBuyAll
 
         private void btn_Buscar_Prod_Click(object sender, EventArgs e)
         {
-            if (this.txt_Cod_Pod.Text != "")
+            if (rb_codigo.Checked)
             {
-                DataTable tabla = new DataTable();
-                tabla = this.Selec_producto.buscar_ProdCodigo(this.txt_Cod_Pod.Text.Trim());
-                if (tabla.Rows.Count == 0)
+                if (this.txt_Cod_Pod.Text != "")
                 {
-                    MessageBox.Show("El producto ingresado no existe", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    this.txt_Cod_Pod.Text = "";
-                    this.txt_Cod_Pod.Focus();
+                    DataTable tabla = new DataTable();
+                    tabla = this.Selec_producto.buscar_ProdCodigo(this.txt_Cod_Pod.Text.Trim());
+                    if (tabla.Rows.Count == 0)
+                    {
+                        MessageBox.Show("El producto ingresado no existe", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        this.txt_Cod_Pod.Text = "";
+                        this.txt_Cod_Pod.Focus();
+                    }
+                    else
+                    {
+                        this.txt_Nom_Prod.Text = tabla.Rows[0]["nombre"].ToString();
+                        this.txt_Precio_Prod.Text = tabla.Rows[0]["precio"].ToString();
+                        grid_product.DataSource = tabla;
+                    }
                 }
                 else
                 {
-                    this.txt_Nom_Prod.Text = tabla.Rows[0]["nombre"].ToString();
-                    this.txt_Precio_Prod.Text = tabla.Rows[0]["precio"].ToString();
+                    MessageBox.Show("Faltan datos. Para buscar el producto primero debe ingresar el Codigo del mimso.");
+                    this.txt_Cod_Pod.Text = "";
+                    this.txt_Cod_Pod.Focus();
+                    return;
                 }
             }
-            else
-            {
-                MessageBox.Show("Faltan datos. Para buscar el producto primero debe ingresar el Codigo del mimso.");
-                this.txt_Cod_Pod.Text = "";
-                this.txt_Cod_Pod.Focus();
-            }
 
+            if (rb_Nombre.Checked)
+            {
+                if (this.txt_Nom_Prod.Text != "")
+                {
+                    DataTable tabla = new DataTable();
+                    tabla = this.Selec_producto.buscar_x_nombre(this.txt_Nom_Prod.Text.Trim());
+                    if (tabla.Rows.Count == 0)
+                    {
+                        MessageBox.Show("El producto ingresado no existe", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        this.txt_Cod_Pod.Text = "";
+                        this.txt_Cod_Pod.Focus();
+                    }
+                    else
+                    {
+                        grid_product.DataSource = tabla;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Faltan datos. Para buscar el producto primero debe ingresar el nombre del mimso.");
+                }
             }
+            
+
+        }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            btn_Buscar_Prod.Enabled = false;
             txt_Cod_Pod.Enabled = false;
+            txt_Nom_Prod.Enabled = false;
+            txt_Nom_Prod.Text = "";
+            txt_Cod_Pod.Text = "";
+            rb_Nombre.Checked = false;
+            rb_codigo.Checked = false;
+            txt_Precio_Prod.Text = "";
             DataTable tabla = new DataTable();
             tabla = _BD.consulta("SELECT * FROM productos");
             if(tabla.Rows.Count != 0)
@@ -138,10 +172,21 @@ namespace ShoppingBuyAll
 
                 if (cod != "" && nom !="" && precioUnidad != "" && loc != "")
                 {
-                    grid_compra.AutoGenerateColumns = false;
-                    grid_compra.Rows.Add(cod, nom, precioUnidad, loc, cantidad, precioTotal);
-                    this.compras.agregar_detalle(this.num_factur.Text, cod, precioUnidad, this.txt_cuil.Text, cantidad);
-                    txt_Total.Text = calcularTotal();
+                    DataTable tabla = new DataTable();
+                    tabla = compras.verificarItemSeleccionado(num_factur.Text.Trim(), txt_cuil.Text.Trim(), cod);
+                    if (tabla.Rows.Count == 0)
+                    {
+                        grid_compra.AutoGenerateColumns = false;
+                        grid_compra.Rows.Add(cod, nom, precioUnidad, loc, cantidad, precioTotal);
+                        this.compras.agregar_detalle(this.num_factur.Text, cod, precioUnidad, this.txt_cuil.Text, cantidad);
+                        txt_Total.Text = calcularTotal();
+                        txt_cantidad.Value = 1;
+                    }
+                    else
+                    {
+                        MessageBox.Show("El producto ya se encuentra en la compra. Si desea cambiar la cantidad del producto primero debe eliminarlo de la lista.", "importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+                    
                 }
                 else
                 {
@@ -178,14 +223,14 @@ namespace ShoppingBuyAll
                     this.txt_nom_loc.Text = tabla_loc.Rows[0]["nombre"].ToString();
                     this.txt_tipo_loc.Text = tabla_tipo.Rows[0]["descripcion"].ToString();
 
+                    this._BD.iniciar_transaccion();
                     string pk_Factura = this.compras.Numero_Factura(this.txt_cuil.Text.Trim());
                     this.num_factur.Text = pk_Factura;
                     this.btn_busc_loc.Enabled = false;
                     this.num_factur.Enabled = false;
                     this.txt_cuil.Enabled = false;
-                    this._BD.iniciar_transaccion();
                     this.compras.agregar_compra_vacia(pk_Factura, this.txt_cuil.Text.Trim(), this.cmb_TipoDoc.SelectedValue.ToString().Trim(),
-                                                        this.txt_NumeroDoc.Text.Trim());
+                                                        this.txt_NumeroDoc.Text.Trim(), dtp_compra.Text.ToString());
                 }
             }
             else
@@ -199,12 +244,12 @@ namespace ShoppingBuyAll
         {
             if (this.cmb_TipoDoc.SelectedIndex != -1 || txt_NumeroDoc.Text != "")
             {
-                this.cmb_tarjeta.DataSource = tarjetas.buscar_Tarjeta(this.cmb_TipoDoc.SelectedValue.ToString(), this.txt_NumeroDoc.Text.ToString().Trim());
-                this.cmb_tarjeta.DisplayMember = "Numero";
-                this.cmb_tarjeta.ValueMember = "Codigo";
-                this.cmb_tarjeta.Enabled = true;
-                this.cmb_tarjeta.SelectedIndex = -1;
-                this.txt_cod_seg.Text = "";
+                this.cmb_NumTarjeta.DataSource = tarjetas.buscar_Tarjeta(this.cmb_TipoDoc.SelectedValue.ToString(), this.txt_NumeroDoc.Text.ToString().Trim());
+                this.cmb_NumTarjeta.DisplayMember = "Numero";
+                this.cmb_NumTarjeta.ValueMember = "Codigo";
+                this.cmb_NumTarjeta.Enabled = true;
+                this.cmb_NumTarjeta.SelectedIndex = -1;
+                this.cb_NombreTarjeta.Text = "";
                 this.btn_finalizar.Enabled = true;
             }
             else
@@ -218,17 +263,18 @@ namespace ShoppingBuyAll
 
         private void cmb_tarjeta_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (this.cmb_tarjeta.SelectedIndex != -1)
-            {
-                this.txt_cod_seg.Text = this.cmb_tarjeta.SelectedValue.ToString();
-            }
+            //if (this.cmb_NumTarjeta.SelectedIndex != -1)
+            //{
+            //    this.cb_NombreTarjeta.Text = this.cmb_NumTarjeta.SelectedValue.ToString();
+            //    idCodigoTarjera = compras.obtenerIDCodigoTarejta(this.cb_NombreTarjeta.Text.Trim());
+            //}
         }
 
         private void rbt_eft_CheckedChanged(object sender, EventArgs e)
         {
-            this.cmb_tarjeta.SelectedIndex = -1;
-            this.cmb_tarjeta.Enabled = false;
-            this.txt_cod_seg.Text = "";
+            this.cmb_NumTarjeta.SelectedIndex = -1;
+            this.cmb_NumTarjeta.Enabled = false;
+            this.cb_NombreTarjeta.Text = "";
             this.btn_finalizar.Enabled = true;
             
         }
@@ -238,7 +284,6 @@ namespace ShoppingBuyAll
             int fila = grid_compra.CurrentRow.Index;
             
             string cod = grid_compra.CurrentRow.Cells[0].Value.ToString();
-            MessageBox.Show(cod);
             this.compras.eliminar_detalle(this.num_factur.Text, cod , this.txt_cuil.Text);
             MessageBox.Show("Se elimino correctamente el item!");
             grid_compra.Rows.RemoveAt(fila);
@@ -268,9 +313,13 @@ namespace ShoppingBuyAll
         {
             if (rbt_tar.Checked == true || rbt_eft.Checked == true)
             {
+                if (rbt_tar.Checked)
+                {
+                    this.compras.agregar_Tarjeta_Factura(this.num_factur.Text.Trim(), idCodigoTarjera, cmb_NumTarjeta.Text.Trim(), cmb_TipoDoc.SelectedValue.ToString(), txt_NumeroDoc.Text.Trim());
+                }
                 this._BD.cerrar_transaccion();
                 MessageBox.Show("Se finalizo la compra con exito");
-                this.Dispose();                
+                this.Dispose();
             }
             else
             {
@@ -283,6 +332,61 @@ namespace ShoppingBuyAll
         private void label16_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmb_NumTarjeta_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (this.cmb_NumTarjeta.SelectedIndex != -1)
+            {
+                this.cb_NombreTarjeta.Text = this.cmb_NumTarjeta.SelectedValue.ToString();
+                idCodigoTarjera = compras.obtenerIDCodigoTarejta(this.cb_NombreTarjeta.Text.Trim());
+            }
+        }
+
+        private void frm_Compras_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
+
+        private void rb_codigo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rb_codigo.Checked)
+            {
+                txt_Cod_Pod.Enabled = true;
+                txt_Cod_Pod.Focus();
+            }
+            else
+            {
+                txt_Cod_Pod.Enabled = false;
+                txt_Cod_Pod.Text = "";
+            }
+        }
+
+        private void rb_Nombre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rb_Nombre.Checked)
+            {
+                txt_Nom_Prod.Enabled = true;
+                txt_Nom_Prod.Focus();
+            }
+            else
+            {
+                txt_Nom_Prod.Enabled = false;
+                txt_Nom_Prod.Text = "";
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txt_Cod_Pod.Text = "";
+            txt_Cod_Pod.Enabled = false;
+            rb_codigo.Checked = false;
+
+            txt_Nom_Prod.Text = "";
+            txt_Nom_Prod.Enabled = false;
+            rb_Nombre.Checked = false;
+
+            grid_product.DataSource = "";
         }
     }
 }

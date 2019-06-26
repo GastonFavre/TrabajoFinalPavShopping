@@ -20,10 +20,10 @@ namespace ShoppingBuyAll.clases
             _BD.auto_insert(controles, "ComprasXCliente");
         }
 
-        public void agregar_compra_vacia(string pk, string local, string tipo_D, string nro_Doc)
+        public void agregar_compra_vacia(string pk, string local, string tipo_D, string nro_Doc, string fecha)
         {
-            string sql = "INSERT INTO ComprasXCliente (nro_factura, cuil_local1, tipo_doc1, num_doc1)" +
-                          " VALUES (" + pk + " , " + local + " , " + tipo_D + " , " + nro_Doc + ")";
+            string sql = "INSERT INTO ComprasXCliente (nro_factura, cuil_local1, tipo_doc1, num_doc1, fecha_compra)" +
+                          " VALUES (" + pk + " , " + local + " , " + tipo_D + " , " + nro_Doc + " , " +  fecha + ")";
             this._BD.insert_update_delete(sql);
         }
 
@@ -61,5 +61,44 @@ namespace ShoppingBuyAll.clases
             return pk_nueva;
         }
 
+        public void agregar_Tarjeta_Factura(string nro_factura, string cod_Tarjeta, string num_Tarjeta, string tipoDoc, string numDoc)
+        {
+            string sql = @"UPDATE ComprasXCliente 
+                            SET tipo_doc1 = " + tipoDoc + ", num_doc1 = " + numDoc + ", cod_tarjeta1 = " + cod_Tarjeta + ", num_tarjeta1 = " + num_Tarjeta +
+                            " WHERE nro_factura =" + nro_factura;
+            MessageBox.Show(sql);
+            this._BD.grabar_modificar(sql);
+        }
+
+        public string obtenerIDCodigoTarejta(string codigo)
+        {
+            if (codigo != "")
+            {
+                string sql = @"SELECT cod_tarje FROM MarcaTarjetas WHERE nombre = '" + codigo + "'";
+                DataTable tabla = new DataTable();
+                tabla = this._BD.consulta(sql);
+                if (tabla.Rows.Count == 0)
+                {
+                    return null;
+                }
+                else
+                {
+                    return tabla.Rows[0][0].ToString();
+                }
+            }
+            else
+            {
+                return null;
+            }
+            
+            
+        }
+
+        public DataTable verificarItemSeleccionado(string nroFactura, string cuilLocal, string cod_prod)
+        {
+            string sql = @"SELECt * FROM DetalleCompras
+                            WHERE nro_factura1 = " + nroFactura + " AND cuil_Local2 = " + cuilLocal + " AND cod_prod1  = " + cod_prod;
+            return _BD.consulta(sql);
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace ShoppingBuyAll.clases
         {
             string sqlpatron = "";
 
-            sqlpatron = @"SELECT * FROM Productos WHERE nombre like ' %" + patron.Trim() + "%'";
+            sqlpatron = @"SELECT * FROM Productos WHERE nombre LIKE '%" + patron + "%'";
             return _BD.consulta(sqlpatron);
         }
         public Validar.estado_validacion validar_Producto(Control.ControlCollection controles)
