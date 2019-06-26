@@ -40,58 +40,6 @@ namespace ShoppingBuyAll.Formularios
 
         private void btn_buscarFiltrado_Click(object sender, EventArgs e)
         {
-            //Estacionamiento AutoCliente = new Estacionamiento();
-            //DataTable tabla_filtrados = new DataTable();
-            //if (this.txt_patenteFiltrado.Visible)
-            //{
-            //    if (this.txt_patenteFiltrado.Text == "")
-            //    {
-            //        MessageBox.Show("Debe ingresar una patente");
-            //    }
-            //    else
-            //    {
-            //        GrillaFiltrados.DataSource = AutoCliente.buscar_porPatente(txt_patenteFiltrado.Text);
-            //    }
-            //}
-
-            //if (this.txt_NumDocFiltrado.Visible)
-            //{
-            //    if (this.txt_NumDocFiltrado.Text == "" || cmb_tipoDocFiltrado.SelectedIndex == -1)
-            //    {
-            //        MessageBox.Show("Debe completar el tipo y numero de documento");
-            //    }
-            //    else
-            //    {
-            //        GrillaFiltrados.DataSource = AutoCliente.buscar_porDNI(txt_NumDocFiltrado.Text);
-            //    }
-            //}
-
-            //if (this.cmbPlayaFiltrado.Visible)
-            //{
-            //    if (this.cmbPlayaFiltrado.SelectedIndex == -1)
-            //    {
-            //        MessageBox.Show("Debe seleccionar la playa");
-            //    }
-            //    else
-            //    {
-            //        GrillaFiltrados.DataSource = AutoCliente.buscar_porPlaya(cmbPlayaFiltrado.SelectedValue.ToString());
-            //    }
-            //}
-
-            //if (this.dt_fecha_entradaFiltrado.Visible)
-            //{
-            //    if (this.dt_fecha_entradaFiltrado.Text == "")
-            //    {
-            //        MessageBox.Show("Debe ingresar una fecha");
-            //    }
-            //    else
-            //    {
-            //        GrillaFiltrados.DataSource = AutoCliente.buscar_porFecha(dt_fecha_entradaFiltrado.Text);
-            //    }
-            //}
-
-
-
             string comando_sql = "";
             if (checkPatente.Checked)
             {
